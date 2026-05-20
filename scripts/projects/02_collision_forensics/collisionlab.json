@@ -1,0 +1,169 @@
+{
+  "kind": "project-story",
+  "order": 2,
+  "slug": "collisionlab",
+  "class_prefix": "Collisionlab",
+  "project_en": "Collision Forensics — who was really going faster?",
+  "project_ar": "تحقيق في تصادم — مَن كان أسرعَ حقًّا؟",
+  "persona": "Noura — two toy carts, one dent, an argument to settle",
+  "phet_sim": "Collision Lab (phet.colorado.edu) — momentum vectors + KE readout on",
+  "concepts_combined": [
+    "10_impulse",
+    "11_momentumcons",
+    "21_collisions"
+  ],
+  "ending_hint": "Diegetic callback to impulse (crumple/airbag), momentum conservation (the bag throw / rocket), collisions (steel vs clay).",
+  "tone": "Silence is content. Kitchen-table-warm. A story we watch. Pure #000000 void, font=sans. English voice, فصحى Arabic subtitles.",
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Two toy carts collided on the table. One ended up dented. Noura's little brother says his cart was barely moving.",
+      "text_ar": "تصادمت عربتان صغيرتان على الطاولة. انبعجت إحداهما. يقول أخوها الصغير إنّ عربته كانت تكاد لا تتحرّك.",
+      "visual": "Side view, void. Two toy carts at rest after impact, one with a dent. A small figure (the brother) pointing, Noura skeptical."
+    },
+    {
+      "id": "s1_b2",
+      "text": "She wants one answer. Who was actually going faster, the moment they hit?",
+      "text_ar": "تريد إجابةً واحدة. مَن كان أسرعَ فعلًا في لحظة الاصطدام؟",
+      "visual": "Freeze on the collision instant; two '?' speed tags over the carts."
+    },
+    {
+      "id": "s1_b3",
+      "text": "She looks at the dent. The bigger dent must mean the harder hit. Right?",
+      "text_ar": "تنظر إلى الانبعاج. الانبعاجُ الأكبر لا بدّ أنّه الاصطدامُ الأعنف. أليس كذلك؟",
+      "visual": "Close on the dent; a guess label 'bigger dent = faster?' with a question mark."
+    },
+    {
+      "id": "s1_b4",
+      "text": "So she guesses from the wreck. She's sure the dented one took the bigger hit, so it was the slower one.",
+      "text_ar": "فتُخمّن من آثار الحادث. تجزم أنّ المنبعجة تلقّت الضربة الأكبر، فكانت هي الأبطأ.",
+      "visual": "Noura drawing a conclusion arrow from dent → 'slower cart'. Confident."
+    },
+    {
+      "id": "s1_b5",
+      "text": "Her brother runs it again. Same carts. This time the dented one was clearly the fast one. Her rule just broke.",
+      "text_ar": "يعيد أخوها التجربة. العربتان نفساهما. هذه المرّة كانت المنبعجة هي السريعةَ بوضوح. انهارت قاعدتها.",
+      "visual": "Replay: the previously-'slow' cart now visibly fast into impact; the dent forms anyway. A struck-out rule."
+    },
+    {
+      "id": "s1_b6",
+      "text": "She tries reading speed from how far they slid after. But a heavy cart and a light cart slide differently from the same hit.",
+      "text_ar": "تحاول قراءة السرعة من مسافة انزلاقهما بعد الاصطدام. لكنّ العربة الثقيلة والخفيفة تنزلقان بصورةٍ مختلفةٍ من الضربة نفسها.",
+      "visual": "Two post-collision slides of different lengths; a 'mass?' confound tag."
+    },
+    {
+      "id": "s1_b7",
+      "text": "Every clue lies on its own. The dent, the slide, the noise — none of them, alone, gives her the speed.",
+      "text_ar": "كلُّ دليلٍ يكذب وحده. الانبعاج، والانزلاق، والصوت — لا شيءَ منها، منفردًا، يمنحها السرعة.",
+      "visual": "Three clue icons (dent, slide, sound), each with a small ✗. Noura sitting, stuck. Held beat."
+    },
+    {
+      "id": "s1_b8",
+      "text": "She wasn't short of clues. She was short of a conserved quantity — something the crash can't change.",
+      "text_ar": "لم تكن تنقصها الأدلّة. كان ينقصها مقدارٌ محفوظ — شيءٌ لا يستطيع التصادمُ تغييره.",
+      "visual": "The clues fade. A single steady bar labeled faintly 'unchanged by the hit' glows."
+    },
+    {
+      "id": "s1_b9",
+      "text": "Mass times velocity, added up for both carts. Before the hit and after — that total stays the same. Always.",
+      "text_ar": "الكتلةُ في السرعة، مجموعةً للعربتين. قبل الاصطدام وبعده — يبقى ذلك المجموعُ ثابتًا. دائمًا.",
+      "visual": "A fixed-length total-momentum bar spanning 'before' and 'after', unchanged through the impact flash."
+    },
+    {
+      "id": "s1_b10",
+      "text": "And the energy of motion? That can drop — into the dent, the sound, the heat. How much it drops tells her what kind of collision this was.",
+      "text_ar": "وماذا عن طاقة الحركة؟ تلك يمكن أن تنقص — إلى الانبعاج والصوت والحرارة. ومقدارُ نقصها يخبرها بنوع هذا التصادم.",
+      "visual": "A second bar (motion energy) shrinking at impact; the lost part shown as dent+sound+heat shimmer."
+    },
+    {
+      "id": "s1_b11",
+      "text": "Two rules. One that never changes. One that's allowed to. Together they pin down what really happened.",
+      "text_ar": "قاعدتان. واحدةٌ لا تتغيّر أبدًا. وأخرى يُسمح لها بذلك. معًا تُحدّدان ما جرى حقًّا.",
+      "visual": "The two bars side by side, labeled 'always' and 'sometimes'."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Before she argues another minute — she rebuilds the crash where she can measure it.",
+      "text_ar": "قبل أن تجادل دقيقةً أخرى — تعيد بناء الاصطدام حيث تستطيع القياس.",
+      "visual": "Scene resolves into the Collision Lab layout: two pucks on a track, momentum vectors, a KE readout."
+    },
+    {
+      "id": "s1_b13",
+      "text": "Collision Lab. She sets the two masses. Turns on the momentum arrows and the kinetic-energy number.",
+      "text_ar": "محاكاة «مختبر التصادم». تضبط الكتلتين. وتُشغّل أسهمَ الزخم وقيمةَ الطاقة الحركية.",
+      "visual": "The PhET pucks with mass labels; momentum vector arrows and a KE value box appear."
+    },
+    {
+      "id": "s1_b14",
+      "text": "Here is the real job. Not pressing play. Predicting — before she does.",
+      "text_ar": "هنا تكمن المهمّةُ الحقيقيّة. ليست الضغط على التشغيل. بل التنبّؤ — قبل أن تفعل.",
+      "visual": "Finger over play, deliberately not pressing; the arrows frozen at start."
+    },
+    {
+      "id": "s1_b15",
+      "text": "Given what each cart does after — work backward. What speed must each have had before, so the total momentum balances?",
+      "text_ar": "بمعرفة ما تفعله كلُّ عربةٍ بعد الاصطدام — اعملي بالعكس. ما السرعةُ التي كانت لكلٍّ منهما قبله، حتى يتوازن مجموعُ الزخم؟",
+      "visual": "Two 'before speed = ?' blanks; a small 'Σp before = Σp after' relation, numbers open."
+    },
+    {
+      "id": "s1_b16",
+      "text": "Then she presses play. And she watches the arrows and the energy number — not the carts.",
+      "text_ar": "ثمّ تضغط على التشغيل. وتراقب الأسهمَ ورقمَ الطاقة — لا العربتين.",
+      "visual": "Pucks collide; camera holds on the momentum vectors summing and the KE value dropping."
+    },
+    {
+      "id": "s1_b17",
+      "text": "After — she explains the gap. If the energy barely dropped, they bounced. If it collapsed, they crushed together.",
+      "text_ar": "بعد ذلك — تفسّر الفجوة. إن نقصت الطاقةُ بالكاد، فقد ارتدّتا. وإن انهارت، فقد تلاصقتا متحطّمتين.",
+      "visual": "Two outcomes contrasted: elastic (energy bar nearly full) vs inelastic (collapsed), each labeled."
+    },
+    {
+      "id": "s1_b18",
+      "text": "She adjusts a mass. Predicts again. Three runs. That's all she gets.",
+      "text_ar": "تضبط إحدى الكتلتين. وتتنبّأ مجددًا. ثلاث محاولات. هذا كلُّ ما لديها.",
+      "visual": "A mass slider nudged; '3 runs' counter; each run deliberate, no random clicking."
+    },
+    {
+      "id": "s1_b19",
+      "text": "Her first prediction is wrong. That is not the problem. That is the point. Each miss tells her which clue had fooled her.",
+      "text_ar": "تنبّؤها الأول خاطئ. ليست تلك هي المشكلة. تلك هي الغاية. كلُّ إخفاقٍ يخبرها أيُّ دليلٍ خدعها.",
+      "visual": "Run 1 miss, run 2 closer, run 3 close — prediction converging on the sim."
+    },
+    {
+      "id": "s1_b20",
+      "text": "Now she answers her brother. Not from the dent — from the numbers. And she can show why.",
+      "text_ar": "الآن تُجيب أخاها. لا من الانبعاج — بل من الأرقام. وتستطيع أن تُبيّن السبب.",
+      "visual": "Back to the table; Noura points at the carts, the conserved-total bar drawn confidently above them."
+    },
+    {
+      "id": "s1_b21",
+      "text": "The argument was never the homework. This is: in one sentence, your own words — which clue lied, and which rule never did?",
+      "text_ar": "لم يكن الجدالُ هو الواجب قط. الواجبُ هو هذا: في جملةٍ واحدةٍ، بكلماتك أنت — أيُّ دليلٍ كذب، وأيُّ قاعدةٍ لم تكذب أبدًا؟",
+      "visual": "The two carts hold, still. An empty line waits for the student's sentence. Silence."
+    },
+    {
+      "id": "s1_b22",
+      "text": "And if this felt familiar — it should. Do you remember the two cars at the wall, one that crumpled slowly and one that didn't?",
+      "text_ar": "وإن بدا لك هذا مألوفًا — فحُقَّ له. أتذكرُ السيّارتين عند الجدار، إحداهما انبعجت ببطءٍ والأخرى لم تفعل؟",
+      "visual": "Faint callback: the two cars at the wall (impulse video), crumple vs rigid."
+    },
+    {
+      "id": "s1_b23",
+      "text": "And the figure on the frozen lake, who threw a bag and slid backward — giving nothing away that the ice could keep?",
+      "text_ar": "والشخصُ على البحيرة المتجمّدة، الذي رمى حقيبةً فانزلق إلى الخلف — دون أن يضيع شيءٌ ممّا يحفظه الجليد؟",
+      "visual": "Faint callback: the frozen-lake figure + thrown bag (momentum-conservation video)."
+    },
+    {
+      "id": "s1_b24",
+      "text": "And the steel that bounced, and the clay that just stopped — same momentum, different energy?",
+      "text_ar": "والفولاذُ الذي ارتدّ، والصلصالُ الذي توقّف فحسب — الزخمُ نفسه، والطاقةُ مختلفة؟",
+      "visual": "Faint callback: steel spheres rebounding vs clay fusing (collisions video)."
+    },
+    {
+      "id": "s1_b25",
+      "text": "This crash was all three at once. That is the concept. Now you know which videos to go back to.",
+      "text_ar": "كان هذا الاصطدامُ الثلاثةَ في آنٍ واحد. تلك هي الفكرة. الآن تعرفُ إلى أيِّ مقاطعَ تعود.",
+      "visual": "The three callbacks converge into the single two-cart + conserved-bar image, then hold. [Hold 3s in silence]"
+    }
+  ]
+}

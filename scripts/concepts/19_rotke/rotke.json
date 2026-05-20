@@ -1,0 +1,107 @@
+{
+  "order": 19,
+  "slug": "rotke",
+  "concept_en": "Rotational Kinetic Energy",
+  "concept_ar": "طاقة الحركة الدورانية",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 5,
+    "chapter_title_en": "Energy and Its Conservation",
+    "chapter_title_ar": "الطاقة وحفظها",
+    "lesson": "5-1",
+    "lesson_title_en": "The Many Forms of Energy",
+    "lesson_title_ar": "الأشكال المتعددة للطاقة",
+    "pages": "131-140",
+    "start_page": 131,
+    "end_page": 140,
+    "lesson_objectives": [
+      "استخدام نموذج لربط الشغل بالطاقة",
+      "حساب الطاقة الحركية",
+      "تحديد طاقة الوضع الجاذبية لنظام ما",
+      "تبيين كيفية تخزين طاقة الوضع المرونية"
+    ],
+    "lesson_key_terms": [
+      "طاقة الحركة الدورانية",
+      "طاقة الوضع الجاذبية",
+      "مستوى الإسناد",
+      "طاقة الوضع المرونية"
+    ]
+  },
+  "video": {
+    "target_filename": "rotke_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "A spinning flywheel, going nowhere. Its center never moves.",
+      "visual": "A heavy disk spinning in place in the void, axis fixed."
+    },
+    {
+      "id": "s1_b2",
+      "text": "By the usual rule, motion energy comes from a thing's speed through space. This thing's center has none.",
+      "visual": "The disk's center marked, a 'speed = 0' tag on it; question mark."
+    },
+    {
+      "id": "s1_b3",
+      "text": "So does a spinning wheel carry energy of motion — or not?",
+      "visual": "The disk spinning, a question mark hovering."
+    },
+    {
+      "id": "s1_b4",
+      "text": "Try to stop it with your hand. It bites back. It clearly carries something.",
+      "visual": "A hand grabs the rim; sparks; the hand pushed; the disk slowing reluctantly."
+    },
+    {
+      "id": "s1_b5",
+      "text": "Look closer. The center is still — but every other bit of the disk is racing in a circle.",
+      "visual": "Zoom to the rim; small mass elements streaking around at speed."
+    },
+    {
+      "id": "s1_b6",
+      "text": "Each tiny piece has its own motion energy. Add them all up, and the wheel as a whole holds plenty.",
+      "visual": "Many small speed vectors on the rotating mass; they sum into one glowing energy bar."
+    },
+    {
+      "id": "s1_b7",
+      "text": "That total is rotational kinetic energy. Energy of spin, not of going anywhere.",
+      "visual": "The whole disk labeled 'rotational kinetic energy'."
+    },
+    {
+      "id": "s1_b8",
+      "text": "And where the mass sits matters. The same mass, far from the axis, moves faster — and stores far more.",
+      "visual": "Two disks, equal mass: one with mass near the hub, one with mass at the rim; the rim one's bar much larger."
+    },
+    {
+      "id": "s1_b9",
+      "text": "That reluctance to spin up or slow down has a name of its own — the moment of inertia.",
+      "visual": "The mass-distribution picture labeled 'moment of inertia — how the mass is spread'."
+    },
+    {
+      "id": "s1_b10",
+      "text": "It's why a flywheel can store energy, and a potter's wheel keeps turning long after the last push.",
+      "visual": "A flywheel feeding energy out smoothly; a potter's wheel coasting."
+    },
+    {
+      "id": "s1_b11",
+      "text": "A rolling ball carries both kinds at once — moving forward and spinning. Two energies in one body.",
+      "visual": "A ball rolling down a slope; two bars on it: 'forward motion' and 'spin'."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Computing rotational kinetic energy from the moment of inertia and the angular speed — that's yours.",
+      "visual": "Clean: a disk with ω and a mass-distribution sketch, terms left open. Holds."
+    }
+  ]
+}

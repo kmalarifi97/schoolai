@@ -1,0 +1,14 @@
+{
+  "s1_b1": "A spinning flywheel, going nowhere. Its center never moves.",
+  "s1_b2": "By the usual rule, motion energy comes from a thing's speed through space. This thing's center has none.",
+  "s1_b3": "So does a spinning wheel carry energy of motion — or not?",
+  "s1_b4": "Try to stop it with your hand. It bites back. It clearly carries something.",
+  "s1_b5": "Look closer. The center is still — but every other bit of the disk is racing in a circle.",
+  "s1_b6": "Each tiny piece has its own motion energy. Add them all up, and the wheel as a whole holds plenty.",
+  "s1_b7": "That total is rotational kinetic energy. Energy of spin, not of going anywhere.",
+  "s1_b8": "And where the mass sits matters. The same mass, far from the axis, moves faster — and stores far more.",
+  "s1_b9": "That reluctance to spin up or slow down has a name of its own — the moment of inertia.",
+  "s1_b10": "It's why a flywheel can store energy, and a potter's wheel keeps turning long after the last push.",
+  "s1_b11": "A rolling ball carries both kinds at once — moving forward and spinning. Two energies in one body.",
+  "s1_b12": "Computing rotational kinetic energy from the moment of inertia and the angular speed — that's yours."
+}

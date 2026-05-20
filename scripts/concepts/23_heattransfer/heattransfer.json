@@ -1,0 +1,110 @@
+{
+  "order": 23,
+  "slug": "heattransfer",
+  "concept_en": "Heat Transfer — Conduction, Convection, Radiation",
+  "concept_ar": "انتقال الحرارة: التوصيل والحمل والإشعاع",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 6,
+    "chapter_title_en": "Thermal Energy",
+    "chapter_title_ar": "الطاقة الحرارية",
+    "lesson": "6-1",
+    "lesson_title_en": "Temperature and Thermal Energy",
+    "lesson_title_ar": "درجة الحرارة والطاقة الحرارية",
+    "pages": "165-177",
+    "start_page": 165,
+    "end_page": 177,
+    "lesson_objectives": [
+      "وصف الطاقة الحرارية ومقارنتها بطاقة الوضع والطاقة الحركية",
+      "التمييز بين درجة الحرارة والطاقة الحرارية",
+      "تعرف الحرارة النوعية",
+      "حساب الحرارة المنتقلة"
+    ],
+    "lesson_key_terms": [
+      "الطاقة الحرارية",
+      "التوصيل الحراري",
+      "الاتزان الحراري",
+      "الحرارة",
+      "الحمل الحراري",
+      "الإشعاع الحراري",
+      "الحرارة النوعية"
+    ]
+  },
+  "video": {
+    "target_filename": "heattransfer_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Hold a metal spoon in hot soup. Soon the handle, far from the soup, is hot too.",
+      "visual": "A spoon in a steaming bowl; warmth creeping up the handle, color shifting along it."
+    },
+    {
+      "id": "s1_b2",
+      "text": "Nothing moved up that handle. So how did the heat travel through solid metal?",
+      "visual": "The handle's metal; a question mark; no visible flow."
+    },
+    {
+      "id": "s1_b3",
+      "text": "The hot end's particles jiggle hard. They knock their neighbors, who knock theirs. The jiggle passes along.",
+      "visual": "A chain of bonded particles; vibration handed from one to the next up the handle."
+    },
+    {
+      "id": "s1_b4",
+      "text": "Heat passed by contact, particle to particle, the material itself staying put. That's conduction.",
+      "visual": "The whole handle, jiggle relay completed, labeled 'conduction — by contact'."
+    },
+    {
+      "id": "s1_b5",
+      "text": "Now a pot of water on a flame. The bottom heats first. But the whole pot warms — and the water churns.",
+      "visual": "A pot over a flame; circulating loops drawn in the water."
+    },
+    {
+      "id": "s1_b6",
+      "text": "Hot water expands, grows light, rises. Cool water sinks to take its place. The fluid carries the heat by moving.",
+      "visual": "A convection loop: red rising in the middle, blue sinking at the sides, a turning circle."
+    },
+    {
+      "id": "s1_b7",
+      "text": "Heat carried by the bulk motion of a fluid. That's convection.",
+      "visual": "The loop labeled 'convection — by flow'; same engine behind wind and ocean currents, faint icons."
+    },
+    {
+      "id": "s1_b8",
+      "text": "But step into sunlight. The Sun's heat crossed a hundred million miles of empty space. No metal. No fluid. Nothing to carry it.",
+      "visual": "The Sun, vast void, a faint glow reaching a small Earth; emphasize the emptiness between."
+    },
+    {
+      "id": "s1_b9",
+      "text": "It came as light. Heat that travels as radiation needs no material at all.",
+      "visual": "Wavy energy rays crossing the void from Sun to Earth, labeled 'radiation — by waves'."
+    },
+    {
+      "id": "s1_b10",
+      "text": "You feel it from a campfire across the gap, and from a hot stove before you ever touch it.",
+      "visual": "A figure facing a fire, rays warming their face across open air; a glowing stove element."
+    },
+    {
+      "id": "s1_b11",
+      "text": "Three paths for one thing. Touch. Flow. Across nothing at all.",
+      "visual": "A clean triptych: conduction (spoon), convection (pot loop), radiation (Sun rays)."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Which path dominates where, and how fast each moves heat — that's the thinking we hand to you.",
+      "visual": "The three icons holding side by side, an open question between them. Silent."
+    }
+  ]
+}

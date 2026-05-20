@@ -1,0 +1,106 @@
+{
+  "order": 9,
+  "slug": "fictitious",
+  "concept_en": "Fictitious Forces — Centrifugal & Coriolis",
+  "concept_ar": "القوى الظاهرية: الطاردة المركزية وكوريوليس",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 2,
+    "chapter_title_en": "Rotational Motion",
+    "chapter_title_ar": "الحركة الدورانية",
+    "lesson": "2-3",
+    "lesson_title_en": "Equilibrium",
+    "lesson_title_ar": "الاتزان",
+    "pages": "47-65",
+    "start_page": 47,
+    "end_page": 65,
+    "lesson_objectives": [
+      "تعرف مركز الكتلة",
+      "توضيح تأثير موقع مركز الكتلة في استقرار الجسم",
+      "تعرف شروط الاتزان",
+      "وصف كيف يؤدي دوران الأطر المرجعية إلى ظهور قوى ظاهرية"
+    ],
+    "lesson_key_terms": [
+      "مركز الكتلة",
+      "القوة الطاردة المركزية",
+      "قوة كوريوليس"
+    ]
+  },
+  "video": {
+    "target_filename": "fictitious_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "A car takes a sharp turn. You feel thrown against the door.",
+      "visual": "Top-down car curving left; a passenger pressed toward the right door, an outward arrow."
+    },
+    {
+      "id": "s1_b2",
+      "text": "It feels like a force pushed you outward. Name it, and it seems real.",
+      "visual": "The outward arrow labeled with a question mark."
+    },
+    {
+      "id": "s1_b3",
+      "text": "But step outside the car. Watch from above, from the still ground.",
+      "visual": "Camera lifts to a fixed overhead view; the car's curved path drawn on the road."
+    },
+    {
+      "id": "s1_b4",
+      "text": "From out here, nothing pushed you outward. Your body simply wanted to go straight — and the car turned out from under you.",
+      "visual": "The passenger's straight-line tendency drawn; the door curving into them, not them into the door."
+    },
+    {
+      "id": "s1_b5",
+      "text": "The outward push was never a force. It was the feeling of your own straight-line motion, seen from a turning frame.",
+      "visual": "Split screen: inside-the-car view (feels a force) vs ground view (just straight-line inertia)."
+    },
+    {
+      "id": "s1_b6",
+      "text": "That invented push has a name we use anyway, because it's useful inside the turning frame. The centrifugal force.",
+      "visual": "The inside-frame outward arrow labeled 'centrifugal — only in the rotating frame'."
+    },
+    {
+      "id": "s1_b7",
+      "text": "Now a harder one. Stand at the center of a spinning platform and roll a ball straight to a friend at the edge.",
+      "visual": "Top-down rotating disk; a ball launched from center toward an edge target."
+    },
+    {
+      "id": "s1_b8",
+      "text": "From above, it goes perfectly straight. From on the platform, it curves away — and misses.",
+      "visual": "Ground view: straight line. Disk view: the same path appears as a curve, missing the friend."
+    },
+    {
+      "id": "s1_b9",
+      "text": "Nothing bent the ball's path through space—it went perfectly straight. But the floor rotated beneath that straight path, so from the floor it looks curved.",
+      "visual": "Split screen: (left) fixed space view with straight ball path; (right) rotating disk view with same path now appearing curved. Frame labels: 'space view' vs 'disk view'."
+    },
+    {
+      "id": "s1_b10",
+      "text": "That apparent deflection has a name. The Coriolis effect — the signature of doing physics on a turning floor.",
+      "visual": "The curved disk-frame path labeled 'Coriolis'."
+    },
+    {
+      "id": "s1_b11",
+      "text": "We live on one. The Earth is the spinning platform. It steers winds and ocean currents into great curves.",
+      "visual": "The globe rotating; broad atmospheric flow arrows curving across it."
+    },
+    {
+      "id": "s1_b12",
+      "text": "These forces vanish the moment you step to the still ground. When do you need them, and how big are they? That's the thinking to carry off.",
+      "visual": "The rotating frame and the still frame side by side, the open question between them. Holds."
+    }
+  ]
+}

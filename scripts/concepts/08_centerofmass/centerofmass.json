@@ -1,0 +1,106 @@
+{
+  "order": 8,
+  "slug": "centerofmass",
+  "concept_en": "Center of Mass & Stability",
+  "concept_ar": "مركز الكتلة والاتزان",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 2,
+    "chapter_title_en": "Rotational Motion",
+    "chapter_title_ar": "الحركة الدورانية",
+    "lesson": "2-3",
+    "lesson_title_en": "Equilibrium",
+    "lesson_title_ar": "الاتزان",
+    "pages": "47-65",
+    "start_page": 47,
+    "end_page": 65,
+    "lesson_objectives": [
+      "تعرف مركز الكتلة",
+      "توضيح تأثير موقع مركز الكتلة في استقرار الجسم",
+      "تعرف شروط الاتزان",
+      "وصف كيف يؤدي دوران الأطر المرجعية إلى ظهور قوى ظاهرية"
+    ],
+    "lesson_key_terms": [
+      "مركز الكتلة",
+      "القوة الطاردة المركزية",
+      "قوة كوريوليس"
+    ]
+  },
+  "video": {
+    "target_filename": "centerofmass_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Throw a wrench, spinning, across the room.",
+      "visual": "A wrench tumbling through the void, end over end."
+    },
+    {
+      "id": "s1_b2",
+      "text": "Every part of it goes a different way. But one single point traces a clean, smooth arc.",
+      "visual": "Chaotic tumbling, with one marked point gliding along a perfect parabola."
+    },
+    {
+      "id": "s1_b3",
+      "text": "That point moves as if all the mass were squeezed into it. The center of mass.",
+      "visual": "The marked point labeled 'center of mass'; the rest dims."
+    },
+    {
+      "id": "s1_b4",
+      "text": "It isn't always in the middle of the object. It isn't even always inside the object.",
+      "visual": "An L-shaped piece; the center-of-mass point sits in the empty notch, outside the metal."
+    },
+    {
+      "id": "s1_b5",
+      "text": "Now stand a block on the table. Tilt it a little. It rocks back down.",
+      "visual": "A block tilted slightly; a vertical line from its center of mass still inside the base; it returns."
+    },
+    {
+      "id": "s1_b6",
+      "text": "Tilt it more. There's a moment where it hangs, undecided.",
+      "visual": "The block tilted to the edge; the vertical line passing exactly through the pivot corner."
+    },
+    {
+      "id": "s1_b7",
+      "text": "Past that moment, it goes over. What flipped wasn't the push. It was whether the center of mass stayed above the base.",
+      "visual": "The line crosses outside the base; the block topples."
+    },
+    {
+      "id": "s1_b8",
+      "text": "That's the whole rule of stability. Center of mass over the base of support — it returns. Beyond it — it falls.",
+      "visual": "Two clean cases side by side: line inside base (stable), line outside (toppling)."
+    },
+    {
+      "id": "s1_b9",
+      "text": "This is why a low, wide thing is hard to tip. A race car. A pyramid.",
+      "visual": "A low wide shape vs a tall narrow shape; the wide one's center stays over its base through a big tilt."
+    },
+    {
+      "id": "s1_b10",
+      "text": "And why a person leans into a heavy bag — moving their center of mass back over their feet.",
+      "visual": "A figure carrying a load forward, body leaning back; combined center-of-mass point held over the feet."
+    },
+    {
+      "id": "s1_b11",
+      "text": "Lower the center, widen the base, keep it over support — that's balance, with no magic in it.",
+      "visual": "The three ideas as a tight labeled triptych."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Locating the center of mass of a given shape, and finding the maximum tilt before its vertical line leaves the base — that's yours.",
+      "visual": "A shape with its center-of-mass point and base width marked, the tilt left open. Holds."
+    }
+  ]
+}

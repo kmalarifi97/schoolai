@@ -1,0 +1,110 @@
+{
+  "order": 15,
+  "slug": "machines",
+  "concept_en": "Simple Machines & Mechanical Advantage",
+  "concept_ar": "الآلات البسيطة والفائدة الميكانيكية",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 4,
+    "chapter_title_en": "Work, Energy, and Simple Machines",
+    "chapter_title_ar": "الشغل والطاقة والآلات البسيطة",
+    "lesson": "4-2",
+    "lesson_title_en": "Machines",
+    "lesson_title_ar": "الآلات",
+    "pages": "109-129",
+    "start_page": 109,
+    "end_page": 129,
+    "lesson_objectives": [
+      "توضيح فوائد الآلات البسيطة",
+      "المقارنة بين كفاءة الآلات المثالية والحقيقية",
+      "تحليل الآلات المركبة مبيناً الآلات البسيطة التي تتكون منها",
+      "حساب كفاءة الآلات البسيطة والمركبة"
+    ],
+    "lesson_key_terms": [
+      "الآلة",
+      "القوة (المسلطة)",
+      "المقاومة",
+      "الفائدة الميكانيكية",
+      "الفائدة الميكانيكية المثالية",
+      "الكفاءة",
+      "الآلة المركبة"
+    ]
+  },
+  "video": {
+    "target_filename": "machines_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "A boulder you cannot possibly lift. Slide a bar under it, rest it on a rock, and push the far end down.",
+      "visual": "A heavy boulder; a long lever over a small fulcrum; a hand on the far end."
+    },
+    {
+      "id": "s1_b2",
+      "text": "The boulder rises. With a force far smaller than its weight. It feels like cheating.",
+      "visual": "The boulder lifts; a small input arrow, a large output arrow. A 'free lunch?' tag."
+    },
+    {
+      "id": "s1_b3",
+      "text": "It isn't. Watch your hand, not the rock. Your end traveled a long way down.",
+      "visual": "Trace the long arc of the hand-end vs the tiny rise of the boulder-end."
+    },
+    {
+      "id": "s1_b4",
+      "text": "The boulder barely moved. You pushed gently — but through a huge distance.",
+      "visual": "Side-by-side: small force × long distance (input) | large force × short distance (output)."
+    },
+    {
+      "id": "s1_b5",
+      "text": "That's the bargain every machine makes. It trades force for distance. It never gives you both.",
+      "visual": "A balance: force down one side, distance up the other; the product unchanged."
+    },
+    {
+      "id": "s1_b6",
+      "text": "The factor by which it multiplies your force has a name. The mechanical advantage.",
+      "visual": "The ratio output-force / input-force highlighted, labeled 'mechanical advantage'."
+    },
+    {
+      "id": "s1_b7",
+      "text": "A ramp is the same deal. Sliding a barrel up a long slope is easy — but you walk much farther.",
+      "visual": "A barrel pushed up a gentle incline vs lifted straight up; longer path, smaller force."
+    },
+    {
+      "id": "s1_b8",
+      "text": "So is a screw, an axle, a pulley. All of them: less force, more distance, same job underneath.",
+      "visual": "Quick row of icons — screw, wheel-and-axle, pulley — each with the small-force/long-path motif."
+    },
+    {
+      "id": "s1_b9",
+      "text": "Stack them together and you get a compound machine — a bicycle, a pair of scissors, an engine.",
+      "visual": "Simple-machine icons combining into a bicycle drivetrain."
+    },
+    {
+      "id": "s1_b10",
+      "text": "In a perfect machine, what you put in equals what you get out. Force times distance, conserved.",
+      "visual": "Ideal case: input work bar exactly equal to output work bar."
+    },
+    {
+      "id": "s1_b11",
+      "text": "The machine never makes energy. It only reshapes the deal — so a human can do a job a human couldn't.",
+      "visual": "The lever scene returns; the energy bar identical in and out, only its shape changed."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Computing the mechanical advantage of a lever or ramp from its dimensions, and the input force a given load needs — that's yours.",
+      "visual": "Clean lever diagram, input and output arms labeled, the ratio left open. Holds."
+    }
+  ]
+}

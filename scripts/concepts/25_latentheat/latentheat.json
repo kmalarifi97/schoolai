@@ -1,0 +1,110 @@
+{
+  "order": 25,
+  "slug": "latentheat",
+  "concept_en": "Latent Heat — energy hidden in a change of state",
+  "concept_ar": "الحرارة الكامنة لتغير الحالة",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 6,
+    "chapter_title_en": "Thermal Energy",
+    "chapter_title_ar": "الطاقة الحرارية",
+    "lesson": "6-2",
+    "lesson_title_en": "Changes of State and Laws of Thermodynamics",
+    "lesson_title_ar": "تغيرات حالة المادة وقوانين الديناميكا الحرارية",
+    "pages": "178-200",
+    "start_page": 178,
+    "end_page": 200,
+    "lesson_objectives": [
+      "تعرف الحرارة الكامنة للانصهار",
+      "تعرف الحرارة الكامنة للتبخر",
+      "تعرف القانونين الأول والثاني في الديناميكا الحرارية",
+      "التمييز بين الحرارة والشغل",
+      "تعرف الإنتروبي"
+    ],
+    "lesson_key_terms": [
+      "الحرارة الكامنة للانصهار",
+      "الحرارة الكامنة للتبخر",
+      "القانون الأول في الديناميكا الحرارية",
+      "المحرك الحراري",
+      "الإنتروبي",
+      "القانون الثاني في الديناميكا الحرارية"
+    ]
+  },
+  "video": {
+    "target_filename": "latentheat_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Heat a glass of ice water and watch the thermometer.",
+      "visual": "A glass of ice and water on a flame; a thermometer reading 0°."
+    },
+    {
+      "id": "s1_b2",
+      "text": "You're pouring energy in steadily. But while ice remains, the temperature does not budge. Zero. Still zero.",
+      "visual": "Energy flowing in continuously; the thermometer frozen at 0° as ice shrinks. Hold on the unmoving needle."
+    },
+    {
+      "id": "s1_b3",
+      "text": "Energy in, no temperature rise. The heat is going somewhere we can't see on the thermometer.",
+      "visual": "Energy arrows pouring in; the flat temperature line; a question mark."
+    },
+    {
+      "id": "s1_b4",
+      "text": "Zoom in. In ice, particles are locked in a rigid lattice. The incoming energy isn't speeding them up —",
+      "visual": "An ordered crystal of bonded particles; energy arriving but motion not increasing."
+    },
+    {
+      "id": "s1_b5",
+      "text": "— it's breaking the bonds that hold them in place. Energy spent on freedom, not on speed.",
+      "visual": "Bonds snapping one by one; particles loosening from the lattice into liquid disorder."
+    },
+    {
+      "id": "s1_b6",
+      "text": "Only once the last of the ice is freed does the thermometer start climbing again.",
+      "visual": "Last crystal melts; the temperature needle finally rises off 0°."
+    },
+    {
+      "id": "s1_b7",
+      "text": "That hidden energy — paid to change state, not to change temperature — is the latent heat.",
+      "visual": "The flat segment of the heat curve highlighted, labeled 'latent heat — hidden, no temp change'."
+    },
+    {
+      "id": "s1_b8",
+      "text": "The same pause happens again at boiling. Energy floods in to tear liquid into vapor — temperature holds flat.",
+      "visual": "A second flat plateau on the curve at the boiling point; rolling boil, steady thermometer."
+    },
+    {
+      "id": "s1_b9",
+      "text": "And it runs in reverse. Steam releases that hidden energy when it condenses—which is why steam delivers far more heat to skin than boiling water at the same temperature.",
+      "visual": "Steam hitting skin, dumping a large latent-energy bar on contact; beside it, boiling water at 100° transferring much less. Energy bars compared."
+    },
+    {
+      "id": "s1_b10",
+      "text": "It's why sweat cools you: evaporating water carries off enormous hidden energy as it leaves your skin.",
+      "visual": "Sweat droplets evaporating off skin, each carrying away a chunk of energy; the skin cooling."
+    },
+    {
+      "id": "s1_b11",
+      "text": "A full heating curve, then, has flats and slopes. Slopes warm it. Flats rebuild it.",
+      "visual": "The complete temperature-vs-energy curve: rising slopes for heating, flat shelves at melting and boiling."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Computing the heat absorbed during melting and boiling from the mass and the latent heat — that's yours.",
+      "visual": "Clean heating curve, the two flat plateaus labeled, their energies left open. Holds."
+    }
+  ]
+}

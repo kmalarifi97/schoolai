@@ -1,0 +1,107 @@
+{
+  "order": 17,
+  "slug": "gravpe",
+  "concept_en": "Gravitational Potential Energy & Reference Level",
+  "concept_ar": "طاقة الوضع الجاذبية ومستوى الإسناد",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 5,
+    "chapter_title_en": "Energy and Its Conservation",
+    "chapter_title_ar": "الطاقة وحفظها",
+    "lesson": "5-1",
+    "lesson_title_en": "The Many Forms of Energy",
+    "lesson_title_ar": "الأشكال المتعددة للطاقة",
+    "pages": "131-140",
+    "start_page": 131,
+    "end_page": 140,
+    "lesson_objectives": [
+      "استخدام نموذج لربط الشغل بالطاقة",
+      "حساب الطاقة الحركية",
+      "تحديد طاقة الوضع الجاذبية لنظام ما",
+      "تبيين كيفية تخزين طاقة الوضع المرونية"
+    ],
+    "lesson_key_terms": [
+      "طاقة الحركة الدورانية",
+      "طاقة الوضع الجاذبية",
+      "مستوى الإسناد",
+      "طاقة الوضع المرونية"
+    ]
+  },
+  "video": {
+    "target_filename": "gravpe_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Lift a book onto a high shelf. It just sits there. Still. Doing nothing.",
+      "visual": "A book raised and placed on a shelf; it rests, motionless."
+    },
+    {
+      "id": "s1_b2",
+      "text": "But you spent work lifting it. If the work goes somewhere — where did it go? The book isn't moving.",
+      "visual": "The work you did, shown as a bar; an arrow pointing at the still book; question mark."
+    },
+    {
+      "id": "s1_b3",
+      "text": "Nudge it off the edge and you find out. It falls — and arrives moving fast.",
+      "visual": "The book slides off; falls; a growing speed bar as it descends."
+    },
+    {
+      "id": "s1_b4",
+      "text": "The motion it didn't have up top, it has now. The work you did was stored, waiting, the whole time.",
+      "visual": "The earlier work bar reappears and pours into the falling book's speed bar."
+    },
+    {
+      "id": "s1_b5",
+      "text": "Energy held by position. Owed motion, not yet collected. Potential energy.",
+      "visual": "The book on the shelf again, glowing faintly, labeled 'stored — potential energy'."
+    },
+    {
+      "id": "s1_b6",
+      "text": "Higher means more stored. Lift it twice as high, it arrives carrying twice as much.",
+      "visual": "Two shelves; the higher book's stored bar visibly larger; both fall to compare speeds."
+    },
+    {
+      "id": "s1_b7",
+      "text": "Now a subtle question. The book on the table — does it have potential energy?",
+      "visual": "A book resting on a table; a question mark; the floor below it."
+    },
+    {
+      "id": "s1_b8",
+      "text": "Compared to the floor, yes — it could still fall. Compared to the table top, no — it's already there.",
+      "visual": "Two dashed reference lines: one at the floor, one at the table; the same book, two different heights."
+    },
+    {
+      "id": "s1_b9",
+      "text": "So potential energy isn't an absolute. It's always measured from a line you choose.",
+      "visual": "The book with its height drawn from a movable dashed baseline."
+    },
+    {
+      "id": "s1_b10",
+      "text": "That chosen line has a name. The reference level. You pick it. The physics doesn't care which.",
+      "visual": "The dashed baseline labeled 'reference level'; it slides up and down freely."
+    },
+    {
+      "id": "s1_b11",
+      "text": "Only the change in height matters—how far it actually falls. Set your reference at the floor, the table, or the roof: the fall distance stays the same, so the energy released is identical.",
+      "visual": "Three side-by-side scenarios: reference at floor (h=2m fall), reference at table (h=2m fall from higher start), reference at roof (h=2m fall, now both positions below zero). All three show the same 2m drop and same released energy bar."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Computing the gravitational potential energy from mass, gravity, and height above your chosen reference — that's yours.",
+      "visual": "Clean: a mass at height h above a chosen dashed reference, h left as an open symbol. Holds."
+    }
+  ]
+}

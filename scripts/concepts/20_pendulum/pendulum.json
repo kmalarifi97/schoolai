@@ -1,0 +1,45 @@
+{
+  "order": 20,
+  "slug": "pendulum",
+  "concept_en": "Conservation of Mechanical Energy",
+  "concept_ar": "حفظ الطاقة الميكانيكية",
+  "status": "shipped",
+  "source": "videos/pendulum_full_voiced_subs.mp4 — storyboard at scripts/pendulum_full_voiced_subs.json (29 beats).",
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 5,
+    "chapter_title_en": "Energy and Its Conservation",
+    "chapter_title_ar": "الطاقة وحفظها",
+    "lesson": "5-2",
+    "lesson_title_en": "Conservation of Energy",
+    "lesson_title_ar": "حفظ الطاقة",
+    "pages": "141-163",
+    "start_page": 141,
+    "end_page": 163,
+    "lesson_objectives": [
+      "حل مسائل باستخدام قانون حفظ الطاقة",
+      "تحليل التصادمات لإيجاد التغير في الطاقة الحركية"
+    ],
+    "lesson_key_terms": [
+      "قانون حفظ الطاقة",
+      "الطاقة الميكانيكية",
+      "التصادم فوق المرن",
+      "التصادم المرن",
+      "التصادم العديم المرونة"
+    ]
+  },
+  "video": {
+    "target_filename": "pendulum_full_voiced_subs.mp4",
+    "status": "present (copied from videos/)"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": []
+}

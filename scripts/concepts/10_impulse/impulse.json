@@ -1,0 +1,104 @@
+{
+  "order": 10,
+  "slug": "impulse",
+  "concept_en": "Impulse–Momentum Theorem",
+  "concept_ar": "نظرية الدفع والزخم",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 3,
+    "chapter_title_en": "Momentum and Its Conservation",
+    "chapter_title_ar": "الزخم وحفظه",
+    "lesson": "3-1",
+    "lesson_title_en": "Impulse and Momentum",
+    "lesson_title_ar": "الدفع والزخم",
+    "pages": "67-73",
+    "start_page": 67,
+    "end_page": 73,
+    "lesson_objectives": [
+      "التعرف على مفهوم الزخم",
+      "تحديد مقدار الدفع الواقع على جسم"
+    ],
+    "lesson_key_terms": [
+      "الدفع",
+      "الزخم",
+      "نظرية الدفع-الزخم"
+    ]
+  },
+  "video": {
+    "target_filename": "impulse_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Two cars hit a wall at the same speed. One crumples slowly. One stops instantly.",
+      "visual": "Two identical cars approaching a wall; one with a long crumple zone, one rigid."
+    },
+    {
+      "id": "s1_b2",
+      "text": "Same speed in. Same dead stop. One driver walks away. One does not.",
+      "visual": "Both ending at rest against the wall; one figure standing, one not. Hold."
+    },
+    {
+      "id": "s1_b3",
+      "text": "The motion that had to be killed was identical. So what made the difference?",
+      "visual": "Both cars' 'motion to remove' shown as the same-size quantity; a question mark."
+    },
+    {
+      "id": "s1_b4",
+      "text": "Call that quantity of motion momentum — mass moving, how much there is to stop.",
+      "visual": "A moving block with mass and velocity tags; bundled into one label 'p'."
+    },
+    {
+      "id": "s1_b5",
+      "text": "To change momentum you need a force. But force alone isn't the whole story.",
+      "visual": "A push arrow on the block; the momentum bar shrinking."
+    },
+    {
+      "id": "s1_b6",
+      "text": "A force acting for a long time, and a much bigger force acting for an instant, can do the very same job.",
+      "visual": "Two graphs of force over time: a low wide one and a tall narrow one, equal shaded areas."
+    },
+    {
+      "id": "s1_b7",
+      "text": "It's force multiplied by the time it acts. That product is the impulse.",
+      "visual": "The shaded area highlighted, labeled 'impulse = force × time'."
+    },
+    {
+      "id": "s1_b8",
+      "text": "And the impulse equals exactly the change in momentum. That's the whole bridge.",
+      "visual": "Impulse area on the left, momentum-change bar on the right, an equals sign between."
+    },
+    {
+      "id": "s1_b9",
+      "text": "Now the crash makes sense. Same momentum to remove. The crumple zone stretches the stopping time —",
+      "visual": "Crumpling car: a long stopping interval drawn."
+    },
+    {
+      "id": "s1_b10",
+      "text": "— so the force needed drops. The rigid car stops in an instant, and the force spikes.",
+      "visual": "Side-by-side force-vs-time: long-and-low for the crumple, brief-and-huge for the rigid."
+    },
+    {
+      "id": "s1_b11",
+      "text": "Airbags, knees bending on landing, a boxer rolling with a punch—all the same trick. Buy time, cut the force. Watch: the airbag stretches the stop from a tenth of a second to half a second—force drops fivefold.",
+      "visual": "Three icons in a row: airbag (before/after time comparison: 0.1s → 0.5s, force arrow shrinks 5×); bending knees; boxer rolling. The airbag gets numeric annotations; the others stay iconic."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Computing the impulse from a force acting over a time interval, and the change in momentum it produces — that's yours.",
+      "visual": "Clean: impulse area = change in p, with time left as an open knob. Holds."
+    }
+  ]
+}

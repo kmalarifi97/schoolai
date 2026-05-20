@@ -1,0 +1,110 @@
+{
+  "order": 16,
+  "slug": "efficiency",
+  "concept_en": "Efficiency — ideal vs real machines",
+  "concept_ar": "الكفاءة: الآلات المثالية والحقيقية",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 4,
+    "chapter_title_en": "Work, Energy, and Simple Machines",
+    "chapter_title_ar": "الشغل والطاقة والآلات البسيطة",
+    "lesson": "4-2",
+    "lesson_title_en": "Machines",
+    "lesson_title_ar": "الآلات",
+    "pages": "109-129",
+    "start_page": 109,
+    "end_page": 129,
+    "lesson_objectives": [
+      "توضيح فوائد الآلات البسيطة",
+      "المقارنة بين كفاءة الآلات المثالية والحقيقية",
+      "تحليل الآلات المركبة مبيناً الآلات البسيطة التي تتكون منها",
+      "حساب كفاءة الآلات البسيطة والمركبة"
+    ],
+    "lesson_key_terms": [
+      "الآلة",
+      "القوة (المسلطة)",
+      "المقاومة",
+      "الفائدة الميكانيكية",
+      "الفائدة الميكانيكية المثالية",
+      "الكفاءة",
+      "الآلة المركبة"
+    ]
+  },
+  "video": {
+    "target_filename": "efficiency_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "A perfect machine: every bit of work you put in comes out the other side.",
+      "visual": "An input work bar flowing through a clean machine into an equal output bar."
+    },
+    {
+      "id": "s1_b2",
+      "text": "Build it in the real world and something is always missing.",
+      "visual": "The same machine, but the output bar comes out visibly shorter than the input."
+    },
+    {
+      "id": "s1_b3",
+      "text": "You crank a real winch. Some of your effort lifts the load. Some just warms the gears.",
+      "visual": "Input split: most into the rising load, a thin stream into faint heat shimmer at the gears."
+    },
+    {
+      "id": "s1_b4",
+      "text": "It didn't vanish. Friction turned part of your work into heat and sound. Useless for the job.",
+      "visual": "The lost stream labeled 'friction → heat, sound'."
+    },
+    {
+      "id": "s1_b5",
+      "text": "So a machine has two stories. The work you hoped for. And the work you actually got.",
+      "visual": "Two bars: 'ideal output' tall, 'real output' shorter, side by side."
+    },
+    {
+      "id": "s1_b6",
+      "text": "The ratio of what you got to what you put in — that's efficiency.",
+      "visual": "Real-output bar over input bar, labeled 'efficiency', shown as a percent."
+    },
+    {
+      "id": "s1_b7",
+      "text": "A perfect machine would be one hundred percent. Nothing real ever is.",
+      "visual": "A dial: 100% marked but unreachable; the needle resting below it."
+    },
+    {
+      "id": "s1_b8",
+      "text": "A good gearbox might keep ninety. A clumsy chain of parts, far less.",
+      "visual": "Two machines: a clean one near 90%, a messy compound one with a much lower dial."
+    },
+    {
+      "id": "s1_b9",
+      "text": "And in a compound machine the losses stack. Each stage skims a little off the top.",
+      "visual": "Work passing through three linked stages, the bar stepping down at each."
+    },
+    {
+      "id": "s1_b10",
+      "text": "This is why ideal mechanical advantage and the real one disagree. The gap is exactly what friction ate.",
+      "visual": "Two MA values side by side, ideal larger; the difference shaded as the friction loss."
+    },
+    {
+      "id": "s1_b11",
+      "text": "Energy is still conserved — none was destroyed. It just left the job and became heat.",
+      "visual": "Full bar conserved: useful part + heat part = input. Nothing missing, only redirected."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Computing efficiency as useful output over total input, and the work lost to friction in a real machine — that's yours.",
+      "visual": "Clean: 'efficiency = useful output ÷ input', values left open. Holds."
+    }
+  ]
+}

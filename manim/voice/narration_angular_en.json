@@ -1,0 +1,14 @@
+{
+  "s1_b1": "Two children on a merry-go-round. One near the center. One out at the edge.",
+  "s1_b2": "Who's moving faster?",
+  "s1_b3": "The one at the edge sweeps a huge circle. The one near the center barely moves. So — different speeds.",
+  "s1_b4": "But in another sense, they move together. Same start, same finish, same instant. They never separate.",
+  "s1_b5": "Both stories are true. We just need the right way to measure turning — not distance along the ground, but angle swept.",
+  "s1_b6": "How much angle you've turned through: angular displacement.",
+  "s1_b7": "How fast that angle grows: angular velocity. Measured the same for every point on the disk.",
+  "s1_b8": "Speed it up — the angle grows faster and faster. That change is angular acceleration.",
+  "s1_b9": "Notice the shape of this. Position becomes angle. Velocity becomes rate of angle. Acceleration becomes rate of that rate. The same trio as straight-line motion, just turned in a circle.",
+  "s1_b10": "And the bridge between the two worlds is the radius. Same angular speed, bigger radius, faster through space.",
+  "s1_b11": "So the child at the edge really is faster — and yet they turn at the very same rate. No contradiction.",
+  "s1_b12": "Angle, rate of angle, change of that rate. Computing angular velocity and acceleration, then converting them to linear speed through the radius — that's yours."
+}

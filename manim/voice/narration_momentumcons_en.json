@@ -1,0 +1,14 @@
+{
+  "s1_b1": "Stand on a frozen lake, perfectly still. Throw a heavy bag forward.",
+  "s1_b2": "You slide backward. You didn't push the ground. The bag did nothing to the world but leave your hands.",
+  "s1_b3": "Before: nothing moving. After: two things moving, opposite ways. Where did that motion come from?",
+  "s1_b4": "Add it up the right way — motion as momentum, with direction. Forward counts as plus. Backward as minus.",
+  "s1_b5": "The bag's forward momentum and your backward momentum are equal and opposite. They cancel.",
+  "s1_b6": "Total momentum before: zero. Total after: still zero. Nothing was created. It only got shared.",
+  "s1_b7": "This holds whenever no outside force interferes. A system left to itself. Isolated.",
+  "s1_b8": "And it's just Newton's third law, looked at over time. Every push has an equal, opposite push back.",
+  "s1_b9": "It's how a rocket climbs. Throw exhaust down hard; the rocket is thrown up just as hard.",
+  "s1_b10": "And how collisions work. Two carts meet. Whatever one gains, the other gives up. The total never changes.",
+  "s1_b11": "Inside the boundary, momentum is currency. It moves around. It is never spent.",
+  "s1_b12": "Setting total momentum before equal to total momentum after, and solving for an unknown velocity in a collision or recoil — that's yours."
+}

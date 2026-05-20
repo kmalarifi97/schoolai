@@ -1,0 +1,10 @@
+{
+  "_comment": "Pre-seeded users. No self-registration. Edit this file to add students.",
+  "users": [
+    { "username": "teacher",  "password": "phys2-teacher", "name": "المعلّم",      "role": "teacher" },
+    { "username": "student1", "password": "phys2-1",       "name": "طالب ١",      "role": "student" },
+    { "username": "student2", "password": "phys2-2",       "name": "طالب ٢",      "role": "student" },
+    { "username": "student3", "password": "phys2-3",       "name": "طالب ٣",      "role": "student" },
+    { "username": "demo",     "password": "demo",          "name": "زائر تجريبي", "role": "student" }
+  ]
+}

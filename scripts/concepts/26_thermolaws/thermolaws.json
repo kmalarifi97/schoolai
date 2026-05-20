@@ -1,0 +1,110 @@
+{
+  "order": 26,
+  "slug": "thermolaws",
+  "concept_en": "The Laws of Thermodynamics & Entropy",
+  "concept_ar": "قوانين الديناميكا الحرارية والإنتروبي",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 6,
+    "chapter_title_en": "Thermal Energy",
+    "chapter_title_ar": "الطاقة الحرارية",
+    "lesson": "6-2",
+    "lesson_title_en": "Changes of State and Laws of Thermodynamics",
+    "lesson_title_ar": "تغيرات حالة المادة وقوانين الديناميكا الحرارية",
+    "pages": "178-200",
+    "start_page": 178,
+    "end_page": 200,
+    "lesson_objectives": [
+      "تعرف الحرارة الكامنة للانصهار",
+      "تعرف الحرارة الكامنة للتبخر",
+      "تعرف القانونين الأول والثاني في الديناميكا الحرارية",
+      "التمييز بين الحرارة والشغل",
+      "تعرف الإنتروبي"
+    ],
+    "lesson_key_terms": [
+      "الحرارة الكامنة للانصهار",
+      "الحرارة الكامنة للتبخر",
+      "القانون الأول في الديناميكا الحرارية",
+      "المحرك الحراري",
+      "الإنتروبي",
+      "القانون الثاني في الديناميكا الحرارية"
+    ]
+  },
+  "video": {
+    "target_filename": "thermolaws_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Two rules govern every engine, every fridge, every living thing. They sound almost too simple.",
+      "visual": "Two faint stone-tablet shapes in the void, blank, waiting."
+    },
+    {
+      "id": "s1_b2",
+      "text": "First rule. Energy is never created and never destroyed. It only changes form, or moves.",
+      "visual": "Energy flowing between forms — fuel to motion to heat — the total bar a fixed length throughout. First tablet inscribed."
+    },
+    {
+      "id": "s1_b3",
+      "text": "Heat into an engine becomes work out, plus heat dumped away. Add it all back: nothing missing. Ever.",
+      "visual": "An engine box: heat in; work out + waste heat out; the sum exactly equal to the input."
+    },
+    {
+      "id": "s1_b4",
+      "text": "So the first rule says you can't win — you can't get more energy out than you put in.",
+      "visual": "A balance, output never exceeding input, the needle stuck at parity."
+    },
+    {
+      "id": "s1_b5",
+      "text": "Then the second rule, the strange one. It's about direction.",
+      "visual": "The second tablet, an arrow on it pointing one way only."
+    },
+    {
+      "id": "s1_b6",
+      "text": "Drop ink in water; it spreads. You will never, ever watch it gather itself back into a drop.",
+      "visual": "Ink diffusing through water; the reverse shown faded out and crossed."
+    },
+    {
+      "id": "s1_b7",
+      "text": "A hot coffee always cools to the room. The room never spontaneously reheats the coffee.",
+      "visual": "Coffee cooling to room temperature; the reverse process struck through."
+    },
+    {
+      "id": "s1_b8",
+      "text": "Nothing in the first rule forbids the reverse. Energy would still balance. Yet it never happens.",
+      "visual": "The reverse scenes shown obeying energy conservation, still stamped 'never'."
+    },
+    {
+      "id": "s1_b9",
+      "text": "Because the universe drifts, always, toward more spread-out, more disordered, more mixed. We measure that drift with entropy.",
+      "visual": "Ordered arrangement dissolving into a scattered one; a rising bar labeled 'entropy'."
+    },
+    {
+      "id": "s1_b10",
+      "text": "The second rule: total entropy always increases. That's why time has a direction.",
+      "visual": "The entropy bar climbing along an arrow labeled 'time'."
+    },
+    {
+      "id": "s1_b11",
+      "text": "It's why no engine is perfect. Some energy must always be paid out as disordered waste heat. You can't even break even.",
+      "visual": "The engine again, an unavoidable waste-heat stream draining off; the dial pinned below 100%."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Computing an engine's maximum possible efficiency from its hot and cold operating temperatures — that's yours.",
+      "visual": "The two tablets side by side, clean and final, an open question beneath them. Silent. [Hold 3s in silence]"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "s1_b1",
+    "text": "Pick up a paperclip. Hold it in your palm. Feel how light it is.",
+    "visual": "Close-up of a hand, palm up. A single small steel paperclip rests in the center, glinting softly. Label fades in: '1 gram.'"
+  },
+  {
+    "id": "s1_b2",
+    "text": "One gram of metal. Nothing. You could lose it in a couch cushion.",
+    "visual": "The hand tilts. The paperclip slides off and falls into the cushions of a sofa, disappearing between them."
+  },
+  {
+    "id": "s1_b3",
+    "text": "Now here's a sentence that sounds insane.",
+    "visual": "Black frame. A small text marker fades in: 'a sentence that sounds insane.'"
+  },
+  {
+    "id": "s1_b4",
+    "text": "That paperclip — if you could open it up the right way — has the same energy inside it as the bomb that destroyed Hiroshima.",
+    "visual": "Split frame. Left: the small paperclip resting on a fingertip. Right: an aerial silhouette of a city skyline with a mushroom cloud rising over it. A faint equals sign hovers between them."
+  },
+  {
+    "id": "s1_b5",
+    "text": "Not a piece of one. The whole bomb. From one gram of bent wire.",
+    "visual": "The paperclip on the left brightens. The mushroom cloud on the right brightens. The equals sign between them glows."
+  },
+  {
+    "id": "s1_b6",
+    "text": "How is that possible? Where is all that energy hiding?",
+    "visual": "The frame fades down. The paperclip alone remains, surrounded by darkness. A question mark hovers above it."
+  },
+  {
+    "id": "s1_b7",
+    "text": "To answer that, forget physics for a minute. Look at a glass of water.",
+    "visual": "The paperclip dissolves. A simple glass of water appears on a table, viewed from the side."
+  },
+  {
+    "id": "s1_b8",
+    "text": "You can freeze it. You get ice. You can melt the ice. You get water back.",
+    "visual": "The glass shifts state in three frames: liquid water → solid ice cube → liquid water again. A small temperature gauge moves with each change."
+  },
+  {
+    "id": "s1_b9",
+    "text": "Same stuff. Different state. Hard, then soft. Locked, then free.",
+    "visual": "Two labels appear side by side beneath the glass: 'ice' and 'water,' connected by a double-headed arrow."
+  },
+  {
+    "id": "s1_b10",
+    "text": "Now imagine this — but bigger. Much bigger.",
+    "visual": "The glass shrinks. A larger circular badge appears in its place, faintly glowing."
+  },
+  {
+    "id": "s1_b11",
+    "text": "Matter is frozen energy.",
+    "visual": "Inside the badge, two labels appear linked by a double-headed arrow: 'matter' and 'energy.' Below them in smaller text: 'same stuff, different state.'"
+  },
+  {
+    "id": "s1_b12",
+    "text": "Everything solid — the paperclip, your phone, your hand — is energy that got compressed into a shape that holds still.",
+    "visual": "Quick visual triplet: a paperclip, a phone, an open hand. Each one briefly dissolves into shimmering particles of light, then re-forms into its solid shape."
+  },
+  {
+    "id": "s1_b13",
+    "text": "And the energy didn't go anywhere when it froze. It's still in there. Just locked.",
+    "visual": "Return to the paperclip alone. A faint inner glow pulses through it, suggesting hidden contents."
+  },
+  {
+    "id": "s1_b14",
+    "text": "So now the real question. If matter is frozen energy — how much energy is frozen in a gram?",
+    "visual": "The paperclip sits in the center. A small label fades in beside it: '1 gram = ? energy.'"
+  },
+  {
+    "id": "s1_b15",
+    "text": "Einstein answered that in one line.",
+    "visual": "The label fades. The equation appears in elegant typography in the center of the frame: E = mc²"
+  },
+  {
+    "id": "s1_b16",
+    "text": "Energy equals mass — times something called c squared.",
+    "visual": "The 'E,' the 'm,' and the 'c²' each light up briefly as they're named."
+  },
+  {
+    "id": "s1_b17",
+    "text": "Most equations have a polite little number for the conversion. This one doesn't.",
+    "visual": "The 'm' dims. The 'c²' remains glowing in the center."
+  },
+  {
+    "id": "s1_b18",
+    "text": "c is the speed of light. Three hundred million meters per second. The fastest thing in the universe.",
+    "visual": "Above the equation, an animation: a small dot traces from one side of the frame to the other almost instantly. A label fades in: 'c = 300,000,000 m/s.'"
+  },
+  {
+    "id": "s1_b19",
+    "text": "And we don't multiply mass by c. We multiply it by c times c.",
+    "visual": "The 'c²' separates into 'c × c' floating beside the equation."
+  },
+  {
+    "id": "s1_b20",
+    "text": "Three hundred million times three hundred million. Roughly a hundred thousand trillion.",
+    "visual": "Two large numbers appear: 300,000,000 × 300,000,000. They collapse into a single result: '≈ 90,000,000,000,000,000.'"
+  },
+  {
+    "id": "s1_b21",
+    "text": "That's the exchange rate. One gram of mass, fully cashed in, gives you a hundred thousand trillion joules of energy.",
+    "visual": "Split frame returns. Left: a 1-gram paperclip on a small scale. Right: a tall bar labeled '≈ 9 × 10¹⁶ joules' rising off the top of the frame."
+  },
+  {
+    "id": "s1_b22",
+    "text": "That's why a paperclip is a bomb. Not because the paperclip is special. Because c² is enormous.",
+    "visual": "The 'c²' from the equation grows large in the center, dwarfing the paperclip beside it."
+  },
+  {
+    "id": "s1_b23",
+    "text": "Anything with mass is carrying this. Your phone. Your coffee. You.",
+    "visual": "Quick cuts: a phone, a coffee cup, a person — each briefly haloed with a faint inner glow."
+  },
+  {
+    "id": "s1_b24",
+    "text": "You are walking around with the energy of thousands of bombs inside you. Frozen. Locked. Quiet.",
+    "visual": "A silhouette of a person stands calmly in the center of the frame. A soft inner glow pulses through the silhouette."
+  },
+  {
+    "id": "s1_b25",
+    "text": "We don't normally have keys to that lock. Burning wood doesn't open it. Lighting gasoline doesn't open it. Even a regular chemical bomb barely cracks it.",
+    "visual": "Three small icons appear and dissolve: a campfire, a gasoline flame, a small explosion. Each one barely scratches a large padlock icon in the corner."
+  },
+  {
+    "id": "s1_b26",
+    "text": "A nuclear reaction is the first thing humans built that opens the lock — and even then, only a little. Hiroshima released the energy of less than one gram of matter.",
+    "visual": "The padlock cracks slightly. A small portion of light spills out — and that small portion becomes the mushroom cloud from earlier."
+  },
+  {
+    "id": "s1_b27",
+    "text": "Less than one gram. Out of an entire bomb. The rest of it just sat there as matter, frozen, untouched.",
+    "visual": "A bomb shape appears with most of it shaded in solid color, and a tiny sliver highlighted in glowing light. Label on the sliver: '< 1 gram.' Label on the rest: 'still frozen.'"
+  },
+  {
+    "id": "s1_b28",
+    "text": "So pick up the paperclip again.",
+    "visual": "Callback. Return to the opening shot. The hand, palm up, with the paperclip resting in the center."
+  },
+  {
+    "id": "s1_b29",
+    "text": "It's not a piece of metal. It's a sealed container. Holding the energy of a city.",
+    "visual": "The paperclip in the palm starts to pulse with a soft inner glow. The glow holds, quietly, while the hand stays still."
+  },
+  {
+    "id": "s1_b30",
+    "text": "We just don't know how to open it. Yet.",
+    "visual": "Hold on the glowing paperclip in the palm. The glow softens. The last word lingers as the frame slowly fades."
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "order": 3,
+  "slug": "gfield",
+  "concept_en": "The Gravitational Field",
+  "concept_ar": "مجال الجاذبية",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 1,
+    "chapter_title_en": "Gravitation",
+    "chapter_title_ar": "الجاذبية",
+    "lesson": "1-2",
+    "lesson_title_en": "Using the Law of Universal Gravitation",
+    "lesson_title_ar": "استخدام قانون الجذب الكوني",
+    "pages": "18-35",
+    "start_page": 18,
+    "end_page": 35,
+    "lesson_objectives": [
+      "حل مسائل على الحركة المدارية",
+      "ربط انعدام الوزن بأجسام في حالة سقوط حر",
+      "وصف مجال الجاذبية",
+      "المقارنة بين كتلة القصور وكتلة الجاذبية",
+      "المقارنة بين وجهتي نظر نيوتن وآينشتاين حول الجاذبية"
+    ],
+    "lesson_key_terms": [
+      "مجال الجاذبية",
+      "كتلة القصور",
+      "كتلة الجاذبية",
+      "مبدأ التكافؤ"
+    ]
+  },
+  "video": {
+    "target_filename": "gfield_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Drop something. It falls. We say the Earth pulls it.",
+      "visual": "A small object falls toward the Earth's surface, single arrow down."
+    },
+    {
+      "id": "s1_b2",
+      "text": "But here's a strange question. How does the rock know the Earth is there? They never touch.",
+      "visual": "The rock paused mid-air; a subtle separation visible but not emphasized; a question mark floats between rock and ground."
+    },
+    {
+      "id": "s1_b3",
+      "text": "Newton himself was uneasy about this. Action at a distance, across empty space, with nothing in between.",
+      "visual": "The gap zooms in, now clearly highlighted as pure empty void, emphasizing the absence of connection."
+    },
+    {
+      "id": "s1_b4",
+      "text": "So we change the picture. Instead of the Earth reaching out to grab things —",
+      "visual": "The Earth alone, centered."
+    },
+    {
+      "id": "s1_b5",
+      "text": "— the Earth changes the space around it. Everywhere. Whether anything is there to feel it or not.",
+      "visual": "Faint arrows bloom outward-inward all around the Earth, pointing toward its center, filling the void."
+    },
+    {
+      "id": "s1_b6",
+      "text": "That invisible influence has a name. The gravitational field. A property of the space, not of the rock.",
+      "visual": "The arrow pattern labeled 'g'."
+    },
+    {
+      "id": "s1_b7",
+      "text": "The rock doesn't reach out to the Earth. It just responds to the field it's sitting in. Right here. Locally.",
+      "visual": "A test object placed into the field; it follows the local arrow."
+    },
+    {
+      "id": "s1_b8",
+      "text": "Closer to the Earth, the arrows crowd together. The field is stronger.",
+      "visual": "Arrows dense and long near the surface, sparse and short far out."
+    },
+    {
+      "id": "s1_b9",
+      "text": "Far away, they thin out. Never quite zero. Just fainter, and fainter.",
+      "visual": "Camera pulls back; arrows fade with distance but never vanish."
+    },
+    {
+      "id": "s1_b10",
+      "text": "Weight isn't a thing an object owns. It's the field, times the mass, measured where the object happens to be.",
+      "visual": "A mass at two different heights, the field arrow visibly shorter higher up."
+    },
+    {
+      "id": "s1_b11",
+      "text": "Same rock. Different field. Different weight. Move it to the Moon and the arrows are weaker — the rock didn't change.",
+      "visual": "The rock beside Earth, then beside the Moon; shorter arrow at the Moon."
+    },
+    {
+      "id": "s1_b12",
+      "text": "The field is the map of the influence. Computing the field strength at a given distance from a mass, and the force it puts on an object placed there — that's yours.",
+      "visual": "The full field map holds with a clean 'g' label, then stills."
+    }
+  ]
+}

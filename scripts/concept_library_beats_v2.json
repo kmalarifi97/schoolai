@@ -1,0 +1,493 @@
+{
+  "library": "Physics 2 — Saudi Pathways System, Year 2 (1447/2025) — Concept Spark Library",
+  "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+  "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+  "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction).",
+  "totals": { "concepts": 26, "shipped": 3, "to_build": 23 },
+  "concepts": [
+    {
+      "order": 1, "chapter": 1, "lesson": "1-1", "slug": "gravitation",
+      "concept_en": "Kepler's Laws → Newton's Universal Gravitation",
+      "concept_ar": "قوانين كبلر وقانون الجذب الكوني",
+      "status": "shipped-external",
+      "source": "gravity2_full_voiced.mp4 / .json — archived at ~/school-ai/, not in this library. Pull in for completeness.",
+      "beats": []
+    },
+    {
+      "order": 2, "chapter": 1, "lesson": "1-1", "slug": "cavendish",
+      "concept_en": "The Cavendish Experiment — weighing the Earth",
+      "concept_ar": "تجربة كافندش — وزن الأرض",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "Newton gave us the law. Every mass pulls every other mass.", "visual": "Two faint glowing spheres in the void, a thin force line drawn between them." },
+        { "id": "s1_b2", "text": "But the law has a number in it. A constant. Big G. And nobody knew what it was.", "visual": "The force line gains a small floating label: 'G = ?'." },
+        { "id": "s1_b3", "text": "For a hundred years, G was a question mark. The Earth's pull, we could feel. The constant behind it, we could not.", "visual": "The Earth fades in, an apple falling beside it. The '?' lingers." },
+        { "id": "s1_b4", "text": "The problem: to measure G, you need to watch two ordinary objects pull each other. Not a planet. Just two weights.", "visual": "The Earth shrinks away. Two small lead spheres remain, alone." },
+        { "id": "s1_b5", "text": "And that pull is absurdly weak. Two lead spheres a foot apart attract each other with less force than the weight of a single grain of sand.", "visual": "Two lead spheres side by side; a near-invisible force arrow; a single sand grain drops with a vastly larger arrow for contrast." },
+        { "id": "s1_b6", "text": "Cavendish's idea was patient. Hang two small masses from a thin fiber. Like a tiny barbell on a thread.", "visual": "A horizontal rod suspended by a vertical fiber from above; small spheres on each end." },
+        { "id": "s1_b7", "text": "Bring two large masses close. The small ones drift toward them. Just barely.", "visual": "Two large spheres slide in from the sides; the suspended rod twists by a hair." },
+        { "id": "s1_b8", "text": "The fiber twists. And how much it twists tells you exactly how hard they pulled.", "visual": "A faint light beam reflects off the rod onto a distant scale; a tiny deflection magnified." },
+        { "id": "s1_b9", "text": "From a twist you can barely see, Cavendish pulled out G.", "visual": "The deflection resolves into a value: 'G ≈ 6.67 × 10⁻¹¹'." },
+        { "id": "s1_b10", "text": "And once you have G, the law works backward. The same equation that drops an apple can now weigh the entire planet.", "visual": "G's value flows back into the force equation; the Earth swells back into frame." },
+        { "id": "s1_b11", "text": "He didn't visit space. He didn't lift the Earth. He measured a thread, in a room, and held a planet on a number.", "visual": "The Earth sits in the void with a single clean label: 'mₑ'. Quiet hold." },
+        { "id": "s1_b12", "text": "The fiber, the masses, the deflection — that's the apparatus. Extracting the value of G from the measured twist, then using it to compute the Earth's mass — that's yours.", "visual": "The setup redraws as a clean labeled diagram. It holds, silent, inviting the student in." }
+      ]
+    },
+    {
+      "order": 3, "chapter": 1, "lesson": "1-2", "slug": "gfield",
+      "concept_en": "The Gravitational Field",
+      "concept_ar": "مجال الجاذبية",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "Drop something. It falls. We say the Earth pulls it.", "visual": "A small object falls toward the Earth's surface, single arrow down." },
+        { "id": "s1_b2", "text": "But here's a strange question. How does the rock know the Earth is there? They never touch.", "visual": "The rock paused mid-air; a subtle separation visible but not emphasized; a question mark floats between rock and ground." },
+        { "id": "s1_b3", "text": "Newton himself was uneasy about this. Action at a distance, across empty space, with nothing in between.", "visual": "The gap zooms in, now clearly highlighted as pure empty void, emphasizing the absence of connection." },
+        { "id": "s1_b4", "text": "So we change the picture. Instead of the Earth reaching out to grab things —", "visual": "The Earth alone, centered." },
+        { "id": "s1_b5", "text": "— the Earth changes the space around it. Everywhere. Whether anything is there to feel it or not.", "visual": "Faint arrows bloom outward-inward all around the Earth, pointing toward its center, filling the void." },
+        { "id": "s1_b6", "text": "That invisible influence has a name. The gravitational field. A property of the space, not of the rock.", "visual": "The arrow pattern labeled 'g'." },
+        { "id": "s1_b7", "text": "The rock doesn't reach out to the Earth. It just responds to the field it's sitting in. Right here. Locally.", "visual": "A test object placed into the field; it follows the local arrow." },
+        { "id": "s1_b8", "text": "Closer to the Earth, the arrows crowd together. The field is stronger.", "visual": "Arrows dense and long near the surface, sparse and short far out." },
+        { "id": "s1_b9", "text": "Far away, they thin out. Never quite zero. Just fainter, and fainter.", "visual": "Camera pulls back; arrows fade with distance but never vanish." },
+        { "id": "s1_b10", "text": "Weight isn't a thing an object owns. It's the field, times the mass, measured where the object happens to be.", "visual": "A mass at two different heights, the field arrow visibly shorter higher up." },
+        { "id": "s1_b11", "text": "Same rock. Different field. Different weight. Move it to the Moon and the arrows are weaker — the rock didn't change.", "visual": "The rock beside Earth, then beside the Moon; shorter arrow at the Moon." },
+        { "id": "s1_b12", "text": "The field is the map of the influence. Computing the field strength at a given distance from a mass, and the force it puts on an object placed there — that's yours.", "visual": "The full field map holds with a clean 'g' label, then stills." }
+      ]
+    },
+    {
+      "order": 4, "chapter": 1, "lesson": "1-2", "slug": "weightless",
+      "concept_en": "Weightlessness & Free Fall (orbit as perpetual falling)",
+      "concept_ar": "انعدام الوزن والسقوط الحر",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "Astronauts float. The easy explanation: there's no gravity up there.", "visual": "An astronaut drifting beside a space station, Earth large below." },
+        { "id": "s1_b2", "text": "That explanation is wrong. At the space station's height, Earth's gravity is almost as strong as it is on the ground.", "visual": "The station's orbit drawn close to Earth; a gravity arrow at that height nearly as long as one at the surface." },
+        { "id": "s1_b3", "text": "So if gravity is still pulling them — why don't they feel it?", "visual": "The floating astronaut, a question mark beside them." },
+        { "id": "s1_b4", "text": "Go back to Earth. An elevator. You stand on a scale. It reads your weight.", "visual": "A person on a bathroom scale inside an elevator box; the scale shows a number." },
+        { "id": "s1_b5", "text": "Now cut the cable. Elevator, scale, and you — all falling together.", "visual": "The cable snaps; the whole box falls; the scale reading drops to zero." },
+        { "id": "s1_b6", "text": "The scale reads zero. Not because gravity stopped. Because the floor is falling away exactly as fast as you are.", "visual": "Person and scale falling in lockstep; the floor never pushes back. Bold 'ZERO'. [Hold 2s in silence]" },
+        { "id": "s1_b7", "text": "That's weightlessness. Not the absence of gravity. The absence of anything pushing back.", "visual": "The phrase fades: 'no push back'. The falling box continues." },
+        { "id": "s1_b8", "text": "Now the trick. Throw a ball. It curves down and hits the ground.", "visual": "A short flat throw from a hilltop; ball arcs into the ground." },
+        { "id": "s1_b9", "text": "Throw it harder. It lands farther. Harder still — farther still.", "visual": "Progressively longer arcs around a curved Earth surface." },
+        { "id": "s1_b10", "text": "Throw it fast enough—about eight kilometers per second—and the ground curves away beneath it just as fast as it falls. It keeps falling, and never lands.", "visual": "The arc closes into a full circle around the Earth; a faint speed indicator '~8 km/s' appears briefly." },
+        { "id": "s1_b11", "text": "That's an orbit. The station isn't escaping gravity. It's falling around the Earth, forever, missing the ground.", "visual": "The space station tracing the same circular fall, astronaut floating inside it." },
+        { "id": "s1_b12", "text": "Falling, with nothing to push back. How fast must you go to keep missing the ground? Set falling equal to curving — and solve.", "visual": "The orbit holds; a clean labeled circle, the speed left as an open symbol 'v = ?'." }
+      ]
+    },
+    {
+      "order": 5, "chapter": 1, "lesson": "1-2", "slug": "equivalence",
+      "concept_en": "Inertial vs Gravitational Mass & the Equivalence Principle",
+      "concept_ar": "كتلة القصور وكتلة الجاذبية ومبدأ التكافؤ",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "The word mass hides two completely different ideas.", "visual": "The word 'mass' centered, then it splits cleanly into two." },
+        { "id": "s1_b2", "text": "One is stubbornness. Push a thing; how hard is it to get moving? That's inertial mass.", "visual": "A hand pushes a block on a frictionless plane; the block resists. Label: 'inertial mass'." },
+        { "id": "s1_b3", "text": "The other is heaviness. How strongly does gravity pull on it? That's gravitational mass.", "visual": "The same block hangs from a spring scale; gravity arrow down. Label: 'gravitational mass'." },
+        { "id": "s1_b4", "text": "There's no reason these should be the same number. Resistance to a push, and the strength of a pull — different questions.", "visual": "Two labels side by side, an equals sign between them with a question mark over it." },
+        { "id": "s1_b5", "text": "And yet. Galileo's old observation: drop a heavy thing and a light thing together —", "visual": "A heavy ball and a light ball released from the same height in the void." },
+        { "id": "s1_b6", "text": "— they land at the same instant. Always. Every time anyone has ever checked.", "visual": "Both balls hit the bottom of frame on the exact same frame. Hold." },
+        { "id": "s1_b7", "text": "That only works if the stubbornness and the heaviness cancel perfectly. The two masses are equal.", "visual": "The '?' over the equals sign resolves into a firm '='." },
+        { "id": "s1_b8", "text": "A coincidence, said Newton. A fact you write down and use.", "visual": "Newton-side panel: the two masses cancel in a falling diagram, treated as bookkeeping." },
+        { "id": "s1_b9", "text": "Not a coincidence, said Einstein. A clue.", "visual": "Panel shifts to an Einstein-side view; the cancellation glows as if meaningful." },
+        { "id": "s1_b10", "text": "His thought: stand in a sealed box. The floor presses your feet. Are you on Earth — or in a rocket accelerating through empty space?", "visual": "Two identical sealed boxes side by side: one on the ground, one with a thrust flame; the person inside identical in both." },
+        { "id": "s1_b11", "text": "From inside, you cannot tell. Gravity and acceleration feel exactly the same. That's the equivalence principle.", "visual": "The two boxes overlay into one; the difference dissolves. Label: 'equivalence'." },
+        { "id": "s1_b12", "text": "Two views of the same equal masses — one calls it luck, one calls it the door to a new theory. Which experiments would tell them apart? That's the thinking we leave with you.", "visual": "The two boxes hold side by side, silent, the open question between them." }
+      ]
+    },
+    {
+      "order": 6, "chapter": 2, "lesson": "2-1", "slug": "angular",
+      "concept_en": "Angular Motion — displacement, velocity, acceleration",
+      "concept_ar": "وصف الحركة الدورانية",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "Two children on a merry-go-round. One near the center. One out at the edge.", "visual": "Top-down disk rotating; two dots, one near hub, one at rim." },
+        { "id": "s1_b2", "text": "Who's moving faster?", "visual": "The disk turning; both dots tracing paths, a question mark above." },
+        { "id": "s1_b3", "text": "The one at the edge sweeps a huge circle. The one near the center barely moves. So — different speeds.", "visual": "The rim dot's long arc vs the hub dot's tiny arc, drawn." },
+        { "id": "s1_b4", "text": "But in another sense, they move together. Same start, same finish, same instant. They never separate.", "visual": "A straight spoke drawn through both dots stays rigid as the disk turns." },
+        { "id": "s1_b5", "text": "Both stories are true. We just need the right way to measure turning — not distance along the ground, but angle swept.", "visual": "An angle wedge sweeps from the spoke's start to its new position." },
+        { "id": "s1_b6", "text": "How much angle you've turned through: angular displacement.", "visual": "The wedge labeled 'θ'." },
+        { "id": "s1_b7", "text": "How fast that angle grows: angular velocity. Measured the same for every point on the disk.", "visual": "The wedge sweeping at a steady rate, labeled 'ω'; both dots share it." },
+        { "id": "s1_b8", "text": "Speed it up — the angle grows faster and faster. That change is angular acceleration.", "visual": "The sweep visibly quickening, labeled 'α'." },
+        { "id": "s1_b9", "text": "Notice the shape of this. Position becomes angle. Velocity becomes rate of angle. Acceleration becomes rate of that rate. The same trio as straight-line motion, just turned in a circle.", "visual": "Left: x → v → a cascade with arrows showing derivatives. Right: θ → ω → α mirrored, with matching derivative arrows. The parallel structure glows." },
+        { "id": "s1_b10", "text": "And the bridge between the two worlds is the radius. Same angular speed, bigger radius, faster through space.", "visual": "Both dots again; the rim dot's longer arc tied to the spoke length by a faint bracket." },
+        { "id": "s1_b11", "text": "So the child at the edge really is faster — and yet they turn at the very same rate. No contradiction.", "visual": "Both dots highlighted, the rigid spoke holding them at one ω." },
+        { "id": "s1_b12", "text": "Angle, rate of angle, change of that rate. Computing angular velocity and acceleration, then converting them to linear speed through the radius — that's yours.", "visual": "Clean labeled disk: θ, ω, α, r. Holds, silent." }
+      ]
+    },
+    {
+      "order": 7, "chapter": 2, "lesson": "2-2", "slug": "torque",
+      "concept_en": "Torque & the Lever Arm",
+      "concept_ar": "العزم وذراع القوة",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "A stuck bolt. You push the wrench with everything you have. Nothing.", "visual": "Side view: a short wrench on a bolt, a strong push arrow, the bolt unmoving." },
+        { "id": "s1_b2", "text": "Then you slide a pipe over the handle to make it longer. Push gently. It turns.", "visual": "The handle visibly extended; a small push arrow; the bolt rotates." },
+        { "id": "s1_b3", "text": "Less force. More effect. Something other than force is doing the work here.", "visual": "Side-by-side: big force/short handle (no turn) vs small force/long handle (turn)." },
+        { "id": "s1_b4", "text": "Push right at the bolt's center — and nothing turns, no matter how hard.", "visual": "A huge force arrow applied at the pivot itself; zero rotation." },
+        { "id": "s1_b5", "text": "Push at the same spot but straight along the handle — also nothing. The direction matters too.", "visual": "Force pointing along the handle toward the pivot; no rotation." },
+        { "id": "s1_b6", "text": "Turning depends on three things together: how hard, how far from the pivot, and which way.", "visual": "Three small icons: a force, a distance from pivot, an angle." },
+        { "id": "s1_b7", "text": "Bundle them into one quantity. The turning effect of a force. Torque.", "visual": "The three icons merge into a single rotational arrow, labeled 'τ'." },
+        { "id": "s1_b8", "text": "The distance that actually counts isn't the whole handle—it's the perpendicular distance from the pivot to where the force pushes.", "visual": "The handle drawn; the force's line extended; a bright perpendicular line dropped from the pivot to the force line, labeled 'lever arm'." },
+        { "id": "s1_b9", "text": "That perpendicular reach has a name. The lever arm. Lengthen it, and the same force turns harder.", "visual": "The highlighted segment labeled 'lever arm'; it stretches, the rotation arrow grows." },
+        { "id": "s1_b10", "text": "A door proves it daily. Push at the handle, it swings. Push next to the hinge, it fights you.", "visual": "Top-down door: push far from hinge swings wide; push near hinge barely moves." },
+        { "id": "s1_b11", "text": "When several torques act, the rotation goes to whichever side wins the sum.", "visual": "A pivoted bar with forces on both sides; the net rotation arrow points to the stronger side." },
+        { "id": "s1_b12", "text": "Computing the torque from a given force and distance — and finding equilibrium when multiple torques act — that's yours.", "visual": "Clean diagram: pivot, force, perpendicular lever arm labeled τ. Holds." }
+      ]
+    },
+    {
+      "order": 8, "chapter": 2, "lesson": "2-3", "slug": "centerofmass",
+      "concept_en": "Center of Mass & Stability",
+      "concept_ar": "مركز الكتلة والاتزان",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "Throw a wrench, spinning, across the room.", "visual": "A wrench tumbling through the void, end over end." },
+        { "id": "s1_b2", "text": "Every part of it goes a different way. But one single point traces a clean, smooth arc.", "visual": "Chaotic tumbling, with one marked point gliding along a perfect parabola." },
+        { "id": "s1_b3", "text": "That point moves as if all the mass were squeezed into it. The center of mass.", "visual": "The marked point labeled 'center of mass'; the rest dims." },
+        { "id": "s1_b4", "text": "It isn't always in the middle of the object. It isn't even always inside the object.", "visual": "An L-shaped piece; the center-of-mass point sits in the empty notch, outside the metal." },
+        { "id": "s1_b5", "text": "Now stand a block on the table. Tilt it a little. It rocks back down.", "visual": "A block tilted slightly; a vertical line from its center of mass still inside the base; it returns." },
+        { "id": "s1_b6", "text": "Tilt it more. There's a moment where it hangs, undecided.", "visual": "The block tilted to the edge; the vertical line passing exactly through the pivot corner." },
+        { "id": "s1_b7", "text": "Past that moment, it goes over. What flipped wasn't the push. It was whether the center of mass stayed above the base.", "visual": "The line crosses outside the base; the block topples." },
+        { "id": "s1_b8", "text": "That's the whole rule of stability. Center of mass over the base of support — it returns. Beyond it — it falls.", "visual": "Two clean cases side by side: line inside base (stable), line outside (toppling)." },
+        { "id": "s1_b9", "text": "This is why a low, wide thing is hard to tip. A race car. A pyramid.", "visual": "A low wide shape vs a tall narrow shape; the wide one's center stays over its base through a big tilt." },
+        { "id": "s1_b10", "text": "And why a person leans into a heavy bag — moving their center of mass back over their feet.", "visual": "A figure carrying a load forward, body leaning back; combined center-of-mass point held over the feet." },
+        { "id": "s1_b11", "text": "Lower the center, widen the base, keep it over support — that's balance, with no magic in it.", "visual": "The three ideas as a tight labeled triptych." },
+        { "id": "s1_b12", "text": "Locating the center of mass of a given shape, and finding the maximum tilt before its vertical line leaves the base — that's yours.", "visual": "A shape with its center-of-mass point and base width marked, the tilt left open. Holds." }
+      ]
+    },
+    {
+      "order": 9, "chapter": 2, "lesson": "2-3", "slug": "fictitious",
+      "concept_en": "Fictitious Forces — Centrifugal & Coriolis",
+      "concept_ar": "القوى الظاهرية: الطاردة المركزية وكوريوليس",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "A car takes a sharp turn. You feel thrown against the door.", "visual": "Top-down car curving left; a passenger pressed toward the right door, an outward arrow." },
+        { "id": "s1_b2", "text": "It feels like a force pushed you outward. Name it, and it seems real.", "visual": "The outward arrow labeled with a question mark." },
+        { "id": "s1_b3", "text": "But step outside the car. Watch from above, from the still ground.", "visual": "Camera lifts to a fixed overhead view; the car's curved path drawn on the road." },
+        { "id": "s1_b4", "text": "From out here, nothing pushed you outward. Your body simply wanted to go straight — and the car turned out from under you.", "visual": "The passenger's straight-line tendency drawn; the door curving into them, not them into the door." },
+        { "id": "s1_b5", "text": "The outward push was never a force. It was the feeling of your own straight-line motion, seen from a turning frame.", "visual": "Split screen: inside-the-car view (feels a force) vs ground view (just straight-line inertia)." },
+        { "id": "s1_b6", "text": "That invented push has a name we use anyway, because it's useful inside the turning frame. The centrifugal force.", "visual": "The inside-frame outward arrow labeled 'centrifugal — only in the rotating frame'." },
+        { "id": "s1_b7", "text": "Now a harder one. Stand at the center of a spinning platform and roll a ball straight to a friend at the edge.", "visual": "Top-down rotating disk; a ball launched from center toward an edge target." },
+        { "id": "s1_b8", "text": "From above, it goes perfectly straight. From on the platform, it curves away — and misses.", "visual": "Ground view: straight line. Disk view: the same path appears as a curve, missing the friend." },
+        { "id": "s1_b9", "text": "Nothing bent the ball's path through space—it went perfectly straight. But the floor rotated beneath that straight path, so from the floor it looks curved.", "visual": "Split screen: (left) fixed space view with straight ball path; (right) rotating disk view with same path now appearing curved. Frame labels: 'space view' vs 'disk view'." },
+        { "id": "s1_b10", "text": "That apparent deflection has a name. The Coriolis effect — the signature of doing physics on a turning floor.", "visual": "The curved disk-frame path labeled 'Coriolis'." },
+        { "id": "s1_b11", "text": "We live on one. The Earth is the spinning platform. It steers winds and ocean currents into great curves.", "visual": "The globe rotating; broad atmospheric flow arrows curving across it." },
+        { "id": "s1_b12", "text": "These forces vanish the moment you step to the still ground. When do you need them, and how big are they? That's the thinking to carry off.", "visual": "The rotating frame and the still frame side by side, the open question between them. Holds." }
+      ]
+    },
+    {
+      "order": 10, "chapter": 3, "lesson": "3-1", "slug": "impulse",
+      "concept_en": "Impulse–Momentum Theorem",
+      "concept_ar": "نظرية الدفع والزخم",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "Two cars hit a wall at the same speed. One crumples slowly. One stops instantly.", "visual": "Two identical cars approaching a wall; one with a long crumple zone, one rigid." },
+        { "id": "s1_b2", "text": "Same speed in. Same dead stop. One driver walks away. One does not.", "visual": "Both ending at rest against the wall; one figure standing, one not. Hold." },
+        { "id": "s1_b3", "text": "The motion that had to be killed was identical. So what made the difference?", "visual": "Both cars' 'motion to remove' shown as the same-size quantity; a question mark." },
+        { "id": "s1_b4", "text": "Call that quantity of motion momentum — mass moving, how much there is to stop.", "visual": "A moving block with mass and velocity tags; bundled into one label 'p'." },
+        { "id": "s1_b5", "text": "To change momentum you need a force. But force alone isn't the whole story.", "visual": "A push arrow on the block; the momentum bar shrinking." },
+        { "id": "s1_b6", "text": "A force acting for a long time, and a much bigger force acting for an instant, can do the very same job.", "visual": "Two graphs of force over time: a low wide one and a tall narrow one, equal shaded areas." },
+        { "id": "s1_b7", "text": "It's force multiplied by the time it acts. That product is the impulse.", "visual": "The shaded area highlighted, labeled 'impulse = force × time'." },
+        { "id": "s1_b8", "text": "And the impulse equals exactly the change in momentum. That's the whole bridge.", "visual": "Impulse area on the left, momentum-change bar on the right, an equals sign between." },
+        { "id": "s1_b9", "text": "Now the crash makes sense. Same momentum to remove. The crumple zone stretches the stopping time —", "visual": "Crumpling car: a long stopping interval drawn." },
+        { "id": "s1_b10", "text": "— so the force needed drops. The rigid car stops in an instant, and the force spikes.", "visual": "Side-by-side force-vs-time: long-and-low for the crumple, brief-and-huge for the rigid." },
+        { "id": "s1_b11", "text": "Airbags, knees bending on landing, a boxer rolling with a punch—all the same trick. Buy time, cut the force. Watch: the airbag stretches the stop from a tenth of a second to half a second—force drops fivefold.", "visual": "Three icons in a row: airbag (before/after time comparison: 0.1s → 0.5s, force arrow shrinks 5×); bending knees; boxer rolling. The airbag gets numeric annotations; the others stay iconic." },
+        { "id": "s1_b12", "text": "Computing the impulse from a force acting over a time interval, and the change in momentum it produces — that's yours.", "visual": "Clean: impulse area = change in p, with time left as an open knob. Holds." }
+      ]
+    },
+    {
+      "order": 11, "chapter": 3, "lesson": "3-2", "slug": "momentumcons",
+      "concept_en": "Conservation of Momentum",
+      "concept_ar": "حفظ الزخم",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "Stand on a frozen lake, perfectly still. Throw a heavy bag forward.", "visual": "Top-down: a figure at rest on ice, a bag held." },
+        { "id": "s1_b2", "text": "You slide backward. You didn't push the ground. The bag did nothing to the world but leave your hands.", "visual": "The bag flies forward; the figure glides backward; ice frictionless." },
+        { "id": "s1_b3", "text": "Before: nothing moving. After: two things moving, opposite ways. Where did that motion come from?", "visual": "A 'before' frame (still) and an 'after' frame (bag right, person left); question mark." },
+        { "id": "s1_b4", "text": "Add it up the right way — motion as momentum, with direction. Forward counts as plus. Backward as minus.", "visual": "The bag's forward momentum bar (right) and the person's backward bar (left), signed." },
+        { "id": "s1_b5", "text": "The bag's forward momentum and your backward momentum are equal and opposite. They cancel.", "visual": "The two signed bars laid against each other; they sum to zero." },
+        { "id": "s1_b6", "text": "Total momentum before: zero. Total after: still zero. Nothing was created. It only got shared.", "visual": "Two pans of a balance: empty=empty before, (+bag)+(−you)=0 after. [Hold 2s in silence]" },
+        { "id": "s1_b7", "text": "This holds whenever no outside force interferes. A system left to itself. Isolated.", "visual": "A dashed boundary around the figure and bag, no arrows crossing it. Label: 'isolated system'." },
+        { "id": "s1_b8", "text": "And it's just Newton's third law, looked at over time. Every push has an equal, opposite push back.", "visual": "Equal-opposite force pair between hand and bag; resolving into equal-opposite momentum changes." },
+        { "id": "s1_b9", "text": "It's how a rocket climbs. Throw exhaust down hard; the rocket is thrown up just as hard.", "visual": "A rocket in the void; exhaust momentum down, rocket momentum up, the two balancing." },
+        { "id": "s1_b10", "text": "And how collisions work. Two carts meet. Whatever one gains, the other gives up. The total never changes.", "visual": "Two carts colliding; individual momenta change, the summed bar stays fixed length." },
+        { "id": "s1_b11", "text": "Inside the boundary, momentum is currency. It moves around. It is never spent.", "visual": "The dashed boundary; momentum tokens sliding between bodies, the count constant." },
+        { "id": "s1_b12", "text": "Setting total momentum before equal to total momentum after, and solving for an unknown velocity in a collision or recoil — that's yours.", "visual": "Clean before/after with one fixed total bar; the split left open. Holds." }
+      ]
+    },
+    {
+      "order": 12, "chapter": 4, "lesson": "4-1", "slug": "workenergy",
+      "concept_en": "Work–Energy Theorem",
+      "concept_ar": "نظرية الشغل والطاقة",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "Push hard against a wall for an hour. You're exhausted. The wall hasn't moved.", "visual": "A figure straining against a solid wall; a sweat drop; the wall fixed. Hold on the stillness." },
+        { "id": "s1_b2", "text": "You're exhausted—your muscles burned energy. But in physics, you did no work on the wall. None.", "visual": "The word 'work on the wall' emphasized, with a zero beside the unmoving wall. A faint 'effort ≠ work' subtitle." },
+        { "id": "s1_b3", "text": "Work isn't effort. Work isn't being tired. Work is a force that actually moves something along its direction.", "visual": "Force arrow plus a displacement arrow, aligned; the product highlighted." },
+        { "id": "s1_b4", "text": "Now push a cart and let it roll. Same force — but this time it moves.", "visual": "The same figure pushing a cart that travels a distance." },
+        { "id": "s1_b5", "text": "Force, times the distance it pushes through. That's work. And it isn't lost — it goes somewhere.", "visual": "Force × distance shaded; an arrow leading into the moving cart." },
+        { "id": "s1_b6", "text": "Where it goes: into motion. The cart that was still is now fast.", "visual": "The cart's speed bar growing as the work pours in." },
+        { "id": "s1_b7", "text": "That motion is itself a kind of energy — energy of movement. The work became speed.", "visual": "The work shading transforming into a 'motion energy' bar on the cart." },
+        { "id": "s1_b8", "text": "Do negative work — push backward, like a brake — and you take that energy out. The cart slows.", "visual": "A backward force on a moving cart; the motion-energy bar draining." },
+        { "id": "s1_b9", "text": "So work is the accounting of energy moving in and out of motion. Add it, motion grows. Remove it, motion shrinks.", "visual": "A ledger: +work raises the motion bar, −work lowers it." },
+        { "id": "s1_b10", "text": "That's the work–energy theorem. The net work done on a thing equals the change in its energy of motion. Exactly.", "visual": "Net work bar on the left, change-in-motion-energy bar on the right, an equals sign." },
+        { "id": "s1_b11", "text": "It's why the wall taught you nothing. No motion, no work, no change. Effort isn't in the equation.", "visual": "The wall scene returns, all three terms zeroed." },
+        { "id": "s1_b12", "text": "Computing the net work on an object and equating it to the change in its kinetic energy to find a final speed — that's yours.", "visual": "Clean: 'net work = change in energy of motion', terms left as open symbols. Holds." }
+      ]
+    },
+    {
+      "order": 13, "chapter": 4, "lesson": "4-1", "slug": "cars",
+      "concept_en": "Kinetic Energy",
+      "concept_ar": "الطاقة الحركية",
+      "status": "shipped",
+      "source": "videos/cars_full_voiced_subs.mp4 — storyboard at scripts/cars_full_voiced_subs.json (28 beats).",
+      "beats": []
+    },
+    {
+      "order": 14, "chapter": 4, "lesson": "4-1", "slug": "power",
+      "concept_en": "Power — the rate of doing work",
+      "concept_ar": "القدرة",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "Carry a heavy box up four flights of stairs. Take ten minutes, resting often.", "visual": "A figure climbing slow, a tall stairwell, a clock ticking to 10:00." },
+        { "id": "s1_b2", "text": "Now carry the same box, up the same stairs, in twenty seconds.", "visual": "Same stairwell, same box, the figure sprinting; clock to 0:20." },
+        { "id": "s1_b3", "text": "Here's the thing. The work done was exactly the same. Same weight. Same height.", "visual": "Two identical 'work done' bars, side by side, equal." },
+        { "id": "s1_b4", "text": "Same work — but the sprint nearly killed you and the stroll didn't. Work alone doesn't capture that.", "visual": "Two figures at the top: one calm, one collapsed; the equal work bars still shown. Question mark." },
+        { "id": "s1_b5", "text": "What's different isn't how much. It's how fast. The same job, packed into less time.", "visual": "The equal work bars, but with very different time widths beneath them." },
+        { "id": "s1_b6", "text": "Work divided by the time it took. That's power.", "visual": "Work bar over a time bar, resolving into a single label 'power'." },
+        { "id": "s1_b7", "text": "Same work, less time — more power. Same work, more time — less power. It's a rate.", "visual": "Slider on time: as time shrinks the power bar shoots up; as it grows the power bar drops." },
+        { "id": "s1_b8", "text": "It's why a small engine and a big engine can move the same car the same mile — but not in the same time.", "visual": "Two cars, equal distance covered; one finishes far sooner, a taller power bar." },
+        { "id": "s1_b9", "text": "A weak motor can lift a piano. Eventually. A strong one lifts it now. Same work, different power.", "visual": "Two pulleys raising identical pianos to the same height; one slow, one fast." },
+        { "id": "s1_b10", "text": "The unit honors the man who measured engines against horses. The watt.", "visual": "The label 'watt' appears under the power bar; a faint horse-and-engine motif." },
+        { "id": "s1_b11", "text": "Energy is what you transfer. Power is how fast you transfer it.", "visual": "Two clean labels: 'Energy (joules)' above; 'Power (joules per second)' below, the time denominator highlighted." },
+        { "id": "s1_b12", "text": "Computing power as work divided by time — and as force times speed — for a real climb or engine — that's yours.", "visual": "Clean: 'power = work ÷ time', the numbers left open. Holds." }
+      ]
+    },
+    {
+      "order": 15, "chapter": 4, "lesson": "4-2", "slug": "machines",
+      "concept_en": "Simple Machines & Mechanical Advantage",
+      "concept_ar": "الآلات البسيطة والفائدة الميكانيكية",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "A boulder you cannot possibly lift. Slide a bar under it, rest it on a rock, and push the far end down.", "visual": "A heavy boulder; a long lever over a small fulcrum; a hand on the far end." },
+        { "id": "s1_b2", "text": "The boulder rises. With a force far smaller than its weight. It feels like cheating.", "visual": "The boulder lifts; a small input arrow, a large output arrow. A 'free lunch?' tag." },
+        { "id": "s1_b3", "text": "It isn't. Watch your hand, not the rock. Your end traveled a long way down.", "visual": "Trace the long arc of the hand-end vs the tiny rise of the boulder-end." },
+        { "id": "s1_b4", "text": "The boulder barely moved. You pushed gently — but through a huge distance.", "visual": "Side-by-side: small force × long distance (input) | large force × short distance (output)." },
+        { "id": "s1_b5", "text": "That's the bargain every machine makes. It trades force for distance. It never gives you both.", "visual": "A balance: force down one side, distance up the other; the product unchanged." },
+        { "id": "s1_b6", "text": "The factor by which it multiplies your force has a name. The mechanical advantage.", "visual": "The ratio output-force / input-force highlighted, labeled 'mechanical advantage'." },
+        { "id": "s1_b7", "text": "A ramp is the same deal. Sliding a barrel up a long slope is easy — but you walk much farther.", "visual": "A barrel pushed up a gentle incline vs lifted straight up; longer path, smaller force." },
+        { "id": "s1_b8", "text": "So is a screw, an axle, a pulley. All of them: less force, more distance, same job underneath.", "visual": "Quick row of icons — screw, wheel-and-axle, pulley — each with the small-force/long-path motif." },
+        { "id": "s1_b9", "text": "Stack them together and you get a compound machine — a bicycle, a pair of scissors, an engine.", "visual": "Simple-machine icons combining into a bicycle drivetrain." },
+        { "id": "s1_b10", "text": "In a perfect machine, what you put in equals what you get out. Force times distance, conserved.", "visual": "Ideal case: input work bar exactly equal to output work bar." },
+        { "id": "s1_b11", "text": "The machine never makes energy. It only reshapes the deal — so a human can do a job a human couldn't.", "visual": "The lever scene returns; the energy bar identical in and out, only its shape changed." },
+        { "id": "s1_b12", "text": "Computing the mechanical advantage of a lever or ramp from its dimensions, and the input force a given load needs — that's yours.", "visual": "Clean lever diagram, input and output arms labeled, the ratio left open. Holds." }
+      ]
+    },
+    {
+      "order": 16, "chapter": 4, "lesson": "4-2", "slug": "efficiency",
+      "concept_en": "Efficiency — ideal vs real machines",
+      "concept_ar": "الكفاءة: الآلات المثالية والحقيقية",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "A perfect machine: every bit of work you put in comes out the other side.", "visual": "An input work bar flowing through a clean machine into an equal output bar." },
+        { "id": "s1_b2", "text": "Build it in the real world and something is always missing.", "visual": "The same machine, but the output bar comes out visibly shorter than the input." },
+        { "id": "s1_b3", "text": "You crank a real winch. Some of your effort lifts the load. Some just warms the gears.", "visual": "Input split: most into the rising load, a thin stream into faint heat shimmer at the gears." },
+        { "id": "s1_b4", "text": "It didn't vanish. Friction turned part of your work into heat and sound. Useless for the job.", "visual": "The lost stream labeled 'friction → heat, sound'." },
+        { "id": "s1_b5", "text": "So a machine has two stories. The work you hoped for. And the work you actually got.", "visual": "Two bars: 'ideal output' tall, 'real output' shorter, side by side." },
+        { "id": "s1_b6", "text": "The ratio of what you got to what you put in — that's efficiency.", "visual": "Real-output bar over input bar, labeled 'efficiency', shown as a percent." },
+        { "id": "s1_b7", "text": "A perfect machine would be one hundred percent. Nothing real ever is.", "visual": "A dial: 100% marked but unreachable; the needle resting below it." },
+        { "id": "s1_b8", "text": "A good gearbox might keep ninety. A clumsy chain of parts, far less.", "visual": "Two machines: a clean one near 90%, a messy compound one with a much lower dial." },
+        { "id": "s1_b9", "text": "And in a compound machine the losses stack. Each stage skims a little off the top.", "visual": "Work passing through three linked stages, the bar stepping down at each." },
+        { "id": "s1_b10", "text": "This is why ideal mechanical advantage and the real one disagree. The gap is exactly what friction ate.", "visual": "Two MA values side by side, ideal larger; the difference shaded as the friction loss." },
+        { "id": "s1_b11", "text": "Energy is still conserved — none was destroyed. It just left the job and became heat.", "visual": "Full bar conserved: useful part + heat part = input. Nothing missing, only redirected." },
+        { "id": "s1_b12", "text": "Computing efficiency as useful output over total input, and the work lost to friction in a real machine — that's yours.", "visual": "Clean: 'efficiency = useful output ÷ input', values left open. Holds." }
+      ]
+    },
+    {
+      "order": 17, "chapter": 5, "lesson": "5-1", "slug": "gravpe",
+      "concept_en": "Gravitational Potential Energy & Reference Level",
+      "concept_ar": "طاقة الوضع الجاذبية ومستوى الإسناد",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "Lift a book onto a high shelf. It just sits there. Still. Doing nothing.", "visual": "A book raised and placed on a shelf; it rests, motionless." },
+        { "id": "s1_b2", "text": "But you spent work lifting it. If the work goes somewhere — where did it go? The book isn't moving.", "visual": "The work you did, shown as a bar; an arrow pointing at the still book; question mark." },
+        { "id": "s1_b3", "text": "Nudge it off the edge and you find out. It falls — and arrives moving fast.", "visual": "The book slides off; falls; a growing speed bar as it descends." },
+        { "id": "s1_b4", "text": "The motion it didn't have up top, it has now. The work you did was stored, waiting, the whole time.", "visual": "The earlier work bar reappears and pours into the falling book's speed bar." },
+        { "id": "s1_b5", "text": "Energy held by position. Owed motion, not yet collected. Potential energy.", "visual": "The book on the shelf again, glowing faintly, labeled 'stored — potential energy'." },
+        { "id": "s1_b6", "text": "Higher means more stored. Lift it twice as high, it arrives carrying twice as much.", "visual": "Two shelves; the higher book's stored bar visibly larger; both fall to compare speeds." },
+        { "id": "s1_b7", "text": "Now a subtle question. The book on the table — does it have potential energy?", "visual": "A book resting on a table; a question mark; the floor below it." },
+        { "id": "s1_b8", "text": "Compared to the floor, yes — it could still fall. Compared to the table top, no — it's already there.", "visual": "Two dashed reference lines: one at the floor, one at the table; the same book, two different heights." },
+        { "id": "s1_b9", "text": "So potential energy isn't an absolute. It's always measured from a line you choose.", "visual": "The book with its height drawn from a movable dashed baseline." },
+        { "id": "s1_b10", "text": "That chosen line has a name. The reference level. You pick it. The physics doesn't care which.", "visual": "The dashed baseline labeled 'reference level'; it slides up and down freely." },
+        { "id": "s1_b11", "text": "Only the change in height matters—how far it actually falls. Set your reference at the floor, the table, or the roof: the fall distance stays the same, so the energy released is identical.", "visual": "Three side-by-side scenarios: reference at floor (h=2m fall), reference at table (h=2m fall from higher start), reference at roof (h=2m fall, now both positions below zero). All three show the same 2m drop and same released energy bar." },
+        { "id": "s1_b12", "text": "Computing the gravitational potential energy from mass, gravity, and height above your chosen reference — that's yours.", "visual": "Clean: a mass at height h above a chosen dashed reference, h left as an open symbol. Holds." }
+      ]
+    },
+    {
+      "order": 18, "chapter": 5, "lesson": "5-1", "slug": "elasticpe",
+      "concept_en": "Elastic Potential Energy",
+      "concept_ar": "طاقة الوضع المرونية",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "Pull a bow. It doesn't move. It just bends, and waits.", "visual": "A drawn bow held taut, arrow nocked, perfectly still." },
+        { "id": "s1_b2", "text": "You did work to draw it. The bow isn't moving — so where is that work now?", "visual": "A work bar; an arrow at the bent limbs; question mark." },
+        { "id": "s1_b3", "text": "Let go. The arrow leaves at terrific speed. The work was never lost. It was loaded into the bend.", "visual": "Release; the arrow flies; the work bar pours into the arrow's speed." },
+        { "id": "s1_b4", "text": "Energy stored not by height — but by shape. By stretch, by squeeze, by bend.", "visual": "Three quick images: stretched spring, compressed spring, bent ruler, each glowing faintly." },
+        { "id": "s1_b5", "text": "Elastic potential energy. The energy a material holds while it's deformed and trying to spring back.", "visual": "A spring stretched, labeled 'elastic potential energy', a 'wants to return' arrow." },
+        { "id": "s1_b6", "text": "Stretch a little, store a little. Stretch more, and it fights back harder the farther you go.", "visual": "A spring pulled in steps; the resisting arrow growing with each step." },
+        { "id": "s1_b7", "text": "So the stored energy doesn't grow steadily — it grows faster the more you deform it.", "visual": "Stored-energy bar climbing in accelerating jumps versus the stretch amount." },
+        { "id": "s1_b8", "text": "That's why a slightly longer draw on the bow sends the arrow much farther than you'd guess.", "visual": "Two draws, one a little longer; the longer one's stored bar dramatically larger." },
+        { "id": "s1_b9", "text": "It's everywhere. A trampoline. A pole vault. The spring in a clock. A diving board.", "visual": "Quick row: trampoline dip, vault pole bow, coiled clock spring, flexed board." },
+        { "id": "s1_b10", "text": "Push too far and it won't return — the material gives, and the stored energy doesn't come back.", "visual": "A spring overstretched and staying bent; its stored bar emptied uselessly." },
+        { "id": "s1_b11", "text": "Within its limit, though, it's a perfect bank. Put energy in by bending; take it back when it springs.", "visual": "A spring cycling: load (bar fills) then release (bar empties into motion), repeating." },
+        { "id": "s1_b12", "text": "Finding how the stored elastic energy depends on the spring's stiffness and how far it's deformed — that's yours.", "visual": "Clean: a spring at deformation x, x left as an open symbol. Holds." }
+      ]
+    },
+    {
+      "order": 19, "chapter": 5, "lesson": "5-1", "slug": "rotke",
+      "concept_en": "Rotational Kinetic Energy",
+      "concept_ar": "طاقة الحركة الدورانية",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "A spinning flywheel, going nowhere. Its center never moves.", "visual": "A heavy disk spinning in place in the void, axis fixed." },
+        { "id": "s1_b2", "text": "By the usual rule, motion energy comes from a thing's speed through space. This thing's center has none.", "visual": "The disk's center marked, a 'speed = 0' tag on it; question mark." },
+        { "id": "s1_b3", "text": "So does a spinning wheel carry energy of motion — or not?", "visual": "The disk spinning, a question mark hovering." },
+        { "id": "s1_b4", "text": "Try to stop it with your hand. It bites back. It clearly carries something.", "visual": "A hand grabs the rim; sparks; the hand pushed; the disk slowing reluctantly." },
+        { "id": "s1_b5", "text": "Look closer. The center is still — but every other bit of the disk is racing in a circle.", "visual": "Zoom to the rim; small mass elements streaking around at speed." },
+        { "id": "s1_b6", "text": "Each tiny piece has its own motion energy. Add them all up, and the wheel as a whole holds plenty.", "visual": "Many small speed vectors on the rotating mass; they sum into one glowing energy bar." },
+        { "id": "s1_b7", "text": "That total is rotational kinetic energy. Energy of spin, not of going anywhere.", "visual": "The whole disk labeled 'rotational kinetic energy'." },
+        { "id": "s1_b8", "text": "And where the mass sits matters. The same mass, far from the axis, moves faster — and stores far more.", "visual": "Two disks, equal mass: one with mass near the hub, one with mass at the rim; the rim one's bar much larger." },
+        { "id": "s1_b9", "text": "That reluctance to spin up or slow down has a name of its own — the moment of inertia.", "visual": "The mass-distribution picture labeled 'moment of inertia — how the mass is spread'." },
+        { "id": "s1_b10", "text": "It's why a flywheel can store energy, and a potter's wheel keeps turning long after the last push.", "visual": "A flywheel feeding energy out smoothly; a potter's wheel coasting." },
+        { "id": "s1_b11", "text": "A rolling ball carries both kinds at once — moving forward and spinning. Two energies in one body.", "visual": "A ball rolling down a slope; two bars on it: 'forward motion' and 'spin'." },
+        { "id": "s1_b12", "text": "Computing rotational kinetic energy from the moment of inertia and the angular speed — that's yours.", "visual": "Clean: a disk with ω and a mass-distribution sketch, terms left open. Holds." }
+      ]
+    },
+    {
+      "order": 20, "chapter": 5, "lesson": "5-2", "slug": "pendulum",
+      "concept_en": "Conservation of Mechanical Energy",
+      "concept_ar": "حفظ الطاقة الميكانيكية",
+      "status": "shipped",
+      "source": "videos/pendulum_full_voiced_subs.mp4 — storyboard at scripts/pendulum_full_voiced_subs.json (29 beats).",
+      "beats": []
+    },
+    {
+      "order": 21, "chapter": 5, "lesson": "5-2", "slug": "collisions",
+      "concept_en": "Collisions — Elastic & Inelastic",
+      "concept_ar": "التصادمات المرنة وعديمة المرونة",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "Two balls collide. We already know one rule never breaks: total momentum stays the same.", "visual": "Two carts meeting; a fixed-length total-momentum bar above, unchanged through impact." },
+        { "id": "s1_b2", "text": "But momentum doesn't tell the whole story of the crash. Listen to the difference.", "visual": "Two collisions side by side, frozen at impact; a question mark between them." },
+        { "id": "s1_b3", "text": "Two steel balls click and bounce apart, lively as before.", "visual": "Polished spheres collide and rebound; speed bars nearly as tall after as before." },
+        { "id": "s1_b4", "text": "Two balls of clay hit and just — stop. Stuck together. Dead.", "visual": "Two clay blobs collide, fuse, crawl off slowly as one lump." },
+        { "id": "s1_b5", "text": "Momentum was conserved in both. So the difference isn't there. It's in the energy of motion.", "visual": "Identical total-momentum bars for both cases; but two very different 'motion energy' bars." },
+        { "id": "s1_b6", "text": "The steel balls kept almost all their motion energy. We call that an elastic collision.", "visual": "Steel case: motion-energy bar nearly unchanged before and after. Label: 'elastic'." },
+        { "id": "s1_b7", "text": "The clay lost most of it — to heat, to sound, to bending. An inelastic collision.", "visual": "Clay case: motion-energy bar collapses; the lost part shown as heat/sound shimmer. Label: 'inelastic'." },
+        { "id": "s1_b8", "text": "And the extreme: when they stick and move off as one. Perfectly inelastic. The most energy lost.", "visual": "The fused clay lump moving as a single body; the largest energy-loss shimmer." },
+        { "id": "s1_b9", "text": "The energy was never destroyed. It left the motion and became heat, deformation, noise.", "visual": "A conserved total bar: 'useful motion' shrinks, 'heat + sound + bending' grows by the same amount." },
+        { "id": "s1_b10", "text": "So a collision has two questions. Momentum: always conserved. Motion energy: only sometimes.", "visual": "Two checklists — momentum: ✓ always; kinetic energy: ✓ elastic only." },
+        { "id": "s1_b11", "text": "Real life lives in between. Most collisions keep some bounce and lose some energy.", "visual": "A slider between 'perfectly elastic' and 'perfectly inelastic'; a dropped ball bouncing lower each time." },
+        { "id": "s1_b12", "text": "Momentum always balances; energy of motion is the variable. Solving each type with the right pair of rules — that's yours.", "visual": "Clean: two before/after frames, momentum bar fixed, energy bar open. Holds." }
+      ]
+    },
+    {
+      "order": 22, "chapter": 6, "lesson": "6-1", "slug": "tempvsthermal",
+      "concept_en": "Temperature vs Thermal Energy",
+      "concept_ar": "درجة الحرارة والطاقة الحرارية",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "A lit match. And a warm bathtub.", "visual": "A single match flame; beside it, a full tub gently steaming." },
+        { "id": "s1_b2", "text": "The flame is far hotter. Hundreds of degrees against a mild forty.", "visual": "Two thermometers: the match's pinned high, the tub's modest." },
+        { "id": "s1_b3", "text": "Now: which one could you safely touch — and which one could heat a whole room?", "visual": "A hand near the match; the tub beside a cold room. Question marks on both." },
+        { "id": "s1_b4", "text": "The match is hotter, but it can't warm the room. The cooler tub can. Hotter isn't the same as more heat.", "visual": "The tub's energy filling a room outline; the match's tiny energy barely a glow." },
+        { "id": "s1_b5", "text": "Zoom in. Heat is really the jiggling of countless particles. Always moving, always bumping.", "visual": "A swarm of particles vibrating and colliding inside both objects." },
+        { "id": "s1_b6", "text": "Temperature measures how violently each particle jiggles, on average. Just the average. Per particle.", "visual": "One particle highlighted, its vibration amplitude tied to a thermometer reading. Label: 'temperature = average jiggle'." },
+        { "id": "s1_b7", "text": "In the match flame, each particle jiggles like mad. Very high temperature.", "visual": "The match's few particles vibrating ferociously, thermometer high." },
+        { "id": "s1_b8", "text": "But there are almost none of them. A tiny flame holds very little jiggling in total.", "visual": "Zoom out: the flame is just a sparse handful of fast particles." },
+        { "id": "s1_b9", "text": "The tub is only mildly warm — but it's a vast crowd of particles, all jiggling a little.", "visual": "The tub teeming with an enormous number of gently vibrating particles." },
+        { "id": "s1_b10", "text": "Add up all that jiggling and the tub holds an ocean of energy. That total is thermal energy.", "visual": "Sum of all the tub's particle motions into one huge bar, dwarfing the match's tiny bar. Label: 'thermal energy = total'." },
+        { "id": "s1_b11", "text": "Temperature is the per-particle average. Thermal energy is the grand total. Intensity versus amount.", "visual": "Two clean panels: a single fast particle (temperature) | a vast bar of summed motion (thermal energy)." },
+        { "id": "s1_b12", "text": "Average jiggle versus the whole sum — and how many particles bridges them. Quantifying that link is yours.", "visual": "Match and tub side by side, the average/total contrast labeled, the count left open. Holds." }
+      ]
+    },
+    {
+      "order": 23, "chapter": 6, "lesson": "6-1", "slug": "heattransfer",
+      "concept_en": "Heat Transfer — Conduction, Convection, Radiation",
+      "concept_ar": "انتقال الحرارة: التوصيل والحمل والإشعاع",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "Hold a metal spoon in hot soup. Soon the handle, far from the soup, is hot too.", "visual": "A spoon in a steaming bowl; warmth creeping up the handle, color shifting along it." },
+        { "id": "s1_b2", "text": "Nothing moved up that handle. So how did the heat travel through solid metal?", "visual": "The handle's metal; a question mark; no visible flow." },
+        { "id": "s1_b3", "text": "The hot end's particles jiggle hard. They knock their neighbors, who knock theirs. The jiggle passes along.", "visual": "A chain of bonded particles; vibration handed from one to the next up the handle." },
+        { "id": "s1_b4", "text": "Heat passed by contact, particle to particle, the material itself staying put. That's conduction.", "visual": "The whole handle, jiggle relay completed, labeled 'conduction — by contact'." },
+        { "id": "s1_b5", "text": "Now a pot of water on a flame. The bottom heats first. But the whole pot warms — and the water churns.", "visual": "A pot over a flame; circulating loops drawn in the water." },
+        { "id": "s1_b6", "text": "Hot water expands, grows light, rises. Cool water sinks to take its place. The fluid carries the heat by moving.", "visual": "A convection loop: red rising in the middle, blue sinking at the sides, a turning circle." },
+        { "id": "s1_b7", "text": "Heat carried by the bulk motion of a fluid. That's convection.", "visual": "The loop labeled 'convection — by flow'; same engine behind wind and ocean currents, faint icons." },
+        { "id": "s1_b8", "text": "But step into sunlight. The Sun's heat crossed a hundred million miles of empty space. No metal. No fluid. Nothing to carry it.", "visual": "The Sun, vast void, a faint glow reaching a small Earth; emphasize the emptiness between." },
+        { "id": "s1_b9", "text": "It came as light. Heat that travels as radiation needs no material at all.", "visual": "Wavy energy rays crossing the void from Sun to Earth, labeled 'radiation — by waves'." },
+        { "id": "s1_b10", "text": "You feel it from a campfire across the gap, and from a hot stove before you ever touch it.", "visual": "A figure facing a fire, rays warming their face across open air; a glowing stove element." },
+        { "id": "s1_b11", "text": "Three paths for one thing. Touch. Flow. Across nothing at all.", "visual": "A clean triptych: conduction (spoon), convection (pot loop), radiation (Sun rays)." },
+        { "id": "s1_b12", "text": "Which path dominates where, and how fast each moves heat — that's the thinking we hand to you.", "visual": "The three icons holding side by side, an open question between them. Silent." }
+      ]
+    },
+    {
+      "order": 24, "chapter": 6, "lesson": "6-1", "slug": "specificheat",
+      "concept_en": "Specific Heat",
+      "concept_ar": "الحرارة النوعية",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "Same flame. Same time. Under one pot of water — and one pot of cooking oil.", "visual": "Two identical pots on identical flames, one water, one oil, same clock." },
+        { "id": "s1_b2", "text": "Equal heat poured into each. But the oil is scorching while the water is merely warm.", "visual": "Two thermometers: oil's risen far higher than water's, same time elapsed." },
+        { "id": "s1_b3", "text": "Same energy in. Wildly different temperature out. Why does water resist heating up?", "visual": "Equal 'energy in' bars, very unequal temperature rises; question mark." },
+        { "id": "s1_b4", "text": "Some substances soak up a lot of energy for only a small rise in temperature.", "visual": "A 'sponge' metaphor: water absorbing a big energy bar, its thermometer barely moving." },
+        { "id": "s1_b5", "text": "Others heat fast — a little energy sends their temperature shooting up.", "visual": "The oil taking a small energy bar, thermometer leaping; metal doing the same, even faster." },
+        { "id": "s1_b6", "text": "That stubbornness — how much energy one gram needs to warm by one degree — is the specific heat.", "visual": "A clean label: 'specific heat = energy to raise 1 g by 1°'; a tiny gram cube warming." },
+        { "id": "s1_b7", "text": "Water's is famously huge. It's one of the hardest common things to heat — and to cool.", "visual": "A bar chart: water's specific-heat bar towering over oil, sand, iron." },
+        { "id": "s1_b8", "text": "That's why the sea is mild while the desert sand next to it bakes by noon and freezes by night.", "visual": "Coast scene: calm steady sea temperature; beside it sand swinging hot-to-cold." },
+        { "id": "s1_b9", "text": "It's why water cools an engine, why a hot-water bottle stays warm for hours.", "visual": "Coolant circulating through an engine; a water bottle holding its warmth on a clock." },
+        { "id": "s1_b10", "text": "And it's why your own body, mostly water, holds a steady temperature through a changing day.", "visual": "A figure outdoors, environment temperature swinging, body temperature a flat line." },
+        { "id": "s1_b11", "text": "Heat needed depends on three things: the substance, how much of it, and how big a rise you want.", "visual": "Three dials: material (specific heat), mass, temperature change — feeding one 'heat' total." },
+        { "id": "s1_b12", "text": "Computing the heat needed from the specific heat, the mass, and the temperature change — that's yours.", "visual": "Clean: 'heat = (specific heat) × mass × (temperature change)', values left open. Holds." }
+      ]
+    },
+    {
+      "order": 25, "chapter": 6, "lesson": "6-2", "slug": "latentheat",
+      "concept_en": "Latent Heat — energy hidden in a change of state",
+      "concept_ar": "الحرارة الكامنة لتغير الحالة",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "Heat a glass of ice water and watch the thermometer.", "visual": "A glass of ice and water on a flame; a thermometer reading 0°." },
+        { "id": "s1_b2", "text": "You're pouring energy in steadily. But while ice remains, the temperature does not budge. Zero. Still zero.", "visual": "Energy flowing in continuously; the thermometer frozen at 0° as ice shrinks. Hold on the unmoving needle." },
+        { "id": "s1_b3", "text": "Energy in, no temperature rise. The heat is going somewhere we can't see on the thermometer.", "visual": "Energy arrows pouring in; the flat temperature line; a question mark." },
+        { "id": "s1_b4", "text": "Zoom in. In ice, particles are locked in a rigid lattice. The incoming energy isn't speeding them up —", "visual": "An ordered crystal of bonded particles; energy arriving but motion not increasing." },
+        { "id": "s1_b5", "text": "— it's breaking the bonds that hold them in place. Energy spent on freedom, not on speed.", "visual": "Bonds snapping one by one; particles loosening from the lattice into liquid disorder." },
+        { "id": "s1_b6", "text": "Only once the last of the ice is freed does the thermometer start climbing again.", "visual": "Last crystal melts; the temperature needle finally rises off 0°." },
+        { "id": "s1_b7", "text": "That hidden energy — paid to change state, not to change temperature — is the latent heat.", "visual": "The flat segment of the heat curve highlighted, labeled 'latent heat — hidden, no temp change'." },
+        { "id": "s1_b8", "text": "The same pause happens again at boiling. Energy floods in to tear liquid into vapor — temperature holds flat.", "visual": "A second flat plateau on the curve at the boiling point; rolling boil, steady thermometer." },
+        { "id": "s1_b9", "text": "And it runs in reverse. Steam releases that hidden energy when it condenses—which is why steam delivers far more heat to skin than boiling water at the same temperature.", "visual": "Steam hitting skin, dumping a large latent-energy bar on contact; beside it, boiling water at 100° transferring much less. Energy bars compared." },
+        { "id": "s1_b10", "text": "It's why sweat cools you: evaporating water carries off enormous hidden energy as it leaves your skin.", "visual": "Sweat droplets evaporating off skin, each carrying away a chunk of energy; the skin cooling." },
+        { "id": "s1_b11", "text": "A full heating curve, then, has flats and slopes. Slopes warm it. Flats rebuild it.", "visual": "The complete temperature-vs-energy curve: rising slopes for heating, flat shelves at melting and boiling." },
+        { "id": "s1_b12", "text": "Computing the heat absorbed during melting and boiling from the mass and the latent heat — that's yours.", "visual": "Clean heating curve, the two flat plateaus labeled, their energies left open. Holds." }
+      ]
+    },
+    {
+      "order": 26, "chapter": 6, "lesson": "6-2", "slug": "thermolaws",
+      "concept_en": "The Laws of Thermodynamics & Entropy",
+      "concept_ar": "قوانين الديناميكا الحرارية والإنتروبي",
+      "status": "to-build",
+      "beats": [
+        { "id": "s1_b1", "text": "Two rules govern every engine, every fridge, every living thing. They sound almost too simple.", "visual": "Two faint stone-tablet shapes in the void, blank, waiting." },
+        { "id": "s1_b2", "text": "First rule. Energy is never created and never destroyed. It only changes form, or moves.", "visual": "Energy flowing between forms — fuel to motion to heat — the total bar a fixed length throughout. First tablet inscribed." },
+        { "id": "s1_b3", "text": "Heat into an engine becomes work out, plus heat dumped away. Add it all back: nothing missing. Ever.", "visual": "An engine box: heat in; work out + waste heat out; the sum exactly equal to the input." },
+        { "id": "s1_b4", "text": "So the first rule says you can't win — you can't get more energy out than you put in.", "visual": "A balance, output never exceeding input, the needle stuck at parity." },
+        { "id": "s1_b5", "text": "Then the second rule, the strange one. It's about direction.", "visual": "The second tablet, an arrow on it pointing one way only." },
+        { "id": "s1_b6", "text": "Drop ink in water; it spreads. You will never, ever watch it gather itself back into a drop.", "visual": "Ink diffusing through water; the reverse shown faded out and crossed." },
+        { "id": "s1_b7", "text": "A hot coffee always cools to the room. The room never spontaneously reheats the coffee.", "visual": "Coffee cooling to room temperature; the reverse process struck through." },
+        { "id": "s1_b8", "text": "Nothing in the first rule forbids the reverse. Energy would still balance. Yet it never happens.", "visual": "The reverse scenes shown obeying energy conservation, still stamped 'never'." },
+        { "id": "s1_b9", "text": "Because the universe drifts, always, toward more spread-out, more disordered, more mixed. We measure that drift with entropy.", "visual": "Ordered arrangement dissolving into a scattered one; a rising bar labeled 'entropy'." },
+        { "id": "s1_b10", "text": "The second rule: total entropy always increases. That's why time has a direction.", "visual": "The entropy bar climbing along an arrow labeled 'time'." },
+        { "id": "s1_b11", "text": "It's why no engine is perfect. Some energy must always be paid out as disordered waste heat. You can't even break even.", "visual": "The engine again, an unavoidable waste-heat stream draining off; the dial pinned below 100%." },
+        { "id": "s1_b12", "text": "Computing an engine's maximum possible efficiency from its hot and cold operating temperatures — that's yours.", "visual": "The two tablets side by side, clean and final, an open question beneath them. Silent. [Hold 3s in silence]" }
+      ]
+    }
+  ]
+}

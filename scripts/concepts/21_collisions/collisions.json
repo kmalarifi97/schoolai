@@ -1,0 +1,106 @@
+{
+  "order": 21,
+  "slug": "collisions",
+  "concept_en": "Collisions — Elastic & Inelastic",
+  "concept_ar": "التصادمات المرنة وعديمة المرونة",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 5,
+    "chapter_title_en": "Energy and Its Conservation",
+    "chapter_title_ar": "الطاقة وحفظها",
+    "lesson": "5-2",
+    "lesson_title_en": "Conservation of Energy",
+    "lesson_title_ar": "حفظ الطاقة",
+    "pages": "141-163",
+    "start_page": 141,
+    "end_page": 163,
+    "lesson_objectives": [
+      "حل مسائل باستخدام قانون حفظ الطاقة",
+      "تحليل التصادمات لإيجاد التغير في الطاقة الحركية"
+    ],
+    "lesson_key_terms": [
+      "قانون حفظ الطاقة",
+      "الطاقة الميكانيكية",
+      "التصادم فوق المرن",
+      "التصادم المرن",
+      "التصادم العديم المرونة"
+    ]
+  },
+  "video": {
+    "target_filename": "collisions_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Two balls collide. We already know one rule never breaks: total momentum stays the same.",
+      "visual": "Two carts meeting; a fixed-length total-momentum bar above, unchanged through impact."
+    },
+    {
+      "id": "s1_b2",
+      "text": "But momentum doesn't tell the whole story of the crash. Listen to the difference.",
+      "visual": "Two collisions side by side, frozen at impact; a question mark between them."
+    },
+    {
+      "id": "s1_b3",
+      "text": "Two steel balls click and bounce apart, lively as before.",
+      "visual": "Polished spheres collide and rebound; speed bars nearly as tall after as before."
+    },
+    {
+      "id": "s1_b4",
+      "text": "Two balls of clay hit and just — stop. Stuck together. Dead.",
+      "visual": "Two clay blobs collide, fuse, crawl off slowly as one lump."
+    },
+    {
+      "id": "s1_b5",
+      "text": "Momentum was conserved in both. So the difference isn't there. It's in the energy of motion.",
+      "visual": "Identical total-momentum bars for both cases; but two very different 'motion energy' bars."
+    },
+    {
+      "id": "s1_b6",
+      "text": "The steel balls kept almost all their motion energy. We call that an elastic collision.",
+      "visual": "Steel case: motion-energy bar nearly unchanged before and after. Label: 'elastic'."
+    },
+    {
+      "id": "s1_b7",
+      "text": "The clay lost most of it — to heat, to sound, to bending. An inelastic collision.",
+      "visual": "Clay case: motion-energy bar collapses; the lost part shown as heat/sound shimmer. Label: 'inelastic'."
+    },
+    {
+      "id": "s1_b8",
+      "text": "And the extreme: when they stick and move off as one. Perfectly inelastic. The most energy lost.",
+      "visual": "The fused clay lump moving as a single body; the largest energy-loss shimmer."
+    },
+    {
+      "id": "s1_b9",
+      "text": "The energy was never destroyed. It left the motion and became heat, deformation, noise.",
+      "visual": "A conserved total bar: 'useful motion' shrinks, 'heat + sound + bending' grows by the same amount."
+    },
+    {
+      "id": "s1_b10",
+      "text": "So a collision has two questions. Momentum: always conserved. Motion energy: only sometimes.",
+      "visual": "Two checklists — momentum: ✓ always; kinetic energy: ✓ elastic only."
+    },
+    {
+      "id": "s1_b11",
+      "text": "Real life lives in between. Most collisions keep some bounce and lose some energy.",
+      "visual": "A slider between 'perfectly elastic' and 'perfectly inelastic'; a dropped ball bouncing lower each time."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Momentum always balances; energy of motion is the variable. Solving each type with the right pair of rules — that's yours.",
+      "visual": "Clean: two before/after frames, momentum bar fixed, energy bar open. Holds."
+    }
+  ]
+}

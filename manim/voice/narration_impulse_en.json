@@ -1,0 +1,14 @@
+{
+  "s1_b1": "Two cars hit a wall at the same speed. One crumples slowly. One stops instantly.",
+  "s1_b2": "Same speed in. Same dead stop. One driver walks away. One does not.",
+  "s1_b3": "The motion that had to be killed was identical. So what made the difference?",
+  "s1_b4": "Call that quantity of motion momentum — mass moving, how much there is to stop.",
+  "s1_b5": "To change momentum you need a force. But force alone isn't the whole story.",
+  "s1_b6": "A force acting for a long time, and a much bigger force acting for an instant, can do the very same job.",
+  "s1_b7": "It's force multiplied by the time it acts. That product is the impulse.",
+  "s1_b8": "And the impulse equals exactly the change in momentum. That's the whole bridge.",
+  "s1_b9": "Now the crash makes sense. Same momentum to remove. The crumple zone stretches the stopping time —",
+  "s1_b10": "— so the force needed drops. The rigid car stops in an instant, and the force spikes.",
+  "s1_b11": "Airbags, knees bending on landing, a boxer rolling with a punch—all the same trick. Buy time, cut the force. Watch: the airbag stretches the stop from a tenth of a second to half a second—force drops fivefold.",
+  "s1_b12": "Computing the impulse from a force acting over a time interval, and the change in momentum it produces — that's yours."
+}

@@ -1,0 +1,14 @@
+{
+  "s1_b1": "A stuck bolt. You push the wrench with everything you have. Nothing.",
+  "s1_b2": "Then you slide a pipe over the handle to make it longer. Push gently. It turns.",
+  "s1_b3": "Less force. More effect. Something other than force is doing the work here.",
+  "s1_b4": "Push right at the bolt's center — and nothing turns, no matter how hard.",
+  "s1_b5": "Push at the same spot but straight along the handle — also nothing. The direction matters too.",
+  "s1_b6": "Turning depends on three things together: how hard, how far from the pivot, and which way.",
+  "s1_b7": "Bundle them into one quantity. The turning effect of a force. Torque.",
+  "s1_b8": "The distance that actually counts isn't the whole handle — it's the perpendicular distance from the pivot to where the force pushes.",
+  "s1_b9": "That perpendicular reach has a name. The lever arm. Lengthen it, and the same force turns harder.",
+  "s1_b10": "A door proves it daily. Push at the handle, it swings. Push next to the hinge, it fights you.",
+  "s1_b11": "When several torques act, the rotation goes to whichever side wins the sum.",
+  "s1_b12": "Computing the torque from a given force and distance — and finding equilibrium when multiple torques act — that's yours."
+}

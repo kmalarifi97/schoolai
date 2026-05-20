@@ -1,0 +1,147 @@
+[
+  {
+    "id": "s1_b1",
+    "text": "Watch a pendulum. It swings. And swings. And after a while — it stops.",
+    "visual": "Side view. A simple pendulum swinging on a string from a fixed point. Three full swings shown, then amplitude visibly decreases until it comes to rest at the bottom."
+  },
+  {
+    "id": "s1_b2",
+    "text": "Natural question: where did its energy go?",
+    "visual": "The pendulum hangs still at the bottom. A question mark fades in beside it."
+  },
+  {
+    "id": "s1_b3",
+    "text": "Most people answer in two words. It ran out.",
+    "visual": "The phrase 'it ran out' appears in plain typography in the center of the frame."
+  },
+  {
+    "id": "s1_b4",
+    "text": "That answer is wrong. Energy doesn't run out. Ever.",
+    "visual": "A red line strikes through 'it ran out.' Then it fades."
+  },
+  {
+    "id": "s1_b5",
+    "text": "To see why, leave the pendulum for a second. Open your wallet.",
+    "visual": "The pendulum scene fades out. A wallet fades in on a wooden table, viewed from a slight overhead angle."
+  },
+  {
+    "id": "s1_b6",
+    "text": "Yesterday you had fifty riyals. Today you have forty.",
+    "visual": "The wallet opens. Split frame: 'YESTERDAY' label with a stack of bills marked '50', 'TODAY' label with a smaller stack marked '40'."
+  },
+  {
+    "id": "s1_b7",
+    "text": "Did the ten riyals disappear?",
+    "visual": "A red question mark hovers over a faded outline of a missing 10-riyal bill between the two stacks."
+  },
+  {
+    "id": "s1_b8",
+    "text": "No. Nobody assumes money disappears. You start looking for the receipt.",
+    "visual": "Cut to a person's hands rummaging in pockets. Small paper receipts begin to spill onto the table one by one."
+  },
+  {
+    "id": "s1_b9",
+    "text": "Maybe coffee. Maybe parking. Maybe some small thing you forgot. But it went somewhere.",
+    "visual": "Three receipts on the table light up in turn, each with a small icon: a coffee cup, a parking sign, a generic shop bag."
+  },
+  {
+    "id": "s1_b10",
+    "text": "That's the rule. Money doesn't vanish. It moves.",
+    "visual": "Text fades in beneath the receipts: 'Money doesn't vanish. It moves.'"
+  },
+  {
+    "id": "s1_b11",
+    "text": "Now go back to the pendulum. Same reflex.",
+    "visual": "Smooth transition back to the pendulum, now still at the bottom."
+  },
+  {
+    "id": "s1_b12",
+    "text": "Its energy didn't run out. It was spent. We just have to find the receipt.",
+    "visual": "Beside the pendulum, 'ran out' fades out and 'spent' fades in to replace it. A small receipt icon hovers in the corner."
+  },
+  {
+    "id": "s1_b13",
+    "text": "But spent on what? The pendulum doesn't drink coffee.",
+    "visual": "A small thought bubble next to the pendulum shows a coffee cup with a red strike-through."
+  },
+  {
+    "id": "s1_b14",
+    "text": "Look closer. Every swing, the pendulum pushes air.",
+    "visual": "Camera zooms in toward the pendulum's path. Faint curved motion lines appear, indicating air being pushed out of the way."
+  },
+  {
+    "id": "s1_b15",
+    "text": "And air isn't nothing. Air is billions of tiny molecules, sitting in its way.",
+    "visual": "Zoom continues until tiny dots — air molecules — become visible, drifting slowly throughout the empty space around the pendulum."
+  },
+  {
+    "id": "s1_b16",
+    "text": "It bumps them. They start moving faster.",
+    "visual": "The pendulum swings through the frame. The molecules nearest its path visibly speed up — their motion becoming fast and jittery."
+  },
+  {
+    "id": "s1_b17",
+    "text": "And moving faster has a name. We call it heat.",
+    "visual": "The fast-moving molecules glow with a soft warm tint. A label fades in beside them: 'heat.'"
+  },
+  {
+    "id": "s1_b18",
+    "text": "Every swing — a small piece of swing-energy becomes a small piece of heat.",
+    "visual": "Split frame. Left: the pendulum with a vertical bar labeled 'swing energy' that shrinks slightly. Right: the surrounding air with a vertical bar labeled 'heat' that grows by the same amount."
+  },
+  {
+    "id": "s1_b19",
+    "text": "Pay. Pay. Pay. Millions of swings, millions of tiny payments.",
+    "visual": "Time-lapse. The pendulum swings rapidly. With each swing, a tiny coin-like token visibly transfers from the pendulum into the surrounding air."
+  },
+  {
+    "id": "s1_b20",
+    "text": "Until the wallet is empty. And the pendulum stops.",
+    "visual": "The pendulum's swing decays to zero. It hangs still at the bottom. The 'swing energy' bar from earlier is now empty."
+  },
+  {
+    "id": "s1_b21",
+    "text": "But the room — the room is slightly warmer. By an amount you can't feel.",
+    "visual": "Camera pulls back to reveal the whole room. The air carries a very faint warm tint. A small thermometer in the corner has risen by an imperceptible amount."
+  },
+  {
+    "id": "s1_b22",
+    "text": "That's the receipt.",
+    "visual": "A small receipt icon fades in beside the still pendulum, labeled in faint text: 'air, slightly warmer.'"
+  },
+  {
+    "id": "s1_b23",
+    "text": "Physics has an equation for this. Total energy before = total energy after.",
+    "visual": "An equation fades in elegantly: KE + PE = constant. Below it in smaller text: 'energy before = energy after.' Glows briefly."
+  },
+  {
+    "id": "s1_b24",
+    "text": "It tells you the total never changes. It doesn't tell you where to look.",
+    "visual": "The equation dims and slides to a corner of the frame, leaving the still pendulum at center."
+  },
+  {
+    "id": "s1_b25",
+    "text": "The habit is what matters. Don't ask where the energy went.",
+    "visual": "The question 'where did the energy go?' appears, then a line strikes through it."
+  },
+  {
+    "id": "s1_b26",
+    "text": "Ask: what got warmer? What got louder? What moved?",
+    "visual": "Three icons fade in one by one to a steady beat: a thermometer (warmth), a small speaker (sound), an arrow (motion)."
+  },
+  {
+    "id": "s1_b27",
+    "text": "Car brakes get hot. A bouncing ball thuds quieter and quieter as the floor warms. Your phone 'dies' — its heat is in your hand.",
+    "visual": "Three quick cuts: glowing red-hot brake discs of a stopping car; a bouncing ball with faint heat glow and small sound waves on the floor; a phone in a hand with a soft warm aura."
+  },
+  {
+    "id": "s1_b28",
+    "text": "Nothing ran out. Everything was spent.",
+    "visual": "The three example icons appear briefly side-by-side, each with a small receipt icon beneath it. Then dissolve."
+  },
+  {
+    "id": "s1_b29",
+    "text": "Back to the pendulum. The last swing. The air around it is carrying everything it had — a warmth you couldn't see.",
+    "visual": "Callback to the opening shot. The pendulum completes one final swing and comes to rest. This time, the air around it visibly pulses with a soft warm glow that radiates outward into the room before fading."
+  }
+]

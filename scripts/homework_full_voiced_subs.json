@@ -1,0 +1,127 @@
+[
+  {
+    "id": "s1_b1",
+    "text": "Welcome back. You just watched two rocks pull each other across empty space.",
+    "visual": "Two grey rocks float in deep black space, slowly drifting toward each other — a direct echo of the gravity lesson's opening shot."
+  },
+  {
+    "id": "s1_b2",
+    "text": "Now the rocks are yours.",
+    "visual": "The rocks settle to a stop. The deep cosmic black around them gently tightens into a rectangular frame — becoming the canvas of the homework interface."
+  },
+  {
+    "id": "s1_b3",
+    "text": "Two sliders for mass. One for distance. A play button. A timer.",
+    "visual": "Below the canvas, the control panel materializes piece by piece: two horizontal sliders labeled 'Mass A' and 'Mass B,' a third labeled 'Distance,' a white 'Play' button, and a timer reading '0.0 seconds.' Each element appears in turn as it's named."
+  },
+  {
+    "id": "s1_b4",
+    "text": "One instruction. Make them collide in exactly sixty seconds.",
+    "visual": "A line of text fades in above the canvas: 'Make these two rocks collide in exactly 60 seconds.' The '60' glows briefly."
+  },
+  {
+    "id": "s1_b5",
+    "text": "Looks simple. It isn't.",
+    "visual": "The whole interface holds still. A faint, almost shy question mark hovers off to one side, not quite intruding."
+  },
+  {
+    "id": "s1_b6",
+    "text": "Because your real job isn't to make them collide in sixty seconds.",
+    "visual": "The '60' in the instruction line dims slightly, sliding gently out of focus."
+  },
+  {
+    "id": "s1_b7",
+    "text": "Your real job is to predict what your rocks are going to do — before you press play.",
+    "visual": "A text box slides into view below the canvas. A label fades in across it: 'Before you press play.' The Play button stays dim in the background."
+  },
+  {
+    "id": "s1_b8",
+    "text": "How many seconds until they meet. And why.",
+    "visual": "The text box fills out: 'With mass A = 10, mass B = 10, distance = 400, I predict they will collide in __ seconds, because __.' The two blank fields pulse gently."
+  },
+  {
+    "id": "s1_b9",
+    "text": "Then you press play. And you watch.",
+    "visual": "The Play button brightens. The two rocks begin to drift toward each other. The timer ticks upward: 12, 25, 38."
+  },
+  {
+    "id": "s1_b10",
+    "text": "After — you explain the gap.",
+    "visual": "The rocks meet softly. A reflection text box slides into view, showing 'predicted: ___ seconds, actual: ___ seconds, gap: ___.'"
+  },
+  {
+    "id": "s1_b11",
+    "text": "If you said thirty and they collided in fifty — what did you miss? Mass? Distance? Both?",
+    "visual": "Three small icons appear in sequence beside the gap: a weight (mass), a ruler (distance), and both together. Each pulses briefly as it's named."
+  },
+  {
+    "id": "s1_b12",
+    "text": "You get three tries. That's all.",
+    "visual": "Three small counter dots appear in the corner: ● ○ ○. A label beneath them reads 'Attempts.'"
+  },
+  {
+    "id": "s1_b13",
+    "text": "So don't burn them by clicking around. Random clicking is the trap.",
+    "visual": "A cursor zips back and forth across the sliders rapidly, jittering. A soft red X overlays the motion. Then everything stills."
+  },
+  {
+    "id": "s1_b14",
+    "text": "The trick is to think first. Then press play.",
+    "visual": "A cursor hovers calmly over the Play button without pressing it. A small thought bubble forms above the canvas, holding empty for a moment."
+  },
+  {
+    "id": "s1_b15",
+    "text": "Your first prediction will probably be wrong. That's not a problem. That's the point.",
+    "visual": "Split frame. Left: 'Predicted: 30s.' Right: 'Actual: 75s.' A neutral marker — neither red nor green, just a quiet checkmark — appears between them."
+  },
+  {
+    "id": "s1_b16",
+    "text": "Wrong is where the learning lives. Each miss tells you which lever you misjudged.",
+    "visual": "Three rows of 'predicted vs actual' appear in sequence. Row one: gap of 45 seconds. Row two: gap of 15 seconds. Row three: gap of 2 seconds. The gap visibly shrinks down the column."
+  },
+  {
+    "id": "s1_b17",
+    "text": "By the third try, your prediction will be close.",
+    "visual": "Hold on the third row of the table. 'Predicted: 58s, actual: 60s.' A soft glow surrounds the numbers."
+  },
+  {
+    "id": "s1_b18",
+    "text": "Not because you memorized anything. Because you built a feeling for what gravity does.",
+    "visual": "Two side-by-side icons: an equation symbol on the left, faded and gray; a hand resting on a slider on the right, brightening. The hand icon glows softly."
+  },
+  {
+    "id": "s1_b19",
+    "text": "And after the three tries — one last thing.",
+    "visual": "All three attempt dots are now filled: ● ● ●. The control panel quietly dims. A new text box begins to slide into focus from below."
+  },
+  {
+    "id": "s1_b20",
+    "text": "Write down, in your own words, what you understand about gravity now that you didn't understand before.",
+    "visual": "The final reflection text box fills the center of the frame. The prompt is clear: 'In your own words — what did you learn about gravity that you didn't know before?' A cursor blinks in the empty field."
+  },
+  {
+    "id": "s1_b21",
+    "text": "No right answer. Just what you saw.",
+    "visual": "Hold on the empty field. The cursor blinks steadily. The rest of the page softens into dim focus around it."
+  },
+  {
+    "id": "s1_b22",
+    "text": "That sentence is the real homework. Everything else was practice for it.",
+    "visual": "The cursor blinks once more. The full homework page comes back into soft focus behind the text box, with the canvas, sliders, and Play button all visible but quiet."
+  },
+  {
+    "id": "s1_b23",
+    "text": "So. Look at the sliders. Look at the rocks. Imagine what they're about to do.",
+    "visual": "The homework interface returns to full clarity. The two rocks sit at their starting positions. The sliders are at their defaults. The Play button waits, untouched."
+  },
+  {
+    "id": "s1_b24",
+    "text": "Then write it down. And see how close you got.",
+    "visual": "A cursor reaches into the prediction text box. A character or two begin to appear in the empty field, just enough to show the act of writing has started."
+  },
+  {
+    "id": "s1_b25",
+    "text": "Welcome to running your own universe.",
+    "visual": "Pull back to show the full interface, alive and ready. The two rocks float in their starting positions. The cursor blinks once on the prediction field. Hold. Fade."
+  }
+]

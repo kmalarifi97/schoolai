@@ -1,0 +1,164 @@
+{
+  "kind": "project-story",
+  "order": 1,
+  "slug": "skatepark",
+  "project_en": "The Ramp That Kept Lying to Him — a Skate Park Energy Audit",
+  "project_ar": "المنحدر الذي ظلّ يكذب عليه — تدقيق طاقة في حديقة التزلج",
+  "persona": "Faris — building a plywood launch ramp to clear a gap",
+  "phet_sim": "Energy Skate Park (phet.colorado.edu) — energy bar chart on",
+  "concepts_combined": ["17_gravpe", "13_cars (kinetic energy)", "20_pendulum (conservation of mechanical energy)", "12_workenergy (work against friction → thermal)"],
+  "ending_hint": "Diegetic callback to the concept-spark videos (book on the shelf, the cart, the pendulum) — the hint IS the last movement of the story.",
+  "tone": "Silence is content. Kitchen-table-warm. A story we watch, not a lecture. Pure #000000 void, font=sans. English voice, فصحى Arabic subtitles.",
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Faris built a ramp out of plywood. A launch on one side, a gap, a landing on the other.",
+      "text_ar": "بنى فارس منحدرًا من ألواح الخشب. منصّةُ انطلاقٍ في جهة، وفجوة، ومهبطٌ في الجهة الأخرى.",
+      "visual": "Side view, pure void. A simple plywood launch ramp left, a gap, a lower landing ramp right. Faris a minimal figure beside it."
+    },
+    {
+      "id": "s1_b2",
+      "text": "One goal. Clear the gap. Land clean on the far side.",
+      "text_ar": "هدفٌ واحد. اجتيازُ الفجوة. وهبوطٌ نظيفٌ على الجهة المقابلة.",
+      "visual": "A dotted ideal arc drawn from launch lip to landing. Calm, single line."
+    },
+    {
+      "id": "s1_b3",
+      "text": "He starts low. He doesn't make it. He falls into the gap.",
+      "text_ar": "يبدأ من ارتفاعٍ منخفض. لا يصل. يسقط في الفجوة.",
+      "visual": "Low start point on the ramp; the board's arc falls short into the gap. A small, quiet fail."
+    },
+    {
+      "id": "s1_b4",
+      "text": "So he builds the launch higher. Now he overshoots — flies past the landing, and crashes.",
+      "text_ar": "فيرفع منصّة الانطلاق. الآن يتجاوز الهدف — يطير بعيدًا عن المهبط، ويرتطم.",
+      "visual": "Start point raised; arc now overshoots far past the landing ramp."
+    },
+    {
+      "id": "s1_b5",
+      "text": "He lowers it a little. Short again.",
+      "text_ar": "يخفضه قليلًا. قصيرٌ من جديد.",
+      "visual": "Start lowered a notch; arc falls just short. The trial-and-error loop is forming."
+    },
+    {
+      "id": "s1_b6",
+      "text": "He decides the wood is the problem. He sands it smooth. He waxes it.",
+      "text_ar": "يقرّر أنّ الخشب هو المشكلة. يصقله حتى يَنعَم. ويطليه بالشمع.",
+      "visual": "Close on the ramp surface going from rough texture to smooth, glinting."
+    },
+    {
+      "id": "s1_b7",
+      "text": "Same height as before. But now he flies further — and overshoots again. The same ramp gave him two different answers.",
+      "text_ar": "الارتفاع نفسه كما كان. لكنّه الآن يطير أبعد — ويتجاوز الهدف ثانية. المنحدر نفسه أعطاه إجابتين مختلفتين.",
+      "visual": "Two overlaid arcs from the SAME start height: yesterday's shorter (rough), today's longer (waxed). A faint question mark between them."
+    },
+    {
+      "id": "s1_b8",
+      "text": "He raises, lowers, sands, guesses. He is almost out of plywood, and out of patience.",
+      "text_ar": "يرفع، ويخفض، ويصقل، ويُخمّن. كاد ينفد منه الخشب، ونفد منه الصبر.",
+      "visual": "Quick montage of start-height markers jittering up and down; a dwindling stack of plywood."
+    },
+    {
+      "id": "s1_b9",
+      "text": "The ramp keeps lying to him. Same setup, different result. He can't see the rule underneath.",
+      "text_ar": "يظلّ المنحدر يكذب عليه. الإعدادُ نفسه، والنتيجةُ مختلفة. لا يرى القاعدة الكامنة تحته.",
+      "visual": "Faris sitting beside the ramp, still. The two contradicting arcs hang faintly above him. A held, quiet beat."
+    },
+    {
+      "id": "s1_b10",
+      "text": "But he was never short of wood. He was short of a model.",
+      "text_ar": "لكنّه لم يكن ينقصه الخشب قط. كان ينقصه نموذج.",
+      "visual": "The plywood stack fades. The word-free idea: the arcs remain, waiting to be explained."
+    },
+    {
+      "id": "s1_b11",
+      "text": "Every failed run was energy he didn't count. The height he started from — that became his speed at the bottom.",
+      "text_ar": "كلُّ محاولةٍ فاشلةٍ كانت طاقةً لم يحسبها. الارتفاعُ الذي انطلق منه — تحوّل إلى سرعته في الأسفل.",
+      "visual": "Start height shown as a tall 'stored' bar; as the board descends, that bar pours into a 'speed' bar at the ramp bottom."
+    },
+    {
+      "id": "s1_b12",
+      "text": "And the rough wood quietly ate some of it — turned it into heat. Wax the ramp, less is eaten, he goes further.",
+      "text_ar": "والخشبُ الخشنُ كان يلتهم جزءًا منها بهدوء — يحوّله إلى حرارة. وحين يُطلى بالشمع، يُلتهَمُ أقلّ، فيقطعُ مسافةً أبعد.",
+      "visual": "Same pour, but a thin stream siphons off into a faint 'heat' shimmer at the rough surface; on the waxed surface that stream is much thinner."
+    },
+    {
+      "id": "s1_b13",
+      "text": "Same height, two answers — because friction was a term he never wrote down.",
+      "text_ar": "الارتفاعُ نفسه، وإجابتان — لأنّ الاحتكاك كان حدًّا لم يدوّنه قط.",
+      "visual": "The two arcs return, now each tagged with its heat-loss size. The mystery resolves into a missing term."
+    },
+    {
+      "id": "s1_b14",
+      "text": "So before he touches the real ramp again — he tests it somewhere he can see the energy.",
+      "text_ar": "لذا، قبل أن يلمس المنحدر الحقيقي مجددًا — يختبره في مكانٍ يرى فيه الطاقة.",
+      "visual": "The scene resolves into the Energy Skate Park layout: a track shaped like his ramp, and a stacked energy bar-chart panel."
+    },
+    {
+      "id": "s1_b15",
+      "text": "Energy Skate Park. He builds his ramp's shape into the track. Turns the energy bars on.",
+      "text_ar": "محاكاة «حديقة التزلج». يبني شكل منحدره داخل المسار. ويُشغّل أعمدة الطاقة.",
+      "visual": "The PhET track taking his ramp's profile; the bar chart (potential / kinetic / thermal / total) appears beside it."
+    },
+    {
+      "id": "s1_b16",
+      "text": "Here is the real job. Not pressing play. Predicting — before he does.",
+      "text_ar": "هنا تكمن المهمّةُ الحقيقيّة. ليست الضغط على التشغيل. بل التنبّؤ — قبل أن يفعل.",
+      "visual": "A finger hovering over a play button, deliberately not pressing. The bars sit at their start state."
+    },
+    {
+      "id": "s1_b17",
+      "text": "How fast at the bottom. How high on the far side. Worked out from the energy — start height, minus what friction takes.",
+      "text_ar": "ما سرعتُه في الأسفل. وما ارتفاعُه في الجهة المقابلة. محسوبًا من الطاقة — ارتفاعُ البداية، ناقصًا ما يأخذه الاحتكاك.",
+      "visual": "Three blanks to fill before the run: v_bottom = ?, h_far = ?, with a small 'PE − heat → KE' relation sketched, numbers left open."
+    },
+    {
+      "id": "s1_b18",
+      "text": "Then he presses play. And he watches the bars, not the skater.",
+      "text_ar": "ثمّ يضغط على التشغيل. ويراقب الأعمدة، لا المتزلّج.",
+      "visual": "The skater runs; camera stays on the bar chart — potential shrinking, kinetic rising, thermal creeping up, total flat."
+    },
+    {
+      "id": "s1_b19",
+      "text": "After — he explains the gap. If he said this and the bars said that: which lever did he misjudge? The height? The friction?",
+      "text_ar": "بعد ذلك — يفسّر الفجوة. إن قال هذا وقالت الأعمدةُ ذاك: أيُّ عاملٍ أساء تقديره؟ الارتفاع؟ أم الاحتكاك؟",
+      "visual": "His prediction and the sim's result side by side; the difference highlighted, two suspects labeled 'height' and 'friction'."
+    },
+    {
+      "id": "s1_b20",
+      "text": "He adjusts the friction. Predicts again. Three runs. That's all he gets.",
+      "text_ar": "يضبط الاحتكاك. ويتنبّأ مجددًا. ثلاث محاولات. هذا كلّ ما لديه.",
+      "visual": "A friction slider nudged; '3 runs' counter. No random clicking — each run deliberate."
+    },
+    {
+      "id": "s1_b21",
+      "text": "His first prediction is wrong. That is not the problem. That is the point. Each miss tells him which energy he forgot.",
+      "text_ar": "تنبّؤه الأول خاطئ. ليست تلك هي المشكلة. تلك هي الغاية. كلُّ إخفاقٍ يخبره أيَّ طاقةٍ نسي.",
+      "visual": "Run 1 miss, run 2 closer, run 3 close — the prediction line converging onto the sim's bars."
+    },
+    {
+      "id": "s1_b22",
+      "text": "Now he builds the real ramp. Once. And the landing is clean.",
+      "text_ar": "الآن يبني المنحدر الحقيقي. مرّةً واحدة. ويأتي الهبوطُ نظيفًا.",
+      "visual": "Back to the plywood scene. One start height, set with intent. The board arcs and lands clean on the far ramp."
+    },
+    {
+      "id": "s1_b23",
+      "text": "The clean landing was never the homework. This is: in one sentence, your own words — why did the same ramp give two answers, and which energy did he keep forgetting?",
+      "text_ar": "لم يكن الهبوطُ النظيف هو الواجب قط. الواجبُ هو هذا: في جملةٍ واحدةٍ، بكلماتك أنت — لماذا أعطى المنحدرُ نفسُه إجابتين، وأيَّ طاقةٍ ظلّ ينساها؟",
+      "visual": "The ramp holds, still. An empty line waits for the student's own sentence. Silence."
+    },
+    {
+      "id": "s1_b24",
+      "text": "And if all of this felt familiar — it should. Do you remember the book that sat still on the shelf, holding energy it hadn't spent? The cart that turned a push into speed? The pendulum that never lost a thing — until something quietly took it?",
+      "text_ar": "وإن بدا لك كلُّ هذا مألوفًا — فحُقَّ له. أتذكرُ الكتابَ الذي استقرَّ ساكنًا على الرفّ، يحملُ طاقةً لم يُنفقها؟ والعربةَ التي حوّلت دفعةً إلى سرعة؟ والبندولَ الذي لم يفقد شيئًا قط — حتى أخذ منه شيءٌ ما بهدوء؟",
+      "visual": "Three faint callbacks flicker in the void in turn: the book on a shelf, the rolling cart, the swinging pendulum — the exact images from those concept videos."
+    },
+    {
+      "id": "s1_b25",
+      "text": "This ramp was all of them, at once. That is the concept. Now you know which videos to go back to.",
+      "text_ar": "كان هذا المنحدرُ كلَّها، في آنٍ واحد. تلك هي الفكرة. الآن تعرفُ إلى أيِّ مقاطعَ تعود.",
+      "visual": "The three callback images converge into the single ramp+energy-bar image, then hold. The hint, complete. Stillness. [Hold 3s in silence]"
+    }
+  ]
+}

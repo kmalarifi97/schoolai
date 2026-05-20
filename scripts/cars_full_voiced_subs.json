@@ -1,0 +1,142 @@
+[
+  {
+    "id": "s1_b1",
+    "text": "Two cars. Same model. Same road.",
+    "visual": "Side view of a highway. Two identical cars sit at the start of the frame, one slightly behind the other."
+  },
+  {
+    "id": "s1_b2",
+    "text": "The first one is doing sixty. The second one is doing a hundred and twenty. Twice the speed.",
+    "visual": "Both cars begin moving. A speedometer overlays each: '60 km/h' above the first, '120 km/h' above the second. The second car pulls ahead noticeably."
+  },
+  {
+    "id": "s1_b3",
+    "text": "Common sense: twice the speed, twice the danger. Right?",
+    "visual": "The two speedometers freeze side by side. A scale icon appears between them, balanced evenly. A small label: '2× speed = 2× danger?'"
+  },
+  {
+    "id": "s1_b4",
+    "text": "Wrong.",
+    "visual": "The scale tips violently to one side. The label crosses out."
+  },
+  {
+    "id": "s1_b5",
+    "text": "Four times.",
+    "visual": "The number '4×' fades in large in the center of the frame, then dims."
+  },
+  {
+    "id": "s1_b6",
+    "text": "Not a little more. Not a bit more. Four times the energy slamming into whatever you hit.",
+    "visual": "The two cars from earlier appear again, but this time with energy bars above each. The 60 km/h car's bar is short. The 120 km/h car's bar is four times as tall."
+  },
+  {
+    "id": "s1_b7",
+    "text": "That doesn't match common sense. So let's leave cars for a minute. Stand on a wall.",
+    "visual": "The cars fade out. A simple side-view illustration appears: a person standing on top of a low wall, ground beneath them."
+  },
+  {
+    "id": "s1_b8",
+    "text": "The wall is one meter high. Jump down.",
+    "visual": "A dashed line shows the wall's height labeled '1 m.' The figure hops off and lands on the ground with a small impact ring."
+  },
+  {
+    "id": "s1_b9",
+    "text": "Your knees take it. No big deal. You've done it a hundred times.",
+    "visual": "The figure walks away casually. A green checkmark briefly pulses near them."
+  },
+  {
+    "id": "s1_b10",
+    "text": "Now make the wall four meters.",
+    "visual": "The wall stretches upward dramatically. The dashed height label changes from '1 m' to '4 m.' The figure stands at the top, much higher than before."
+  },
+  {
+    "id": "s1_b11",
+    "text": "Stop. Don't jump. Think first.",
+    "visual": "The figure hesitates at the edge of the 4-meter wall. The frame holds still."
+  },
+  {
+    "id": "s1_b12",
+    "text": "Four times higher. So… four times harder to land? That's what common sense says.",
+    "visual": "Two stick figures appear side by side: one standing under a '1 m' marker, one under a '4 m' marker. A scale shows '4×' between them."
+  },
+  {
+    "id": "s1_b13",
+    "text": "But you can feel in your stomach that it's worse than that. Way worse.",
+    "visual": "A faint red glow pulses around the 4-meter figure. A small thought bubble shows a knee with a sharp pain indicator."
+  },
+  {
+    "id": "s1_b14",
+    "text": "Your stomach is right. Jumping from four meters isn't four times worse than from one. It's sixteen times worse.",
+    "visual": "The '4×' label gets crossed out. A new label fades in larger: '16×.' The red glow around the 4-meter figure intensifies."
+  },
+  {
+    "id": "s1_b15",
+    "text": "From one meter — your knees absorb it. From four meters — you break your legs.",
+    "visual": "Side-by-side outcomes: the 1-meter jumper walks away with a green checkmark. The 4-meter jumper is on the ground with red impact lines around their legs."
+  },
+  {
+    "id": "s1_b16",
+    "text": "What happened? You only raised the height by four. The damage went up by sixteen.",
+    "visual": "An arrow on the left side shows height multiplied by 4. An arrow on the right shows damage multiplied by 16. The two arrows are visibly different sizes."
+  },
+  {
+    "id": "s1_b17",
+    "text": "Because falling further means landing faster. And the energy your body has when you land doesn't grow with speed. It grows with speed squared.",
+    "visual": "A simple graph appears. X-axis labeled 'speed.' Y-axis labeled 'energy.' A straight diagonal line is drawn — then erased. A steep upward curve replaces it."
+  },
+  {
+    "id": "s1_b18",
+    "text": "Double your landing speed — four times the impact. Triple it — nine times. The number on top is a power, not a multiplier.",
+    "visual": "Three columns rise from the floor: speed ×1 → impact ×1, speed ×2 → impact ×4, speed ×3 → impact ×9. Each column is much taller than expected."
+  },
+  {
+    "id": "s1_b19",
+    "text": "Physics writes it like this.",
+    "visual": "The equation fades in elegantly in the center of the frame: KE = ½ m v²"
+  },
+  {
+    "id": "s1_b20",
+    "text": "Most of the symbols are boring. Mass. A half. The one that matters is the little two on top of the v.",
+    "visual": "The 'm' and '½' fade to gray. The 'v²' glows. A small arrow points to the '²' exponent."
+  },
+  {
+    "id": "s1_b21",
+    "text": "That little two is the reason a four-meter fall is sixteen times worse than a one-meter fall.",
+    "visual": "Callback split. Left: the 1-meter jumper walking away. Right: the 4-meter jumper on the ground. The '²' from the equation hovers between them, glowing."
+  },
+  {
+    "id": "s1_b22",
+    "text": "Now. Back to the cars.",
+    "visual": "The fall scenes dissolve. The two cars from the opening return, side by side on the road."
+  },
+  {
+    "id": "s1_b23",
+    "text": "Sixty to a hundred and twenty isn't doubling the danger. It's the four-meter wall instead of the one-meter wall. Same body. Same physics.",
+    "visual": "Above each car, a wall fades in: a 1-meter wall above the 60 km/h car, a 4-meter wall above the 120 km/h car. The figure on each wall mirrors the earlier illustration."
+  },
+  {
+    "id": "s1_b24",
+    "text": "Hit a wall at sixty — your car crumples. You might walk out.",
+    "visual": "The 60 km/h car collides with a barrier. The front crumples. A figure steps out of the door."
+  },
+  {
+    "id": "s1_b25",
+    "text": "Hit the same wall at a hundred and twenty — four times the energy has to go somewhere. It goes into the car. And what's left of you.",
+    "visual": "The 120 km/h car collides with the same barrier. The entire car deforms severely. No figure emerges. The frame holds, sober."
+  },
+  {
+    "id": "s1_b26",
+    "text": "It's not the speedometer that kills people. It's the little two.",
+    "visual": "Close-up of a speedometer needle climbing past 120. The '²' from the equation appears as a faint ghost overlay on the dial."
+  },
+  {
+    "id": "s1_b27",
+    "text": "Twice as fast is never twice as bad. It's four times. Every time. No exceptions.",
+    "visual": "A simple final image: two cars side by side at rest. Above the slower one, a small energy bar. Above the faster one, a bar four times as tall. Hold."
+  },
+  {
+    "id": "s1_b28",
+    "text": "So next time you press the accelerator — you're not adding speed. You're squaring it.",
+    "visual": "First-person view from inside a car. A hand on a steering wheel. A foot presses the accelerator pedal. The speedometer climbs. As it climbs, the '²' faintly glows on the dial."
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "order": 1,
+  "slug": "gravitation",
+  "concept_en": "Kepler's Laws → Newton's Universal Gravitation",
+  "concept_ar": "قوانين كبلر وقانون الجذب الكوني",
+  "status": "shipped-external",
+  "source": "gravity2_full_voiced.mp4 / .json — archived at ~/school-ai/, not in this library. Pull in for completeness.",
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 1,
+    "chapter_title_en": "Gravitation",
+    "chapter_title_ar": "الجاذبية",
+    "lesson": "1-1",
+    "lesson_title_en": "Planetary Motion and Gravitation",
+    "lesson_title_ar": "حركة الكواكب والجاذبية",
+    "pages": "9-17",
+    "start_page": 9,
+    "end_page": 17,
+    "lesson_objectives": [
+      "الربط بين قوانين كبلر وقانون الجذب الكوني",
+      "حساب الزمن الدوري ومقدار السرعة المدارية",
+      "وصف أهمية تجربة كافندش"
+    ],
+    "lesson_key_terms": [
+      "القانون الأول لكبلر",
+      "القانون الثاني لكبلر",
+      "القانون الثالث لكبلر",
+      "قوة الجاذبية",
+      "قانون الجذب الكوني (العام)"
+    ]
+  },
+  "video": {
+    "target_filename": "gravitation_full_voiced_subs.mp4",
+    "status": "shipped externally — see source field, not in this repo"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": []
+}

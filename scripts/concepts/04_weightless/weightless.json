@@ -1,0 +1,108 @@
+{
+  "order": 4,
+  "slug": "weightless",
+  "concept_en": "Weightlessness & Free Fall (orbit as perpetual falling)",
+  "concept_ar": "انعدام الوزن والسقوط الحر",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 1,
+    "chapter_title_en": "Gravitation",
+    "chapter_title_ar": "الجاذبية",
+    "lesson": "1-2",
+    "lesson_title_en": "Using the Law of Universal Gravitation",
+    "lesson_title_ar": "استخدام قانون الجذب الكوني",
+    "pages": "18-35",
+    "start_page": 18,
+    "end_page": 35,
+    "lesson_objectives": [
+      "حل مسائل على الحركة المدارية",
+      "ربط انعدام الوزن بأجسام في حالة سقوط حر",
+      "وصف مجال الجاذبية",
+      "المقارنة بين كتلة القصور وكتلة الجاذبية",
+      "المقارنة بين وجهتي نظر نيوتن وآينشتاين حول الجاذبية"
+    ],
+    "lesson_key_terms": [
+      "مجال الجاذبية",
+      "كتلة القصور",
+      "كتلة الجاذبية",
+      "مبدأ التكافؤ"
+    ]
+  },
+  "video": {
+    "target_filename": "weightless_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Astronauts float. The easy explanation: there's no gravity up there.",
+      "visual": "An astronaut drifting beside a space station, Earth large below."
+    },
+    {
+      "id": "s1_b2",
+      "text": "That explanation is wrong. At the space station's height, Earth's gravity is almost as strong as it is on the ground.",
+      "visual": "The station's orbit drawn close to Earth; a gravity arrow at that height nearly as long as one at the surface."
+    },
+    {
+      "id": "s1_b3",
+      "text": "So if gravity is still pulling them — why don't they feel it?",
+      "visual": "The floating astronaut, a question mark beside them."
+    },
+    {
+      "id": "s1_b4",
+      "text": "Go back to Earth. An elevator. You stand on a scale. It reads your weight.",
+      "visual": "A person on a bathroom scale inside an elevator box; the scale shows a number."
+    },
+    {
+      "id": "s1_b5",
+      "text": "Now cut the cable. Elevator, scale, and you — all falling together.",
+      "visual": "The cable snaps; the whole box falls; the scale reading drops to zero."
+    },
+    {
+      "id": "s1_b6",
+      "text": "The scale reads zero. Not because gravity stopped. Because the floor is falling away exactly as fast as you are.",
+      "visual": "Person and scale falling in lockstep; the floor never pushes back. Bold 'ZERO'. [Hold 2s in silence]"
+    },
+    {
+      "id": "s1_b7",
+      "text": "That's weightlessness. Not the absence of gravity. The absence of anything pushing back.",
+      "visual": "The phrase fades: 'no push back'. The falling box continues."
+    },
+    {
+      "id": "s1_b8",
+      "text": "Now the trick. Throw a ball. It curves down and hits the ground.",
+      "visual": "A short flat throw from a hilltop; ball arcs into the ground."
+    },
+    {
+      "id": "s1_b9",
+      "text": "Throw it harder. It lands farther. Harder still — farther still.",
+      "visual": "Progressively longer arcs around a curved Earth surface."
+    },
+    {
+      "id": "s1_b10",
+      "text": "Throw it fast enough—about eight kilometers per second—and the ground curves away beneath it just as fast as it falls. It keeps falling, and never lands.",
+      "visual": "The arc closes into a full circle around the Earth; a faint speed indicator '~8 km/s' appears briefly."
+    },
+    {
+      "id": "s1_b11",
+      "text": "That's an orbit. The station isn't escaping gravity. It's falling around the Earth, forever, missing the ground.",
+      "visual": "The space station tracing the same circular fall, astronaut floating inside it."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Falling, with nothing to push back. How fast must you go to keep missing the ground? Set falling equal to curving — and solve.",
+      "visual": "The orbit holds; a clean labeled circle, the speed left as an open symbol 'v = ?'."
+    }
+  ]
+}

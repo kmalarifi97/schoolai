@@ -1,0 +1,110 @@
+{
+  "order": 24,
+  "slug": "specificheat",
+  "concept_en": "Specific Heat",
+  "concept_ar": "الحرارة النوعية",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 6,
+    "chapter_title_en": "Thermal Energy",
+    "chapter_title_ar": "الطاقة الحرارية",
+    "lesson": "6-1",
+    "lesson_title_en": "Temperature and Thermal Energy",
+    "lesson_title_ar": "درجة الحرارة والطاقة الحرارية",
+    "pages": "165-177",
+    "start_page": 165,
+    "end_page": 177,
+    "lesson_objectives": [
+      "وصف الطاقة الحرارية ومقارنتها بطاقة الوضع والطاقة الحركية",
+      "التمييز بين درجة الحرارة والطاقة الحرارية",
+      "تعرف الحرارة النوعية",
+      "حساب الحرارة المنتقلة"
+    ],
+    "lesson_key_terms": [
+      "الطاقة الحرارية",
+      "التوصيل الحراري",
+      "الاتزان الحراري",
+      "الحرارة",
+      "الحمل الحراري",
+      "الإشعاع الحراري",
+      "الحرارة النوعية"
+    ]
+  },
+  "video": {
+    "target_filename": "specificheat_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Same flame. Same time. Under one pot of water — and one pot of cooking oil.",
+      "visual": "Two identical pots on identical flames, one water, one oil, same clock."
+    },
+    {
+      "id": "s1_b2",
+      "text": "Equal heat poured into each. But the oil is scorching while the water is merely warm.",
+      "visual": "Two thermometers: oil's risen far higher than water's, same time elapsed."
+    },
+    {
+      "id": "s1_b3",
+      "text": "Same energy in. Wildly different temperature out. Why does water resist heating up?",
+      "visual": "Equal 'energy in' bars, very unequal temperature rises; question mark."
+    },
+    {
+      "id": "s1_b4",
+      "text": "Some substances soak up a lot of energy for only a small rise in temperature.",
+      "visual": "A 'sponge' metaphor: water absorbing a big energy bar, its thermometer barely moving."
+    },
+    {
+      "id": "s1_b5",
+      "text": "Others heat fast — a little energy sends their temperature shooting up.",
+      "visual": "The oil taking a small energy bar, thermometer leaping; metal doing the same, even faster."
+    },
+    {
+      "id": "s1_b6",
+      "text": "That stubbornness — how much energy one gram needs to warm by one degree — is the specific heat.",
+      "visual": "A clean label: 'specific heat = energy to raise 1 g by 1°'; a tiny gram cube warming."
+    },
+    {
+      "id": "s1_b7",
+      "text": "Water's is famously huge. It's one of the hardest common things to heat — and to cool.",
+      "visual": "A bar chart: water's specific-heat bar towering over oil, sand, iron."
+    },
+    {
+      "id": "s1_b8",
+      "text": "That's why the sea is mild while the desert sand next to it bakes by noon and freezes by night.",
+      "visual": "Coast scene: calm steady sea temperature; beside it sand swinging hot-to-cold."
+    },
+    {
+      "id": "s1_b9",
+      "text": "It's why water cools an engine, why a hot-water bottle stays warm for hours.",
+      "visual": "Coolant circulating through an engine; a water bottle holding its warmth on a clock."
+    },
+    {
+      "id": "s1_b10",
+      "text": "And it's why your own body, mostly water, holds a steady temperature through a changing day.",
+      "visual": "A figure outdoors, environment temperature swinging, body temperature a flat line."
+    },
+    {
+      "id": "s1_b11",
+      "text": "Heat needed depends on three things: the substance, how much of it, and how big a rise you want.",
+      "visual": "Three dials: material (specific heat), mass, temperature change — feeding one 'heat' total."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Computing the heat needed from the specific heat, the mass, and the temperature change — that's yours.",
+      "visual": "Clean: 'heat = (specific heat) × mass × (temperature change)', values left open. Holds."
+    }
+  ]
+}

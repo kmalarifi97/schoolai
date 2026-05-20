@@ -1,0 +1,442 @@
+<!doctype html><html lang="ar" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مكتبة الفيزياء ٢ — شاهد الفكرة، ثمّ حُلّ بنفسك</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;600;700&family=Noto+Naskh+Arabic:wght@400;500;700&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--void:#000;--ink:#ECE6DA;--dim:#8C8576;--line:rgba(236,230,218,.10);
+--amber:#E2A86A;--amber-2:#caa06a;--blue:#6E97B8;--card:#0a0a0a;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--void);color:var(--ink);font-family:"Noto Naskh Arabic",serif;
+line-height:1.85;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.035;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px;position:relative;z-index:2}
+h1,h2,h3,h4,.chapter__n,.lesson__id{font-family:"Reem Kufi",sans-serif;font-weight:600;line-height:1.3}
+/* hero */
+.hero{min-height:96vh;display:flex;flex-direction:column;justify-content:center;
+padding:120px 0 80px;position:relative}
+.hero::after{content:"";position:absolute;inset-inline:0;bottom:14vh;height:1px;
+background:linear-gradient(90deg,transparent,var(--line) 30%,var(--line) 70%,transparent)}
+.kicker{font-family:"Reem Kufi";letter-spacing:.35em;color:var(--amber);font-size:.78rem;
+margin-bottom:30px;opacity:0;animation:up .9s .1s forwards}
+.hero h1{font-size:clamp(2.8rem,8vw,6.2rem);font-weight:700;letter-spacing:-.01em;
+opacity:0;animation:up 1s .25s forwards}
+.hero h1 .am{font-family:"Amiri",serif;font-style:italic;color:var(--amber)}
+.hero p{max-width:48ch;margin-top:30px;color:var(--dim);font-size:1.12rem;
+opacity:0;animation:up 1s .5s forwards}
+.hero .meta{margin-top:46px;display:flex;gap:34px;flex-wrap:wrap;color:var(--dim);
+font-size:.85rem;font-family:"Reem Kufi";letter-spacing:.04em;
+opacity:0;animation:up 1s .7s forwards}
+.hero .meta b{color:var(--ink);font-size:1.5rem;display:block;font-weight:700}
+@keyframes up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+/* chapter */
+.chapter{padding:88px 0;border-top:1px solid var(--line)}
+.chapter__h{display:flex;align-items:flex-start;gap:26px;margin-bottom:54px}
+.chapter__n{font-size:3.2rem;color:var(--amber);line-height:1;opacity:.85;
+font-variant-numeric:tabular-nums}
+.chapter__h h2{font-size:clamp(1.8rem,4vw,2.7rem)}
+.chapter__en{color:var(--dim);font-family:"Reem Kufi";letter-spacing:.16em;
+font-size:.74rem;text-transform:uppercase}
+.lesson{margin:0 0 56px}
+.lesson__head{display:flex;align-items:center;gap:18px;margin:0 0 26px;
+padding-bottom:14px;border-bottom:1px solid var(--line)}
+.lesson__id{font-size:.92rem;color:var(--void);background:var(--amber);
+padding:5px 12px;border-radius:2px;letter-spacing:.05em}
+.lesson__head h3{font-size:1.4rem}
+.lesson__en{color:var(--dim);font-size:.78rem;font-family:"Reem Kufi";letter-spacing:.05em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:4px;
+padding:22px;display:flex;flex-direction:column;gap:13px;min-height:208px;
+transition:border-color .4s,transform .4s,background .4s}
+.card:hover{border-color:rgba(226,168,106,.5);transform:translateY(-3px);background:#0d0c0a}
+.card--ext{opacity:.5}
+.card__top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.card__id{font-family:"Reem Kufi";font-size:.66rem;letter-spacing:.12em;
+text-transform:uppercase;color:var(--dim);text-align:left}
+.card h4{font-size:1.3rem;color:var(--ink)}
+.handoff{font-family:"Amiri",serif;font-style:italic;color:var(--amber-2);
+font-size:.95rem;line-height:1.7;opacity:.82;flex:1}
+.card__foot{display:flex;gap:8px;align-items:center}
+.chip{font-family:"Reem Kufi";font-size:.68rem;letter-spacing:.05em;color:var(--dim);
+border:1px solid var(--line);padding:3px 10px;border-radius:999px}
+.chip--c{color:var(--amber-2);border-color:rgba(226,168,106,.28)}
+.ext{font-family:"Reem Kufi";font-size:.7rem;color:var(--dim)}
+.play{width:46px;height:46px;border-radius:50%;border:1px solid rgba(226,168,106,.45);
+background:transparent;color:var(--amber);font-size:.8rem;cursor:pointer;
+display:grid;place-items:center;transition:all .35s;flex:none}
+.play:hover{background:var(--amber);color:var(--void);transform:scale(1.08)}
+.play--lg{width:auto;height:auto;border-radius:999px;padding:11px 22px;
+font-family:"Reem Kufi";font-size:.84rem;letter-spacing:.04em}
+/* projects */
+.lab{padding:96px 0;border-top:1px solid var(--line)}
+.lab__h{text-align:center;margin-bottom:60px}
+.lab__h h2{font-size:clamp(2rem,5vw,3rem)}
+.lab__h .am{font-family:"Amiri",serif;font-style:italic;color:var(--amber)}
+.lab__h p{color:var(--dim);margin-top:14px}
+.plist{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:20px}
+.pcard{background:linear-gradient(180deg,#0c0b09,#070707);border:1px solid var(--line);
+border-radius:5px;padding:30px;display:flex;flex-direction:column;gap:14px;
+transition:border-color .4s,transform .4s}
+.pcard:hover{border-color:rgba(110,151,184,.45);transform:translateY(-3px)}
+.pcard__sim{font-family:"Reem Kufi";font-size:.7rem;letter-spacing:.14em;
+text-transform:uppercase;color:var(--blue)}
+.pcard h3{font-size:1.42rem;line-height:1.45}
+.pcard__persona{color:var(--dim);font-size:.92rem}
+.pcard__chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:4px}
+.pcard__act{display:flex;gap:12px;align-items:center;margin-top:14px;flex-wrap:wrap}
+.phet{font-family:"Reem Kufi";font-size:.84rem;letter-spacing:.03em;color:var(--blue);
+border:1px solid rgba(110,151,184,.45);padding:11px 20px;border-radius:999px;
+text-decoration:none;transition:all .35s}
+.phet:hover{background:var(--blue);color:var(--void)}
+footer{border-top:1px solid var(--line);padding:60px 0 90px;color:var(--dim);
+font-size:.84rem;text-align:center;font-family:"Reem Kufi";letter-spacing:.04em}
+footer .am{font-family:"Amiri",serif;font-style:italic;color:var(--amber);font-size:1rem}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.94);
+display:none;place-items:center;padding:30px;backdrop-filter:blur(6px)}
+.lb.on{display:grid}
+.lb__in{width:min(960px,94vw)}
+.lb__t{font-family:"Reem Kufi";color:var(--amber);margin-bottom:14px;font-size:1.1rem}
+.lb video{width:100%;border-radius:5px;background:#000;display:block}
+.lb__x{position:absolute;top:24px;left:30px;background:none;border:1px solid var(--line);
+color:var(--ink);width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:1.1rem}
+.lb__x:hover{border-color:var(--amber);color:var(--amber)}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity 1s,transform 1s}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:640px){.chapter__h{gap:16px}.wrap{padding:0 18px}}
+</style></head><body>
+<div class="wrap">
+  <header class="hero">
+    <div class="kicker">الفيزياء ٢ · نظام المسارات · السنة الثانية</div>
+    <h1>شاهِد الفكرة.<br>ثمّ <span class="am">حُلَّ بنفسك.</span></h1>
+    <p>مكتبةٌ تُشعِل الفهم ثمّ تتنحّى. كلُّ مفهومٍ مقطعٌ قصيرٌ يبني الحدس ويتوقّف قبل المعادلة — لأنّ الحلّ مهمّتُك أنت. ثمّ ستةُ مشاريع تجمع المفاهيم معًا على مِحاكيات PhET.</p>
+    <div class="meta">
+      <span><b>26</b>مقطع مفهوم</span>
+      <span><b>6</b>مشروع تطبيقي</span>
+      <span><b>٦</b>فصول · 242 صفحة</span>
+      <span><b>AR</b>ترجمة فصحى مدمجة</span>
+    </div>
+  </header>
+
+  <section class="chapter reveal" id="ch1">
+      <header class="chapter__h">
+        <span class="chapter__n">١</span>
+        <div><h2>الجاذبية</h2><span class="chapter__en">Gravitation</span></div>
+      </header>
+      <div class="lesson">
+          <div class="lesson__head">
+            <span class="lesson__id">1-1</span>
+            <div><h3>حركة الكواكب والجاذبية</h3>
+            <span class="lesson__en">Planetary Motion and Gravitation · ص 9–17</span></div>
+          </div>
+          <div class="grid"><article class="card card--ext">
+      <div class="card__top"><span class="ext">مؤرشَف خارجيًّا</span><div class="card__id">Kepler&#x27;s Laws → Newton&#x27;s Universal Gravitation</div></div>
+      <h4>قوانين كبلر وقانون الجذب الكوني</h4>
+      <div class="card__foot"><span class="chip">ص 9-17</span></div>
+    </article><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/02_cavendish/cavendish_full_voiced_subs.mp4" data-title="تجربة كافندش — وزن الأرض" aria-label="تشغيل">▶</button><div class="card__id">The Cavendish Experiment — weighing the Earth</div></div>
+      <h4>تجربة كافندش — وزن الأرض</h4><p class="handoff">The fiber, the masses, the deflection — that&#x27;s the apparatus. Extracting the value of G from the measured twist, then using it to compute the Earth&#x27;s mass — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 9-17</span></div>
+    </article></div>
+        </div><div class="lesson">
+          <div class="lesson__head">
+            <span class="lesson__id">1-2</span>
+            <div><h3>استخدام قانون الجذب الكوني</h3>
+            <span class="lesson__en">Using the Law of Universal Gravitation · ص 18–35</span></div>
+          </div>
+          <div class="grid"><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/03_gfield/gfield_full_voiced_subs.mp4" data-title="مجال الجاذبية" aria-label="تشغيل">▶</button><div class="card__id">The Gravitational Field</div></div>
+      <h4>مجال الجاذبية</h4><p class="handoff">The field is the map of the influence. Computing the field strength at a given distance from a mass, and the force it puts on an object placed there — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 18-35</span></div>
+    </article><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/04_weightless/weightless_full_voiced_subs.mp4" data-title="انعدام الوزن والسقوط الحر" aria-label="تشغيل">▶</button><div class="card__id">Weightlessness &amp; Free Fall (orbit as perpetual falling)</div></div>
+      <h4>انعدام الوزن والسقوط الحر</h4><p class="handoff">Falling, with nothing to push back. How fast must you go to keep missing the ground? Set falling equal to curving — and solve.</p>
+      <div class="card__foot"><span class="chip">ص 18-35</span></div>
+    </article><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/05_equivalence/equivalence_full_voiced_subs.mp4" data-title="كتلة القصور وكتلة الجاذبية ومبدأ التكافؤ" aria-label="تشغيل">▶</button><div class="card__id">Inertial vs Gravitational Mass &amp; the Equivalence Principle</div></div>
+      <h4>كتلة القصور وكتلة الجاذبية ومبدأ التكافؤ</h4><p class="handoff">Two views of the same equal masses — one calls it luck, one calls it the door to a new theory. Which experiments would tell them apart? That&#x27;s the thinking we leave with you.</p>
+      <div class="card__foot"><span class="chip">ص 18-35</span></div>
+    </article></div>
+        </div>
+    </section><section class="chapter reveal" id="ch2">
+      <header class="chapter__h">
+        <span class="chapter__n">٢</span>
+        <div><h2>الحركة الدورانية</h2><span class="chapter__en">Rotational Motion</span></div>
+      </header>
+      <div class="lesson">
+          <div class="lesson__head">
+            <span class="lesson__id">2-1</span>
+            <div><h3>وصف الحركة الدورانية</h3>
+            <span class="lesson__en">Describing Rotational Motion · ص 37–41</span></div>
+          </div>
+          <div class="grid"><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/06_angular/angular_full_voiced_subs.mp4" data-title="وصف الحركة الدورانية" aria-label="تشغيل">▶</button><div class="card__id">Angular Motion — displacement, velocity, acceleration</div></div>
+      <h4>وصف الحركة الدورانية</h4><p class="handoff">Angle, rate of angle, change of that rate. Computing angular velocity and acceleration, then converting them to linear speed through the radius — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 37-41</span></div>
+    </article></div>
+        </div><div class="lesson">
+          <div class="lesson__head">
+            <span class="lesson__id">2-2</span>
+            <div><h3>ديناميكا الحركة الدورانية</h3>
+            <span class="lesson__en">Rotational Dynamics · ص 42–46</span></div>
+          </div>
+          <div class="grid"><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/07_torque/torque_full_voiced_subs.mp4" data-title="العزم وذراع القوة" aria-label="تشغيل">▶</button><div class="card__id">Torque &amp; the Lever Arm</div></div>
+      <h4>العزم وذراع القوة</h4><p class="handoff">Computing the torque from a given force and distance — and finding equilibrium when multiple torques act — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 42-46</span></div>
+    </article></div>
+        </div><div class="lesson">
+          <div class="lesson__head">
+            <span class="lesson__id">2-3</span>
+            <div><h3>الاتزان</h3>
+            <span class="lesson__en">Equilibrium · ص 47–65</span></div>
+          </div>
+          <div class="grid"><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/08_centerofmass/centerofmass_full_voiced_subs.mp4" data-title="مركز الكتلة والاتزان" aria-label="تشغيل">▶</button><div class="card__id">Center of Mass &amp; Stability</div></div>
+      <h4>مركز الكتلة والاتزان</h4><p class="handoff">Locating the center of mass of a given shape, and finding the maximum tilt before its vertical line leaves the base — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 47-65</span></div>
+    </article><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/09_fictitious/fictitious_full_voiced_subs.mp4" data-title="القوى الظاهرية: الطاردة المركزية وكوريوليس" aria-label="تشغيل">▶</button><div class="card__id">Fictitious Forces — Centrifugal &amp; Coriolis</div></div>
+      <h4>القوى الظاهرية: الطاردة المركزية وكوريوليس</h4><p class="handoff">These forces vanish the moment you step to the still ground. When do you need them, and how big are they? That&#x27;s the thinking to carry off.</p>
+      <div class="card__foot"><span class="chip">ص 47-65</span></div>
+    </article></div>
+        </div>
+    </section><section class="chapter reveal" id="ch3">
+      <header class="chapter__h">
+        <span class="chapter__n">٣</span>
+        <div><h2>الزخم وحفظه</h2><span class="chapter__en">Momentum and Its Conservation</span></div>
+      </header>
+      <div class="lesson">
+          <div class="lesson__head">
+            <span class="lesson__id">3-1</span>
+            <div><h3>الدفع والزخم</h3>
+            <span class="lesson__en">Impulse and Momentum · ص 67–73</span></div>
+          </div>
+          <div class="grid"><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/10_impulse/impulse_full_voiced_subs.mp4" data-title="نظرية الدفع والزخم" aria-label="تشغيل">▶</button><div class="card__id">Impulse–Momentum Theorem</div></div>
+      <h4>نظرية الدفع والزخم</h4><p class="handoff">Computing the impulse from a force acting over a time interval, and the change in momentum it produces — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 67-73</span></div>
+    </article></div>
+        </div><div class="lesson">
+          <div class="lesson__head">
+            <span class="lesson__id">3-2</span>
+            <div><h3>حفظ الزخم</h3>
+            <span class="lesson__en">Conservation of Momentum · ص 74–95</span></div>
+          </div>
+          <div class="grid"><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/11_momentumcons/momentumcons_full_voiced_subs.mp4" data-title="حفظ الزخم" aria-label="تشغيل">▶</button><div class="card__id">Conservation of Momentum</div></div>
+      <h4>حفظ الزخم</h4><p class="handoff">Setting total momentum before equal to total momentum after, and solving for an unknown velocity in a collision or recoil — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 74-95</span></div>
+    </article></div>
+        </div>
+    </section><section class="chapter reveal" id="ch4">
+      <header class="chapter__h">
+        <span class="chapter__n">٤</span>
+        <div><h2>الشغل والطاقة والآلات البسيطة</h2><span class="chapter__en">Work, Energy, and Simple Machines</span></div>
+      </header>
+      <div class="lesson">
+          <div class="lesson__head">
+            <span class="lesson__id">4-1</span>
+            <div><h3>الطاقة والشغل</h3>
+            <span class="lesson__en">Work and Energy · ص 97–108</span></div>
+          </div>
+          <div class="grid"><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/12_workenergy/workenergy_full_voiced_subs.mp4" data-title="نظرية الشغل والطاقة" aria-label="تشغيل">▶</button><div class="card__id">Work–Energy Theorem</div></div>
+      <h4>نظرية الشغل والطاقة</h4><p class="handoff">Computing the net work on an object and equating it to the change in its kinetic energy to find a final speed — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 97-108</span></div>
+    </article><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/13_cars/cars_full_voiced_subs.mp4" data-title="الطاقة الحركية" aria-label="تشغيل">▶</button><div class="card__id">Kinetic Energy</div></div>
+      <h4>الطاقة الحركية</h4>
+      <div class="card__foot"><span class="chip">ص 97-108</span></div>
+    </article><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/14_power/power_full_voiced_subs.mp4" data-title="القدرة" aria-label="تشغيل">▶</button><div class="card__id">Power — the rate of doing work</div></div>
+      <h4>القدرة</h4><p class="handoff">Computing power as work divided by time — and as force times speed — for a real climb or engine — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 97-108</span></div>
+    </article></div>
+        </div><div class="lesson">
+          <div class="lesson__head">
+            <span class="lesson__id">4-2</span>
+            <div><h3>الآلات</h3>
+            <span class="lesson__en">Machines · ص 109–129</span></div>
+          </div>
+          <div class="grid"><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/15_machines/machines_full_voiced_subs.mp4" data-title="الآلات البسيطة والفائدة الميكانيكية" aria-label="تشغيل">▶</button><div class="card__id">Simple Machines &amp; Mechanical Advantage</div></div>
+      <h4>الآلات البسيطة والفائدة الميكانيكية</h4><p class="handoff">Computing the mechanical advantage of a lever or ramp from its dimensions, and the input force a given load needs — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 109-129</span></div>
+    </article><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/16_efficiency/efficiency_full_voiced_subs.mp4" data-title="الكفاءة: الآلات المثالية والحقيقية" aria-label="تشغيل">▶</button><div class="card__id">Efficiency — ideal vs real machines</div></div>
+      <h4>الكفاءة: الآلات المثالية والحقيقية</h4><p class="handoff">Computing efficiency as useful output over total input, and the work lost to friction in a real machine — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 109-129</span></div>
+    </article></div>
+        </div>
+    </section><section class="chapter reveal" id="ch5">
+      <header class="chapter__h">
+        <span class="chapter__n">٥</span>
+        <div><h2>الطاقة وحفظها</h2><span class="chapter__en">Energy and Its Conservation</span></div>
+      </header>
+      <div class="lesson">
+          <div class="lesson__head">
+            <span class="lesson__id">5-1</span>
+            <div><h3>الأشكال المتعددة للطاقة</h3>
+            <span class="lesson__en">The Many Forms of Energy · ص 131–140</span></div>
+          </div>
+          <div class="grid"><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/17_gravpe/gravpe_full_voiced_subs.mp4" data-title="طاقة الوضع الجاذبية ومستوى الإسناد" aria-label="تشغيل">▶</button><div class="card__id">Gravitational Potential Energy &amp; Reference Level</div></div>
+      <h4>طاقة الوضع الجاذبية ومستوى الإسناد</h4><p class="handoff">Computing the gravitational potential energy from mass, gravity, and height above your chosen reference — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 131-140</span></div>
+    </article><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/18_elasticpe/elasticpe_full_voiced_subs.mp4" data-title="طاقة الوضع المرونية" aria-label="تشغيل">▶</button><div class="card__id">Elastic Potential Energy</div></div>
+      <h4>طاقة الوضع المرونية</h4><p class="handoff">Finding how the stored elastic energy depends on the spring&#x27;s stiffness and how far it&#x27;s deformed — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 131-140</span></div>
+    </article><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/19_rotke/rotke_full_voiced_subs.mp4" data-title="طاقة الحركة الدورانية" aria-label="تشغيل">▶</button><div class="card__id">Rotational Kinetic Energy</div></div>
+      <h4>طاقة الحركة الدورانية</h4><p class="handoff">Computing rotational kinetic energy from the moment of inertia and the angular speed — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 131-140</span></div>
+    </article></div>
+        </div><div class="lesson">
+          <div class="lesson__head">
+            <span class="lesson__id">5-2</span>
+            <div><h3>حفظ الطاقة</h3>
+            <span class="lesson__en">Conservation of Energy · ص 141–163</span></div>
+          </div>
+          <div class="grid"><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/20_pendulum/pendulum_full_voiced_subs.mp4" data-title="حفظ الطاقة الميكانيكية" aria-label="تشغيل">▶</button><div class="card__id">Conservation of Mechanical Energy</div></div>
+      <h4>حفظ الطاقة الميكانيكية</h4>
+      <div class="card__foot"><span class="chip">ص 141-163</span></div>
+    </article><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/21_collisions/collisions_full_voiced_subs.mp4" data-title="التصادمات المرنة وعديمة المرونة" aria-label="تشغيل">▶</button><div class="card__id">Collisions — Elastic &amp; Inelastic</div></div>
+      <h4>التصادمات المرنة وعديمة المرونة</h4><p class="handoff">Momentum always balances; energy of motion is the variable. Solving each type with the right pair of rules — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 141-163</span></div>
+    </article></div>
+        </div>
+    </section><section class="chapter reveal" id="ch6">
+      <header class="chapter__h">
+        <span class="chapter__n">٦</span>
+        <div><h2>الطاقة الحرارية</h2><span class="chapter__en">Thermal Energy</span></div>
+      </header>
+      <div class="lesson">
+          <div class="lesson__head">
+            <span class="lesson__id">6-1</span>
+            <div><h3>درجة الحرارة والطاقة الحرارية</h3>
+            <span class="lesson__en">Temperature and Thermal Energy · ص 165–177</span></div>
+          </div>
+          <div class="grid"><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/22_tempvsthermal/tempvsthermal_full_voiced_subs.mp4" data-title="درجة الحرارة والطاقة الحرارية" aria-label="تشغيل">▶</button><div class="card__id">Temperature vs Thermal Energy</div></div>
+      <h4>درجة الحرارة والطاقة الحرارية</h4><p class="handoff">Average jiggle versus the whole sum — and how many particles bridges them. Quantifying that link is yours.</p>
+      <div class="card__foot"><span class="chip">ص 165-177</span></div>
+    </article><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/23_heattransfer/heattransfer_full_voiced_subs.mp4" data-title="انتقال الحرارة: التوصيل والحمل والإشعاع" aria-label="تشغيل">▶</button><div class="card__id">Heat Transfer — Conduction, Convection, Radiation</div></div>
+      <h4>انتقال الحرارة: التوصيل والحمل والإشعاع</h4><p class="handoff">Which path dominates where, and how fast each moves heat — that&#x27;s the thinking we hand to you.</p>
+      <div class="card__foot"><span class="chip">ص 165-177</span></div>
+    </article><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/24_specificheat/specificheat_full_voiced_subs.mp4" data-title="الحرارة النوعية" aria-label="تشغيل">▶</button><div class="card__id">Specific Heat</div></div>
+      <h4>الحرارة النوعية</h4><p class="handoff">Computing the heat needed from the specific heat, the mass, and the temperature change — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 165-177</span></div>
+    </article></div>
+        </div><div class="lesson">
+          <div class="lesson__head">
+            <span class="lesson__id">6-2</span>
+            <div><h3>تغيرات حالة المادة وقوانين الديناميكا الحرارية</h3>
+            <span class="lesson__en">Changes of State and Laws of Thermodynamics · ص 178–200</span></div>
+          </div>
+          <div class="grid"><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/25_latentheat/latentheat_full_voiced_subs.mp4" data-title="الحرارة الكامنة لتغير الحالة" aria-label="تشغيل">▶</button><div class="card__id">Latent Heat — energy hidden in a change of state</div></div>
+      <h4>الحرارة الكامنة لتغير الحالة</h4><p class="handoff">Computing the heat absorbed during melting and boiling from the mass and the latent heat — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 178-200</span></div>
+    </article><article class="card">
+      <div class="card__top"><button class="play" data-src="../scripts/concepts/26_thermolaws/thermolaws_full_voiced_subs.mp4" data-title="قوانين الديناميكا الحرارية والإنتروبي" aria-label="تشغيل">▶</button><div class="card__id">The Laws of Thermodynamics &amp; Entropy</div></div>
+      <h4>قوانين الديناميكا الحرارية والإنتروبي</h4><p class="handoff">Computing an engine&#x27;s maximum possible efficiency from its hot and cold operating temperatures — that&#x27;s yours.</p>
+      <div class="card__foot"><span class="chip">ص 178-200</span></div>
+    </article></div>
+        </div>
+    </section>
+
+  <section class="lab reveal" id="lab">
+    <div class="lab__h">
+      <h2>المختبر — <span class="am">مشاريع PhET</span></h2>
+      <p>شخصيّةٌ تحاول، فتتعثّر — حتى تبني نموذجًا. تنبّأ قبل أن تضغط «تشغيل».</p>
+    </div>
+    <div class="plist"><article class="pcard reveal">
+      <div class="pcard__sim">Energy Skate Park</div>
+      <h3>المنحدر الذي ظلّ يكذب عليه — تدقيق طاقة في حديقة التزلج</h3>
+      <p class="pcard__persona">Faris — building a plywood launch ramp to clear a gap</p>
+      <div class="pcard__chips"><span class="chip chip--c">gravpe</span><span class="chip chip--c">cars </span><span class="chip chip--c">pendulum </span><span class="chip chip--c">workenergy </span></div>
+      <div class="pcard__act">
+        <button class="play play--lg" data-src="../scripts/projects/01_skatepark_energy_audit/skatepark_full_voiced_subs.mp4" data-title="المنحدر الذي ظلّ يكذب عليه — تدقيق طاقة في حديقة التزلج">▶ القصّة</button>
+        <a class="phet" href="https://phet.colorado.edu/en/simulations/energy-skate-park-basics" target="_blank" rel="noopener">افتح مِحاكاة PhET ↗</a>
+      </div>
+    </article><article class="pcard reveal">
+      <div class="pcard__sim">Collision Lab</div>
+      <h3>تحقيق في تصادم — مَن كان أسرعَ حقًّا؟</h3>
+      <p class="pcard__persona">Noura — two toy carts, one dent, an argument to settle</p>
+      <div class="pcard__chips"><span class="chip chip--c">impulse</span><span class="chip chip--c">momentumcons</span><span class="chip chip--c">collisions</span></div>
+      <div class="pcard__act">
+        <button class="play play--lg" data-src="../scripts/projects/02_collision_forensics/collisionlab_full_voiced_subs.mp4" data-title="تحقيق في تصادم — مَن كان أسرعَ حقًّا؟">▶ القصّة</button>
+        <a class="phet" href="https://phet.colorado.edu/en/simulations/collision-lab" target="_blank" rel="noopener">افتح مِحاكاة PhET ↗</a>
+      </div>
+    </article><article class="pcard reveal">
+      <div class="pcard__sim">Gravity and Orbits</div>
+      <h3>ابْنِ مدارًا مستقرًّا — دورةٌ واحدةٌ نظيفة، دون اصطدام</h3>
+      <p class="pcard__persona">Sami — trying to make a moon circle his planet exactly once</p>
+      <div class="pcard__chips"><span class="chip chip--c">gravitation</span><span class="chip chip--c">gfield</span><span class="chip chip--c">weightless</span></div>
+      <div class="pcard__act">
+        <button class="play play--lg" data-src="../scripts/projects/03_build_a_stable_orbit/orbitlab_full_voiced_subs.mp4" data-title="ابْنِ مدارًا مستقرًّا — دورةٌ واحدةٌ نظيفة، دون اصطدام">▶ القصّة</button>
+        <a class="phet" href="https://phet.colorado.edu/en/simulations/gravity-and-orbits" target="_blank" rel="noopener">افتح مِحاكاة PhET ↗</a>
+      </div>
+    </article><article class="pcard reveal">
+      <div class="pcard__sim">Balancing Act</div>
+      <h3>حاملُ التوازن — حاملٌ مُعلَّقٌ لا يميل</h3>
+      <p class="pcard__persona">Lina — building a hanging mobile that keeps tilting</p>
+      <div class="pcard__chips"><span class="chip chip--c">torque</span><span class="chip chip--c">centerofmass</span></div>
+      <div class="pcard__act">
+        <button class="play play--lg" data-src="../scripts/projects/04_the_balancing_rig/balancerig_full_voiced_subs.mp4" data-title="حاملُ التوازن — حاملٌ مُعلَّقٌ لا يميل">▶ القصّة</button>
+        <a class="phet" href="https://phet.colorado.edu/en/simulations/balancing-act" target="_blank" rel="noopener">افتح مِحاكاة PhET ↗</a>
+      </div>
+    </article><article class="pcard reveal">
+      <div class="pcard__sim">Masses and Springs</div>
+      <h3>آلةُ النابض والإسقاط — اقرعِ الجرسَ عند الارتفاع الصحيح</h3>
+      <p class="pcard__persona">Yousef — a spring launcher that must ring a bell at an exact height</p>
+      <div class="pcard__chips"><span class="chip chip--c">elasticpe</span><span class="chip chip--c">gravpe</span><span class="chip chip--c">cars </span><span class="chip chip--c">pendulum </span></div>
+      <div class="pcard__act">
+        <button class="play play--lg" data-src="../scripts/projects/05_spring_drop_machine/springdrop_full_voiced_subs.mp4" data-title="آلةُ النابض والإسقاط — اقرعِ الجرسَ عند الارتفاع الصحيح">▶ القصّة</button>
+        <a class="phet" href="https://phet.colorado.edu/en/simulations/masses-and-springs" target="_blank" rel="noopener">افتح مِحاكاة PhET ↗</a>
+      </div>
+    </article><article class="pcard reveal">
+      <div class="pcard__sim">Energy Forms and Changes / States of Matter</div>
+      <h3>ميزانيّةُ الحرارة — أَذِبْها في اللحظة الصحيحة</h3>
+      <p class="pcard__persona">Maha — must turn a block of ice to water exactly when the timer ends</p>
+      <div class="pcard__chips"><span class="chip chip--c">tempvsthermal</span><span class="chip chip--c">specificheat</span><span class="chip chip--c">heattransfer</span><span class="chip chip--c">latentheat</span></div>
+      <div class="pcard__act">
+        <button class="play play--lg" data-src="../scripts/projects/06_thermal_budget/thermalbudget_full_voiced_subs.mp4" data-title="ميزانيّةُ الحرارة — أَذِبْها في اللحظة الصحيحة">▶ القصّة</button>
+        <a class="phet" href="https://phet.colorado.edu/en/simulations/energy-forms-and-changes" target="_blank" rel="noopener">افتح مِحاكاة PhET ↗</a>
+      </div>
+    </article></div>
+  </section>
+
+  <footer>
+    الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية — وزارة التعليم - المملكة العربية السعودية · 1447 / 2025<br>
+    <span class="am">الصمتُ محتوى. شاهِد، ثمّ فكِّر.</span>
+  </footer>
+</div>
+
+<div class="lb" id="lb">
+  <button class="lb__x" id="lbx" aria-label="إغلاق">✕</button>
+  <div class="lb__in"><div class="lb__t" id="lbt"></div>
+  <video id="lbv" controls preload="metadata"></video></div>
+</div>
+<script>
+const lb=document.getElementById('lb'),lv=document.getElementById('lbv'),lt=document.getElementById('lbt');
+function close(){lb.classList.remove('on');lv.pause();lv.removeAttribute('src');lv.load();}
+document.querySelectorAll('.play').forEach(b=>b.addEventListener('click',()=>{
+  lv.src=b.dataset.src;lt.textContent=b.dataset.title;lb.classList.add('on');lv.play().catch(()=>{});
+}));
+document.getElementById('lbx').addEventListener('click',close);
+lb.addEventListener('click',e=>{if(e.target===lb)close();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')close();});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body></html>

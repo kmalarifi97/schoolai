@@ -1,0 +1,107 @@
+{
+  "order": 6,
+  "slug": "angular",
+  "concept_en": "Angular Motion — displacement, velocity, acceleration",
+  "concept_ar": "وصف الحركة الدورانية",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 2,
+    "chapter_title_en": "Rotational Motion",
+    "chapter_title_ar": "الحركة الدورانية",
+    "lesson": "2-1",
+    "lesson_title_en": "Describing Rotational Motion",
+    "lesson_title_ar": "وصف الحركة الدورانية",
+    "pages": "37-41",
+    "start_page": 37,
+    "end_page": 41,
+    "lesson_objectives": [
+      "وصف الإزاحة الزاوية",
+      "حساب السرعة الزاوية المتجهة",
+      "حساب التسارع الزاوي",
+      "حل مسائل تتعلق بالحركة الدورانية"
+    ],
+    "lesson_key_terms": [
+      "الراديان",
+      "الإزاحة الزاوية",
+      "السرعة الزاوية المتجهة",
+      "التسارع الزاوي"
+    ]
+  },
+  "video": {
+    "target_filename": "angular_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Two children on a merry-go-round. One near the center. One out at the edge.",
+      "visual": "Top-down disk rotating; two dots, one near hub, one at rim."
+    },
+    {
+      "id": "s1_b2",
+      "text": "Who's moving faster?",
+      "visual": "The disk turning; both dots tracing paths, a question mark above."
+    },
+    {
+      "id": "s1_b3",
+      "text": "The one at the edge sweeps a huge circle. The one near the center barely moves. So — different speeds.",
+      "visual": "The rim dot's long arc vs the hub dot's tiny arc, drawn."
+    },
+    {
+      "id": "s1_b4",
+      "text": "But in another sense, they move together. Same start, same finish, same instant. They never separate.",
+      "visual": "A straight spoke drawn through both dots stays rigid as the disk turns."
+    },
+    {
+      "id": "s1_b5",
+      "text": "Both stories are true. We just need the right way to measure turning — not distance along the ground, but angle swept.",
+      "visual": "An angle wedge sweeps from the spoke's start to its new position."
+    },
+    {
+      "id": "s1_b6",
+      "text": "How much angle you've turned through: angular displacement.",
+      "visual": "The wedge labeled 'θ'."
+    },
+    {
+      "id": "s1_b7",
+      "text": "How fast that angle grows: angular velocity. Measured the same for every point on the disk.",
+      "visual": "The wedge sweeping at a steady rate, labeled 'ω'; both dots share it."
+    },
+    {
+      "id": "s1_b8",
+      "text": "Speed it up — the angle grows faster and faster. That change is angular acceleration.",
+      "visual": "The sweep visibly quickening, labeled 'α'."
+    },
+    {
+      "id": "s1_b9",
+      "text": "Notice the shape of this. Position becomes angle. Velocity becomes rate of angle. Acceleration becomes rate of that rate. The same trio as straight-line motion, just turned in a circle.",
+      "visual": "Left: x → v → a cascade with arrows showing derivatives. Right: θ → ω → α mirrored, with matching derivative arrows. The parallel structure glows."
+    },
+    {
+      "id": "s1_b10",
+      "text": "And the bridge between the two worlds is the radius. Same angular speed, bigger radius, faster through space.",
+      "visual": "Both dots again; the rim dot's longer arc tied to the spoke length by a faint bracket."
+    },
+    {
+      "id": "s1_b11",
+      "text": "So the child at the edge really is faster — and yet they turn at the very same rate. No contradiction.",
+      "visual": "Both dots highlighted, the rigid spoke holding them at one ω."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Angle, rate of angle, change of that rate. Computing angular velocity and acceleration, then converting them to linear speed through the radius — that's yours.",
+      "visual": "Clean labeled disk: θ, ω, α, r. Holds, silent."
+    }
+  ]
+}

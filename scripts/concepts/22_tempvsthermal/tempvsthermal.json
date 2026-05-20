@@ -1,0 +1,110 @@
+{
+  "order": 22,
+  "slug": "tempvsthermal",
+  "concept_en": "Temperature vs Thermal Energy",
+  "concept_ar": "درجة الحرارة والطاقة الحرارية",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 6,
+    "chapter_title_en": "Thermal Energy",
+    "chapter_title_ar": "الطاقة الحرارية",
+    "lesson": "6-1",
+    "lesson_title_en": "Temperature and Thermal Energy",
+    "lesson_title_ar": "درجة الحرارة والطاقة الحرارية",
+    "pages": "165-177",
+    "start_page": 165,
+    "end_page": 177,
+    "lesson_objectives": [
+      "وصف الطاقة الحرارية ومقارنتها بطاقة الوضع والطاقة الحركية",
+      "التمييز بين درجة الحرارة والطاقة الحرارية",
+      "تعرف الحرارة النوعية",
+      "حساب الحرارة المنتقلة"
+    ],
+    "lesson_key_terms": [
+      "الطاقة الحرارية",
+      "التوصيل الحراري",
+      "الاتزان الحراري",
+      "الحرارة",
+      "الحمل الحراري",
+      "الإشعاع الحراري",
+      "الحرارة النوعية"
+    ]
+  },
+  "video": {
+    "target_filename": "tempvsthermal_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "A lit match. And a warm bathtub.",
+      "visual": "A single match flame; beside it, a full tub gently steaming."
+    },
+    {
+      "id": "s1_b2",
+      "text": "The flame is far hotter. Hundreds of degrees against a mild forty.",
+      "visual": "Two thermometers: the match's pinned high, the tub's modest."
+    },
+    {
+      "id": "s1_b3",
+      "text": "Now: which one could you safely touch — and which one could heat a whole room?",
+      "visual": "A hand near the match; the tub beside a cold room. Question marks on both."
+    },
+    {
+      "id": "s1_b4",
+      "text": "The match is hotter, but it can't warm the room. The cooler tub can. Hotter isn't the same as more heat.",
+      "visual": "The tub's energy filling a room outline; the match's tiny energy barely a glow."
+    },
+    {
+      "id": "s1_b5",
+      "text": "Zoom in. Heat is really the jiggling of countless particles. Always moving, always bumping.",
+      "visual": "A swarm of particles vibrating and colliding inside both objects."
+    },
+    {
+      "id": "s1_b6",
+      "text": "Temperature measures how violently each particle jiggles, on average. Just the average. Per particle.",
+      "visual": "One particle highlighted, its vibration amplitude tied to a thermometer reading. Label: 'temperature = average jiggle'."
+    },
+    {
+      "id": "s1_b7",
+      "text": "In the match flame, each particle jiggles like mad. Very high temperature.",
+      "visual": "The match's few particles vibrating ferociously, thermometer high."
+    },
+    {
+      "id": "s1_b8",
+      "text": "But there are almost none of them. A tiny flame holds very little jiggling in total.",
+      "visual": "Zoom out: the flame is just a sparse handful of fast particles."
+    },
+    {
+      "id": "s1_b9",
+      "text": "The tub is only mildly warm — but it's a vast crowd of particles, all jiggling a little.",
+      "visual": "The tub teeming with an enormous number of gently vibrating particles."
+    },
+    {
+      "id": "s1_b10",
+      "text": "Add up all that jiggling and the tub holds an ocean of energy. That total is thermal energy.",
+      "visual": "Sum of all the tub's particle motions into one huge bar, dwarfing the match's tiny bar. Label: 'thermal energy = total'."
+    },
+    {
+      "id": "s1_b11",
+      "text": "Temperature is the per-particle average. Thermal energy is the grand total. Intensity versus amount.",
+      "visual": "Two clean panels: a single fast particle (temperature) | a vast bar of summed motion (thermal energy)."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Average jiggle versus the whole sum — and how many particles bridges them. Quantifying that link is yours.",
+      "visual": "Match and tub side by side, the average/total contrast labeled, the count left open. Holds."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "order": 5,
+  "slug": "equivalence",
+  "concept_en": "Inertial vs Gravitational Mass & the Equivalence Principle",
+  "concept_ar": "كتلة القصور وكتلة الجاذبية ومبدأ التكافؤ",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 1,
+    "chapter_title_en": "Gravitation",
+    "chapter_title_ar": "الجاذبية",
+    "lesson": "1-2",
+    "lesson_title_en": "Using the Law of Universal Gravitation",
+    "lesson_title_ar": "استخدام قانون الجذب الكوني",
+    "pages": "18-35",
+    "start_page": 18,
+    "end_page": 35,
+    "lesson_objectives": [
+      "حل مسائل على الحركة المدارية",
+      "ربط انعدام الوزن بأجسام في حالة سقوط حر",
+      "وصف مجال الجاذبية",
+      "المقارنة بين كتلة القصور وكتلة الجاذبية",
+      "المقارنة بين وجهتي نظر نيوتن وآينشتاين حول الجاذبية"
+    ],
+    "lesson_key_terms": [
+      "مجال الجاذبية",
+      "كتلة القصور",
+      "كتلة الجاذبية",
+      "مبدأ التكافؤ"
+    ]
+  },
+  "video": {
+    "target_filename": "equivalence_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "The word mass hides two completely different ideas.",
+      "visual": "The word 'mass' centered, then it splits cleanly into two."
+    },
+    {
+      "id": "s1_b2",
+      "text": "One is stubbornness. Push a thing; how hard is it to get moving? That's inertial mass.",
+      "visual": "A hand pushes a block on a frictionless plane; the block resists. Label: 'inertial mass'."
+    },
+    {
+      "id": "s1_b3",
+      "text": "The other is heaviness. How strongly does gravity pull on it? That's gravitational mass.",
+      "visual": "The same block hangs from a spring scale; gravity arrow down. Label: 'gravitational mass'."
+    },
+    {
+      "id": "s1_b4",
+      "text": "There's no reason these should be the same number. Resistance to a push, and the strength of a pull — different questions.",
+      "visual": "Two labels side by side, an equals sign between them with a question mark over it."
+    },
+    {
+      "id": "s1_b5",
+      "text": "And yet. Galileo's old observation: drop a heavy thing and a light thing together —",
+      "visual": "A heavy ball and a light ball released from the same height in the void."
+    },
+    {
+      "id": "s1_b6",
+      "text": "— they land at the same instant. Always. Every time anyone has ever checked.",
+      "visual": "Both balls hit the bottom of frame on the exact same frame. Hold."
+    },
+    {
+      "id": "s1_b7",
+      "text": "That only works if the stubbornness and the heaviness cancel perfectly. The two masses are equal.",
+      "visual": "The '?' over the equals sign resolves into a firm '='."
+    },
+    {
+      "id": "s1_b8",
+      "text": "A coincidence, said Newton. A fact you write down and use.",
+      "visual": "Newton-side panel: the two masses cancel in a falling diagram, treated as bookkeeping."
+    },
+    {
+      "id": "s1_b9",
+      "text": "Not a coincidence, said Einstein. A clue.",
+      "visual": "Panel shifts to an Einstein-side view; the cancellation glows as if meaningful."
+    },
+    {
+      "id": "s1_b10",
+      "text": "His thought: stand in a sealed box. The floor presses your feet. Are you on Earth — or in a rocket accelerating through empty space?",
+      "visual": "Two identical sealed boxes side by side: one on the ground, one with a thrust flame; the person inside identical in both."
+    },
+    {
+      "id": "s1_b11",
+      "text": "From inside, you cannot tell. Gravity and acceleration feel exactly the same. That's the equivalence principle.",
+      "visual": "The two boxes overlay into one; the difference dissolves. Label: 'equivalence'."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Two views of the same equal masses — one calls it luck, one calls it the door to a new theory. Which experiments would tell them apart? That's the thinking we leave with you.",
+      "visual": "The two boxes hold side by side, silent, the open question between them."
+    }
+  ]
+}

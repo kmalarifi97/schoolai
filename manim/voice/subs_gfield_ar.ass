@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+ScaledBorderAndShadow: yes
+WrapStyle: 0
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Arabic,Arial Unicode MS,30,&H00FFFFFF,&H000000FF,&H00000000,&HC0000000,0,0,0,0,100,100,0,0,1,2.0,0,2,80,80,50,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:04.61,Arabic,,0,0,0,,خَلِّ شيء يطيح. يسقط. نقول إن الأرض تشدّه.
+Dialogue: 0,0:00:05.80,0:00:14.66,Arabic,,0,0,0,,بس فيه سؤال غريب. كيف الصخرة تدري إن الأرض موجودة؟ ولا مرة لمسوا بعض.
+Dialogue: 0,0:00:14.97,0:00:22.67,Arabic,,0,0,0,,نيوتن نفسه ما كان مرتاح لهذا. تأثير عن بُعد — عبر فراغ خالٍ، وما بينهم شيء.
+Dialogue: 0,0:00:23.27,0:00:28.83,Arabic,,0,0,0,,فنغيّر الصورة. بدل ما الأرض تمدّ يدها وتمسك الأشياء —
+Dialogue: 0,0:00:29.77,0:00:37.09,Arabic,,0,0,0,,— الأرض تغيّر الفضاء اللي حولها. في كل مكان. سواء فيه شيء يحسّ فيه أو ما فيه.
+Dialogue: 0,0:00:37.87,0:00:46.53,Arabic,,0,0,0,,هذا التأثير الخفي له اسم. مجال الجاذبية. خاصية للفضاء — مو للصخرة.
+Dialogue: 0,0:00:46.83,0:00:54.95,Arabic,,0,0,0,,الصخرة ما تمدّ يدها للأرض. هي بس تستجيب للمجال اللي قاعدة فيه. هنا. محلياً.
+Dialogue: 0,0:00:55.53,0:01:00.93,Arabic,,0,0,0,,كل ما قربنا من الأرض، الأسهم تتزاحم. المجال أقوى.
+Dialogue: 0,0:01:01.63,0:01:07.95,Arabic,,0,0,0,,وبعيد، يخفّون. ولا مرة يصير صفر تماماً. بس أخفت — وأخفت.
+Dialogue: 0,0:01:08.27,0:01:16.38,Arabic,,0,0,0,,الوزن مو شيء يملكه الجسم. هو المجال — في الكتلة — مقيس عند المكان اللي صادف الجسم فيه.
+Dialogue: 0,0:01:16.97,0:01:25.92,Arabic,,0,0,0,,نفس الصخرة. مجال مختلف. وزن مختلف. حرّكها للقمر والأسهم أضعف — الصخرة ما تغيّرت.
+Dialogue: 0,0:01:26.23,0:01:37.20,Arabic,,0,0,0,,المجال هو خريطة التأثير. حساب شدّة المجال عند مسافة معيّنة من كتلة، والقوة اللي يسلّطها على جسم تحطّه هناك — هذا لك أنت.

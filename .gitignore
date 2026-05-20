@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+web/frontend/.next/
+out/
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Secrets
+*.secret
+.env
+.env.*
+
+# Generated media (rendered from scripts)
+*.mp4
+*.mp3
+*.wav
+
+# Manim render cache / output
+**/media/
+*.cache-9
+
+# Logs & misc
+*.log
+.DS_Store

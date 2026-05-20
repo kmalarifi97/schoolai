@@ -1,0 +1,104 @@
+{
+  "order": 7,
+  "slug": "torque",
+  "concept_en": "Torque & the Lever Arm",
+  "concept_ar": "العزم وذراع القوة",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 2,
+    "chapter_title_en": "Rotational Motion",
+    "chapter_title_ar": "الحركة الدورانية",
+    "lesson": "2-2",
+    "lesson_title_en": "Rotational Dynamics",
+    "lesson_title_ar": "ديناميكا الحركة الدورانية",
+    "pages": "42-46",
+    "start_page": 42,
+    "end_page": 46,
+    "lesson_objectives": [
+      "وصف العزم",
+      "تحديد العوامل التي يعتمد عليها العزم",
+      "حساب محصلة العزم"
+    ],
+    "lesson_key_terms": [
+      "ذراع القوة",
+      "العزم"
+    ]
+  },
+  "video": {
+    "target_filename": "torque_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "A stuck bolt. You push the wrench with everything you have. Nothing.",
+      "visual": "Side view: a short wrench on a bolt, a strong push arrow, the bolt unmoving."
+    },
+    {
+      "id": "s1_b2",
+      "text": "Then you slide a pipe over the handle to make it longer. Push gently. It turns.",
+      "visual": "The handle visibly extended; a small push arrow; the bolt rotates."
+    },
+    {
+      "id": "s1_b3",
+      "text": "Less force. More effect. Something other than force is doing the work here.",
+      "visual": "Side-by-side: big force/short handle (no turn) vs small force/long handle (turn)."
+    },
+    {
+      "id": "s1_b4",
+      "text": "Push right at the bolt's center — and nothing turns, no matter how hard.",
+      "visual": "A huge force arrow applied at the pivot itself; zero rotation."
+    },
+    {
+      "id": "s1_b5",
+      "text": "Push at the same spot but straight along the handle — also nothing. The direction matters too.",
+      "visual": "Force pointing along the handle toward the pivot; no rotation."
+    },
+    {
+      "id": "s1_b6",
+      "text": "Turning depends on three things together: how hard, how far from the pivot, and which way.",
+      "visual": "Three small icons: a force, a distance from pivot, an angle."
+    },
+    {
+      "id": "s1_b7",
+      "text": "Bundle them into one quantity. The turning effect of a force. Torque.",
+      "visual": "The three icons merge into a single rotational arrow, labeled 'τ'."
+    },
+    {
+      "id": "s1_b8",
+      "text": "The distance that actually counts isn't the whole handle—it's the perpendicular distance from the pivot to where the force pushes.",
+      "visual": "The handle drawn; the force's line extended; a bright perpendicular line dropped from the pivot to the force line, labeled 'lever arm'."
+    },
+    {
+      "id": "s1_b9",
+      "text": "That perpendicular reach has a name. The lever arm. Lengthen it, and the same force turns harder.",
+      "visual": "The highlighted segment labeled 'lever arm'; it stretches, the rotation arrow grows."
+    },
+    {
+      "id": "s1_b10",
+      "text": "A door proves it daily. Push at the handle, it swings. Push next to the hinge, it fights you.",
+      "visual": "Top-down door: push far from hinge swings wide; push near hinge barely moves."
+    },
+    {
+      "id": "s1_b11",
+      "text": "When several torques act, the rotation goes to whichever side wins the sum.",
+      "visual": "A pivoted bar with forces on both sides; the net rotation arrow points to the stronger side."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Computing the torque from a given force and distance — and finding equilibrium when multiple torques act — that's yours.",
+      "visual": "Clean diagram: pivot, force, perpendicular lever arm labeled τ. Holds."
+    }
+  ]
+}

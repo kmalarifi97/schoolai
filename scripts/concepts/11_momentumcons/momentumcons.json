@@ -1,0 +1,105 @@
+{
+  "order": 11,
+  "slug": "momentumcons",
+  "concept_en": "Conservation of Momentum",
+  "concept_ar": "حفظ الزخم",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 3,
+    "chapter_title_en": "Momentum and Its Conservation",
+    "chapter_title_ar": "الزخم وحفظه",
+    "lesson": "3-2",
+    "lesson_title_en": "Conservation of Momentum",
+    "lesson_title_ar": "حفظ الزخم",
+    "pages": "74-95",
+    "start_page": 74,
+    "end_page": 95,
+    "lesson_objectives": [
+      "الربط بين القانون الثالث لنيوتن وحفظ الزخم",
+      "تعرف الظروف اللازمة لحفظ الزخم",
+      "حل مسائل حفظ الزخم"
+    ],
+    "lesson_key_terms": [
+      "النظام المغلق",
+      "النظام المعزول",
+      "قانون حفظ الزخم"
+    ]
+  },
+  "video": {
+    "target_filename": "momentumcons_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Stand on a frozen lake, perfectly still. Throw a heavy bag forward.",
+      "visual": "Top-down: a figure at rest on ice, a bag held."
+    },
+    {
+      "id": "s1_b2",
+      "text": "You slide backward. You didn't push the ground. The bag did nothing to the world but leave your hands.",
+      "visual": "The bag flies forward; the figure glides backward; ice frictionless."
+    },
+    {
+      "id": "s1_b3",
+      "text": "Before: nothing moving. After: two things moving, opposite ways. Where did that motion come from?",
+      "visual": "A 'before' frame (still) and an 'after' frame (bag right, person left); question mark."
+    },
+    {
+      "id": "s1_b4",
+      "text": "Add it up the right way — motion as momentum, with direction. Forward counts as plus. Backward as minus.",
+      "visual": "The bag's forward momentum bar (right) and the person's backward bar (left), signed."
+    },
+    {
+      "id": "s1_b5",
+      "text": "The bag's forward momentum and your backward momentum are equal and opposite. They cancel.",
+      "visual": "The two signed bars laid against each other; they sum to zero."
+    },
+    {
+      "id": "s1_b6",
+      "text": "Total momentum before: zero. Total after: still zero. Nothing was created. It only got shared.",
+      "visual": "Two pans of a balance: empty=empty before, (+bag)+(−you)=0 after. [Hold 2s in silence]"
+    },
+    {
+      "id": "s1_b7",
+      "text": "This holds whenever no outside force interferes. A system left to itself. Isolated.",
+      "visual": "A dashed boundary around the figure and bag, no arrows crossing it. Label: 'isolated system'."
+    },
+    {
+      "id": "s1_b8",
+      "text": "And it's just Newton's third law, looked at over time. Every push has an equal, opposite push back.",
+      "visual": "Equal-opposite force pair between hand and bag; resolving into equal-opposite momentum changes."
+    },
+    {
+      "id": "s1_b9",
+      "text": "It's how a rocket climbs. Throw exhaust down hard; the rocket is thrown up just as hard.",
+      "visual": "A rocket in the void; exhaust momentum down, rocket momentum up, the two balancing."
+    },
+    {
+      "id": "s1_b10",
+      "text": "And how collisions work. Two carts meet. Whatever one gains, the other gives up. The total never changes.",
+      "visual": "Two carts colliding; individual momenta change, the summed bar stays fixed length."
+    },
+    {
+      "id": "s1_b11",
+      "text": "Inside the boundary, momentum is currency. It moves around. It is never spent.",
+      "visual": "The dashed boundary; momentum tokens sliding between bodies, the count constant."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Setting total momentum before equal to total momentum after, and solving for an unknown velocity in a collision or recoil — that's yours.",
+      "visual": "Clean before/after with one fixed total bar; the split left open. Holds."
+    }
+  ]
+}

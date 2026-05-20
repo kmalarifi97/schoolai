@@ -1,0 +1,109 @@
+{
+  "order": 12,
+  "slug": "workenergy",
+  "concept_en": "Work–Energy Theorem",
+  "concept_ar": "نظرية الشغل والطاقة",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 4,
+    "chapter_title_en": "Work, Energy, and Simple Machines",
+    "chapter_title_ar": "الشغل والطاقة والآلات البسيطة",
+    "lesson": "4-1",
+    "lesson_title_en": "Work and Energy",
+    "lesson_title_ar": "الطاقة والشغل",
+    "pages": "97-108",
+    "start_page": 97,
+    "end_page": 108,
+    "lesson_objectives": [
+      "وصف العلاقة بين الشغل والطاقة",
+      "حساب الشغل",
+      "حساب القدرة المستهلكة"
+    ],
+    "lesson_key_terms": [
+      "الشغل",
+      "الطاقة",
+      "الطاقة الحركية",
+      "نظرية الشغل-الطاقة",
+      "الجول",
+      "القدرة",
+      "الواط"
+    ]
+  },
+  "video": {
+    "target_filename": "workenergy_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Push hard against a wall for an hour. You're exhausted. The wall hasn't moved.",
+      "visual": "A figure straining against a solid wall; a sweat drop; the wall fixed. Hold on the stillness."
+    },
+    {
+      "id": "s1_b2",
+      "text": "You're exhausted—your muscles burned energy. But in physics, you did no work on the wall. None.",
+      "visual": "The word 'work on the wall' emphasized, with a zero beside the unmoving wall. A faint 'effort ≠ work' subtitle."
+    },
+    {
+      "id": "s1_b3",
+      "text": "Work isn't effort. Work isn't being tired. Work is a force that actually moves something along its direction.",
+      "visual": "Force arrow plus a displacement arrow, aligned; the product highlighted."
+    },
+    {
+      "id": "s1_b4",
+      "text": "Now push a cart and let it roll. Same force — but this time it moves.",
+      "visual": "The same figure pushing a cart that travels a distance."
+    },
+    {
+      "id": "s1_b5",
+      "text": "Force, times the distance it pushes through. That's work. And it isn't lost — it goes somewhere.",
+      "visual": "Force × distance shaded; an arrow leading into the moving cart."
+    },
+    {
+      "id": "s1_b6",
+      "text": "Where it goes: into motion. The cart that was still is now fast.",
+      "visual": "The cart's speed bar growing as the work pours in."
+    },
+    {
+      "id": "s1_b7",
+      "text": "That motion is itself a kind of energy — energy of movement. The work became speed.",
+      "visual": "The work shading transforming into a 'motion energy' bar on the cart."
+    },
+    {
+      "id": "s1_b8",
+      "text": "Do negative work — push backward, like a brake — and you take that energy out. The cart slows.",
+      "visual": "A backward force on a moving cart; the motion-energy bar draining."
+    },
+    {
+      "id": "s1_b9",
+      "text": "So work is the accounting of energy moving in and out of motion. Add it, motion grows. Remove it, motion shrinks.",
+      "visual": "A ledger: +work raises the motion bar, −work lowers it."
+    },
+    {
+      "id": "s1_b10",
+      "text": "That's the work–energy theorem. The net work done on a thing equals the change in its energy of motion. Exactly.",
+      "visual": "Net work bar on the left, change-in-motion-energy bar on the right, an equals sign."
+    },
+    {
+      "id": "s1_b11",
+      "text": "It's why the wall taught you nothing. No motion, no work, no change. Effort isn't in the equation.",
+      "visual": "The wall scene returns, all three terms zeroed."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Computing the net work on an object and equating it to the change in its kinetic energy to find a final speed — that's yours.",
+      "visual": "Clean: 'net work = change in energy of motion', terms left as open symbols. Holds."
+    }
+  ]
+}

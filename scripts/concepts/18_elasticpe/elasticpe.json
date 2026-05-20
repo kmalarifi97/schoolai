@@ -1,0 +1,107 @@
+{
+  "order": 18,
+  "slug": "elasticpe",
+  "concept_en": "Elastic Potential Energy",
+  "concept_ar": "طاقة الوضع المرونية",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 5,
+    "chapter_title_en": "Energy and Its Conservation",
+    "chapter_title_ar": "الطاقة وحفظها",
+    "lesson": "5-1",
+    "lesson_title_en": "The Many Forms of Energy",
+    "lesson_title_ar": "الأشكال المتعددة للطاقة",
+    "pages": "131-140",
+    "start_page": 131,
+    "end_page": 140,
+    "lesson_objectives": [
+      "استخدام نموذج لربط الشغل بالطاقة",
+      "حساب الطاقة الحركية",
+      "تحديد طاقة الوضع الجاذبية لنظام ما",
+      "تبيين كيفية تخزين طاقة الوضع المرونية"
+    ],
+    "lesson_key_terms": [
+      "طاقة الحركة الدورانية",
+      "طاقة الوضع الجاذبية",
+      "مستوى الإسناد",
+      "طاقة الوضع المرونية"
+    ]
+  },
+  "video": {
+    "target_filename": "elasticpe_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Pull a bow. It doesn't move. It just bends, and waits.",
+      "visual": "A drawn bow held taut, arrow nocked, perfectly still."
+    },
+    {
+      "id": "s1_b2",
+      "text": "You did work to draw it. The bow isn't moving — so where is that work now?",
+      "visual": "A work bar; an arrow at the bent limbs; question mark."
+    },
+    {
+      "id": "s1_b3",
+      "text": "Let go. The arrow leaves at terrific speed. The work was never lost. It was loaded into the bend.",
+      "visual": "Release; the arrow flies; the work bar pours into the arrow's speed."
+    },
+    {
+      "id": "s1_b4",
+      "text": "Energy stored not by height — but by shape. By stretch, by squeeze, by bend.",
+      "visual": "Three quick images: stretched spring, compressed spring, bent ruler, each glowing faintly."
+    },
+    {
+      "id": "s1_b5",
+      "text": "Elastic potential energy. The energy a material holds while it's deformed and trying to spring back.",
+      "visual": "A spring stretched, labeled 'elastic potential energy', a 'wants to return' arrow."
+    },
+    {
+      "id": "s1_b6",
+      "text": "Stretch a little, store a little. Stretch more, and it fights back harder the farther you go.",
+      "visual": "A spring pulled in steps; the resisting arrow growing with each step."
+    },
+    {
+      "id": "s1_b7",
+      "text": "So the stored energy doesn't grow steadily — it grows faster the more you deform it.",
+      "visual": "Stored-energy bar climbing in accelerating jumps versus the stretch amount."
+    },
+    {
+      "id": "s1_b8",
+      "text": "That's why a slightly longer draw on the bow sends the arrow much farther than you'd guess.",
+      "visual": "Two draws, one a little longer; the longer one's stored bar dramatically larger."
+    },
+    {
+      "id": "s1_b9",
+      "text": "It's everywhere. A trampoline. A pole vault. The spring in a clock. A diving board.",
+      "visual": "Quick row: trampoline dip, vault pole bow, coiled clock spring, flexed board."
+    },
+    {
+      "id": "s1_b10",
+      "text": "Push too far and it won't return — the material gives, and the stored energy doesn't come back.",
+      "visual": "A spring overstretched and staying bent; its stored bar emptied uselessly."
+    },
+    {
+      "id": "s1_b11",
+      "text": "Within its limit, though, it's a perfect bank. Put energy in by bending; take it back when it springs.",
+      "visual": "A spring cycling: load (bar fills) then release (bar empties into motion), repeating."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Finding how the stored elastic energy depends on the spring's stiffness and how far it's deformed — that's yours.",
+      "visual": "Clean: a spring at deformation x, x left as an open symbol. Holds."
+    }
+  ]
+}

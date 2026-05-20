@@ -1,0 +1,23 @@
+services:
+  backend:
+    build: ./backend
+    environment:
+      LIB_ROOT: /srv/lib
+      APP_SECRET: change-me-in-production-please
+    volumes:
+      # repo root -> /lib (read-only): gives the backend scripts/** + all mp4s
+      - ..:/srv/lib:ro
+    ports:
+      - "8090:8000"   # host debug port (auto-picked free)
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        BACKEND_URL: http://backend:8000
+    environment:
+      BACKEND_URL: http://backend:8000
+    depends_on:
+      - backend
+    ports:
+      - "3000:3000"

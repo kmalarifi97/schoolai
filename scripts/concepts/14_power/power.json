@@ -1,0 +1,109 @@
+{
+  "order": 14,
+  "slug": "power",
+  "concept_en": "Power — the rate of doing work",
+  "concept_ar": "القدرة",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 4,
+    "chapter_title_en": "Work, Energy, and Simple Machines",
+    "chapter_title_ar": "الشغل والطاقة والآلات البسيطة",
+    "lesson": "4-1",
+    "lesson_title_en": "Work and Energy",
+    "lesson_title_ar": "الطاقة والشغل",
+    "pages": "97-108",
+    "start_page": 97,
+    "end_page": 108,
+    "lesson_objectives": [
+      "وصف العلاقة بين الشغل والطاقة",
+      "حساب الشغل",
+      "حساب القدرة المستهلكة"
+    ],
+    "lesson_key_terms": [
+      "الشغل",
+      "الطاقة",
+      "الطاقة الحركية",
+      "نظرية الشغل-الطاقة",
+      "الجول",
+      "القدرة",
+      "الواط"
+    ]
+  },
+  "video": {
+    "target_filename": "power_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Carry a heavy box up four flights of stairs. Take ten minutes, resting often.",
+      "visual": "A figure climbing slow, a tall stairwell, a clock ticking to 10:00."
+    },
+    {
+      "id": "s1_b2",
+      "text": "Now carry the same box, up the same stairs, in twenty seconds.",
+      "visual": "Same stairwell, same box, the figure sprinting; clock to 0:20."
+    },
+    {
+      "id": "s1_b3",
+      "text": "Here's the thing. The work done was exactly the same. Same weight. Same height.",
+      "visual": "Two identical 'work done' bars, side by side, equal."
+    },
+    {
+      "id": "s1_b4",
+      "text": "Same work — but the sprint nearly killed you and the stroll didn't. Work alone doesn't capture that.",
+      "visual": "Two figures at the top: one calm, one collapsed; the equal work bars still shown. Question mark."
+    },
+    {
+      "id": "s1_b5",
+      "text": "What's different isn't how much. It's how fast. The same job, packed into less time.",
+      "visual": "The equal work bars, but with very different time widths beneath them."
+    },
+    {
+      "id": "s1_b6",
+      "text": "Work divided by the time it took. That's power.",
+      "visual": "Work bar over a time bar, resolving into a single label 'power'."
+    },
+    {
+      "id": "s1_b7",
+      "text": "Same work, less time — more power. Same work, more time — less power. It's a rate.",
+      "visual": "Slider on time: as time shrinks the power bar shoots up; as it grows the power bar drops."
+    },
+    {
+      "id": "s1_b8",
+      "text": "It's why a small engine and a big engine can move the same car the same mile — but not in the same time.",
+      "visual": "Two cars, equal distance covered; one finishes far sooner, a taller power bar."
+    },
+    {
+      "id": "s1_b9",
+      "text": "A weak motor can lift a piano. Eventually. A strong one lifts it now. Same work, different power.",
+      "visual": "Two pulleys raising identical pianos to the same height; one slow, one fast."
+    },
+    {
+      "id": "s1_b10",
+      "text": "The unit honors the man who measured engines against horses. The watt.",
+      "visual": "The label 'watt' appears under the power bar; a faint horse-and-engine motif."
+    },
+    {
+      "id": "s1_b11",
+      "text": "Energy is what you transfer. Power is how fast you transfer it.",
+      "visual": "Two clean labels: 'Energy (joules)' above; 'Power (joules per second)' below, the time denominator highlighted."
+    },
+    {
+      "id": "s1_b12",
+      "text": "Computing power as work divided by time — and as force times speed — for a real climb or engine — that's yours.",
+      "visual": "Clean: 'power = work ÷ time', the numbers left open. Holds."
+    }
+  ]
+}

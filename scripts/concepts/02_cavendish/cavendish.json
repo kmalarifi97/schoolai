@@ -1,0 +1,107 @@
+{
+  "order": 2,
+  "slug": "cavendish",
+  "concept_en": "The Cavendish Experiment — weighing the Earth",
+  "concept_ar": "تجربة كافندش — وزن الأرض",
+  "status": "to-build",
+  "source": null,
+  "book": {
+    "title_ar": "الفيزياء 2 - التعليم الثانوي - نظام المسارات - السنة الثانية",
+    "title_en": "Physics 2 - Secondary Education - Pathways System - Year 2",
+    "edition": "1447 / 2025",
+    "pdf": "../../../book/فيزياء ثاني ثنوي.pdf",
+    "page_note": "PDF page number == printed page number. Cover is page 1.",
+    "chapter": 1,
+    "chapter_title_en": "Gravitation",
+    "chapter_title_ar": "الجاذبية",
+    "lesson": "1-1",
+    "lesson_title_en": "Planetary Motion and Gravitation",
+    "lesson_title_ar": "حركة الكواكب والجاذبية",
+    "pages": "9-17",
+    "start_page": 9,
+    "end_page": 17,
+    "lesson_objectives": [
+      "الربط بين قوانين كبلر وقانون الجذب الكوني",
+      "حساب الزمن الدوري ومقدار السرعة المدارية",
+      "وصف أهمية تجربة كافندش"
+    ],
+    "lesson_key_terms": [
+      "القانون الأول لكبلر",
+      "القانون الثاني لكبلر",
+      "القانون الثالث لكبلر",
+      "قوة الجاذبية",
+      "قانون الجذب الكوني (العام)"
+    ]
+  },
+  "video": {
+    "target_filename": "cavendish_full_voiced_subs.mp4",
+    "status": "to-build"
+  },
+  "production": {
+    "model": "One short intuition video per concept. It builds the idea and stops before the algebra. Students watch to understand, then solve the equations and problems themselves. Worked problems are deliberately NOT videoed.",
+    "tone": "Silence is content. Slow, kitchen-table-warm, curious-not-excited. Not announcer cadence, not documentary gravitas. Concrete everyday hook first; name the formal term once the intuition is felt; end by handing the thinking back to the student.",
+    "visual_signature": "Pure #000000 background (VOID). font=sans for any text. Subtitles burned in Arabic, voice in English. Each beat: id, text (English narration), visual (Manim direction)."
+  },
+  "beats": [
+    {
+      "id": "s1_b1",
+      "text": "Newton gave us the law. Every mass pulls every other mass.",
+      "visual": "Two faint glowing spheres in the void, a thin force line drawn between them."
+    },
+    {
+      "id": "s1_b2",
+      "text": "But the law has a number in it. A constant. Big G. And nobody knew what it was.",
+      "visual": "The force line gains a small floating label: 'G = ?'."
+    },
+    {
+      "id": "s1_b3",
+      "text": "For a hundred years, G was a question mark. The Earth's pull, we could feel. The constant behind it, we could not.",
+      "visual": "The Earth fades in, an apple falling beside it. The '?' lingers."
+    },
+    {
+      "id": "s1_b4",
+      "text": "The problem: to measure G, you need to watch two ordinary objects pull each other. Not a planet. Just two weights.",
+      "visual": "The Earth shrinks away. Two small lead spheres remain, alone."
+    },
+    {
+      "id": "s1_b5",
+      "text": "And that pull is absurdly weak. Two lead spheres a foot apart attract each other with less force than the weight of a single grain of sand.",
+      "visual": "Two lead spheres side by side; a near-invisible force arrow; a single sand grain drops with a vastly larger arrow for contrast."
+    },
+    {
+      "id": "s1_b6",
+      "text": "Cavendish's idea was patient. Hang two small masses from a thin fiber. Like a tiny barbell on a thread.",
+      "visual": "A horizontal rod suspended by a vertical fiber from above; small spheres on each end."
+    },
+    {
+      "id": "s1_b7",
+      "text": "Bring two large masses close. The small ones drift toward them. Just barely.",
+      "visual": "Two large spheres slide in from the sides; the suspended rod twists by a hair."
+    },
+    {
+      "id": "s1_b8",
+      "text": "The fiber twists. And how much it twists tells you exactly how hard they pulled.",
+      "visual": "A faint light beam reflects off the rod onto a distant scale; a tiny deflection magnified."
+    },
+    {
+      "id": "s1_b9",
+      "text": "From a twist you can barely see, Cavendish pulled out G.",
+      "visual": "The deflection resolves into a value: 'G ≈ 6.67 × 10⁻¹¹'."
+    },
+    {
+      "id": "s1_b10",
+      "text": "And once you have G, the law works backward. The same equation that drops an apple can now weigh the entire planet.",
+      "visual": "G's value flows back into the force equation; the Earth swells back into frame."
+    },
+    {
+      "id": "s1_b11",
+      "text": "He didn't visit space. He didn't lift the Earth. He measured a thread, in a room, and held a planet on a number.",
+      "visual": "The Earth sits in the void with a single clean label: 'mₑ'. Quiet hold."
+    },
+    {
+      "id": "s1_b12",
+      "text": "The fiber, the masses, the deflection — that's the apparatus. Extracting the value of G from the measured twist, then using it to compute the Earth's mass — that's yours.",
+      "visual": "The setup redraws as a clean labeled diagram. It holds, silent, inviting the student in."
+    }
+  ]
+}
