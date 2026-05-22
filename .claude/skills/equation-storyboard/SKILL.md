@@ -58,6 +58,13 @@ Use the scene index to signal continuation: if the teaser was scene 1, the
 equation scene is **`s2_*`**. This is a real cue, not cosmetic — it tells the
 downstream agents (and the human) that this clip plays *after* the teaser.
 
+**The `text` field is the ENGLISH narration.** This pipeline's spoken track is
+English (see the Audience note). `text` is what the TTS voices and what sets the
+timing clock. The Arabic فصحى line is a *parallel subtitle track* — same beat
+`id`, supplied in `narration_<slug>_ar.json`, not in this object. When authoring,
+write the English narration here and provide the matching Arabic subtitle line
+per beat alongside.
+
 ## What this skill keeps from lesson-storyboard
 
 The beat-level writing rules are the same and still govern every `text` field:
@@ -187,11 +194,11 @@ continuation of a "what is gravity / spacetime" teaser.
 
 ```json
 [
-  { "id": "s2_b1", "text": "في الفيديو السابق رأينا الكواكب تنزلق في مداراتها على انحناء الفضاء. لكن تأمّل: لكلِّ كوكبٍ مدارُه وسنتُه — عطارد قريبٌ يلهث سريعًا، ونبتون بعيدٌ يزحف ببطء. أفوضى هي… أم أنّ بُعدَ الكوكب يحكم طولَ سنته سرًّا؟", "visual": "Resume the teaser's curved-space bend. Several planets orbit on it — inner ones fast and tight, outer ones slow and wide. A question mark hangs over the system; then the frame splits: planets to the LEFT, a blank equation frame fading in on the RIGHT (the rule we're hunting)." },
-  { "id": "s2_b3", "text": "ابدأ بما يمكن قياسه: بُعد الكوكب عن الشمس. نسمّيه r، نصف قطر المدار — اتّساع الدائرة نفسها.", "visual": "LEFT: a line from sun to planet. The line AND the letter r in the RIGHT-side equation glow red together. Then r is swept larger — the orbit balloons out, the red line lengthening; smaller — it shrinks; the red r in the equation grows and shrinks in step." },
-  { "id": "s2_b5", "text": "أمّا A وB فليسا رمزين غامضين؛ هما كوكبان نضع أحدهما بجانب الآخر لنقارن — كالأرض والمرّيخ.", "visual": "Two planets appear side by side, tagged A and B." },
-  { "id": "s2_b10", "text": "ضاعِف بُعد الكوكب، فلن تتضاعف سنته. بل تطول أكثر. الأُسّان 3 و2 هما اللذان يضبطان هذا التفاوت بدقّة.", "visual": "Distance doubles (×2) with a «³» pulse; the period stretches by ~2.8× with a «²» pulse, numbers shown." },
-  { "id": "s2_b11", "text": "تذكّر انحناء الفضاء: كلّما ابتعد الكوكب، لان المنحدر، فتمهّل دورانه. هذه المعادلة هي ذلك المنحدر، مكتوبًا بالأرقام.", "visual": "Return to the teaser's bend: a far planet rolls slowly down a gentle slope, a near one whips around a steep one." }
+  { "id": "s2_b1", "text": "Last time, you saw planets slide into their orbits, down the bend in space. But look closer. Every planet keeps its own orbit, its own year. Mercury races in close. Neptune crawls far out. Is that just chaos — or is distance secretly setting the year?", "visual": "Resume the teaser's curved-space bend. Several planets orbit — inner ones fast and tight, outer ones slow and wide. A question mark, then the frame splits: planets LEFT, a blank equation frame fading in on the RIGHT (the rule we're hunting)." },
+  { "id": "s2_b3", "text": "Start with what you can measure. How far the planet sits from the sun. Call it r — the size of the orbit itself.", "visual": "LEFT: a line from sun to planet. The line AND the r-slot in the RIGHT equation glow red together. Sweep r larger — the orbit balloons out, red line lengthening; smaller — it shrinks; the red r grows and shrinks in step." },
+  { "id": "s2_b5", "text": "Now take two planets, not one. A and B. Not cryptic symbols — two worlds, held side by side. Earth and Mars.", "visual": "LEFT splits into two mini-systems: planet A (blue tint), planet B (green tint), each with its own r and T. The subscripts in the equation pick up the same tints." },
+  { "id": "s2_b10", "text": "Why cubed, why squared? Double a planet's distance, and its year more than doubles. The exponents are exactly how much more.", "visual": "Sweep r ×2 on the LEFT: the orbit doubles (³ pulse on r) but the period stretches to ~2.8× (² pulse on T). The two reds grow at visibly different rates." },
+  { "id": "s2_b11", "text": "Remember the bend. The farther out, the gentler the slope, the slower the roll. This equation is that bend — written in numbers.", "visual": "The RIGHT equation slides over the teaser's bend; a far planet rolls slowly down a gentle slope, a near one whips around a steep one." }
 ]
 ```
 
@@ -200,12 +207,18 @@ subscript; `b10` stories the *operations* (cube vs. square as a felt mismatch);
 `b11` is the callback. The full scene fills in the remaining parameters (`T`,
 the two ratios) and the assemble beat between these.
 
-## Audience note
+## Audience note: narration is English, subtitles are Arabic
 
-Default to **Arabic فصحى (MSA)** for the narration `text` (Saudi grade-11
-Physics 2). Keep symbols and equations in the usual Latin/standard notation
-(r, T, θ, ω). If the equation video continues an existing teaser, ask whether to
-match the teaser's language for seamless continuity.
+The spoken track for this library is **English** — OpenAI `gpt-4o-mini-tts`,
+voice `onyx`, driven by a fixed voice-direction prompt (slow, "thinking out loud
+across a kitchen table," curiosity-not-excitement). So a beat's **`text` field
+is the English narration** that the TTS speaks and that sets the clock — write it
+in that warm, patient, "you"-voice register, matching the teaser. The **Arabic
+فصحى** version is a *separate, parallel subtitle track* (`narration_<slug>_ar.json`),
+burned in as RTL subtitles timed to the English audio. So produce **two lines per
+beat**: the English narration (the `text` field) and the matching Arabic فصحى
+subtitle. Keep symbols and equations in standard Latin notation (r, T, θ, ω) in
+both. (The فصحى rule governs the subtitles and the tutor chat, not the audio.)
 
 ## What to hand the user
 
