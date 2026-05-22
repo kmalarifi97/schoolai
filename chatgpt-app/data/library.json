@@ -44,6 +44,11 @@
           ],
           "concepts": [
             {
+              "slug": "gravity2",
+              "concept_ar": "ما الجاذبية؟ — نموذج ذهني تمهيدي",
+              "has_video": true
+            },
+            {
               "slug": "gravitation",
               "concept_ar": "قوانين كبلر وقانون الجذب الكوني",
               "has_video": false
@@ -1200,6 +1205,48 @@
         "The second rule: total entropy always increases. That's why time has a direction.",
         "It's why no engine is perfect. Some energy must always be paid out as disordered waste heat. You can't even break even.",
         "Computing an engine's maximum possible efficiency from its hot and cold operating temperatures — that's yours."
+      ]
+    },
+    "gravity2": {
+      "slug": "gravity2",
+      "concept_ar": "ما الجاذبية؟ — نموذج ذهني تمهيدي",
+      "concept_en": "What is gravity? — foundational mental model",
+      "chapter": 1,
+      "chapter_title_ar": "الجاذبية",
+      "lesson": "1-1",
+      "lesson_title_ar": "حركة الكواكب والجاذبية",
+      "pages": "",
+      "has_video": true,
+      "phet": null,
+      "kind": "foundation",
+      "handoff_ar": "هذا الفيديو يبني الحدس: ما الجاذبية ولماذا تتجاذب الأجسام. نيوتن أعطانا معادلةً دقيقة لِـ«مقدار» قوة الجذب، أمّا «لماذا» فحكايةٌ أعمق (انحناء الزمكان). الآن لننتقل إلى ما يقوله الكتاب: قوانين كبلر، ثم قانون نيوتن للجذب الكوني.",
+      "beats": [
+        "Forget planets for a second. Forget the sun, the moon, all of it. Picture two rocks floating in empty space.",
+        "Nothing's touching them. Nothing's pushing them. Just two rocks in the dark.",
+        "Watch.",
+        "The smaller one starts drifting. Toward the bigger one.",
+        "Nothing made it move. No wind, no magnet, no string. The big rock just pulled it. Quietly. Across empty space.",
+        "That's gravity. The whole thing. Anything with mass pulls anything else with mass. That's the rule.",
+        "It's not a planet thing. It's not even a space thing. Two coins on a table are pulling each other right now. You just can't feel it, because the pull is unimaginably tiny.",
+        "But in deep space, with nothing else around, that tiny pull is all there is. The rocks have nowhere to go but toward each other.",
+        "So they clump.",
+        "And the bigger they get, the more they pull. More rocks come in.",
+        "Give it a few million years.",
+        "And the lump becomes a ball.",
+        "That's a planet. Nobody built it. It built itself. Out of nothing but gravity and time.",
+        "Now zoom out further. Other rocks were doing the same thing nearby.",
+        "Same rule. Bigger pieces. The sun is just a rock that got so heavy it caught fire. The planets are rocks that didn't quite make it.",
+        "So when you look up and see planets in clean orbits — nobody arranged them. They fell into each other, billions of years ago, and what's left is what stuck.",
+        "Okay. But that just tells you what gravity does. It doesn't tell you why.",
+        "Why does a rock care about another rock? Why does mass pull anything at all?",
+        "Newton wrote a perfect equation for how strong the pull is. But the equation doesn't say why.",
+        "To answer that, we have to leave physics for a minute. Imagine a trampoline.",
+        "Put a bowling ball in the middle. The fabric sags around it.",
+        "Now roll a marble past it. The marble curves in.",
+        "Nothing is pulling the marble. It's just rolling on a surface that's been bent.",
+        "That's what gravity actually is. Heavy things bend the space around them. And everything else just rolls along the bend.",
+        "The two rocks weren't pulling each other. They were rolling into each other. Down a bend in space we couldn't see.",
+        "Nobody built the planets. They rolled into each other. Down the curve."
       ]
     }
   },
