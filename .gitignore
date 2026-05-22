@@ -29,5 +29,6 @@ venv/
 *.log
 .DS_Store
 
-# Local Claude Code state (worktrees, etc.)
-.claude/
+# Local Claude Code state (worktrees, etc.) — but keep project skills tracked
+.claude/*
+!.claude/skills/
