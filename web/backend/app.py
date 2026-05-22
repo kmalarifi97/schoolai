@@ -14,6 +14,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, FileResponse, Response, StreamingResponse
 
 from catalog import build
+from gpt_api import make_router
 
 HERE = pathlib.Path(__file__).resolve().parent
 SECRET = (os.environ.get("APP_SECRET")
@@ -32,6 +33,9 @@ app = FastAPI(title="Physics 2 Library")
 app.add_middleware(
     CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"],
 )
+
+# Read-only curriculum metadata for the Custom GPT Action (see gpt_api.py).
+app.include_router(make_router(CATALOG))
 
 
 def _sign(username: str) -> str:
