@@ -1,0 +1,11 @@
+{
+  "s1_b1": "Newton's law works for ANY two masses. Now point it at something personal — you, and the Earth under your feet.",
+  "s1_b2": "You feel your weight right now, pressing into the floor. But what IS that, really?",
+  "s1_b3": "Your weight is just Newton's pull — between your mass and the Earth's. Write 'your weight is m-g' on one side, and Newton's pull on the other. They're the same thing.",
+  "s1_b4": "Your own mass sits on both sides — so it cancels. Gravity's pull per kilogram doesn't care how heavy you are. A feather and a hammer fall together.",
+  "s1_b5": "What's left is g — the pull per kilogram at the surface. It depends only on the Earth's mass, and your distance from its center: its radius.",
+  "s1_b6": "So g equals big G times the Earth's mass, over its radius squared. Put in the numbers, and out comes nine-point-eight — the number you've known all along.",
+  "s1_b7": "What's it for? It tells you the surface gravity of ANY world. Swap in the Moon's mass and radius — you get one-sixth. Mars, Jupiter, a distant moon: same equation, new world.",
+  "s1_b8": "It's the same bend. A heavier world digs a deeper well — and g is how steep that well is right at the surface.",
+  "s1_b9": "No codes. g, the pull per kilogram. m-Earth, the world's mass. r-Earth, its radius. The square, again the sphere. Read it — that's why you weigh what you weigh."
+}

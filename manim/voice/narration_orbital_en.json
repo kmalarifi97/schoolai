@@ -1,0 +1,12 @@
+{
+  "s1_b1": "Newton gave you the force. Kepler gave you a pattern in the planets. Watch them meet.",
+  "s1_b2": "A planet circles the sun, year after year — never falling in, never flying off. What sets the length of its year?",
+  "s1_b3": "Gravity is the leash. The inward pull is exactly the force needed to bend a straight path into a circle. Set those two equal, and the year falls out.",
+  "s1_b4": "On one side, Newton's pull: big G, the sun's mass, the planet's mass, over r squared. On the other, the turn a circle demands — which grows with speed and shrinks with radius.",
+  "s1_b5": "The planet's own mass cancels — its year doesn't care how heavy it is. Solve for the time of one loop, and you get this.",
+  "s1_b6": "Here, T is the planet's year. r, the size of its orbit. m-sun, the mass it circles. And G again, gravity's constant.",
+  "s1_b7": "Push the planet farther out, and its year grows — fast. The distance is cubed under the root, so the year stretches by its cube root. Distance rules the calendar.",
+  "s1_b8": "T equals two-pi times the square root of r cubed, over G times the sun's mass. Hand it an orbit's size and the sun's mass, and it predicts the year — for any planet, any satellite, any exoplanet you'll never visit.",
+  "s1_b9": "And look — this IS Kepler's third law. What he found by staring at data, Newton's gravity now explains. Same bend, same rule — measured once, derived now.",
+  "s1_b10": "No codes. T, the year. r, the orbit's size. m-sun, what it circles. G, gravity's constant. The cube and the root — distance ruling time. Read it: the law that times the heavens."
+}
