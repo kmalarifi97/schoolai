@@ -10,6 +10,7 @@
 //   read_lesson_pages(lesson) full per-page textbook content (vision-once JSON)
 //   find_question(lesson,...)  resolve "سؤال 8 صفحة 17" to the exact question
 // Show tools (in-chat widgets):
+//   show_prerequisite_video(lesson) lesson's foundation/teaser video (kind:foundation)
 //   show_concept_video(concept)   concept intuition video player
 //   show_project_video(project)   project (homework story) video player
 //
@@ -390,6 +391,45 @@ function createPhysicsServer() {
       const note = payload.video_url
         ? `يعرض فيديو: ${c.concept_ar} (${c.concept_en}).`
         : `${c.concept_ar}: ${payload.message}`;
+      return { content: [{ type: "text", text: note }], structuredContent: payload };
+    }
+  );
+
+  // ---- show_prerequisite_video ----
+  registerAppTool(
+    server,
+    "show_prerequisite_video",
+    {
+      title: "Show a lesson's prerequisite (foundation) video",
+      description:
+        "Open the foundational intuition video a lesson should START with — the " +
+        "mental-model 'appetizer' (kind: foundation) that builds intuition and " +
+        "sparks curiosity BEFORE any equation or book content. Pass a lesson id " +
+        "(e.g. '1-1'); returns the in-chat player for that lesson's prerequisite " +
+        "video. Use this to OPEN a lesson before teaching from the book; for " +
+        "lesson 1-1 it is the gravity-intuition video. If a lesson has no " +
+        "foundation video, it says so.",
+      inputSchema: { lesson: z.string().min(1).describe("Lesson id, e.g. '1-1'") },
+      outputSchema: {
+        slug: z.string().optional(), concept_ar: z.string().optional(),
+        concept_en: z.string().optional(), chapter_title_ar: z.string().optional(),
+        lesson_title_ar: z.string().optional(), pages: z.string().optional(),
+        phet: z.string().nullable().optional(), video_url: z.string().nullable().optional(),
+        message: z.string().nullable().optional(),
+      },
+      _meta: { ui: { resourceUri: VIDEO_WIDGET } },
+    },
+    async ({ lesson }) => {
+      const lid = lesson.trim();
+      const found = conceptList.find((c) => c.kind === "foundation" && c.lesson === lid);
+      if (!found) {
+        const msg = `لا يوجد فيديو تمهيدي (نموذج ذهني) للدرس "${lesson}".`;
+        return { ...text(msg), structuredContent: { message: msg } };
+      }
+      const payload = conceptWidgetPayload(found);
+      const note = payload.video_url
+        ? `الفيديو التمهيدي للدرس ${lid}: ${found.concept_ar} — افتتح به الحصة ثم انتقل إلى الكتاب.`
+        : `${found.concept_ar}: ${payload.message}`;
       return { content: [{ type: "text", text: note }], structuredContent: payload };
     }
   );
