@@ -100,28 +100,41 @@ order. The middle (one beat per parameter) is the heart.
    and its own year; is that chaos, or is distance secretly tied to time?"* —
    and let the need to measure fall out of it. End on the question, not the
    instruction.
-2. **What-can-we-measure beat** — name the handful of real, observable
+2. **The turn — answer the question** — immediately after the hook, give the
+   confident one-line answer: *"It's not chaos. There's a rule."* Don't leave
+   the question hanging through the whole parameter build — the student needs to
+   know a payoff is coming, *then* watch you earn it. The hook buys attention;
+   the turn promises it's worth it.
+3. **What-can-we-measure beat** — name the handful of real, observable
    quantities before any symbol appears. Grounds the symbols in things.
-3. **One beat per parameter** — *the core of the skill.* Introduce each symbol
+4. **One beat per parameter** — *the core of the skill.* Introduce each symbol
    only after the thing it names is on screen, and say what it stands for in
    plain words. `r` is "how wide the orbit is," not "the radius variable." Then
    **vary it live** (see principle 2): drag the parameter up and down and let
    the object respond on screen, so the symbol is felt as a knob, not read as a
    label.
-4. **Demystify subscripts/indices** — `A` and `B` aren't arcana; they're "two
+5. **Demystify subscripts/indices** — `A` and `B` aren't arcana; they're "two
    real worlds you're holding side by side." Make them concrete (Earth, Mars).
-5. **Story the operations, not just the letters** — a ratio is "how many times
+6. **Story the operations, not just the letters** — a ratio is "how many times
    bigger"; an exponent is a *rhythm* or *mismatch*, not decoration. This is
    where most equation explainers fail: they read the letters and ignore the
    `³`, the `/`, the `=`.
-6. **Assemble beat** — build the equation piece by piece on screen and let the
+7. **Assemble beat** — build the equation piece by piece on screen and let the
    `=` snap shut. Don't present the finished formula and then dissect it;
    construct it so the student watches it cohere.
-7. **Callback beat** — return to the teaser's image with the equation overlaid:
+8. **What it's FOR beat** — *the payoff, and the one most often missing.* State
+   plainly what the equation lets you *do*: what you put in, what you get out,
+   what question it answers — "know a planet's distance, and you can predict its
+   year without ever timing it." Then rule out the neighbours so the student
+   isn't left guessing what they're solving for: "it won't give you the planet's
+   mass, or the shape of its path — just how distance and time trade off." A
+   student who can read every symbol still can't *use* the equation until this
+   beat lands.
+9. **Callback beat** — return to the teaser's image with the equation overlaid:
    *"this equation is that bend, written in numbers."*
-8. **Landing beat** — recap each symbol in one line so the bare equation is now
-   readable: "r = orbit width, T = the planet's year, A and B = two worlds, the
-   exponents = the rhythm."
+10. **Landing beat** — recap each symbol in one line so the bare equation is now
+    readable: "r = orbit width, T = the planet's year, A and B = two worlds, the
+    exponents = the rhythm."
 
 ## Principles specific to equations
 
