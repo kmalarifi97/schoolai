@@ -84,8 +84,15 @@ not repeated here.
 Not a rigid template, but an equation storyboard usually needs these, roughly in
 order. The middle (one beat per parameter) is the heart.
 
-1. **Resume beat** — open on the teaser's final image; pivot from *feeling* to
-   *measuring*. ("You felt why it happens. Feeling isn't enough. Into the lab.")
+1. **Resume + earn the measurement** — open on the teaser's final image, then
+   raise the *student's own* question — the one that makes measuring feel
+   necessary. Do **not** announce the destination ("now let's measure," "into
+   the lab"); that's the equation-mode version of reading the next slide aloud,
+   and it leaves the student performing steps without knowing why. Instead
+   surface the mystery the equation resolves — *"every planet has its own orbit
+   and its own year; is that chaos, or is distance secretly tied to time?"* —
+   and let the need to measure fall out of it. End on the question, not the
+   instruction.
 2. **What-can-we-measure beat** — name the handful of real, observable
    quantities before any symbol appears. Grounds the symbols in things.
 3. **One beat per parameter** — *the core of the skill.* Introduce each symbol
@@ -145,6 +152,21 @@ order. The middle (one beat per parameter) is the heart.
    beat), and in the system mark the equation concept as building on the
    teaser (see below).
 
+## Staging: split the frame, bind by color
+
+Keep the **equation on one side and the world on the other**, both on screen at
+once for the whole scene. The equation is not a payoff card revealed at the end;
+it's a **scoreboard the student watches fill in**. The link between the two
+halves is **color**: when you explain a parameter, highlight the symbol in the
+equation *and* its referent in the world in the **same color** (e.g. red), at
+the same moment. `r` turns red in the formula while the orbit's radius turns red
+on the other side — together. When you sweep the knob (principle 2), both red
+elements move in step. When you compare two cases, give each case its own tint
+(A blue, B green) and carry that tint into the subscripts. This synchronized,
+persistent highlight is what makes *"this symbol is that thing"* unmissable —
+much stronger than a label or an arrow. State the layout (which side holds what)
+and the matched color in the `visual` field of every parameter beat.
+
 ## System linking (this pipeline)
 
 The equation scene is bound to its teaser, not free-floating:
@@ -165,8 +187,8 @@ continuation of a "what is gravity / spacetime" teaser.
 
 ```json
 [
-  { "id": "s2_b1", "text": "في الفيديو السابق شعرتَ لماذا تدور الكواكب: الكتلة تُحني الفضاء، فتنزلق الأجسام في مداراتها. لكنّ الشعور وحده لا يكفي. هيّا إلى المختبر.", "visual": "The curved-space bend from the teaser's final shot. Camera pulls back through it into an old observatory: telescope, a notebook of numbers." },
-  { "id": "s2_b3", "text": "الأوّل: بُعد الكوكب عن الشمس. نسمّيه r، نصف قطر المدار — ببساطة: ما اتّساع الدائرة التي يرسمها الكوكب.", "visual": "A line stretches from the sun to the planet, labeled r. Then r is dragged larger — the whole orbit balloons outward, the planet sliding out with it; dragged smaller — the orbit shrinks inward. The student sees r IS the orbit's size, not a label on it." },
+  { "id": "s2_b1", "text": "في الفيديو السابق رأينا الكواكب تنزلق في مداراتها على انحناء الفضاء. لكن تأمّل: لكلِّ كوكبٍ مدارُه وسنتُه — عطارد قريبٌ يلهث سريعًا، ونبتون بعيدٌ يزحف ببطء. أفوضى هي… أم أنّ بُعدَ الكوكب يحكم طولَ سنته سرًّا؟", "visual": "Resume the teaser's curved-space bend. Several planets orbit on it — inner ones fast and tight, outer ones slow and wide. A question mark hangs over the system; then the frame splits: planets to the LEFT, a blank equation frame fading in on the RIGHT (the rule we're hunting)." },
+  { "id": "s2_b3", "text": "ابدأ بما يمكن قياسه: بُعد الكوكب عن الشمس. نسمّيه r، نصف قطر المدار — اتّساع الدائرة نفسها.", "visual": "LEFT: a line from sun to planet. The line AND the letter r in the RIGHT-side equation glow red together. Then r is swept larger — the orbit balloons out, the red line lengthening; smaller — it shrinks; the red r in the equation grows and shrinks in step." },
   { "id": "s2_b5", "text": "أمّا A وB فليسا رمزين غامضين؛ هما كوكبان نضع أحدهما بجانب الآخر لنقارن — كالأرض والمرّيخ.", "visual": "Two planets appear side by side, tagged A and B." },
   { "id": "s2_b10", "text": "ضاعِف بُعد الكوكب، فلن تتضاعف سنته. بل تطول أكثر. الأُسّان 3 و2 هما اللذان يضبطان هذا التفاوت بدقّة.", "visual": "Distance doubles (×2) with a «³» pulse; the period stretches by ~2.8× with a «²» pulse, numbers shown." },
   { "id": "s2_b11", "text": "تذكّر انحناء الفضاء: كلّما ابتعد الكوكب، لان المنحدر، فتمهّل دورانه. هذه المعادلة هي ذلك المنحدر، مكتوبًا بالأرقام.", "visual": "Return to the teaser's bend: a far planet rolls slowly down a gentle slope, a near one whips around a steep one." }
