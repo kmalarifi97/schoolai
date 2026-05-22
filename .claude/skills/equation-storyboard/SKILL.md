@@ -90,7 +90,10 @@ order. The middle (one beat per parameter) is the heart.
    quantities before any symbol appears. Grounds the symbols in things.
 3. **One beat per parameter** — *the core of the skill.* Introduce each symbol
    only after the thing it names is on screen, and say what it stands for in
-   plain words. `r` is "how wide the orbit is," not "the radius variable."
+   plain words. `r` is "how wide the orbit is," not "the radius variable." Then
+   **vary it live** (see principle 2): drag the parameter up and down and let
+   the object respond on screen, so the symbol is felt as a knob, not read as a
+   label.
 4. **Demystify subscripts/indices** — `A` and `B` aren't arcana; they're "two
    real worlds you're holding side by side." Make them concrete (Earth, Mars).
 5. **Story the operations, not just the letters** — a ratio is "how many times
@@ -112,23 +115,34 @@ order. The middle (one beat per parameter) is the heart.
    *before* using the letter, and ideally show the thing first. The student
    should never meet `T` as "T"; they meet "the planet's year," which we'll
    *call* `T`.
-2. **Operations carry meaning too.** Story the ratio, the power, the equals.
+2. **Bind each parameter to a live behavior — make the symbol a knob.** A
+   parameter only becomes meaningful when the student watches the object
+   *respond* to it. Don't label `r` on a frozen orbit; **vary it** — drag `r`
+   bigger and let the orbit balloon outward, smaller and let it shrink in. Turn
+   the symbol up and down and animate what changes (bigger/smaller,
+   faster/slower, stronger/weaker). This live mapping — symbol ↔ visible
+   behavior — is the single highest-leverage move in an equation video, because
+   it converts an arbitrary letter into a thing the student has *operated*. Put
+   it in the `visual` field of every parameter beat: state the static label,
+   then sweep the value and show the consequence.
+3. **Operations carry meaning too.** Story the ratio, the power, the equals.
    "Cube vs. square" should land as *a specific lopsidedness the student can
    state* (double the distance and the year more-than-doubles), not as "raised
-   to the third power."
-3. **Subscripts are instances, not decoration.** Bind them to concrete cases so
+   to the third power." These are best shown the same way as principle 2 — by
+   sweeping a value and watching the mismatch.
+4. **Subscripts are instances, not decoration.** Bind them to concrete cases so
    the student stops reading them as noise.
-4. **Build, don't present.** Assemble the equation live. A formula that appears
+5. **Build, don't present.** Assemble the equation live. A formula that appears
    whole reads as authority handed down; one that is constructed reads as
    something the student could have found.
-5. **Honor the equation's epistemic status.** An *empirical* law (a pattern in
+6. **Honor the equation's epistemic status.** An *empirical* law (a pattern in
    data, like Kepler's 3rd) describes; it does not explain. You may borrow the
    teaser's intuition to make it *feel* inevitable — but don't claim the
    intuition *derives* it. Save the real "why" for the later *causal* equation
    (e.g. Newton's law deriving Kepler's), and say so honestly. Flag this
    distinction to the user when it applies.
-6. **Link to the teaser explicitly.** Open and close on its image (principle 7
-   above), and in the system mark the equation concept as building on the
+7. **Link to the teaser explicitly.** Open and close on its image (the callback
+   beat), and in the system mark the equation concept as building on the
    teaser (see below).
 
 ## System linking (this pipeline)
@@ -152,7 +166,7 @@ continuation of a "what is gravity / spacetime" teaser.
 ```json
 [
   { "id": "s2_b1", "text": "في الفيديو السابق شعرتَ لماذا تدور الكواكب: الكتلة تُحني الفضاء، فتنزلق الأجسام في مداراتها. لكنّ الشعور وحده لا يكفي. هيّا إلى المختبر.", "visual": "The curved-space bend from the teaser's final shot. Camera pulls back through it into an old observatory: telescope, a notebook of numbers." },
-  { "id": "s2_b3", "text": "الأوّل: بُعد الكوكب عن الشمس. نسمّيه r، نصف قطر المدار — ببساطة: ما اتّساع الدائرة التي يرسمها الكوكب.", "visual": "A line stretches from the sun to the planet, labeled r. The orbit circle glows." },
+  { "id": "s2_b3", "text": "الأوّل: بُعد الكوكب عن الشمس. نسمّيه r، نصف قطر المدار — ببساطة: ما اتّساع الدائرة التي يرسمها الكوكب.", "visual": "A line stretches from the sun to the planet, labeled r. Then r is dragged larger — the whole orbit balloons outward, the planet sliding out with it; dragged smaller — the orbit shrinks inward. The student sees r IS the orbit's size, not a label on it." },
   { "id": "s2_b5", "text": "أمّا A وB فليسا رمزين غامضين؛ هما كوكبان نضع أحدهما بجانب الآخر لنقارن — كالأرض والمرّيخ.", "visual": "Two planets appear side by side, tagged A and B." },
   { "id": "s2_b10", "text": "ضاعِف بُعد الكوكب، فلن تتضاعف سنته. بل تطول أكثر. الأُسّان 3 و2 هما اللذان يضبطان هذا التفاوت بدقّة.", "visual": "Distance doubles (×2) with a «³» pulse; the period stretches by ~2.8× with a «²» pulse, numbers shown." },
   { "id": "s2_b11", "text": "تذكّر انحناء الفضاء: كلّما ابتعد الكوكب، لان المنحدر، فتمهّل دورانه. هذه المعادلة هي ذلك المنحدر، مكتوبًا بالأرقام.", "visual": "Return to the teaser's bend: a far planet rolls slowly down a gentle slope, a near one whips around a steep one." }
