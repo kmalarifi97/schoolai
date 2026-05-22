@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>فيديو المفهوم</title>
+    <style>
+      :root { color-scheme: dark; }
+      html, body { margin: 0; width: 100%; }
+      body {
+        background: #000;
+        color: #f4f4f5;
+        font-family: system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+        padding: 16px;
+        box-sizing: border-box;
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .player {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background: #000;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid #1c1c1f;
+      }
+      video { width: 100%; height: 100%; display: block; background: #000; }
+      h1 { font-size: 1.3rem; margin: 16px 0 2px; line-height: 1.4; }
+      .en { color: #9ca3af; font-size: 0.95rem; margin: 0 0 10px; direction: ltr; text-align: right; }
+      .meta { color: #a1a1aa; font-size: 0.85rem; margin: 0 0 14px; }
+      .meta span { white-space: nowrap; }
+      .meta span + span::before { content: "·"; margin: 0 8px; color: #52525b; }
+      .actions { display: flex; gap: 10px; flex-wrap: wrap; }
+      a.btn, button.btn {
+        appearance: none; border: 1px solid #2a2a2e; background: #131316;
+        color: #f4f4f5; text-decoration: none; font: inherit; font-size: 0.9rem;
+        padding: 9px 16px; border-radius: 10px; cursor: pointer;
+      }
+      a.btn:hover, button.btn:hover { background: #1c1c20; }
+      .phet { border-color: #2563eb55; }
+      .empty { color: #a1a1aa; padding: 40px 8px; text-align: center; line-height: 1.7; }
+      .hidden { display: none; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="empty" class="empty">…جارٍ تحميل الفيديو</div>
+
+      <div id="card" class="hidden">
+        <div class="player">
+          <video id="video" controls playsinline preload="metadata"></video>
+        </div>
+        <h1 id="title_ar"></h1>
+        <p id="title_en" class="en"></p>
+        <p class="meta">
+          <span id="chapter"></span><span id="lesson"></span><span id="pages"></span>
+        </p>
+        <div class="actions">
+          <button id="phet" class="btn phet hidden" type="button">افتح المحاكاة التفاعلية (PhET)</button>
+        </div>
+      </div>
+    </main>
+
+    <script type="module">
+      const $ = (id) => document.getElementById(id);
+
+      function openExternal(href) {
+        // Prefer the host bridge; fall back to a normal navigation.
+        try {
+          if (window.openai && typeof window.openai.openExternal === "function") {
+            window.openai.openExternal({ href });
+            return;
+          }
+        } catch (_) {}
+        window.open(href, "_blank", "noopener");
+      }
+
+      function render(data) {
+        if (!data || !data.video_url) {
+          $("card").classList.add("hidden");
+          $("empty").classList.remove("hidden");
+          $("empty").textContent = data && data.message
+            ? data.message
+            : "لا يوجد فيديو لهذا المفهوم بعد.";
+          return;
+        }
+        $("empty").classList.add("hidden");
+        $("card").classList.remove("hidden");
+
+        const v = $("video");
+        if (v.src !== data.video_url) v.src = data.video_url;
+        if (data.poster_url) v.poster = data.poster_url;
+
+        $("title_ar").textContent = data.concept_ar || "";
+        $("title_en").textContent = data.concept_en || "";
+        $("chapter").textContent = data.chapter_title_ar ? "الفصل: " + data.chapter_title_ar : "";
+        $("lesson").textContent = data.lesson_title_ar ? "الدرس: " + data.lesson_title_ar : "";
+        $("pages").textContent = data.pages ? "صفحات: " + data.pages : "";
+
+        const phetBtn = $("phet");
+        if (data.phet) {
+          phetBtn.classList.remove("hidden");
+          phetBtn.onclick = () => openExternal(data.phet);
+        } else {
+          phetBtn.classList.add("hidden");
+        }
+      }
+
+      // ChatGPT Apps SDK runtime: the triggering tool's structuredContent is on
+      // window.openai.toolOutput, refreshed via the openai:set_globals event.
+      function readToolOutput() {
+        try { return window.openai && window.openai.toolOutput; } catch (_) { return null; }
+      }
+
+      render(readToolOutput());
+      window.addEventListener("openai:set_globals", () => render(readToolOutput()));
+
+      // Cross-host MCP Apps bridge fallback: react to model-initiated results.
+      window.addEventListener("message", (e) => {
+        const m = e.data;
+        if (!m || m.jsonrpc !== "2.0") return;
+        if (m.method === "ui/notifications/tool-result" && m.params) {
+          render(m.params.structuredContent || m.params);
+        }
+      });
+    </script>
+  </body>
+</html>

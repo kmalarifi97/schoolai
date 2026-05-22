@@ -28,3 +28,6 @@ venv/
 # Logs & misc
 *.log
 .DS_Store
+
+# Local Claude Code state (worktrees, etc.)
+.claude/
