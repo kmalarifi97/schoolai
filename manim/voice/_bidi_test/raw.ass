@@ -1,0 +1,17 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+ScaledBorderAndShadow: yes
+WrapStyle: 0
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Arabic,Arial Unicode MS,30,&H00FFFFFF,&H000000FF,&H00000000,&HC0000000,0,0,0,0,100,100,0,0,1,2.0,0,2,80,80,50,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.00,Arabic,,0,0,0,,في الفيديو السابق رأينا الكواكب تنزلق في مداراتها على انحناء الفضاء. عطارد قريبٌ سريع، ونبتون بعيدٌ بطيء.
+Dialogue: 0,0:00:02.00,0:00:04.00,Arabic,,0,0,0,,جرّب نسبة المسافتين: r_A على r_B — كم مرّةً يبعد A أكثر من B.
+Dialogue: 0,0:00:04.00,0:00:06.00,Arabic,,0,0,0,,فما فائدتها؟ اعرف بُعد كوكب، فتتنبّأ بطول سنته. كوكبٌ يكشف عن آخر — لا كتلته ولا شكل مساره (mass, path).

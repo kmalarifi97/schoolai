@@ -21,6 +21,9 @@ venv/
 *.mp3
 *.wav
 
+# Source textbook PDFs (keep the structure.json mapping in git, not the binary)
+*.pdf
+
 # Manim render cache / output
 **/media/
 *.cache-9
