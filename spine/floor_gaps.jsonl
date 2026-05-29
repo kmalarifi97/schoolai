@@ -1,0 +1,1 @@
+# Math-floor gaps: physics nodes needing a math prerequisite that has NO graph node. EMPTY for this slice -- the calculus/vector floor (derivative, integral, vector, cross product, trig) is fully present and wired in. Ungrounded-root physics nodes are reported in REPORT.md, not here.
