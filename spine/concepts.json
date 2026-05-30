@@ -1,0 +1,132 @@
+{
+ "gravitation": {
+  "concept_en": "Kepler's Laws → Newton's Universal Gravitation",
+  "lesson": "1-1",
+  "book_pages": "9-17"
+ },
+ "cavendish": {
+  "concept_en": "The Cavendish Experiment — weighing the Earth",
+  "lesson": "1-1",
+  "book_pages": "9-17"
+ },
+ "gfield": {
+  "concept_en": "The Gravitational Field",
+  "lesson": "1-2",
+  "book_pages": "18-35"
+ },
+ "weightless": {
+  "concept_en": "Weightlessness & Free Fall (orbit as perpetual falling)",
+  "lesson": "1-2",
+  "book_pages": "18-35"
+ },
+ "equivalence": {
+  "concept_en": "Inertial vs Gravitational Mass & the Equivalence Principle",
+  "lesson": "1-2",
+  "book_pages": "18-35"
+ },
+ "angular": {
+  "concept_en": "Angular Motion — displacement, velocity, acceleration",
+  "lesson": "2-1",
+  "book_pages": "37-41"
+ },
+ "torque": {
+  "concept_en": "Torque & the Lever Arm",
+  "lesson": "2-2",
+  "book_pages": "42-46"
+ },
+ "centerofmass": {
+  "concept_en": "Center of Mass & Stability",
+  "lesson": "2-3",
+  "book_pages": "47-65"
+ },
+ "fictitious": {
+  "concept_en": "Fictitious Forces — Centrifugal & Coriolis",
+  "lesson": "2-3",
+  "book_pages": "47-65"
+ },
+ "impulse": {
+  "concept_en": "Impulse–Momentum Theorem",
+  "lesson": "3-1",
+  "book_pages": "67-73"
+ },
+ "momentumcons": {
+  "concept_en": "Conservation of Momentum",
+  "lesson": "3-2",
+  "book_pages": "74-95"
+ },
+ "workenergy": {
+  "concept_en": "Work–Energy Theorem",
+  "lesson": "4-1",
+  "book_pages": "97-108"
+ },
+ "cars": {
+  "concept_en": "Kinetic Energy",
+  "lesson": "4-1",
+  "book_pages": "97-108"
+ },
+ "power": {
+  "concept_en": "Power — the rate of doing work",
+  "lesson": "4-1",
+  "book_pages": "97-108"
+ },
+ "machines": {
+  "concept_en": "Simple Machines & Mechanical Advantage",
+  "lesson": "4-2",
+  "book_pages": "109-129"
+ },
+ "efficiency": {
+  "concept_en": "Efficiency — ideal vs real machines",
+  "lesson": "4-2",
+  "book_pages": "109-129"
+ },
+ "gravpe": {
+  "concept_en": "Gravitational Potential Energy & Reference Level",
+  "lesson": "5-1",
+  "book_pages": "131-140"
+ },
+ "elasticpe": {
+  "concept_en": "Elastic Potential Energy",
+  "lesson": "5-1",
+  "book_pages": "131-140"
+ },
+ "rotke": {
+  "concept_en": "Rotational Kinetic Energy",
+  "lesson": "5-1",
+  "book_pages": "131-140"
+ },
+ "pendulum": {
+  "concept_en": "Conservation of Mechanical Energy",
+  "lesson": "5-2",
+  "book_pages": "141-163"
+ },
+ "collisions": {
+  "concept_en": "Collisions — Elastic & Inelastic",
+  "lesson": "5-2",
+  "book_pages": "141-163"
+ },
+ "tempvsthermal": {
+  "concept_en": "Temperature vs Thermal Energy",
+  "lesson": "6-1",
+  "book_pages": "165-177"
+ },
+ "heattransfer": {
+  "concept_en": "Heat Transfer — Conduction, Convection, Radiation",
+  "lesson": "6-1",
+  "book_pages": "165-177"
+ },
+ "specificheat": {
+  "concept_en": "Specific Heat",
+  "lesson": "6-1",
+  "book_pages": "165-177"
+ },
+ "latentheat": {
+  "concept_en": "Latent Heat — energy hidden in a change of state",
+  "lesson": "6-2",
+  "book_pages": "178-200"
+ },
+ "thermolaws": {
+  "concept_en": "The Laws of Thermodynamics & Entropy",
+  "lesson": "6-2",
+  "book_pages": "178-200"
+ }
+}

@@ -9,6 +9,9 @@
 //   get_project(project)      project detail incl. beats
 //   read_lesson_pages(lesson) full per-page textbook content (vision-once JSON)
 //   find_question(lesson,...)  resolve "سؤال 8 صفحة 17" to the exact question
+// Diagnostic tools (KST gap-finding — teach the student's gap, not ToC order):
+//   suggest_next_question(responses) most informative next item to ask
+//   diagnose(responses)              locate the gap -> concept/lesson to teach
 // Show tools (in-chat widgets):
 //   show_prerequisite_video(lesson) lesson's foundation/teaser video (kind:foundation)
 //   show_concept_video(concept)   concept intuition video player
@@ -31,6 +34,8 @@ import {
   registerAppTool,
   RESOURCE_MIME_TYPE,
 } from "@modelcontextprotocol/ext-apps/server";
+
+import { createDiagnostics } from "./kst.js";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT ?? 8787);
@@ -63,6 +68,17 @@ for (const f of readdirSync(LP_DIR)) {
 
 const concepts = LIB.concepts; // { slug: {...} }
 const conceptList = Object.values(concepts);
+
+// KST diagnostic engine (JS port of spine/kst.py). Reads the bundled spine data
+// (data/spine/*.jsonl + concepts.json). Loaded once; gracefully disabled if the
+// spine data is absent so the rest of the tutor still works.
+let diagnostics = null;
+try {
+  diagnostics = createDiagnostics({ spineDir: join(HERE, "data", "spine") });
+  console.log(`KST diagnostics ready: ${diagnostics._struct.states.length} knowledge states`);
+} catch (e) {
+  console.error(`KST diagnostics disabled: ${e.message}`);
+}
 const projects = LIB.projects;
 const projectBySlug = new Map(projects.map((p) => [p.slug, p]));
 
@@ -545,6 +561,111 @@ function createPhysicsServer() {
         ? hits.map((q) => `(${q.printed_number}، ص ${q.page}) ${q.prompt_ar}`).join("\n")
         : `لم أجد سؤالًا مطابقًا في الدرس ${lesson}.`;
       return { content: [{ type: "text", text: t }], structuredContent: { questions: hits } };
+    }
+  );
+
+  // ---- diagnose (KST gap location) ----
+  registerAppTool(
+    server,
+    "diagnose",
+    {
+      title: "Diagnose the student's knowledge gap (KST)",
+      description:
+        "Locate WHERE the student's knowledge stops, using Knowledge Space Theory " +
+        "over the prerequisite graph — so you teach the student's actual gap " +
+        "instead of following table-of-contents order. Call this at session start " +
+        "or on a broad topic request ('I want to review momentum', 'where do I " +
+        "start?'). Give it the answers gathered so far as " +
+        "responses:[{item_id, correct}] (use suggest_next_question + find_question " +
+        "to gather a few first). It returns the gap: the concept to teach next " +
+        "with its slug, lesson, and book pages — then teach THAT lesson from the " +
+        "book via read_lesson_pages. If teach_kind is 'prerequisite', the gap is a " +
+        "foundational math idea with no lesson; start there, motivated by the " +
+        "concept it unlocks. Honor an explicit lesson request without diagnosing.",
+      inputSchema: {
+        responses: z
+          .array(z.object({ item_id: z.string(), correct: z.boolean() }))
+          .describe("Answers gathered so far: item_id from the bank + whether correct"),
+      },
+      outputSchema: {
+        status: z.string(),
+        gap_node: z.string().nullable().optional(),
+        gap_label: z.string().optional(),
+        slug: z.string().optional(),
+        lesson: z.string().optional(),
+        book_pages: z.string().optional(),
+        concept_en: z.string().optional(),
+        teach_kind: z.string().optional(),
+        teach: z.any().optional(),
+        confidence: z.number().optional(),
+        n_states: z.number().optional(),
+        responses_used: z.number().optional(),
+        responses_ignored: z.number().optional(),
+        structural_gap: z.any().optional(),
+        failed_nodes: z.array(z.any()).optional(),
+        fringe: z.array(z.any()).optional(),
+        note: z.string().optional(),
+        message: z.string().optional(),
+      },
+      _meta: {},
+    },
+    async ({ responses }) => {
+      if (!diagnostics)
+        return text("محرّك التشخيص غير متوفر حاليًا.", { status: "unavailable" });
+      const r = diagnostics.diagnose(responses || []);
+      let note;
+      if (r.status === "no_gap")
+        note = "لا توجد فجوة واضحة: المعرفة تغطّي ما جرى تقييمه. تابع بالدرس التالي.";
+      else if (r.teach_kind === "prerequisite")
+        note = `الفجوة في متطلّب أساسي (${r.gap_label}). ابدأ به لأنه أساس ${
+          r.teach?.motivates?.concept_en || "المفهوم المطلوب"
+        }.`;
+      else
+        note = `ابدأ من: ${r.concept_en} — الدرس ${r.lesson} (صفحات ${r.book_pages}). علّمه من الكتاب عبر read_lesson_pages.`;
+      return { content: [{ type: "text", text: note }], structuredContent: r };
+    }
+  );
+
+  // ---- suggest_next_question (KST half-split) ----
+  registerAppTool(
+    server,
+    "suggest_next_question",
+    {
+      title: "Pick the most informative next diagnostic question",
+      description:
+        "Adaptive questioning (KST half-split): given the answers so far, return " +
+        "the single most informative item to ask next, so you can narrow the gap " +
+        "one question at a time. Returns an item_id with its lesson and printed " +
+        "number — fetch the actual question with find_question(lesson, number), " +
+        "ask it, record the answer, then call diagnose. Pass responses:[] at the " +
+        "start of a session.",
+      inputSchema: {
+        responses: z
+          .array(z.object({ item_id: z.string(), correct: z.boolean() }))
+          .describe("Answers gathered so far (empty array to start)"),
+      },
+      outputSchema: {
+        next_item: z
+          .object({
+            item_id: z.string(),
+            lesson: z.string().nullable().optional(),
+            node: z.string().nullable().optional(),
+            qkind: z.string().nullable().optional(),
+            printed_number: z.string().nullable().optional(),
+          })
+          .nullable(),
+      },
+      _meta: {},
+    },
+    async ({ responses }) => {
+      if (!diagnostics)
+        return text("محرّك التشخيص غير متوفر حاليًا.", { next_item: null });
+      const r = diagnostics.suggestNext(responses || []);
+      const ni = r.next_item;
+      const note = ni
+        ? `أنسب سؤال تالٍ: الدرس ${ni.lesson} رقم ${ni.printed_number}. أحضِره عبر find_question واطرحه.`
+        : "لا يوجد سؤال إضافي مفيد للتشخيص الآن.";
+      return { content: [{ type: "text", text: note }], structuredContent: r };
     }
   );
 

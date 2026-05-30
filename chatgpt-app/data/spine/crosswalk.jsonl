@@ -1,0 +1,26 @@
+{"slug":"gravitation","node":"Q134465","label":"Newton's law of universal gravitation","match":"exact","note":"Concept framed Kepler's-laws->Newton; Kepler's laws have no node, anchors to the gravitation law."}
+{"slug":"cavendish","node":null,"label":null,"match":"none","note":"Experiment to measure G; no node. Graph should gain 'Cavendish experiment'; would sit beneath Q134465."}
+{"slug":"gfield","node":null,"label":null,"match":"none","note":"Gravitational field strength g; distinct from the force law. Graph should gain 'Gravitational field'; downstream of Q134465."}
+{"slug":"weightless","node":null,"label":null,"match":"none","note":"Weightlessness / orbit as free fall; no node. Graph should gain 'Weightlessness'; downstream of Q134465."}
+{"slug":"equivalence","node":null,"label":null,"match":"none","note":"Equivalence principle, inertial vs gravitational mass; no node. Graph should gain 'Equivalence principle'; relates to Q11423 Mass."}
+{"slug":"angular","node":"Q161635","label":"Angular velocity","match":"fuzzy","note":"Concept covers angular displacement/velocity/acceleration; only angular velocity has a node. Angular displ/accel nodes absent (see REPORT)."}
+{"slug":"torque","node":"Q48103","label":"Torque","match":"exact","note":""}
+{"slug":"centerofmass","node":null,"label":null,"match":"none","note":"Centre of mass & stability; no node. Graph should gain 'Center of mass'; relates to Q11423 Mass."}
+{"slug":"fictitious","node":null,"label":null,"match":"none","note":"Centrifugal/Coriolis fictitious forces; no node. Graph should gain 'Fictitious force'; relates to Q11402 Force."}
+{"slug":"impulse","node":null,"label":null,"match":"none","note":"Impulse J=integral F dt = delta p; distinct from momentum. Graph should gain 'Impulse'; nearest existing prerequisite Q41273 Momentum (NOT an identity -- do not collapse)."}
+{"slug":"momentumcons","node":"Q2305665","label":"Conservation of momentum","match":"exact","note":""}
+{"slug":"workenergy","node":"Q42213","label":"Work (physics)","match":"fuzzy","note":"Work-energy theorem links work to delta KE; anchors to Work node. Theorem itself (the equality) has no dedicated node."}
+{"slug":"cars","node":"Q46276","label":"Kinetic energy","match":"exact","note":"Concept_en is 'Kinetic Energy'."}
+{"slug":"power","node":null,"label":null,"match":"none","note":"Power P=dW/dt; distinct from work. Graph should gain 'Power'; nearest existing prerequisite Q42213 Work (NOT an identity)."}
+{"slug":"machines","node":null,"label":null,"match":"none","note":"Simple machines & mechanical advantage; no node. Graph should gain 'Simple machine'/'Mechanical advantage'; relates to Q42213 Work."}
+{"slug":"efficiency","node":null,"label":null,"match":"none","note":"Machine efficiency, ideal vs real; no node. Graph should gain 'Mechanical efficiency'; downstream of machines."}
+{"slug":"gravpe","node":"Q155640","label":"Potential energy","match":"fuzzy","note":"Gravitational PE -- a species of PE; collapses onto generic Potential energy. Graph should gain 'Gravitational potential energy' to split (see collapse note in REPORT)."}
+{"slug":"elasticpe","node":"Q155640","label":"Potential energy","match":"fuzzy","note":"Elastic PE -- a species of PE; collapses onto the SAME node as gravpe. Graph should gain 'Elastic potential energy' to split."}
+{"slug":"rotke","node":"Q46276","label":"Kinetic energy","match":"fuzzy","note":"Rotational KE = 1/2 I omega^2; collapses onto generic Kinetic energy (same node as cars). Genuinely needs Q165618 Moment of inertia + Q161635 angular velocity; graph should gain 'Rotational kinetic energy'."}
+{"slug":"pendulum","node":"Q11382","label":"Conservation of energy","match":"fuzzy","note":"Concept_en 'Conservation of Mechanical Energy'; anchors to Conservation of energy. Mechanical-energy specialisation has no dedicated node."}
+{"slug":"collisions","node":null,"label":null,"match":"none","note":"Elastic/inelastic collisions; no node. Graph should gain 'Collision'; nearest prerequisites Q2305665 Conservation of momentum + Q46276 Kinetic energy (NOT an identity -- do not collapse onto momentumcons)."}
+{"slug":"tempvsthermal","node":"Q11466","label":"Temperature","match":"fuzzy","note":"Contrasts temperature vs thermal energy; anchors to Temperature. 'Thermal energy' node absent -- the contrast's other half is missing."}
+{"slug":"heattransfer","node":null,"label":null,"match":"none","note":"Conduction/convection/radiation; no node. Graph should gain 'Heat transfer'; relates to Q11466 Temperature (NOT an identity)."}
+{"slug":"specificheat","node":null,"label":null,"match":"none","note":"Specific heat capacity (material property); no node. Graph should gain 'Specific heat capacity'; relates to Q11466 Temperature (NOT an identity)."}
+{"slug":"latentheat","node":null,"label":null,"match":"none","note":"Latent heat -- energy exchanged at CONSTANT temperature; mapping to Temperature would be wrong. Graph should gain 'Latent heat'."}
+{"slug":"thermolaws","node":null,"label":null,"match":"none","note":"Laws of thermodynamics & entropy; no node ('Entropy' absent). Graph should gain 'Laws of thermodynamics' + 'Entropy'; relates to Q11379 Energy (NOT an identity)."}
