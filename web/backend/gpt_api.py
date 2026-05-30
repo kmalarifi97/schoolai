@@ -7,11 +7,64 @@ without a user login. Optional shared-secret guard via the GPT_API_KEY env var
 
 Mounted by app.py:  app.include_router(make_router(CATALOG))
 """
+import json
 import os
+import pathlib
+import sys
+import time
 
 from fastapi import APIRouter, Header, HTTPException, Query
+from pydantic import BaseModel
 
 GPT_API_KEY = os.environ.get("GPT_API_KEY", "").strip()
+
+# The diagnostic spine (KST engine) lives in the repo, mounted at LIB_ROOT in
+# Docker. Import the pure engine from there; it has stdlib-only dependencies.
+LIB_ROOT = pathlib.Path(os.environ.get("LIB_ROOT")
+                        or pathlib.Path(__file__).resolve().parents[2])
+_SPINE_DIR = LIB_ROOT / "spine"
+if str(_SPINE_DIR) not in sys.path:
+    sys.path.insert(0, str(_SPINE_DIR))
+
+try:
+    import diagnose as _spine          # noqa: E402  spine/diagnose.py
+    _SPINE_OK = True
+except Exception as _e:                # spine not present -> diagnose route 503s
+    _spine = None
+    _SPINE_OK = False
+    _SPINE_ERR = str(_e)
+
+# Response log: seed of real calibration data. The repo mount is read-only, so
+# default to a writable path and degrade gracefully rather than 500.
+_RESPONSES_LOG = pathlib.Path(
+    os.environ.get("SPINE_RESPONSES") or "/tmp/spine_responses.jsonl"
+)
+
+
+def _log_responses(student_id, responses):
+    """Append (student_id, item_id, correct, ts) rows. Returns count or -1."""
+    ts = time.time()
+    try:
+        _RESPONSES_LOG.parent.mkdir(parents=True, exist_ok=True)
+        with _RESPONSES_LOG.open("a") as f:
+            for r in responses:
+                f.write(json.dumps({
+                    "student_id": student_id, "item_id": r.get("item_id"),
+                    "correct": bool(r.get("correct")), "ts": ts,
+                }, ensure_ascii=False) + "\n")
+        return len(responses)
+    except OSError:
+        return -1  # read-only / unwritable; diagnosis still returned
+
+
+class _Response(BaseModel):
+    item_id: str
+    correct: bool
+
+
+class _DiagnoseBody(BaseModel):
+    student_id: str = "anon"
+    responses: list[_Response] = []
 
 
 def _check_key(x_api_key: str):
@@ -89,5 +142,35 @@ def make_router(catalog):
                 or ql in r["slug"].lower()
                 or ql in r["lesson_title_ar"].lower()]
         return {"query": q, "count": len(hits), "concepts": hits}
+
+    @router.post("/diagnose", operation_id="diagnoseGap",
+                 summary="Diagnose the student's knowledge gap from their answers")
+    async def diagnose_gap(body: _DiagnoseBody, x_api_key: str = Header(default="")):
+        """Run the KST diagnostic engine on a student's item responses and return
+        the located gap: the concept to teach next, its slug, lesson, and book
+        pages. Call this at session start or on a topic request, then teach the
+        returned lesson from the book — diagnosis chooses WHAT to teach, replacing
+        table-of-contents order. Body: {student_id, responses:[{item_id,correct}]}.
+        """
+        _check_key(x_api_key)
+        if not _SPINE_OK:
+            raise HTTPException(503, f"diagnostic spine unavailable: {_SPINE_ERR}")
+        resp = [r.model_dump() for r in body.responses]
+        logged = _log_responses(body.student_id, resp)
+        result = _spine.diagnose(resp, root=str(LIB_ROOT))
+        result["logged"] = logged if logged >= 0 else False
+        return result
+
+    @router.post("/next-item", operation_id="nextItem",
+                 summary="Pick the single most informative next item to ask")
+    async def next_item(body: _DiagnoseBody, x_api_key: str = Header(default="")):
+        """Adaptive questioning (KST half-split rule): given the answers so far,
+        return the single most informative item to ask next, so the tutor can
+        narrow the gap one question at a time instead of a fixed batch."""
+        _check_key(x_api_key)
+        if not _SPINE_OK:
+            raise HTTPException(503, f"diagnostic spine unavailable: {_SPINE_ERR}")
+        resp = [r.model_dump() for r in body.responses]
+        return {"next_item": _spine.next_item_for(resp, root=str(LIB_ROOT))}
 
     return router
