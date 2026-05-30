@@ -1,0 +1,20 @@
+{"id":"q-6-1-p165-analysis-1","node":"Q11466","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"Temperature change vs amount of water distinction"}
+{"id":"q-6-1-p165-analysis-2","node":"Q11466","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"Why temperature changes — heat transfer explanation"}
+{"id":"q-6-1-p170-1","node":"Q11466","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"Kelvin-Celsius conversion, temperature scale concept"}
+{"id":"q-6-1-p170-2","node":"Q11466","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"Kelvin and Celsius scale conversions"}
+{"id":"q-6-1-p173-3","node":null,"secondary":null,"needs_concept":"specific_heat","non_assessing":false,"reason":"Q=mcΔT applied to copper pipe"}
+{"id":"q-6-1-p173-4","node":null,"secondary":null,"needs_concept":"specific_heat","non_assessing":false,"reason":"Q=mcΔT applied to car coolant water"}
+{"id":"q-6-1-p173-5","node":null,"secondary":null,"needs_concept":"specific_heat","non_assessing":false,"reason":"Q=mcΔT plus cost calculation for heating water"}
+{"id":"q-6-1-p176-6","node":null,"secondary":null,"needs_concept":"specific_heat","non_assessing":false,"reason":"Calorimetry mixing equal masses, find final temperature"}
+{"id":"q-6-1-p176-7","node":null,"secondary":null,"needs_concept":"specific_heat","non_assessing":false,"reason":"Calorimetry mixing methanol and water, find final temperature"}
+{"id":"q-6-1-p176-8","node":null,"secondary":null,"needs_concept":"specific_heat","non_assessing":false,"reason":"Find specific heat of metal from calorimetry data"}
+{"id":"q-6-1-p176-9","node":null,"secondary":null,"needs_concept":"specific_heat","non_assessing":false,"reason":"Find specific heat of unknown metal via calorimetry"}
+{"id":"q-6-1-p177-10","node":"Q11466","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"Temperature scale conversions between systems"}
+{"id":"q-6-1-p177-11","node":"Q11466","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"Converting temperatures to Kelvin scale"}
+{"id":"q-6-1-p177-12","node":"Q11466","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"Thermal energy vs temperature conceptual distinction"}
+{"id":"q-6-1-p177-13","node":null,"secondary":null,"needs_concept":"specific_heat","non_assessing":false,"reason":"Potato retains heat longer due to high specific heat"}
+{"id":"q-6-1-p177-14","node":null,"secondary":null,"needs_concept":"heat_transfer","non_assessing":false,"reason":"Tile feels cold due to heat conduction rate"}
+{"id":"q-6-1-p177-15","node":null,"secondary":null,"needs_concept":"specific_heat","non_assessing":false,"reason":"Plastic spoon vs hot tea — specific heat and mass"}
+{"id":"q-6-1-p177-16","node":null,"secondary":null,"needs_concept":"specific_heat","non_assessing":false,"reason":"Thick aluminum pan stores more heat than thin pan"}
+{"id":"q-6-1-p177-17","node":null,"secondary":null,"needs_concept":"specific_heat","non_assessing":false,"reason":"Whole potato needs longer cooking than thin slices"}
+{"id":"q-6-1-p177-18","node":null,"secondary":null,"needs_concept":"heat_transfer","non_assessing":false,"reason":"Fog above water and convection currents in pot"}

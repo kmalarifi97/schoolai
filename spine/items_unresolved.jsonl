@@ -1,419 +1,55 @@
-# Flagged items: ambiguous (>=2 matched concepts in the lesson) or unresolved (0 matched concepts). For review; not dropped.
-{"candidate_nodes": [], "item_id": "q-1-2-p20-11", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p20-12", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p20-13", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p27-14", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p27-15", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p27-16", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p27-17", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p27-18", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p29-lab-analysis-1", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p29-lab-analysis-2", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p29-lab-analysis-3", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p29-lab-analysis-4", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p29-lab-analysis-5", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p29-lab-analysis-6", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p29-lab-analysis-7", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p29-lab-conclude-1", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p29-lab-conclude-2", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p29-lab-conclude-3", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p29-lab-conclude-4", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p29-lab-extend-1", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p29-lab-extend-2", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p29-lab-life", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p32-19", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p32-20", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p32-21", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p32-22", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p32-23", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p32-24", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p32-25", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p32-26", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p32-27", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p32-28", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p32-29", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p32-30", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p32-31", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p32-32", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p32-33", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p33-34", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p33-35", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p33-36", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p33-37", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p33-38", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p33-39", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p33-40", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p33-41", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p33-42", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p33-43", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p33-44", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p33-45", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p33-46", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p33-47", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p33-48", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p33-49", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p34-50", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p34-51", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p34-52", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p34-53", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p34-54", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p34-55", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p34-56", "lesson": "1-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p34-57", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p34-58", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p35-mcq-1", "lesson": "1-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p35-mcq-2", "lesson": "1-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p35-mcq-3", "lesson": "1-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p35-mcq-4", "lesson": "1-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p35-mcq-5", "lesson": "1-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-1-2-p35-mcq-6", "lesson": "1-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p52-23", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p52-24", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p55-25", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p55-26", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p55-27", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p55-28", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p55-29", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p55-30", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p57-analysis-1", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p57-analysis-2", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p57-analysis-3", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p57-analysis-4", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p57-analysis-5", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p57-concl-1", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p57-concl-2", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p57-concl-3", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p57-concl-4", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p58-expand-1", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-2-3-p58-expand-2", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p60-31", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p60-32", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p60-33", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p60-34", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p60-35", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p60-36", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p60-37", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p60-38", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p60-39", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p60-40", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p60-41", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p60-42", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p60-43", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p60-44", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p60-45", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p61-46", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p61-47", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p61-48", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p61-49", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p61-50", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p61-51", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p61-52", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p61-53", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p61-54", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p61-55", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p61-56", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p62-57", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p62-58", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p62-59", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p62-60", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p62-61", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p62-62", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p62-63", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p62-64", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p62-65", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p63-66", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p63-67", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p63-68", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p63-69", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p63-70", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p63-71", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p63-72", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p63-73", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p64-74", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p64-75", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p64-76", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p64-77", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p64-78", "lesson": "2-3", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p64-79", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p65-mcq-1", "lesson": "2-3", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p65-mcq-2", "lesson": "2-3", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p65-mcq-3", "lesson": "2-3", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p65-mcq-4", "lesson": "2-3", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p65-mcq-5", "lesson": "2-3", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-ch2-p65-ext-6", "lesson": "2-3", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-3-1-p67-analysis-1", "lesson": "3-1", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-3-1-p67-analysis-2", "lesson": "3-1", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-3-1-p72-1", "lesson": "3-1", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-3-1-p72-2", "lesson": "3-1", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-3-1-p72-3", "lesson": "3-1", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-3-1-p72-4", "lesson": "3-1", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-3-1-p72-5", "lesson": "3-1", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-3-1-p73-6", "lesson": "3-1", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-3-1-p73-7", "lesson": "3-1", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-3-1-p73-8", "lesson": "3-1", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-3-1-p73-9", "lesson": "3-1", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-3-1-p73-10", "lesson": "3-1", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-3-1-p73-11", "lesson": "3-1", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p97-analysis-1", "lesson": "4-1", "qkind": "conceptual", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p97-analysis-2", "lesson": "4-1", "qkind": "conceptual", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p103-1", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p103-2", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p103-3", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p104-4", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p104-5", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p104-6", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p104-7", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p104-8", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p106-9", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p106-10", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p106-11", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p106-12", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p107-13", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p107-14", "lesson": "4-1", "qkind": "graph", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p108-15", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p108-16", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p108-17", "lesson": "4-1", "qkind": "conceptual", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p108-18", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p108-19", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p108-20", "lesson": "4-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p108-21", "lesson": "4-1", "qkind": "conceptual", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p108-22", "lesson": "4-1", "qkind": "conceptual", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q42213", "Q46276"], "item_id": "q-4-1-p108-23", "lesson": "4-1", "qkind": "conceptual", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": [], "item_id": "q-4-2-p111-stim-1", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p111-stim-2", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p111-stim-3", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p113-lab-q", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p113-lab-6", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p113-lab-7", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p115-24", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p115-25", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p115-26", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p115-27", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p115-28", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p117-29", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p117-30", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p117-31", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p117-32", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p117-33", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p119-analysis-1", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p119-analysis-2", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p119-analysis-3", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p119-analysis-4", "lesson": "4-2", "qkind": "graph", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p119-analysis-5", "lesson": "4-2", "qkind": "graph", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p119-analysis-6", "lesson": "4-2", "qkind": "graph", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p119-conclude-1", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p119-conclude-2", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p119-conclude-3", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p119-conclude-4", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p119-life-1", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p119-life-2", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p119-life-3", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p119-expand-1", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p119-expand-2", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p119-expand-3", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p119-expand-4", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p120-1", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p120-2", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-34", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-35", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-36", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-37", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-38", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-39", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-40", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-41", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-42", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-43", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-44", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-45", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-46", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-47", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-48", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-49", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-50", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-51", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p122-52", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p123-53", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p123-54", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p123-55", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p123-56", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p123-57", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p123-58", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p123-59", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p123-60", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p123-61", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p123-62", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p123-63", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p123-64", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p124-65", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p124-66", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p124-67", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p124-68", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p124-69", "lesson": "4-2", "qkind": "graph", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p124-70", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p124-71", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p124-72", "lesson": "4-2", "qkind": "graph", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p125-73", "lesson": "4-2", "qkind": "graph", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p125-74", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p125-75", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p125-76", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p125-77", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p125-78", "lesson": "4-2", "qkind": "graph", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p125-79", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p125-80", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p126-81", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p126-82", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p126-83", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p126-84", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p126-85", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p126-86", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p126-87", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p126-88", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p126-89", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p127-90", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p127-91", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p127-92", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p127-93", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p127-94", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p127-95", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p127-96", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p128-96cont", "lesson": "4-2", "qkind": "graph", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p128-97", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p128-98", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p128-99", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p128-100", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p128-101", "lesson": "4-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p129-mcq-1", "lesson": "4-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p129-mcq-2", "lesson": "4-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p129-mcq-3", "lesson": "4-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p129-mcq-4", "lesson": "4-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p129-mcq-5", "lesson": "4-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p129-mcq-6", "lesson": "4-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p129-mcq-7", "lesson": "4-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-4-2-p129-ext-8", "lesson": "4-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": ["Q155640", "Q46276"], "item_id": "q-5-1-p131-analysis-1", "lesson": "5-1", "qkind": "graph", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q155640", "Q46276"], "item_id": "q-5-1-p131-analysis-2", "lesson": "5-1", "qkind": "conceptual", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q155640", "Q46276"], "item_id": "q-5-1-p131-analysis-3", "lesson": "5-1", "qkind": "conceptual", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q155640", "Q46276"], "item_id": "q-5-1-p134-1", "lesson": "5-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q155640", "Q46276"], "item_id": "q-5-1-p134-2", "lesson": "5-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q155640", "Q46276"], "item_id": "q-5-1-p134-3", "lesson": "5-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q155640", "Q46276"], "item_id": "q-5-1-p138-4", "lesson": "5-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q155640", "Q46276"], "item_id": "q-5-1-p138-5", "lesson": "5-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q155640", "Q46276"], "item_id": "q-5-1-p138-6", "lesson": "5-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q155640", "Q46276"], "item_id": "q-5-1-p138-7", "lesson": "5-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q155640", "Q46276"], "item_id": "q-5-1-p138-8", "lesson": "5-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q155640", "Q46276"], "item_id": "q-5-1-p140-9", "lesson": "5-1", "qkind": "conceptual", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q155640", "Q46276"], "item_id": "q-5-1-p140-10", "lesson": "5-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q155640", "Q46276"], "item_id": "q-5-1-p140-11", "lesson": "5-1", "qkind": "conceptual", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q155640", "Q46276"], "item_id": "q-5-1-p140-12", "lesson": "5-1", "qkind": "numerical", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": ["Q155640", "Q46276"], "item_id": "q-5-1-p140-13", "lesson": "5-1", "qkind": "conceptual", "resolution": "lesson-ambiguous"}
-{"candidate_nodes": [], "item_id": "q-6-2-p179-lab-1", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p179-lab-2", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p179-lab-3", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p179-lab-4", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p179-lab-5", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p179-lab-6", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p182-19", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p182-20", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p182-21", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p185-22", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p185-23", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p185-24", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p185-25", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p185-26", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p186-upsilon-1", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p186-upsilon-2", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p186-upsilon-3", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p186-upsilon-4", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p189-27", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p189-28", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p189-29", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p189-30", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p189-31", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p189-32", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p189-33", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p189-34", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p190-step-1", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p190-step-2", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p190-step-3", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p190-step-4", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p190-step-5", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p190-step-6", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p190-step-7", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p190-step-8", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p190-step-9", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p190-step-10", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p190-step-11", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p191-analysis-1", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p191-analysis-2", "lesson": "6-2", "qkind": "graph", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p191-analysis-3", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p191-analysis-4", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p191-analysis-5", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p191-analysis-6", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p191-conclude-1", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p191-conclude-2", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p191-conclude-3", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p191-conclude-4", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p191-conclude-5", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p191-extend-1", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p191-extend-2", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p191-extend-3", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p191-life-1", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p191-life-2", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p192-1", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p192-2", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-35", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-36", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-37", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-38", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-39", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-40", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-41", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-42", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-43", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-44", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-45", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-46", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-47", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-48", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-49", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-50", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-51", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p194-52", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p195-53", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p195-54", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p195-55", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p195-56", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p195-57", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p195-58", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p195-59", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p195-60", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p195-61", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p195-62", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p196-63", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p196-64", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p196-65", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p196-66", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p196-67", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p196-68", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p196-69", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p196-70", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p196-71", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p197-72", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p197-73", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p197-74", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p197-75", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p197-76", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p197-77", "lesson": "6-2", "qkind": "conceptual", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p197-78", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p197-79", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p198-1", "lesson": "6-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p198-2", "lesson": "6-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p198-3", "lesson": "6-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p198-4", "lesson": "6-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p198-5", "lesson": "6-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p198-6", "lesson": "6-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p198-7", "lesson": "6-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p199-8", "lesson": "6-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p199-9", "lesson": "6-2", "qkind": "mcq", "resolution": "unresolved"}
-{"candidate_nodes": [], "item_id": "q-6-2-p199-10", "lesson": "6-2", "qkind": "numerical", "resolution": "unresolved"}
+# ONLY non-assessing questions (pure instructions, open reflection, lab steps) -- NOT questions we failed to tag.
+{"item_id": "q-1-1-p9-analysis-1", "lesson": "1-1", "qkind": "conceptual", "reason": "Pure drawing/labeling instruction, no physics concept assessed"}
+{"item_id": "q-1-2-p29-lab-analysis-1", "lesson": "1-2", "qkind": "conceptual", "reason": null}
+{"item_id": "q-1-2-p29-lab-analysis-2", "lesson": "1-2", "qkind": "conceptual", "reason": null}
+{"item_id": "q-1-2-p29-lab-analysis-4", "lesson": "1-2", "qkind": "numerical", "reason": null}
+{"item_id": "q-1-2-p32-19", "lesson": "1-2", "qkind": "conceptual", "reason": null}
+{"item_id": "q-1-2-p34-55", "lesson": "1-2", "qkind": "conceptual", "reason": "pure writing task, no physics concept tested"}
+{"item_id": "q-2-3-p55-27", "lesson": "2-3", "qkind": "conceptual", "reason": "open listing prompt with no single concept tested"}
+{"item_id": "q-2-3-p57-analysis-2", "lesson": "2-3", "qkind": "numerical", "reason": "lab data recording step, no concept assessed"}
+{"item_id": "q-2-3-p57-concl-2", "lesson": "2-3", "qkind": "conceptual", "reason": "draw free body diagram — pure drawing instruction"}
+{"item_id": "q-2-3-p58-expand-2", "lesson": "2-3", "qkind": "conceptual", "reason": "open policy discussion, no physics concept assessed"}
+{"item_id": "q-3-1-p72-5", "lesson": "3-1", "qkind": "numerical", "reason": "pure draw-a-diagram instruction, no physics concept assessed"}
+{"item_id": "q-3-2-p77-lab-7", "lesson": "3-2", "qkind": "conceptual", "reason": "lab observation step, describe bounce height of each ball separately"}
+{"item_id": "q-3-2-p77-lab-8", "lesson": "3-2", "qkind": "conceptual", "reason": "lab comparison step, compare bounce heights between two steps"}
+{"item_id": "q-3-2-p86-expand-research", "lesson": "3-2", "qkind": "conceptual", "reason": "open research task about solar sails warning systems, no physics concept assessed"}
+{"item_id": "q-4-1-p103-1", "lesson": "4-1", "qkind": "numerical", "reason": "Instruction to follow example, no standalone physics question"}
+{"item_id": "q-4-1-p97-analysis-1", "lesson": "4-1", "qkind": "conceptual", "reason": "Open reflection on data pattern, no physics concept tested"}
+{"item_id": "q-4-2-p119-analysis-4", "lesson": "4-2", "qkind": "graph", "reason": null}
+{"item_id": "q-4-2-p119-analysis-5", "lesson": "4-2", "qkind": "graph", "reason": null}
+{"item_id": "q-4-2-p119-analysis-6", "lesson": "4-2", "qkind": "graph", "reason": null}
+{"item_id": "q-4-2-p119-conclude-2", "lesson": "4-2", "qkind": "conceptual", "reason": null}
+{"item_id": "q-4-2-p119-expand-4", "lesson": "4-2", "qkind": "conceptual", "reason": null}
+{"item_id": "q-4-2-p119-life-1", "lesson": "4-2", "qkind": "conceptual", "reason": null}
+{"item_id": "q-4-2-p119-life-3", "lesson": "4-2", "qkind": "conceptual", "reason": null}
+{"item_id": "q-4-2-p128-100", "lesson": "4-2", "qkind": "conceptual", "reason": "Open reflective writing task, not concept-assessing"}
+{"item_id": "q-5-2-p153-extend", "lesson": "5-2", "qkind": "conceptual", "reason": "experimental error sources; methodology, not physics concept"}
+{"item_id": "q-5-2-p154-3", "lesson": "5-2", "qkind": "conceptual", "reason": "opinion/research question; no specific physics concept tested"}
+{"item_id": "q-5-ch-p156-28", "lesson": "5-2", "qkind": "conceptual", "reason": "vocabulary classification map; not concept-assessing"}
+{"item_id": "q-5-ch-p162-95", "lesson": "5-2", "qkind": "conceptual", "reason": "Open-ended writing about solar energy forms; not concept-assessing"}
+{"item_id": "q-5-ch-p162-96", "lesson": "5-2", "qkind": "conceptual", "reason": "Research/writing task classifying energy types; not concept-assessing"}
+{"item_id": "q-6-2-p179-lab-1", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab setup instruction, no concept assessed"}
+{"item_id": "q-6-2-p179-lab-2", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab setup instruction, no concept assessed"}
+{"item_id": "q-6-2-p179-lab-3", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab setup instruction, no concept assessed"}
+{"item_id": "q-6-2-p179-lab-4", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab procedure step, no concept assessed"}
+{"item_id": "q-6-2-p179-lab-5", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab data recording step, no concept assessed"}
+{"item_id": "q-6-2-p190-step-1", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab setup instruction, no concept assessed"}
+{"item_id": "q-6-2-p190-step-10", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab safety step, no concept assessed"}
+{"item_id": "q-6-2-p190-step-11", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab cleanup step, no concept assessed"}
+{"item_id": "q-6-2-p190-step-2", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab setup instruction, no concept assessed"}
+{"item_id": "q-6-2-p190-step-3", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab setup instruction, no concept assessed"}
+{"item_id": "q-6-2-p190-step-4", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab calculation step, no concept assessed"}
+{"item_id": "q-6-2-p190-step-5", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab data table setup, no concept assessed"}
+{"item_id": "q-6-2-p190-step-6", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab measurement instruction, no concept assessed"}
+{"item_id": "q-6-2-p190-step-7", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab procedure step, no concept assessed"}
+{"item_id": "q-6-2-p190-step-8", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab procedure step, no concept assessed"}
+{"item_id": "q-6-2-p190-step-9", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab measurement step, no concept assessed"}
+{"item_id": "q-6-2-p191-analysis-1", "lesson": "6-2", "qkind": "numerical", "reason": "Procedural data analysis step, no concept assessed"}
+{"item_id": "q-6-2-p191-analysis-2", "lesson": "6-2", "qkind": "graph", "reason": "Graph plotting instruction, no concept assessed"}
+{"item_id": "q-6-2-p191-analysis-3", "lesson": "6-2", "qkind": "conceptual", "reason": "Read result from graph, no concept assessed"}
+{"item_id": "q-6-2-p191-analysis-4", "lesson": "6-2", "qkind": "conceptual", "reason": "Read result from graph, no concept assessed"}
+{"item_id": "q-6-2-p191-analysis-5", "lesson": "6-2", "qkind": "numerical", "reason": "Arithmetic slope calculation from data, no concept assessed"}
+{"item_id": "q-6-2-p191-analysis-6", "lesson": "6-2", "qkind": "numerical", "reason": "Arithmetic slope calculation from data, no concept assessed"}
+{"item_id": "q-6-2-p191-conclude-1", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab observation summary, no concept assessed"}
+{"item_id": "q-6-2-p191-conclude-2", "lesson": "6-2", "qkind": "conceptual", "reason": "Lab observation summary, no concept assessed"}
+{"item_id": "q-6-2-p197-76", "lesson": "6-2", "qkind": "conceptual", "reason": "historical research and writing task; no physics concept assessed"}

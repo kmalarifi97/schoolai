@@ -1,0 +1,58 @@
+{"id":"q-3-2-p76-12","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"perfectly inelastic collision, apply conservation of momentum"}
+{"id":"q-3-2-p76-13","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"puck caught by goalie, inelastic collision momentum conservation"}
+{"id":"q-3-2-p76-14","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"bullet embeds in wood, find initial speed via momentum conservation"}
+{"id":"q-3-2-p76-15","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"bullet passes through bag, momentum conservation to find bag speed"}
+{"id":"q-3-2-p76-16","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"bullet rebounds off steel ball, momentum conservation with rebound"}
+{"id":"q-3-2-p76-17","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"two balls collide head-on, find speed after using momentum conservation"}
+{"id":"q-3-2-p77-lab-7","node":null,"secondary":null,"needs_concept":null,"non_assessing":true,"reason":"lab observation step, describe bounce height of each ball separately"}
+{"id":"q-3-2-p77-lab-8","node":null,"secondary":null,"needs_concept":null,"non_assessing":true,"reason":"lab comparison step, compare bounce heights between two steps"}
+{"id":"q-3-2-p77-lab-9","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"explain lab observations using momentum conservation"}
+{"id":"q-3-2-p80-18","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"rocket expels gas, find rocket speed via momentum conservation"}
+{"id":"q-3-2-p80-19","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"spring pushes two carts apart, find velocity via momentum conservation"}
+{"id":"q-3-2-p80-20","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"person leaves boat, find boat velocity via momentum conservation"}
+{"id":"q-3-2-p82-21","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"2D perfectly inelastic collision, find final velocity vector"}
+{"id":"q-3-2-p82-22","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"2D inelastic collision, find combined velocity and direction"}
+{"id":"q-3-2-p82-23","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"2D billiard ball collision, find speeds using 2D momentum conservation"}
+{"id":"q-3-2-p82-24","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"2D inelastic collision, infer initial speed from final momentum"}
+{"id":"q-3-2-p83-motivate-1","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"reconstruct pre-collision speed from post-collision skid, momentum conservation"}
+{"id":"q-3-2-p83-motivate-2","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"find other car's speed and evaluate speeding claim using momentum"}
+{"id":"q-3-2-p83-25","node":"Q2305665","secondary":"Q11382","needs_concept":null,"non_assessing":false,"reason":"cart slides incline then collides; energy gives speed, momentum governs collision"}
+{"id":"q-3-2-p83-26","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"is momentum conserved when external force acts; requires system definition"}
+{"id":"q-3-2-p83-27","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"where does vertical momentum come from for pole vaulter; external forces on system"}
+{"id":"q-3-2-p83-28","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"two football players stop mid-air; describe initial momenta that cancel"}
+{"id":"q-3-2-p83-29","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"catching ball on skateboard vs ground; momentum conservation with system choice"}
+{"id":"q-3-2-p84-lab-analysis-1","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"calculate initial and final velocities for cart systems in lab"}
+{"id":"q-3-2-p84-lab-analysis-2","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"calculate initial and final momentum for cart systems"}
+{"id":"q-3-2-p84-lab-analysis-3","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"graph final vs initial momentum to verify conservation law"}
+{"id":"q-3-2-p85-conclude-1","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"state relationship between initial and final momentum in inelastic collisions"}
+{"id":"q-3-2-p85-conclude-2","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"interpret slope of final-vs-initial momentum graph theoretically"}
+{"id":"q-3-2-p85-conclude-3","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"explain why initial momentum typically greater than final due to friction"}
+{"id":"q-3-2-p85-expand-1","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"describe velocity and momentum data when carts bounce instead of stick"}
+{"id":"q-3-2-p85-expand-2","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"design experiment to test friction effect on momentum conservation"}
+{"id":"q-3-2-p85-life-1","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"inelastic collision of players; what happens to system velocity"}
+{"id":"q-3-2-p85-life-2","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"moving car hits stationary car, stick together; apply momentum conservation"}
+{"id":"q-3-2-p86-expand-research","node":null,"secondary":null,"needs_concept":null,"non_assessing":true,"reason":"open research task about solar sails warning systems, no physics concept assessed"}
+{"id":"q-3-2-p86-expand-1","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"solar sail vs rocket propulsion comparison using momentum transfer"}
+{"id":"q-ch3-p88-30","node":null,"secondary":null,"needs_concept":"impulse","non_assessing":false,"reason":"concept map linking impulse, force, time, momentum change"}
+{"id":"q-ch3-p88-31","node":null,"secondary":null,"needs_concept":"impulse","non_assessing":false,"reason":"can bullet equal truck momentum; tests p=mv understanding"}
+{"id":"q-ch3-p88-32","node":null,"secondary":null,"needs_concept":"impulse","non_assessing":false,"reason":"ball thrown and caught at same speed; momentum unchanged, no impulse"}
+{"id":"q-ch3-p88-33","node":null,"secondary":null,"needs_concept":"impulse","non_assessing":false,"reason":"no net force means no acceleration; can momentum still change via impulse"}
+{"id":"q-ch3-p88-34","node":null,"secondary":null,"needs_concept":"impulse","non_assessing":false,"reason":"shock absorbers extend collision time, reducing force via impulse-momentum"}
+{"id":"q-ch3-p88-35","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"define isolated system as prerequisite for conservation of momentum"}
+{"id":"q-ch3-p88-36","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"rocket in space; expelled gas pushes ship via conservation of momentum"}
+{"id":"q-ch3-p88-37","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"equal mass billiard balls; first stops, second takes full speed by momentum conservation"}
+{"id":"q-ch3-p88-38","node":null,"secondary":null,"needs_concept":"impulse","non_assessing":false,"reason":"basketball momentum reverses direction; wall exerts impulse changing momentum"}
+{"id":"q-ch3-p88-39","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"brakes as internal force; friction from road is external force stopping car"}
+{"id":"q-ch3-p88-40","node":null,"secondary":null,"needs_concept":"impulse","non_assessing":false,"reason":"explain impulse concept without equations"}
+{"id":"q-ch3-p88-41","node":null,"secondary":null,"needs_concept":"impulse","non_assessing":false,"reason":"small force over long time can give greater impulse than large brief force"}
+{"id":"q-ch3-p88-42","node":null,"secondary":null,"needs_concept":"impulse","non_assessing":false,"reason":"moving hands with ball extends contact time, reduces force via impulse"}
+{"id":"q-ch3-p89-43","node":null,"secondary":null,"needs_concept":"impulse","non_assessing":false,"reason":"rifle barrel longer, force acts longer, greater impulse yields higher bullet speed"}
+{"id":"q-ch3-p89-44","node":null,"secondary":null,"needs_concept":"impulse","non_assessing":false,"reason":"interpret force-time graph impulse areas to describe resulting motion"}
+{"id":"q-ch3-p89-45","node":null,"secondary":null,"needs_concept":"impulse","non_assessing":false,"reason":"astronaut uses gas gun; impulse-momentum theorem explains how thrust works"}
+{"id":"q-ch3-p89-46","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"tennis ball rebounds off wall; explain momentum reversal using conservation with wall system"}
+{"id":"q-ch3-p89-47","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"slow spaceship by ejecting mass; apply conservation of momentum"}
+{"id":"q-ch3-p89-48","node":"Q2305665","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"infer loaded truck is lighter from final speed greater than half; momentum conservation"}
+{"id":"q-ch3-p89-49","node":null,"secondary":null,"needs_concept":"impulse","non_assessing":false,"reason":"bracing rifle spreads impulse over larger mass, reducing recoil velocity"}
+{"id":"q-ch3-p89-50","node":null,"secondary":null,"needs_concept":"impulse","non_assessing":false,"reason":"rubber bullet bounces giving larger momentum change, more impulse to block"}
+{"id":"q-ch3-p89-51","node":null,"secondary":null,"needs_concept":"impulse","non_assessing":false,"reason":"find contact time from J=FΔt=Δp for golf ball"}
+{"id":"q-ch3-p89-52","node":null,"secondary":null,"needs_concept":"impulse","non_assessing":false,"reason":"calculate impulse on baseball reversed by batter"}

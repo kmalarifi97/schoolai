@@ -1,124 +1,113 @@
-# Diagnostic Spine — Phase 1–2 Report
+# Item Bank — Concept Re-Tagging Report
 
-**Status: Phases 1 (crosswalk) and 2 (prerequisite DAG) complete. Halted for
-review, per run config (Phases 3–6 NOT started this session).**
+**Status: item bank re-tagged per-QUESTION by concept. Validation PASS.**
+(Earlier phase reports: `REPORT_phase1-2.md`, `REPORT_P36.md`.)
 
-Scope: Physics 2 only. Both repos read OK (teacher + knowledge-graph). All
-structure pulled from the graph; nothing invented. DAG validated by the graph's
-own `validator/dag.py`, run inside its `kg` Docker container.
+The old `items.jsonl` linked each question to its *lesson*, so 418/688 had
+`node:null` and were useless to KST. This pass re-tags each question by the
+concept it actually **tests**, read from `prompt_ar`. Discipline kept: 19 LLM
+agents proposed tags (one per batch, reading every question); deterministic code
+(`build_items_concept.py`) verified every tag against a fixed node set, force-fit
+nothing, and emitted the bank. **688/688 tagged, 0 validation errors.**
 
-## Numbers
+## Valid node set (the only allowed tags)
 
-| Metric | Value |
-|---|---|
-| Concepts crosswalked | 26 |
-| → exact | 4 (gravitation, torque, momentumcons, cars) |
-| → fuzzy | 7 (angular, workenergy, gravpe, elasticpe, rotke, pendulum, tempvsthermal) |
-| → none | 15 |
-| Distinct matched graph nodes | 9 |
-| Prereq closure (matched + ancestors) | 20 nodes |
-| Prereq edges from graph (`source=arbitrated`) | 20 |
-| Proposed edges (`source=proposed`, llm, flagged) | 3 |
-| **DAG validation** | **`DAG ok: 23 prerequisite edges, 19 nodes`, exit 0** |
-| missing_nodes (concepts the graph must gain) | 15 |
-| floor_gaps (math node missing) | 0 |
-| Ungrounded matched roots | 2 (Temperature, Potential energy) |
+The 7 matched-concept QIDs **plus** the 4 collapse-split nodes (spine-local until
+the prereq DAG gains them): `SPINE:translational_ke`, `SPINE:rotational_ke`,
+`SPINE:gravitational_pe`, `SPINE:elastic_pe`. Defined in `tag_nodeset.json`.
 
-## Alignment verdict
+## THE NUMBER THAT MATTERS — per-node item count (primary tag)
 
-**11 of 26 concepts (42%) map to the graph; 15 do not.** This is the headline
-finding the prompt asked to surface before any engine is built. The matched 11
-form a coherent, acyclic spine grounded to the math floor
-(Function→Limit→Derivative/Integral→…→Work→KE→Conservation; Vector→Force→Torque;
-Mass/Velocity→Momentum→Conservation; Mass/Force→Universal gravitation) — enough
-to prove the diagnostic loop on the gravitation→momentum→energy chain.
+| node | concept | items | flag |
+|---|---|---:|---|
+| Q42213 | Work & work-energy theorem | **67** | |
+| Q134465 | Newton's gravitation / Kepler | **59** | |
+| Q2305665 | Conservation of momentum | **56** | |
+| Q48103 | Torque & lever arm | **47** | |
+| Q11382 | Conservation of mechanical energy | **46** | |
+| Q161635 | Angular motion / velocity | **31** | |
+| SPINE:gravitational_pe | Gravitational PE (mgh) | **22** | |
+| SPINE:translational_ke | Translational KE (½mv²) | **16** | |
+| Q11466 | Temperature vs thermal energy | **13** | |
+| SPINE:elastic_pe | Elastic PE (½kx²) | **6** | |
+| SPINE:rotational_ke | Rotational KE (½Iω²) | **0** | ⚠ **<3 items** |
 
-The 15 unmatched concepts are not a graph defect — the graph deliberately models
-physics *primitives* and the math floor, not the textbook's experiment /
-application / thermal-engineering concepts. They cluster:
+**Concepts KST cannot yet reliably diagnose (< 3 items): 1 — `rotational_ke` (0).**
+The book has no question that *primarily* tests rotational KE (its items get
+framed via moment of inertia / angular motion). Needs generated items, or accept
+it as non-diagnosable until the book yields more.
 
-- **Gravitation applications** (cavendish, gfield, weightless, equivalence) —
-  downstream of Q134465.
-- **Rotational/dynamics applications** (centerofmass, fictitious).
-- **Momentum/energy quantities** (impulse, power, machines, efficiency,
-  collisions) — each has a real *prerequisite* in the graph but is not identical
-  to it.
-- **Thermal physics** (heattransfer, specificheat, latentheat, thermolaws) —
-  the graph has only Q11466 Temperature; the whole thermal vertical is absent.
+## items_needing_node — demand for the 15 missing nodes
 
-## Decisions for review (do not let convenience redefine the asset)
+**271 questions** test a real concept that has **no node**. They were routed to
+`items_needing_node.jsonl` (not force-fit). Demand ranking — this says which
+missing nodes are worth adding first:
 
-1. **15 force-fit temptations rejected — confirm.** An independent audit pass
-   proposed collapsing 9 of the `none` concepts onto *related* nodes
-   (impulse→Momentum, power→Work, collisions→Conservation of momentum,
-   latentheat→Temperature, thermolaws→Energy, …). All were rejected: those are
-   prerequisites/siblings, not identities, and collapsing them would diagnose the
-   wrong gap (e.g. a student missing *impulse* flagged as missing *momentum*; or
-   *latent heat* — energy at **constant** temperature — mapped to Temperature).
-   `missing_nodes.jsonl` records the nearest related node per concept so the edge
-   is pre-identified when the node is created. **Review: confirm none of these 15
-   should instead be a fuzzy identity match.**
+| missing concept | questions demanding it |
+|---|---:|
+| impulse | 51 |
+| power | 36 |
+| specific_heat | 34 |
+| thermo_laws | 24 |
+| machines | 23 |
+| latent_heat | 23 |
+| collisions | 21 |
+| efficiency | 14 |
+| center_of_mass | 12 |
+| gravitational_field | 11 |
+| heat_transfer | 8 |
+| primitive (force/velocity only) | 5 |
+| fictitious_force | 4 |
+| cavendish | 3 |
+| weightlessness | 2 |
 
-2. **2 concept-pair collapses** (surfaced, not hidden): {gravpe, elasticpe} both
-   → Q155640 Potential energy; {cars, rotke} both → Q46276 Kinetic energy. KST
-   will treat each pair as one knowledge state until the graph gains
-   gravitational-PE / elastic-PE / rotational-KE nodes. **Review: split now, or
-   accept the collapse for the first engine pass?**
+**impulse (51), power (36), specific_heat (34)** are the highest-value nodes to
+add next — adding impulse alone would make 51 currently-unusable questions
+diagnosable.
 
-3. **rotke under-grounded:** rotational KE genuinely needs Moment of inertia
-   (Q165618) + Angular velocity (Q161635), but maps to generic KE, so those
-   prerequisites are not expressed. Tied to decision 2.
+## Before → after
 
-4. **3 proposed edges (flagged, conf 0.5):** Angular velocity (Q161635) arrived
-   with **no** prerequisite edge in the graph. Proposed Time→, Derivative→,
-   Euclidean-vector→Q161635, mirroring how linear velocity is wired. **Review:
-   accept into the graph proper (arbitration), or keep spine-local?**
-
-5. **2 ungrounded roots:** Temperature (Q11466) and Potential energy (Q155640)
-   have no prerequisite edge. Temperature is additionally **edge-isolated** in
-   this slice (it neither requires nor enables any matched node — hence the
-   validator counts 19 edge-nodes, not 20). For Physics 2 these are arguably
-   legitimate entry points, but KST cannot locate a gap *below* a root. **Review:
-   acceptable as foundational, or do they need grounding?**
-
-6. **Angular sub-concepts missing nodes:** the `angular` concept covers angular
-   displacement / velocity / acceleration, but only angular velocity has a node.
-   Not a math-floor gap; a candidate for `missing_nodes` if the graph expands.
-
-7. **floor_gaps is empty — confirm interpretation.** Every math prerequisite the
-   matched physics nodes need (derivative, integral, vector, cross product, trig)
-   already has a node and is wired in. The "math floor" limitation the prompt
-   anticipated does **not** bite this slice; the real gaps are missing *physics*
-   nodes (above), not missing math nodes.
-
-## Files
-
-| File | Rows | Owner |
+| | old (lesson-level) | new (per-question) |
 |---|---|---|
-| `crosswalk.jsonl` | 26 | LLM-proposed (fuzzy rows flagged) |
-| `missing_nodes.jsonl` | 15 | derived from `none` rows; nearest related node in note |
-| `proposed_edges.seed.jsonl` | 3 | LLM-proposed, low-confidence, flagged |
-| `prereq_edges.jsonl` | 23 | deterministic; **emitted only after DAG ok** |
-| `prereq_edges.candidate.jsonl` | 23 | pre-validation intermediate |
-| `floor_gaps.jsonl` | 0 | header-only; no math-node gaps |
-| `build_spine.py` | — | deterministic assembler (re-runnable) |
-| `EXPECTED_OUTPUT.md` | — | the contract, written before generation |
+| questions with a usable node | 270 | **363** |
+| nodes that have items | 6 | **10** of 11 |
+| ambiguous/unresolved nulls | 418 | **0** (271 → demand signal, 54 → non-assessing) |
+| `items_unresolved.jsonl` | mixed (force-fail) | **only 54 genuinely non-assessing** |
 
-## Reproduce
+## Output files
 
-```bash
-# 1. assemble (deterministic) from the LLM seeds + the graph
-python3 spine/build_spine.py
-# 2. validate the DAG in the graph repo's Docker container (final authority)
-SPINE=$(cd spine && pwd)
-cd /Users/khalid-dev/knowledge-graph
-docker compose run --rm -v "$SPINE":/spine kg python -m validator.dag /spine/prereq_edges.candidate.jsonl
-# -> DAG ok: 23 prerequisite edges, 19 nodes   (then rename candidate -> prereq_edges.jsonl)
+- `items.jsonl` — **417 rows**: 363 concept items (node set) + 54 non-assessing
+  (node=null). The ONLY null nodes are `resolution:non_assessing`. Each concept
+  row carries `node`, optional `secondary`, `qkind`, `lesson`, `page`.
+- `items_needing_node.jsonl` — **271 rows**, each with the `needs_concept` key.
+- `items_unresolved.jsonl` — **54 rows**, non-assessing only (instructions,
+  open reflection, lab steps).
+- `tag_nodeset.json` — the valid node set + missing-concept keys.
+- `_tag_out/batch_*.jsonl` — the raw per-agent proposals (audit trail).
+
+## Validation (deterministic)
+
 ```
+coverage: 688/688 tagged; errors: 0
+items.jsonl: 417 rows (concept 363, non_assessing 54)
+bad nodes in items.jsonl: 0   illegal nulls: 0
+RESULT: PASS
+```
+Every `items.jsonl` node is in the valid set; the only null nodes are
+non-assessing; every one of the 688 questions is tagged exactly once.
+`python3 spine/test_kst.py` → 5/5 PASS; `diagnose` loads the new bank without
+error (momentum-weak → momentumcons / lesson 3-2).
 
-## What is NOT done (next session, after review)
+## Scope honored / carried forward
 
-Phases 3–6: item bank from `lesson_pages/*.json` → calibration (borrowed/default)
-→ KST engine in Python (tested on the Function→Derivative→Velocity→Momentum→
-Conservation chain) → `diagnose` endpoint + response logging + rewire
-`gpt/instructions.md`. None started, per run config.
+- **Not modified:** the KST engine (`kst.py`), the diagnose endpoint, the graph.
+  This was tagging only. `build_items.py` (the old lesson-level assembler) is
+  superseded by `build_items_concept.py` — do not re-run the former or it will
+  overwrite `items.jsonl` with the lesson-level version.
+- **Carried forward:** the 4 `SPINE:*` split nodes are tagged but are **not yet
+  in `prereq_edges.jsonl`**, so their items load but aren't diagnosable until a
+  Phase-2 expansion adds those nodes + edges (separate task — would also let
+  `gravitational_pe`/`elastic_pe`/`translational_ke` items drive diagnosis). The
+  7 real-QID nodes are fully diagnosable now.
+- Calibration (`calibration.jsonl`) is keyed by `item_id` and unchanged; still
+  covers all questions.

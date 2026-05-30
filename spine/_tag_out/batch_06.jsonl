@@ -1,0 +1,58 @@
+{"id":"q-2-3-p52-23","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"torque balance on two supports to find forces"}
+{"id":"q-2-3-p52-24","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"torque equilibrium on diving board with diver"}
+{"id":"q-2-3-p55-25","node":null,"secondary":null,"needs_concept":"center_of_mass","non_assessing":false,"reason":"whether center of mass can lie outside the body"}
+{"id":"q-2-3-p55-26","node":null,"secondary":null,"needs_concept":"center_of_mass","non_assessing":false,"reason":"raised center of mass reduces stability"}
+{"id":"q-2-3-p55-27","node":null,"secondary":null,"needs_concept":null,"non_assessing":true,"reason":"open listing prompt with no single concept tested"}
+{"id":"q-2-3-p55-28","node":null,"secondary":null,"needs_concept":"center_of_mass","non_assessing":false,"reason":"procedure to locate center of mass of an object"}
+{"id":"q-2-3-p55-29","node":null,"secondary":null,"needs_concept":"fictitious_force","non_assessing":false,"reason":"coin slides outward on rotating disk — centrifugal effect"}
+{"id":"q-2-3-p55-30","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"braking torque causes front dip — rotational torque concept"}
+{"id":"q-2-3-p57-analysis-1","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"find ruler mass from torque equilibrium"}
+{"id":"q-2-3-p57-analysis-2","node":null,"secondary":null,"needs_concept":null,"non_assessing":true,"reason":"lab data recording step, no concept assessed"}
+{"id":"q-2-3-p57-analysis-3","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"identify CW/CCW torque-producing forces about pivot"}
+{"id":"q-2-3-p57-analysis-4","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"record lever arm lengths for each force"}
+{"id":"q-2-3-p57-analysis-5","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"calculate torque = force × lever arm for each object"}
+{"id":"q-2-3-p57-concl-1","node":null,"secondary":null,"needs_concept":"primitive","non_assessing":false,"reason":"translational equilibrium ΣF=0, no listed concept node"}
+{"id":"q-2-3-p57-concl-2","node":null,"secondary":null,"needs_concept":null,"non_assessing":true,"reason":"draw free body diagram — pure drawing instruction"}
+{"id":"q-2-3-p57-concl-3","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"compare CW vs CCW torque sums — torque balance"}
+{"id":"q-2-3-p57-concl-4","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"percentage difference between opposing torque sums"}
+{"id":"q-2-3-p58-expand-1","node":null,"secondary":null,"needs_concept":"center_of_mass","non_assessing":false,"reason":"sports cars more stable due to lower center of mass"}
+{"id":"q-2-3-p58-expand-2","node":null,"secondary":null,"needs_concept":null,"non_assessing":true,"reason":"open policy discussion, no physics concept assessed"}
+{"id":"q-ch2-p60-31","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"concept map of angular velocity and related quantities"}
+{"id":"q-ch2-p60-32","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"constant rev/min implies constant angular velocity"}
+{"id":"q-ch2-p60-33","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"constant speed means zero angular acceleration"}
+{"id":"q-ch2-p60-34","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"all parts of Earth share same ω, different linear speed"}
+{"id":"q-ch2-p60-35","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"direction of total acceleration at constant angular speed"}
+{"id":"q-ch2-p60-36","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"torque more effective than force alone for tightening bolt"}
+{"id":"q-ch2-p60-37","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"rank torques on doors with same force, different lever arms"}
+{"id":"q-ch2-p60-38","node":null,"secondary":null,"needs_concept":"center_of_mass","non_assessing":false,"reason":"balancing weights moves center of mass to wheel center"}
+{"id":"q-ch2-p60-39","node":null,"secondary":null,"needs_concept":"center_of_mass","non_assessing":false,"reason":"locate center of mass of car on two side tires"}
+{"id":"q-ch2-p60-40","node":null,"secondary":null,"needs_concept":"center_of_mass","non_assessing":false,"reason":"balance requires center of mass over base of support"}
+{"id":"q-ch2-p60-41","node":null,"secondary":null,"needs_concept":"center_of_mass","non_assessing":false,"reason":"raising arms shifts center of mass, changes apparent trajectory"}
+{"id":"q-ch2-p60-42","node":null,"secondary":null,"needs_concept":"center_of_mass","non_assessing":false,"reason":"large tires raise center of mass, increasing rollover risk"}
+{"id":"q-ch2-p60-43","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"compare ω and v between meshed gears of different sizes"}
+{"id":"q-ch2-p60-44","node":null,"secondary":null,"needs_concept":"fictitious_force","non_assessing":false,"reason":"centrifugal effect in rotating drum acts on clothes and water"}
+{"id":"q-ch2-p60-45","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"three ways to increase torque when loosening a bolt"}
+{"id":"q-ch2-p61-46","node":null,"secondary":null,"needs_concept":"center_of_mass","non_assessing":false,"reason":"drooping pole lowers center of mass, increases stability"}
+{"id":"q-ch2-p61-47","node":null,"secondary":null,"needs_concept":"fictitious_force","non_assessing":false,"reason":"object thrown from rotating platform — rotating frame effect"}
+{"id":"q-ch2-p61-48","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"forces at pivot have zero lever arm, contribute no torque"}
+{"id":"q-ch2-p61-49","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"choosing pivot at force eliminates unknown from torque equation"}
+{"id":"q-ch2-p61-50","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"calculate angular velocity from linear speed and radius"}
+{"id":"q-ch2-p61-51","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"find angle from arc length and radius θ=s/r"}
+{"id":"q-ch2-p61-52","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"find arc length from angle and radius s=rθ"}
+{"id":"q-ch2-p61-53","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"convert rev/min to rad/s angular speed"}
+{"id":"q-ch2-p61-54","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"calculate angular deceleration from Δω/Δt"}
+{"id":"q-ch2-p61-55","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"linear speed v=rω at given radius"}
+{"id":"q-ch2-p61-56","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"compare linear speeds at two angular velocities"}
+{"id":"q-ch2-p62-57","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"maximum centripetal acceleration in units of g"}
+{"id":"q-ch2-p62-58","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"find ω from centripetal acceleration a=ω²r"}
+{"id":"q-ch2-p62-59","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"find minimum force from torque τ=Fr"}
+{"id":"q-ch2-p62-60","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"calculate torque from force and lever arm"}
+{"id":"q-ch2-p62-61","node":null,"secondary":null,"needs_concept":"center_of_mass","non_assessing":false,"reason":"locate center of mass from axle weight distribution"}
+{"id":"q-ch2-p62-62","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"torque equilibrium to find two persons' forces on board"}
+{"id":"q-ch2-p62-63","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"torque balance for two people lifting board with box"}
+{"id":"q-ch2-p62-64","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"torque equilibrium for two people lifting weighted plank"}
+{"id":"q-ch2-p62-65","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"torque equilibrium on cylinder with wrapped rope"}
+{"id":"q-ch2-p63-66","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"angular acceleration from rest to max speed in given time"}
+{"id":"q-ch2-p63-67","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"larger tire radius increases v for same ω, speedometer reads high"}
+{"id":"q-ch2-p63-68","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"torque tipping condition for box pulled by rope"}
+{"id":"q-ch2-p63-69","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"tip speed of second hand via v=rω"}

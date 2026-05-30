@@ -1,0 +1,13 @@
+{"id":"q-2-2-p44-10","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"compute force from torque and lever arm"}
+{"id":"q-2-2-p44-11","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"find lever arm length given torque and force"}
+{"id":"q-2-2-p44-12","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"solve for angle in τ=rF sinθ"}
+{"id":"q-2-2-p44-13","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"torque on pedal at given angle and vertical"}
+{"id":"q-2-2-p46-14","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"rotational equilibrium on seesaw, find distance"}
+{"id":"q-2-2-p46-15","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"torque from perpendicular chain force on tire"}
+{"id":"q-2-2-p46-16","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"torque equilibrium on pulleys of different radii"}
+{"id":"q-2-2-p46-17","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"same pulley torque balance with changed radius"}
+{"id":"q-2-2-p46-18","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"net torque balance to find chain force"}
+{"id":"q-2-2-p46-19","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"maximize torque by perpendicular force at rim"}
+{"id":"q-2-2-p46-20","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"compare lever arms at 55° vs 90° to door"}
+{"id":"q-2-2-p46-21","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"net torque from opposing forces on wheel"}
+{"id":"q-2-2-p46-22","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"friction provides torque enabling rolling on slope"}

@@ -1,0 +1,16 @@
+{"id":"q-ch2-p63-70","node":null,"secondary":null,"needs_concept":"center_of_mass","non_assessing":false,"reason":"carrying beam vs two pieces tests center of mass balance"}
+{"id":"q-ch2-p63-71","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"find second force using torque equilibrium on board"}
+{"id":"q-ch2-p63-72","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"tipping point of beam on supports uses torque equilibrium"}
+{"id":"q-ch2-p63-73","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"point on tire rim undergoes rotational/angular motion"}
+{"id":"q-ch2-p64-74","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"find cable tension via rotational equilibrium of flagpole"}
+{"id":"q-ch2-p64-75","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"find rope tension via torque equilibrium on horizontal rod"}
+{"id":"q-ch2-p64-76","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"force distribution on ladder requires torque equilibrium"}
+{"id":"q-ch2-p64-77","node":"Q134465","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"Roche limit requires understanding gravitational tidal forces"}
+{"id":"q-ch2-p64-78","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"research why torque matters for engine classification"}
+{"id":"q-ch2-p64-79","node":null,"secondary":null,"needs_concept":"primitive","non_assessing":false,"reason":"centripetal friction force F=mv^2/r is primitive force balance"}
+{"id":"q-ch2-p65-mcq-1","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"find pivot position for balance using torque equilibrium"}
+{"id":"q-ch2-p65-mcq-2","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"torque with angled force τ=rF sinθ directly tested"}
+{"id":"q-ch2-p65-mcq-3","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"find wrench length from τ=rF solving for r"}
+{"id":"q-ch2-p65-mcq-4","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"rotations from distance and diameter uses arc-angle relation"}
+{"id":"q-ch2-p65-mcq-5","node":"Q161635","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"angular velocity from linear speed ω=v/r"}
+{"id":"q-ch2-p65-ext-6","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"torque from angled force on wrench τ=rF sinθ"}

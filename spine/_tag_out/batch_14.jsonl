@@ -1,0 +1,16 @@
+{"id":"q-5-1-p131-analysis-1","node":"SPINE:gravitational_pe","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"graph read to find rebound height from drop height"}
+{"id":"q-5-1-p131-analysis-2","node":"SPINE:gravitational_pe","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"identify factors affecting gravitational PE at height"}
+{"id":"q-5-1-p131-analysis-3","node":"Q11382","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"energy lost to non-conservative forces explains lower rebound"}
+{"id":"q-5-1-p134-1","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"work-energy theorem: friction work and work to regain speed"}
+{"id":"q-5-1-p134-2","node":"SPINE:translational_ke","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"calculate initial and final KE then net work done"}
+{"id":"q-5-1-p134-3","node":"SPINE:translational_ke","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"compute KE of comet using ½mv²"}
+{"id":"q-5-1-p138-4","node":"SPINE:gravitational_pe","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"PE=mgh with non-ground reference level"}
+{"id":"q-5-1-p138-5","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"work done lowering load equals force times displacement"}
+{"id":"q-5-1-p138-6","node":"SPINE:gravitational_pe","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"PE relative to table surface as reference level"}
+{"id":"q-5-1-p138-7","node":"SPINE:gravitational_pe","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"change in gravitational PE as brick falls"}
+{"id":"q-5-1-p138-8","node":"SPINE:gravitational_pe","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"track PE changes through lift, slide, drop sequence"}
+{"id":"q-5-1-p140-9","node":"SPINE:elastic_pe","secondary":"SPINE:gravitational_pe","needs_concept":null,"non_assessing":false,"reason":"bar chart tracks elastic PE converting to gravitational PE"}
+{"id":"q-5-1-p140-10","node":"SPINE:gravitational_pe","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"PE=mgh at two heights with ground as reference"}
+{"id":"q-5-1-p140-11","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"apply work-energy theorem to lifting bowling ball"}
+{"id":"q-5-1-p140-12","node":"SPINE:gravitational_pe","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"PE at top and bottom positions with rock layer reference"}
+{"id":"q-5-1-p140-13","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"constant horizontal force over distance; W=Fd"}

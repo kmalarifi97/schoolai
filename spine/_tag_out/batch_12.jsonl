@@ -1,0 +1,58 @@
+{"id":"q-4-2-p111-stim-1","node":null,"secondary":null,"needs_concept":"power","non_assessing":false,"reason":"compute power to lift water P=W/t"}
+{"id":"q-4-2-p111-stim-2","node":null,"secondary":null,"needs_concept":"power","non_assessing":false,"reason":"compute power for KE increase of water"}
+{"id":"q-4-2-p111-stim-3","node":null,"secondary":null,"needs_concept":"efficiency","non_assessing":false,"reason":"find input power given 80% efficiency"}
+{"id":"q-4-2-p113-lab-q","node":null,"secondary":null,"needs_concept":"machines","non_assessing":false,"reason":"sprocket doubles distance; what happens to force"}
+{"id":"q-4-2-p113-lab-6","node":null,"secondary":null,"needs_concept":"machines","non_assessing":false,"reason":"lab observation: force in input string of pulley"}
+{"id":"q-4-2-p113-lab-7","node":null,"secondary":null,"needs_concept":"machines","non_assessing":false,"reason":"input distance vs output; explained via work on each string"}
+{"id":"q-4-2-p115-24","node":null,"secondary":null,"needs_concept":"machines","non_assessing":false,"reason":"sprocket radius doubles; which quantities change"}
+{"id":"q-4-2-p115-25","node":null,"secondary":null,"needs_concept":"machines","non_assessing":false,"reason":"wedge IMA and MA calculation"}
+{"id":"q-4-2-p115-26","node":null,"secondary":null,"needs_concept":"machines","non_assessing":false,"reason":"pulley system IMA, MA, work input/output, efficiency"}
+{"id":"q-4-2-p115-27","node":null,"secondary":null,"needs_concept":"efficiency","non_assessing":false,"reason":"given lever efficiency 88.7%, find effort arm distance"}
+{"id":"q-4-2-p115-28","node":null,"secondary":null,"needs_concept":"machines","non_assessing":false,"reason":"wheel-and-axle IMA from radius ratio"}
+{"id":"q-4-2-p117-29","node":null,"secondary":null,"needs_concept":"machines","non_assessing":false,"reason":"classify tools by simple machine type"}
+{"id":"q-4-2-p117-30","node":null,"secondary":null,"needs_concept":"machines","non_assessing":false,"reason":"IMA from distance ratio; find max liftable weight"}
+{"id":"q-4-2-p117-31","node":null,"secondary":null,"needs_concept":"machines","non_assessing":false,"reason":"compound machine IMA calculation"}
+{"id":"q-4-2-p117-32","node":null,"secondary":null,"needs_concept":"efficiency","non_assessing":false,"reason":"increasing efficiency: effect on MA vs IMA"}
+{"id":"q-4-2-p117-33","node":null,"secondary":null,"needs_concept":"machines","non_assessing":false,"reason":"multi-speed bike: changing MA by switching sprockets"}
+{"id":"q-4-2-p119-analysis-1","node":null,"secondary":null,"needs_concept":"primitive","non_assessing":false,"reason":"calculate weight W=mg; no listed concept tested"}
+{"id":"q-4-2-p119-analysis-2","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"calculate work W=F×d for each person on stairs"}
+{"id":"q-4-2-p119-analysis-3","node":null,"secondary":null,"needs_concept":"power","non_assessing":false,"reason":"calculate power P=W/t for each person"}
+{"id":"q-4-2-p119-analysis-4","node":null,"secondary":null,"needs_concept":null,"non_assessing":true,"reason":null}
+{"id":"q-4-2-p119-analysis-5","node":null,"secondary":null,"needs_concept":null,"non_assessing":true,"reason":null}
+{"id":"q-4-2-p119-analysis-6","node":null,"secondary":null,"needs_concept":null,"non_assessing":true,"reason":null}
+{"id":"q-4-2-p119-conclude-1","node":null,"secondary":null,"needs_concept":"power","non_assessing":false,"reason":"conceptual: why power rates differ among group members"}
+{"id":"q-4-2-p119-conclude-2","node":null,"secondary":null,"needs_concept":null,"non_assessing":true,"reason":null}
+{"id":"q-4-2-p119-conclude-3","node":null,"secondary":null,"needs_concept":"power","non_assessing":false,"reason":"explain why the graph relationship exists (P=W/t)"}
+{"id":"q-4-2-p119-conclude-4","node":null,"secondary":null,"needs_concept":"power","non_assessing":false,"reason":"write an operational definition of power"}
+{"id":"q-4-2-p119-life-1","node":null,"secondary":null,"needs_concept":null,"non_assessing":true,"reason":null}
+{"id":"q-4-2-p119-life-2","node":null,"secondary":null,"needs_concept":"power","non_assessing":false,"reason":"compute earnings from power generated; applies P=W/t"}
+{"id":"q-4-2-p119-life-3","node":null,"secondary":null,"needs_concept":null,"non_assessing":true,"reason":null}
+{"id":"q-4-2-p119-expand-1","node":null,"secondary":null,"needs_concept":"power","non_assessing":false,"reason":"ways to increase power on stairs (W=mgh and t)"}
+{"id":"q-4-2-p119-expand-2","node":null,"secondary":null,"needs_concept":"power","non_assessing":false,"reason":"fastest ≠ highest power; weight matters too"}
+{"id":"q-4-2-p119-expand-3","node":null,"secondary":null,"needs_concept":"power","non_assessing":false,"reason":"higher mass ≠ higher power; time factor matters"}
+{"id":"q-4-2-p119-expand-4","node":null,"secondary":null,"needs_concept":null,"non_assessing":true,"reason":null}
+{"id":"q-4-2-p120-1","node":null,"secondary":null,"needs_concept":"machines","non_assessing":false,"reason":"compute IMA for multi-speed bicycle gear cases"}
+{"id":"q-4-2-p120-2","node":null,"secondary":null,"needs_concept":"machines","non_assessing":false,"reason":"choose gear ratio for flat vs steep terrain"}
+{"id":"q-4-2-p122-34","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"concept map: force, displacement, work, ΔKE"}
+{"id":"q-4-2-p122-35","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"unit of work (Joule)"}
+{"id":"q-4-2-p122-36","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"satellite orbit: gravity perpendicular to motion W=0"}
+{"id":"q-4-2-p122-37","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"constant-speed frictionless slide: forces and work each does"}
+{"id":"q-4-2-p122-38","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"define work (valid node); also asks power definition"}
+{"id":"q-4-2-p122-39","node":null,"secondary":null,"needs_concept":"power","non_assessing":false,"reason":"Watt unit equivalence in SI base units"}
+{"id":"q-4-2-p122-40","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"work-energy relationship W=ΔE"}
+{"id":"q-4-2-p122-41","node":null,"secondary":null,"needs_concept":"efficiency","non_assessing":false,"reason":"can a machine output more work than input? Tests efficiency"}
+{"id":"q-4-2-p122-42","node":null,"secondary":null,"needs_concept":"machines","non_assessing":false,"reason":"bicycle pedals as a simple machine (lever/wheel-axle)"}
+{"id":"q-4-2-p122-43","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"compare W=Fd for two load-distance combinations"}
+{"id":"q-4-2-p122-44","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"two equal-opposite forces lifting box: which work is done"}
+{"id":"q-4-2-p122-45","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"worker up then down: net work vs individual forces"}
+{"id":"q-4-2-p122-46","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"horizontal carrying: W=Fd cosθ with force perpendicular"}
+{"id":"q-4-2-p122-47","node":null,"secondary":null,"needs_concept":"power","non_assessing":false,"reason":"same work different time → different power"}
+{"id":"q-4-2-p122-48","node":null,"secondary":null,"needs_concept":"power","non_assessing":false,"reason":"derive P=Fv cosθ from P=W/t"}
+{"id":"q-4-2-p122-49","node":null,"secondary":null,"needs_concept":"machines","non_assessing":false,"reason":"how to increase IMA of a machine"}
+{"id":"q-4-2-p122-50","node":null,"secondary":null,"needs_concept":"efficiency","non_assessing":false,"reason":"increase MA without changing IMA (reduce friction)"}
+{"id":"q-4-2-p122-51","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"planet orbit: gravity perpendicular to motion, W=0"}
+{"id":"q-4-2-p122-52","node":"Q48103","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"claw hammer: lever arm position for minimum force"}
+{"id":"q-4-2-p123-53","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"work to lift refrigerator W=mgh"}
+{"id":"q-4-2-p123-54","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"find mass from W=mgh (work given, find m)"}
+{"id":"q-4-2-p123-55","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"work done jumping W=mgh"}
+{"id":"q-4-2-p123-56","node":"Q42213","secondary":null,"needs_concept":null,"non_assessing":false,"reason":"force from W=Fd in tug-of-war"}

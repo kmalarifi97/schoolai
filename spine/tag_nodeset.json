@@ -1,0 +1,34 @@
+{
+  "_comment": "VALID NODE SET for per-question concept tagging. A question may ONLY be tagged to a node listed in valid_nodes. The 4 SPINE:* nodes are collapse-splits of Q155640 (Potential energy) and Q46276 (Kinetic energy); they are spine-local until the prereq DAG gains them. If a question tests a concept in missing_concepts (or any concept with no valid node), set node=null and needs_concept. If a question is not concept-assessing at all, set node=null and non_assessing=true.",
+  "valid_nodes": [
+    {"node": "Q134465", "slug": "gravitation", "en": "Newton's universal gravitation / Kepler's laws", "ar": "قانون نيوتن للجذب العام وقوانين كبلر — قوة الجذب بين كتلتين، F=Gm1m2/r^2، المدارات"},
+    {"node": "Q161635", "slug": "angular", "en": "Angular motion / angular velocity", "ar": "الحركة الزاوية — الإزاحة/السرعة/التسارع الزاوي، θ ω α، rad، العلاقة بالحركة الخطية"},
+    {"node": "Q48103", "slug": "torque", "en": "Torque & lever arm", "ar": "العزم وذراع القوة — τ=rF sinθ، الاتزان الدوراني"},
+    {"node": "Q2305665", "slug": "momentumcons", "en": "Conservation of momentum", "ar": "حفظ الزخم — النظام المعزول، الزخم قبل=بعد، الارتداد، الدفع في الفضاء (الزخم نفسه p=mv والدفع impulse هما مفهومان مفقودان)"},
+    {"node": "Q42213", "slug": "workenergy", "en": "Work & work-energy theorem", "ar": "الشغل ونظرية الشغل-الطاقة — W=Fd cosθ، الشغل=تغير الطاقة الحركية"},
+    {"node": "Q11382", "slug": "pendulum", "en": "Conservation of mechanical energy", "ar": "حفظ الطاقة الميكانيكية — مجموع الحركية+الوضع ثابت، البندول، المنحدرات (بدون احتكاك)"},
+    {"node": "Q11466", "slug": "tempvsthermal", "en": "Temperature vs thermal energy", "ar": "درجة الحرارة مقابل الطاقة الحرارية — الفرق بينهما، الاتزان الحراري، مقياس كلفن (انتقال الحرارة والحرارة النوعية والكامنة مفاهيم مفقودة)"},
+    {"node": "SPINE:translational_ke", "slug": "cars", "en": "Translational kinetic energy", "ar": "الطاقة الحركية الانتقالية — KE=½mv^2 لجسم منتقل"},
+    {"node": "SPINE:rotational_ke", "slug": "rotke", "en": "Rotational kinetic energy", "ar": "الطاقة الحركية الدورانية — KE=½Iω^2، عزم القصور الذاتي I"},
+    {"node": "SPINE:gravitational_pe", "slug": "gravpe", "en": "Gravitational potential energy", "ar": "طاقة الوضع الجاذبية — PE=mgh، المستوى المرجعي"},
+    {"node": "SPINE:elastic_pe", "slug": "elasticpe", "en": "Elastic potential energy", "ar": "طاقة الوضع المرونية — PE=½kx^2، النابض، قانون هوك"}
+  ],
+  "missing_concepts": [
+    {"key": "cavendish", "ar": "تجربة كافنديش لقياس G ووزن الأرض"},
+    {"key": "gravitational_field", "ar": "المجال الجاذبي وشدته g (يختلف عن قوة الجذب)"},
+    {"key": "weightlessness", "ar": "انعدام الوزن والسقوط الحر والمدار كسقوط دائم"},
+    {"key": "equivalence", "ar": "الكتلة العطالية مقابل الجاذبية ومبدأ التكافؤ"},
+    {"key": "center_of_mass", "ar": "مركز الكتلة والاستقرار والاتزان الانتقالي"},
+    {"key": "fictitious_force", "ar": "القوى الوهمية — الطاردة المركزية وكوريوليس والأطر الدوارة"},
+    {"key": "impulse", "ar": "الدفع J=∫F dt = تغير الزخم، ونظرية الدفع-الزخم، والزخم p=mv نفسه"},
+    {"key": "power", "ar": "القدرة P=W/t = معدل بذل الشغل"},
+    {"key": "machines", "ar": "الآلات البسيطة والفائدة الميكانيكية"},
+    {"key": "efficiency", "ar": "كفاءة الآلات المثالية مقابل الحقيقية"},
+    {"key": "collisions", "ar": "التصادمات المرنة وغير المرنة (تطبيق حفظ الزخم/الطاقة معًا)"},
+    {"key": "heat_transfer", "ar": "انتقال الحرارة — التوصيل والحمل والإشعاع"},
+    {"key": "specific_heat", "ar": "الحرارة النوعية Q=mcΔT"},
+    {"key": "latent_heat", "ar": "الحرارة الكامنة — طاقة تغيّر الحالة عند ثبات الحرارة"},
+    {"key": "thermo_laws", "ar": "قوانين الديناميكا الحرارية والإنتروبيا"},
+    {"key": "primitive", "ar": "متطلّب أساسي فقط (قوة/سرعة/كتلة/متجهات) دون اختبار أي مفهوم من القائمة"}
+  ]
+}

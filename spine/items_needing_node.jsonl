@@ -1,0 +1,272 @@
+# Questions testing a concept with NO node (the 15 missing). Demand signal: which missing nodes are worth adding. Not force-fit.
+{"item_id": "q-1-1-p17-10", "lesson": "1-1", "needs_concept": "gravitational_field", "qkind": "conceptual", "reason": "Why surface gravity differs on Moon vs Earth"}
+{"item_id": "q-1-1-p17-7", "lesson": "1-1", "needs_concept": "gravitational_field", "qkind": "conceptual", "reason": "Tests how surface g changes with radius at fixed mass"}
+{"item_id": "q-1-1-p17-9", "lesson": "1-1", "needs_concept": "cavendish", "qkind": "conceptual", "reason": "Cavendish experiment: whether G depends on material"}
+{"item_id": "q-1-2-p27-14", "lesson": "1-2", "needs_concept": "gravitational_field", "qkind": "numerical", "reason": "compute gravitational field strength from Moon and Sun"}
+{"item_id": "q-1-2-p27-15", "lesson": "1-2", "needs_concept": "gravitational_field", "qkind": "numerical", "reason": "find g on Moon surface from mass and radius"}
+{"item_id": "q-1-2-p27-17", "lesson": "1-2", "needs_concept": "weightlessness", "qkind": "conceptual", "reason": "weightlessness in space station, inertial mass still present"}
+{"item_id": "q-1-2-p32-23", "lesson": "1-2", "needs_concept": "cavendish", "qkind": "conceptual", "reason": "Cavendish torsion experiment measured G between small masses"}
+{"item_id": "q-1-2-p32-28", "lesson": "1-2", "needs_concept": "gravitational_field", "qkind": "conceptual", "reason": "verify units of g = F/m yield m/s^2"}
+{"item_id": "q-1-2-p32-29", "lesson": "1-2", "needs_concept": "gravitational_field", "qkind": "conceptual", "reason": "g doubles if Earth mass doubles at same radius"}
+{"item_id": "q-1-2-p33-36", "lesson": "1-2", "needs_concept": "gravitational_field", "qkind": "numerical", "reason": "calculate g on Jupiter surface from mass and radius ratio"}
+{"item_id": "q-1-2-p33-37", "lesson": "1-2", "needs_concept": "gravitational_field", "qkind": "conceptual", "reason": "field force doubles when mass in the field doubles"}
+{"item_id": "q-1-2-p33-39", "lesson": "1-2", "needs_concept": "cavendish", "qkind": "numerical", "reason": "compute gravitational force in Cavendish setup using F=Gm1m2/r^2"}
+{"item_id": "q-1-2-p33-47", "lesson": "1-2", "needs_concept": "gravitational_field", "qkind": "numerical", "reason": "g = F/m from weight and mass in space"}
+{"item_id": "q-1-2-p33-49", "lesson": "1-2", "needs_concept": "gravitational_field", "qkind": "numerical", "reason": "find lunar g from weight and mass on Moon surface"}
+{"item_id": "q-1-2-p34-50", "lesson": "1-2", "needs_concept": "gravitational_field", "qkind": "numerical", "reason": "find g at altitude from fractional weight loss"}
+{"item_id": "q-1-2-p34-53", "lesson": "1-2", "needs_concept": "weightlessness", "qkind": "numerical", "reason": "rotation speed for surface objects to feel weightless"}
+{"item_id": "q-1-2-p34-57", "lesson": "1-2", "needs_concept": "primitive", "qkind": "numerical", "reason": "distance=speed×time, no listed concept"}
+{"item_id": "q-1-2-p34-58", "lesson": "1-2", "needs_concept": "primitive", "qkind": "numerical", "reason": "centripetal force calculation, no listed concept node"}
+{"item_id": "q-2-3-p55-25", "lesson": "2-3", "needs_concept": "center_of_mass", "qkind": "conceptual", "reason": "whether center of mass can lie outside the body"}
+{"item_id": "q-2-3-p55-26", "lesson": "2-3", "needs_concept": "center_of_mass", "qkind": "conceptual", "reason": "raised center of mass reduces stability"}
+{"item_id": "q-2-3-p55-28", "lesson": "2-3", "needs_concept": "center_of_mass", "qkind": "conceptual", "reason": "procedure to locate center of mass of an object"}
+{"item_id": "q-2-3-p55-29", "lesson": "2-3", "needs_concept": "fictitious_force", "qkind": "conceptual", "reason": "coin slides outward on rotating disk — centrifugal effect"}
+{"item_id": "q-2-3-p57-concl-1", "lesson": "2-3", "needs_concept": "primitive", "qkind": "conceptual", "reason": "translational equilibrium ΣF=0, no listed concept node"}
+{"item_id": "q-2-3-p58-expand-1", "lesson": "2-3", "needs_concept": "center_of_mass", "qkind": "conceptual", "reason": "sports cars more stable due to lower center of mass"}
+{"item_id": "q-3-1-p67-analysis-1", "lesson": "3-1", "needs_concept": "collisions", "qkind": "conceptual", "reason": "factors determining post-collision speed/direction tests collision dynamics"}
+{"item_id": "q-3-1-p67-analysis-2", "lesson": "3-1", "needs_concept": "collisions", "qkind": "conceptual", "reason": "solid ball rebound mechanism tests collision interaction"}
+{"item_id": "q-3-1-p72-1", "lesson": "3-1", "needs_concept": "impulse", "qkind": "numerical", "reason": "draw vector diagram representing p=mv for moving car"}
+{"item_id": "q-3-1-p72-2", "lesson": "3-1", "needs_concept": "impulse", "qkind": "numerical", "reason": "braking force × time = impulse = Δp calculation"}
+{"item_id": "q-3-1-p72-3", "lesson": "3-1", "needs_concept": "impulse", "qkind": "numerical", "reason": "find velocity after each impulse acts on bowling ball"}
+{"item_id": "q-3-1-p72-4", "lesson": "3-1", "needs_concept": "impulse", "qkind": "numerical", "reason": "force over time changes momentum of snow sled"}
+{"item_id": "q-3-1-p73-10", "lesson": "3-1", "needs_concept": "impulse", "qkind": "conceptual", "reason": "Δp nonzero when direction reverses, vector momentum concept"}
+{"item_id": "q-3-1-p73-11", "lesson": "3-1", "needs_concept": "impulse", "qkind": "conceptual", "reason": "rebounding arrow produces larger Δp than embedding arrow"}
+{"item_id": "q-3-1-p73-6", "lesson": "3-1", "needs_concept": "impulse", "qkind": "conceptual", "reason": "momentum vector direction differs north vs south, p=mv"}
+{"item_id": "q-3-1-p73-7", "lesson": "3-1", "needs_concept": "impulse", "qkind": "conceptual", "reason": "bending knees extends time, reduces force — impulse-momentum theorem"}
+{"item_id": "q-3-1-p73-8", "lesson": "3-1", "needs_concept": "impulse", "qkind": "conceptual", "reason": "compare p=mv: stationary tanker vs moving raindrop"}
+{"item_id": "q-3-1-p73-9", "lesson": "3-1", "needs_concept": "impulse", "qkind": "numerical", "reason": "calculate Δp from reversed baseball velocity"}
+{"item_id": "q-4-1-p106-10", "lesson": "4-1", "needs_concept": "power", "qkind": "numerical", "reason": "P=F·v or P=W/t with constant speed push"}
+{"item_id": "q-4-1-p106-11", "lesson": "4-1", "needs_concept": "power", "qkind": "numerical", "reason": "P=W/t for pump lifting water"}
+{"item_id": "q-4-1-p106-12", "lesson": "4-1", "needs_concept": "power", "qkind": "numerical", "reason": "P=W/t, find force from power and kinematics"}
+{"item_id": "q-4-1-p106-9", "lesson": "4-1", "needs_concept": "power", "qkind": "numerical", "reason": "P=W/t, compute motor power in watts and kilowatts"}
+{"item_id": "q-4-1-p107-13", "lesson": "4-1", "needs_concept": "power", "qkind": "numerical", "reason": "Find time from P=W/t given power and work"}
+{"item_id": "q-4-1-p108-17", "lesson": "4-1", "needs_concept": "power", "qkind": "conceptual", "reason": "Conceptual distinction: work independent of speed, power depends on speed"}
+{"item_id": "q-4-1-p108-18", "lesson": "4-1", "needs_concept": "power", "qkind": "numerical", "reason": "P=W/t, elevator lifting mass"}
+{"item_id": "q-4-2-p111-stim-1", "lesson": "4-2", "needs_concept": "power", "qkind": "numerical", "reason": "compute power to lift water P=W/t"}
+{"item_id": "q-4-2-p111-stim-2", "lesson": "4-2", "needs_concept": "power", "qkind": "numerical", "reason": "compute power for KE increase of water"}
+{"item_id": "q-4-2-p111-stim-3", "lesson": "4-2", "needs_concept": "efficiency", "qkind": "numerical", "reason": "find input power given 80% efficiency"}
+{"item_id": "q-4-2-p113-lab-6", "lesson": "4-2", "needs_concept": "machines", "qkind": "conceptual", "reason": "lab observation: force in input string of pulley"}
+{"item_id": "q-4-2-p113-lab-7", "lesson": "4-2", "needs_concept": "machines", "qkind": "conceptual", "reason": "input distance vs output; explained via work on each string"}
+{"item_id": "q-4-2-p113-lab-q", "lesson": "4-2", "needs_concept": "machines", "qkind": "conceptual", "reason": "sprocket doubles distance; what happens to force"}
+{"item_id": "q-4-2-p115-24", "lesson": "4-2", "needs_concept": "machines", "qkind": "numerical", "reason": "sprocket radius doubles; which quantities change"}
+{"item_id": "q-4-2-p115-25", "lesson": "4-2", "needs_concept": "machines", "qkind": "numerical", "reason": "wedge IMA and MA calculation"}
+{"item_id": "q-4-2-p115-26", "lesson": "4-2", "needs_concept": "machines", "qkind": "numerical", "reason": "pulley system IMA, MA, work input/output, efficiency"}
+{"item_id": "q-4-2-p115-27", "lesson": "4-2", "needs_concept": "efficiency", "qkind": "numerical", "reason": "given lever efficiency 88.7%, find effort arm distance"}
+{"item_id": "q-4-2-p115-28", "lesson": "4-2", "needs_concept": "machines", "qkind": "numerical", "reason": "wheel-and-axle IMA from radius ratio"}
+{"item_id": "q-4-2-p117-29", "lesson": "4-2", "needs_concept": "machines", "qkind": "conceptual", "reason": "classify tools by simple machine type"}
+{"item_id": "q-4-2-p117-30", "lesson": "4-2", "needs_concept": "machines", "qkind": "numerical", "reason": "IMA from distance ratio; find max liftable weight"}
+{"item_id": "q-4-2-p117-31", "lesson": "4-2", "needs_concept": "machines", "qkind": "numerical", "reason": "compound machine IMA calculation"}
+{"item_id": "q-4-2-p117-32", "lesson": "4-2", "needs_concept": "efficiency", "qkind": "conceptual", "reason": "increasing efficiency: effect on MA vs IMA"}
+{"item_id": "q-4-2-p117-33", "lesson": "4-2", "needs_concept": "machines", "qkind": "conceptual", "reason": "multi-speed bike: changing MA by switching sprockets"}
+{"item_id": "q-4-2-p119-analysis-1", "lesson": "4-2", "needs_concept": "primitive", "qkind": "numerical", "reason": "calculate weight W=mg; no listed concept tested"}
+{"item_id": "q-4-2-p119-analysis-3", "lesson": "4-2", "needs_concept": "power", "qkind": "numerical", "reason": "calculate power P=W/t for each person"}
+{"item_id": "q-4-2-p119-conclude-1", "lesson": "4-2", "needs_concept": "power", "qkind": "conceptual", "reason": "conceptual: why power rates differ among group members"}
+{"item_id": "q-4-2-p119-conclude-3", "lesson": "4-2", "needs_concept": "power", "qkind": "conceptual", "reason": "explain why the graph relationship exists (P=W/t)"}
+{"item_id": "q-4-2-p119-conclude-4", "lesson": "4-2", "needs_concept": "power", "qkind": "conceptual", "reason": "write an operational definition of power"}
+{"item_id": "q-4-2-p119-expand-1", "lesson": "4-2", "needs_concept": "power", "qkind": "conceptual", "reason": "ways to increase power on stairs (W=mgh and t)"}
+{"item_id": "q-4-2-p119-expand-2", "lesson": "4-2", "needs_concept": "power", "qkind": "conceptual", "reason": "fastest ≠ highest power; weight matters too"}
+{"item_id": "q-4-2-p119-expand-3", "lesson": "4-2", "needs_concept": "power", "qkind": "conceptual", "reason": "higher mass ≠ higher power; time factor matters"}
+{"item_id": "q-4-2-p119-life-2", "lesson": "4-2", "needs_concept": "power", "qkind": "numerical", "reason": "compute earnings from power generated; applies P=W/t"}
+{"item_id": "q-4-2-p120-1", "lesson": "4-2", "needs_concept": "machines", "qkind": "numerical", "reason": "compute IMA for multi-speed bicycle gear cases"}
+{"item_id": "q-4-2-p120-2", "lesson": "4-2", "needs_concept": "machines", "qkind": "conceptual", "reason": "choose gear ratio for flat vs steep terrain"}
+{"item_id": "q-4-2-p122-39", "lesson": "4-2", "needs_concept": "power", "qkind": "conceptual", "reason": "Watt unit equivalence in SI base units"}
+{"item_id": "q-4-2-p122-41", "lesson": "4-2", "needs_concept": "efficiency", "qkind": "conceptual", "reason": "can a machine output more work than input? Tests efficiency"}
+{"item_id": "q-4-2-p122-42", "lesson": "4-2", "needs_concept": "machines", "qkind": "conceptual", "reason": "bicycle pedals as a simple machine (lever/wheel-axle)"}
+{"item_id": "q-4-2-p122-47", "lesson": "4-2", "needs_concept": "power", "qkind": "conceptual", "reason": "same work different time → different power"}
+{"item_id": "q-4-2-p122-48", "lesson": "4-2", "needs_concept": "power", "qkind": "conceptual", "reason": "derive P=Fv cosθ from P=W/t"}
+{"item_id": "q-4-2-p122-49", "lesson": "4-2", "needs_concept": "machines", "qkind": "conceptual", "reason": "how to increase IMA of a machine"}
+{"item_id": "q-4-2-p122-50", "lesson": "4-2", "needs_concept": "efficiency", "qkind": "conceptual", "reason": "increase MA without changing IMA (reduce friction)"}
+{"item_id": "q-4-2-p123-58", "lesson": "4-2", "needs_concept": "power", "qkind": "numerical", "reason": "P=F·d/t, tests power concept"}
+{"item_id": "q-4-2-p123-60", "lesson": "4-2", "needs_concept": "power", "qkind": "numerical", "reason": "Multi-part: work and power from force/time"}
+{"item_id": "q-4-2-p123-64", "lesson": "4-2", "needs_concept": "power", "qkind": "numerical", "reason": "Power from tractor climbing incline at constant speed"}
+{"item_id": "q-4-2-p124-68", "lesson": "4-2", "needs_concept": "power", "qkind": "numerical", "reason": "Distance from power and force with angle"}
+{"item_id": "q-4-2-p124-70", "lesson": "4-2", "needs_concept": "machines", "qkind": "numerical", "reason": "Inclined plane as simple machine, IMA and work"}
+{"item_id": "q-4-2-p124-71", "lesson": "4-2", "needs_concept": "power", "qkind": "numerical", "reason": "P=Fv for boat engine at constant speed"}
+{"item_id": "q-4-2-p125-75", "lesson": "4-2", "needs_concept": "power", "qkind": "numerical", "reason": "Power to pump oil up to elevated barrel"}
+{"item_id": "q-4-2-p125-76", "lesson": "4-2", "needs_concept": "power", "qkind": "numerical", "reason": "Power generated by conveyor belt lifting bundles"}
+{"item_id": "q-4-2-p125-77", "lesson": "4-2", "needs_concept": "power", "qkind": "numerical", "reason": "Find resistance force from P=Fv at constant speed"}
+{"item_id": "q-4-2-p125-79", "lesson": "4-2", "needs_concept": "machines", "qkind": "numerical", "reason": "Pulley system: IMA, effort force, efficiency"}
+{"item_id": "q-4-2-p125-80", "lesson": "4-2", "needs_concept": "efficiency", "qkind": "numerical", "reason": "Work input given machine efficiency and load lifted"}
+{"item_id": "q-4-2-p126-81", "lesson": "4-2", "needs_concept": "efficiency", "qkind": "numerical", "reason": "Pulley system efficiency from input/output work"}
+{"item_id": "q-4-2-p126-82", "lesson": "4-2", "needs_concept": "efficiency", "qkind": "numerical", "reason": "Lever efficiency: IMA, AMA, and percent efficiency"}
+{"item_id": "q-4-2-p126-83", "lesson": "4-2", "needs_concept": "efficiency", "qkind": "numerical", "reason": "Lever with 90% efficiency, find distance lifted"}
+{"item_id": "q-4-2-p126-84", "lesson": "4-2", "needs_concept": "efficiency", "qkind": "numerical", "reason": "Work input to lift mass given machine efficiency 72.5%"}
+{"item_id": "q-4-2-p126-85", "lesson": "4-2", "needs_concept": "machines", "qkind": "numerical", "reason": "Inclined plane IMA and AMA from dimensions"}
+{"item_id": "q-4-2-p126-86", "lesson": "4-2", "needs_concept": "machines", "qkind": "numerical", "reason": "Bicycle gear ratio and chain length as compound machine"}
+{"item_id": "q-4-2-p126-87", "lesson": "4-2", "needs_concept": "efficiency", "qkind": "numerical", "reason": "Combined motor and winch efficiency to find lift speed"}
+{"item_id": "q-4-2-p126-88", "lesson": "4-2", "needs_concept": "machines", "qkind": "numerical", "reason": "IMA of compound machine from lever and pulley IMA"}
+{"item_id": "q-4-2-p126-89", "lesson": "4-2", "needs_concept": "machines", "qkind": "numerical", "reason": "Frictionless inclines: both require same work, compare IMA"}
+{"item_id": "q-4-2-p127-92", "lesson": "4-2", "needs_concept": "efficiency", "qkind": "numerical", "reason": "Cart on incline as machine: IMA, AMA, efficiency"}
+{"item_id": "q-4-2-p127-95", "lesson": "4-2", "needs_concept": "power", "qkind": "numerical", "reason": "Power to pull box up incline against friction at speed"}
+{"item_id": "q-4-2-p127-96", "lesson": "4-2", "needs_concept": "power", "qkind": "conceptual", "reason": "Optimize boxes per trip to minimize time using power-mass graph"}
+{"item_id": "q-4-2-p128-101", "lesson": "4-2", "needs_concept": "fictitious_force", "qkind": "conceptual", "reason": "Evaluate centrifugal force vs centripetal for Moon orbit"}
+{"item_id": "q-4-2-p128-96cont", "lesson": "4-2", "needs_concept": "power", "qkind": "graph", "reason": "Read graph: power vs mass to minimize total task time"}
+{"item_id": "q-4-2-p128-97", "lesson": "4-2", "needs_concept": "power", "qkind": "numerical", "reason": "Power output of runner with constant acceleration"}
+{"item_id": "q-4-2-p128-98", "lesson": "4-2", "needs_concept": "power", "qkind": "numerical", "reason": "Power during acceleration phase then constant speed"}
+{"item_id": "q-4-2-p128-99", "lesson": "4-2", "needs_concept": "efficiency", "qkind": "conceptual", "reason": "Research efficiency of bicycle/car drivetrain components"}
+{"item_id": "q-4-2-p129-ext-8", "lesson": "4-2", "needs_concept": "power", "qkind": "numerical", "reason": "Work and power: angled force, given time and distance"}
+{"item_id": "q-4-2-p129-mcq-1", "lesson": "4-2", "needs_concept": "machines", "qkind": "mcq", "reason": "Pulley IMA from load/effort force ratio"}
+{"item_id": "q-4-2-p129-mcq-3", "lesson": "4-2", "needs_concept": "efficiency", "qkind": "mcq", "reason": "Combined efficiency of incline and pulley compound machine"}
+{"item_id": "q-4-2-p129-mcq-5", "lesson": "4-2", "needs_concept": "machines", "qkind": "mcq", "reason": "Pulley IMA from distance ratio input/output"}
+{"item_id": "q-4-2-p129-mcq-6", "lesson": "4-2", "needs_concept": "power", "qkind": "mcq", "reason": "Difference in power between two people same work different time"}
+{"item_id": "q-5-2-p149-18", "lesson": "5-2", "needs_concept": "collisions", "qkind": "numerical", "reason": "perfectly inelastic collision; bullet embeds in block"}
+{"item_id": "q-5-2-p149-19", "lesson": "5-2", "needs_concept": "collisions", "qkind": "numerical", "reason": "inelastic collision + ballistic pendulum; momentum then energy"}
+{"item_id": "q-5-2-p149-20", "lesson": "5-2", "needs_concept": "collisions", "qkind": "numerical", "reason": "perfectly inelastic collision between two skaters"}
+{"item_id": "q-5-2-p151-23", "lesson": "5-2", "needs_concept": "collisions", "qkind": "conceptual", "reason": "elastic vs inelastic collision; KE conservation question"}
+{"item_id": "q-5-2-p151-24", "lesson": "5-2", "needs_concept": "collisions", "qkind": "conceptual", "reason": "elastic vs inelastic design in sports; collision energy"}
+{"item_id": "q-5-2-p151-challenge", "lesson": "5-2", "needs_concept": "collisions", "qkind": "numerical", "reason": "bullet passes through wood; momentum and energy in collision"}
+{"item_id": "q-5-2-p154-1", "lesson": "5-2", "needs_concept": "collisions", "qkind": "conceptual", "reason": "shoe cushioning extends collision time; impulse concept"}
+{"item_id": "q-5-2-p154-2", "lesson": "5-2", "needs_concept": "collisions", "qkind": "conceptual", "reason": "surface elasticity during footstrike; elastic vs inelastic"}
+{"item_id": "q-5-ch-p156-38", "lesson": "5-2", "needs_concept": "collisions", "qkind": "conceptual", "reason": "clay ball sticks to puck; perfectly inelastic collision"}
+{"item_id": "q-5-ch-p157-45", "lesson": "5-2", "needs_concept": "collisions", "qkind": "conceptual", "reason": "perfectly inelastic collision; where does KE go?"}
+{"item_id": "q-5-ch-p160-77", "lesson": "5-2", "needs_concept": "collisions", "qkind": "numerical", "reason": "Perfectly inelastic collision; find initial speed from post-collision velocity"}
+{"item_id": "q-5-ch-p161-86", "lesson": "5-2", "needs_concept": "collisions", "qkind": "conceptual", "reason": "Collision context; compare momentum and KE before perfectly inelastic collision"}
+{"item_id": "q-5-ch-p161-90", "lesson": "5-2", "needs_concept": "collisions", "qkind": "numerical", "reason": "Perfectly inelastic collision; energy lost = KE before minus KE after"}
+{"item_id": "q-5-ch-p161-91", "lesson": "5-2", "needs_concept": "collisions", "qkind": "numerical", "reason": "Elastic collision between golf club and ball"}
+{"item_id": "q-5-ch-p161-92", "lesson": "5-2", "needs_concept": "collisions", "qkind": "numerical", "reason": "Elastic collision energy transfer between unequal masses"}
+{"item_id": "q-5-ch-p162-92cont", "lesson": "5-2", "needs_concept": "collisions", "qkind": "numerical", "reason": "Continuation of elastic collision analysis between two balls"}
+{"item_id": "q-5-ch-p162-93", "lesson": "5-2", "needs_concept": "collisions", "qkind": "numerical", "reason": "Derive post-collision velocities for elastic collision"}
+{"item_id": "q-5-ch-p162-94", "lesson": "5-2", "needs_concept": "collisions", "qkind": "numerical", "reason": "Elastic collision + pendulum swing; find initial ball speed"}
+{"item_id": "q-5-ch-p162-97", "lesson": "5-2", "needs_concept": "collisions", "qkind": "numerical", "reason": "Bullet embeds in block; perfectly inelastic collision"}
+{"item_id": "q-6-1-p173-3", "lesson": "6-1", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "Q=mcΔT applied to copper pipe"}
+{"item_id": "q-6-1-p173-4", "lesson": "6-1", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "Q=mcΔT applied to car coolant water"}
+{"item_id": "q-6-1-p173-5", "lesson": "6-1", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "Q=mcΔT plus cost calculation for heating water"}
+{"item_id": "q-6-1-p176-6", "lesson": "6-1", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "Calorimetry mixing equal masses, find final temperature"}
+{"item_id": "q-6-1-p176-7", "lesson": "6-1", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "Calorimetry mixing methanol and water, find final temperature"}
+{"item_id": "q-6-1-p176-8", "lesson": "6-1", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "Find specific heat of metal from calorimetry data"}
+{"item_id": "q-6-1-p176-9", "lesson": "6-1", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "Find specific heat of unknown metal via calorimetry"}
+{"item_id": "q-6-1-p177-13", "lesson": "6-1", "needs_concept": "specific_heat", "qkind": "conceptual", "reason": "Potato retains heat longer due to high specific heat"}
+{"item_id": "q-6-1-p177-14", "lesson": "6-1", "needs_concept": "heat_transfer", "qkind": "conceptual", "reason": "Tile feels cold due to heat conduction rate"}
+{"item_id": "q-6-1-p177-15", "lesson": "6-1", "needs_concept": "specific_heat", "qkind": "conceptual", "reason": "Plastic spoon vs hot tea — specific heat and mass"}
+{"item_id": "q-6-1-p177-16", "lesson": "6-1", "needs_concept": "specific_heat", "qkind": "conceptual", "reason": "Thick aluminum pan stores more heat than thin pan"}
+{"item_id": "q-6-1-p177-17", "lesson": "6-1", "needs_concept": "specific_heat", "qkind": "conceptual", "reason": "Whole potato needs longer cooking than thin slices"}
+{"item_id": "q-6-1-p177-18", "lesson": "6-1", "needs_concept": "heat_transfer", "qkind": "conceptual", "reason": "Fog above water and convection currents in pot"}
+{"item_id": "q-6-2-p179-lab-6", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "conceptual", "reason": "Ice vs cold water at same temp — latent heat explains final temp difference"}
+{"item_id": "q-6-2-p182-19", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "numerical", "reason": "Ice warming then melting at 0°C requires latent heat of fusion"}
+{"item_id": "q-6-2-p182-20", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "numerical", "reason": "Water to steam: involves latent heat of vaporization plus specific heat"}
+{"item_id": "q-6-2-p182-21", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "numerical", "reason": "Full phase-change calculation from ice to steam requires latent heat"}
+{"item_id": "q-6-2-p185-22", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "numerical", "reason": "First law: heat absorbed equals work done in isothermal expansion"}
+{"item_id": "q-6-2-p185-23", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "numerical", "reason": "First law: mechanical work converts to internal thermal energy"}
+{"item_id": "q-6-2-p185-24", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "numerical", "reason": "First law: gravitational PE converts to thermal energy via Q=mcΔT"}
+{"item_id": "q-6-2-p185-25", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "numerical", "reason": "First law: mechanical work converts to thermal energy Q=mcΔT"}
+{"item_id": "q-6-2-p185-26", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "conceptual", "reason": "First law: lowering internal energy by doing work to explain cooling"}
+{"item_id": "q-6-2-p186-upsilon-1", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "conceptual", "reason": "Entropy change ΔS=Q/T comparison at low temperature"}
+{"item_id": "q-6-2-p186-upsilon-2", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "conceptual", "reason": "Entropy change ΔS=Q/T smaller at higher temperature"}
+{"item_id": "q-6-2-p186-upsilon-3", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "conceptual", "reason": "Entropy increase during phase change at constant temperature"}
+{"item_id": "q-6-2-p186-upsilon-4", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "conceptual", "reason": "Entropy change comparison for lead vs water, different specific heats"}
+{"item_id": "q-6-2-p189-27", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "conceptual", "reason": "Steam condensation releases latent heat to warm room"}
+{"item_id": "q-6-2-p189-28", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "numerical", "reason": "Water to steam: specific heat + latent heat of vaporization calculation"}
+{"item_id": "q-6-2-p189-29", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "numerical", "reason": "Mercury heating to boiling then vaporizing: specific heat + latent heat"}
+{"item_id": "q-6-2-p189-30", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "conceptual", "reason": "Joule's waterfall experiment: PE converts to thermal energy, first law"}
+{"item_id": "q-6-2-p189-31", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "conceptual", "reason": "Hammer's KE converts to thermal energy in lead block, first law"}
+{"item_id": "q-6-2-p189-32", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "numerical", "reason": "Waterfall: gravitational PE converts to thermal energy via first law"}
+{"item_id": "q-6-2-p189-33", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "conceptual", "reason": "Burning gas increases disorder/entropy, second law"}
+{"item_id": "q-6-2-p189-34", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "conceptual", "reason": "Card shuffling analogy for entropy and second law of thermodynamics"}
+{"item_id": "q-6-2-p191-conclude-4", "lesson": "6-2", "needs_concept": "heat_transfer", "qkind": "conceptual", "reason": "Heating rate vs cooling rate comparison — heat transfer mechanism"}
+{"item_id": "q-6-2-p191-conclude-5", "lesson": "6-2", "needs_concept": "heat_transfer", "qkind": "conceptual", "reason": "Thermal energy dissipates to surroundings via heat transfer"}
+{"item_id": "q-6-2-p191-extend-1", "lesson": "6-2", "needs_concept": "heat_transfer", "qkind": "conceptual", "reason": "Convection in water — thermometer placement and heat transfer"}
+{"item_id": "q-6-2-p191-extend-2", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "conceptual", "reason": "Different water volumes: heating/cooling rates depend on specific heat"}
+{"item_id": "q-6-2-p191-extend-3", "lesson": "6-2", "needs_concept": "heat_transfer", "qkind": "conceptual", "reason": "Insulation reduces heat transfer to/from surroundings"}
+{"item_id": "q-6-2-p191-life-1", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "conceptual", "reason": "Oil vs water heating comparison requires specific heat concept"}
+{"item_id": "q-6-2-p191-life-2", "lesson": "6-2", "needs_concept": "heat_transfer", "qkind": "conceptual", "reason": "Cooling time asymmetry — heat transfer to environment rate"}
+{"item_id": "q-6-2-p192-1", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "conceptual", "reason": "Heat pump cycle: refrigerant flow and first law of thermodynamics"}
+{"item_id": "q-6-2-p192-2", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "conceptual", "reason": "Heat pump efficiency at low temperature — second law limits"}
+{"item_id": "q-6-2-p194-35", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "conceptual", "reason": "Concept map: first law terms heat, work, internal energy, entropy"}
+{"item_id": "q-6-2-p194-39", "lesson": "6-2", "needs_concept": "heat_transfer", "qkind": "conceptual", "reason": "metal conducts heat faster than wood; heat transfer mechanism"}
+{"item_id": "q-6-2-p194-40", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "conceptual", "reason": "different materials change temperature differently per Q=mcΔT"}
+{"item_id": "q-6-2-p194-41", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "conceptual", "reason": "thermal energy added during phase change without temperature rise"}
+{"item_id": "q-6-2-p194-42", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "conceptual", "reason": "solidification releases latent heat of fusion"}
+{"item_id": "q-6-2-p194-43", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "conceptual", "reason": "evaporative cooling via latent heat of vaporization"}
+{"item_id": "q-6-2-p194-44", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "conceptual", "reason": "AC indoor coils evaporate refrigerant absorbing latent heat"}
+{"item_id": "q-6-2-p194-45", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "conceptual", "reason": "boiling temperature constant regardless of heat rate; latent heat concept"}
+{"item_id": "q-6-2-p194-46", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "conceptual", "reason": "comparing cooling capacity by specific heat of liquids"}
+{"item_id": "q-6-2-p194-47", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "conceptual", "reason": "Al vs Pb specific heat determines heat stored and ice melted"}
+{"item_id": "q-6-2-p194-48", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "conceptual", "reason": "fast-evaporating liquids absorb latent heat from skin"}
+{"item_id": "q-6-2-p194-49", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "conceptual", "reason": "larger mass transfers more heat; final temperature differs per Q=mcΔT"}
+{"item_id": "q-6-2-p194-50", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "direct Q=mcΔT calculation for water"}
+{"item_id": "q-6-2-p194-51", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "solve for c from Q=mcΔT"}
+{"item_id": "q-6-2-p194-52", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "Q=mcΔT for glass cup heating"}
+{"item_id": "q-6-2-p195-53", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "calorimetry to find specific heat of tungsten"}
+{"item_id": "q-6-2-p195-54", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "mixing two water samples; find equilibrium temperature via calorimetry"}
+{"item_id": "q-6-2-p195-55", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "zinc in water calorimetry; find final temperature"}
+{"item_id": "q-6-2-p195-56", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "given energy, find water volume using Q=mcΔT"}
+{"item_id": "q-6-2-p195-57", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "time to boil using power and Q=mcΔT for glass+water"}
+{"item_id": "q-6-2-p195-58", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "find water mass needed to absorb engine heat via Q=mcΔT"}
+{"item_id": "q-6-2-p195-59", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "numerical", "reason": "Q=mL for ice melting at constant 0°C"}
+{"item_id": "q-6-2-p195-60", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "numerical", "reason": "calculate L_v for chloroform from condensation heat data"}
+{"item_id": "q-6-2-p195-61", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "KE converted to heat in iron brakes; find ΔT via Q=mcΔT"}
+{"item_id": "q-6-2-p195-62", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "numerical", "reason": "full phase diagram: solid→liquid→gas requires latent heat at each transition"}
+{"item_id": "q-6-2-p196-63", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "bullet KE → heat in lead; find ΔT via Q=mcΔT"}
+{"item_id": "q-6-2-p196-65", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "numerical", "reason": "heat engine efficiency and wasted heat; thermodynamics laws"}
+{"item_id": "q-6-2-p196-66", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "work done on stamped piece transferred to water; find ΔT via Q=mcΔT"}
+{"item_id": "q-6-2-p196-67", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "car KE → heat in Al brakes; find ΔT via Q=mcΔT"}
+{"item_id": "q-6-2-p196-68", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "numerical", "reason": "ice melting absorbs latent heat to cool tea to 0°C"}
+{"item_id": "q-6-2-p196-69", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "calorimetry with different specific heats to find mass ratio"}
+{"item_id": "q-6-2-p196-70", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "KE of colliding blocks → heat; find speed via Q=mcΔT"}
+{"item_id": "q-6-2-p196-71", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "numerical", "reason": "friction work melts ice; mass melted via Q=mL"}
+{"item_id": "q-6-2-p197-72", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "numerical", "reason": "heat engine work, entropy transfer, thermodynamic analysis"}
+{"item_id": "q-6-2-p197-73", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "numerical", "reason": "metabolic heat dissipated by sweat evaporation; Q=mL_v"}
+{"item_id": "q-6-2-p197-74", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "numerical", "reason": "calorimeter measures heat via Q=mcΔT; find per-molecule binding energy"}
+{"item_id": "q-6-2-p197-75", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "conceptual", "reason": "lower sun temperature reduces heat flow; second law implications"}
+{"item_id": "q-6-2-p197-77", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "conceptual", "reason": "question explicitly references latent heat of fusion and vaporization for weather"}
+{"item_id": "q-6-2-p197-79", "lesson": "6-2", "needs_concept": "power", "qkind": "numerical", "reason": "P=W/t to find how many rocks lifted per hour"}
+{"item_id": "q-6-2-p198-2", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "mcq", "reason": "units of entropy; thermodynamics concept"}
+{"item_id": "q-6-2-p198-4", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "mcq", "reason": "multi-phase heating of methanol; latent heat at two phase transitions"}
+{"item_id": "q-6-2-p198-5", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "mcq", "reason": "statements about entropy and state changes; second law"}
+{"item_id": "q-6-2-p198-6", "lesson": "6-2", "needs_concept": "specific_heat", "qkind": "mcq", "reason": "Q=mcΔT for heating water in baby bottle"}
+{"item_id": "q-6-2-p198-7", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "mcq", "reason": "second law: heat engine always wastes heat due to entropy"}
+{"item_id": "q-6-2-p199-10", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "numerical", "reason": "compare latent heat of fusion vs vaporization for same mass of water"}
+{"item_id": "q-6-2-p199-8", "lesson": "6-2", "needs_concept": "latent_heat", "qkind": "mcq", "reason": "melt ice at 0°C then heat water; latent heat + specific heat combined"}
+{"item_id": "q-6-2-p199-9", "lesson": "6-2", "needs_concept": "thermo_laws", "qkind": "mcq", "reason": "entropy increase from stirring coffee; ΔS = Q/T calculation"}
+{"item_id": "q-ch2-p60-38", "lesson": "2-3", "needs_concept": "center_of_mass", "qkind": "conceptual", "reason": "balancing weights moves center of mass to wheel center"}
+{"item_id": "q-ch2-p60-39", "lesson": "2-3", "needs_concept": "center_of_mass", "qkind": "conceptual", "reason": "locate center of mass of car on two side tires"}
+{"item_id": "q-ch2-p60-40", "lesson": "2-3", "needs_concept": "center_of_mass", "qkind": "conceptual", "reason": "balance requires center of mass over base of support"}
+{"item_id": "q-ch2-p60-41", "lesson": "2-3", "needs_concept": "center_of_mass", "qkind": "conceptual", "reason": "raising arms shifts center of mass, changes apparent trajectory"}
+{"item_id": "q-ch2-p60-42", "lesson": "2-3", "needs_concept": "center_of_mass", "qkind": "conceptual", "reason": "large tires raise center of mass, increasing rollover risk"}
+{"item_id": "q-ch2-p60-44", "lesson": "2-3", "needs_concept": "fictitious_force", "qkind": "conceptual", "reason": "centrifugal effect in rotating drum acts on clothes and water"}
+{"item_id": "q-ch2-p61-46", "lesson": "2-3", "needs_concept": "center_of_mass", "qkind": "conceptual", "reason": "drooping pole lowers center of mass, increases stability"}
+{"item_id": "q-ch2-p61-47", "lesson": "2-3", "needs_concept": "fictitious_force", "qkind": "conceptual", "reason": "object thrown from rotating platform — rotating frame effect"}
+{"item_id": "q-ch2-p62-61", "lesson": "2-3", "needs_concept": "center_of_mass", "qkind": "numerical", "reason": "locate center of mass from axle weight distribution"}
+{"item_id": "q-ch2-p63-70", "lesson": "2-3", "needs_concept": "center_of_mass", "qkind": "conceptual", "reason": "carrying beam vs two pieces tests center of mass balance"}
+{"item_id": "q-ch2-p64-79", "lesson": "2-3", "needs_concept": "primitive", "qkind": "numerical", "reason": "centripetal friction force F=mv^2/r is primitive force balance"}
+{"item_id": "q-ch3-p88-30", "lesson": "3-2", "needs_concept": "impulse", "qkind": "conceptual", "reason": "concept map linking impulse, force, time, momentum change"}
+{"item_id": "q-ch3-p88-31", "lesson": "3-2", "needs_concept": "impulse", "qkind": "conceptual", "reason": "can bullet equal truck momentum; tests p=mv understanding"}
+{"item_id": "q-ch3-p88-32", "lesson": "3-2", "needs_concept": "impulse", "qkind": "conceptual", "reason": "ball thrown and caught at same speed; momentum unchanged, no impulse"}
+{"item_id": "q-ch3-p88-33", "lesson": "3-2", "needs_concept": "impulse", "qkind": "conceptual", "reason": "no net force means no acceleration; can momentum still change via impulse"}
+{"item_id": "q-ch3-p88-34", "lesson": "3-2", "needs_concept": "impulse", "qkind": "conceptual", "reason": "shock absorbers extend collision time, reducing force via impulse-momentum"}
+{"item_id": "q-ch3-p88-38", "lesson": "3-2", "needs_concept": "impulse", "qkind": "conceptual", "reason": "basketball momentum reverses direction; wall exerts impulse changing momentum"}
+{"item_id": "q-ch3-p88-40", "lesson": "3-2", "needs_concept": "impulse", "qkind": "conceptual", "reason": "explain impulse concept without equations"}
+{"item_id": "q-ch3-p88-41", "lesson": "3-2", "needs_concept": "impulse", "qkind": "conceptual", "reason": "small force over long time can give greater impulse than large brief force"}
+{"item_id": "q-ch3-p88-42", "lesson": "3-2", "needs_concept": "impulse", "qkind": "conceptual", "reason": "moving hands with ball extends contact time, reduces force via impulse"}
+{"item_id": "q-ch3-p89-43", "lesson": "3-2", "needs_concept": "impulse", "qkind": "conceptual", "reason": "rifle barrel longer, force acts longer, greater impulse yields higher bullet speed"}
+{"item_id": "q-ch3-p89-44", "lesson": "3-2", "needs_concept": "impulse", "qkind": "graph", "reason": "interpret force-time graph impulse areas to describe resulting motion"}
+{"item_id": "q-ch3-p89-45", "lesson": "3-2", "needs_concept": "impulse", "qkind": "conceptual", "reason": "astronaut uses gas gun; impulse-momentum theorem explains how thrust works"}
+{"item_id": "q-ch3-p89-49", "lesson": "3-2", "needs_concept": "impulse", "qkind": "conceptual", "reason": "bracing rifle spreads impulse over larger mass, reducing recoil velocity"}
+{"item_id": "q-ch3-p89-50", "lesson": "3-2", "needs_concept": "impulse", "qkind": "conceptual", "reason": "rubber bullet bounces giving larger momentum change, more impulse to block"}
+{"item_id": "q-ch3-p89-51", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "find contact time from J=FΔt=Δp for golf ball"}
+{"item_id": "q-ch3-p89-52", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "calculate impulse on baseball reversed by batter"}
+{"item_id": "q-ch3-p89-53", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "find Δp and Δv from F and Δt"}
+{"item_id": "q-ch3-p90-54", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "find force from Δp = mΔv over Δt"}
+{"item_id": "q-ch3-p90-55", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "average force from J = Δp over Δt"}
+{"item_id": "q-ch3-p90-56", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "average force from Δp/Δt on volleyball"}
+{"item_id": "q-ch3-p90-57", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "find impulse J = F·Δt directly"}
+{"item_id": "q-ch3-p90-58", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "find total momentum p = mv for system"}
+{"item_id": "q-ch3-p90-59", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "find speed from J = Δp applied to puck"}
+{"item_id": "q-ch3-p90-60", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "find impulse as Δp from velocity change"}
+{"item_id": "q-ch3-p90-61", "lesson": "3-2", "needs_concept": "impulse", "qkind": "graph", "reason": "read impulse from graph to find final velocity"}
+{"item_id": "q-ch3-p90-62", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "find momentum p = mv for baseball"}
+{"item_id": "q-ch3-p90-63", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "find Δp when puck bounces off post"}
+{"item_id": "q-ch3-p91-63cont", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "continuation: impulse from bounce Δp"}
+{"item_id": "q-ch3-p91-64", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "molecule bounces, find Δp = impulse"}
+{"item_id": "q-ch3-p91-65", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "find magnitude and direction of momentum p=mv"}
+{"item_id": "q-ch3-p91-66", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "force on child in crash from J = Δp/Δt"}
+{"item_id": "q-ch3-p91-67", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "find Δt from J = F·Δt = mΔv"}
+{"item_id": "q-ch3-p93-78", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "find Δp and Δv from constant force over time"}
+{"item_id": "q-ch3-p93-79", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "find force from Δp/Δt for car"}
+{"item_id": "q-ch3-p93-80", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "find force from J = Δp for race car"}
+{"item_id": "q-ch3-p93-83", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "find impulse or momentum for jumping boy"}
+{"item_id": "q-ch3-p94-85", "lesson": "3-2", "needs_concept": "impulse", "qkind": "conceptual", "reason": "analyze barrier design using impulse and Δp concepts"}
+{"item_id": "q-ch3-p94-86", "lesson": "3-2", "needs_concept": "impulse", "qkind": "conceptual", "reason": "airbag analysis using impulse and momentum"}
+{"item_id": "q-ch3-p95-ext-5", "lesson": "3-2", "needs_concept": "impulse", "qkind": "numerical", "reason": "find impulse on falling rock at impact"}
+{"item_id": "q-ch3-p95-mcq-3", "lesson": "3-2", "needs_concept": "impulse", "qkind": "mcq", "reason": "compare p=mv values for person and truck"}
+{"item_id": "q-ch3-p95-mcq-4", "lesson": "3-2", "needs_concept": "impulse", "qkind": "mcq", "reason": "find mass from J and final velocity via impulse"}
