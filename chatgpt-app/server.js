@@ -9,9 +9,11 @@
 //   get_project(project)      project detail incl. beats
 //   read_lesson_pages(lesson) full per-page textbook content (vision-once JSON)
 //   find_question(lesson,...)  resolve "سؤال 8 صفحة 17" to the exact question
-// Diagnostic tools (KST gap-finding — teach the student's gap, not ToC order):
-//   suggest_next_question(responses) most informative next item to ask
-//   diagnose(responses)              locate the gap -> concept/lesson to teach
+// Diagnostic tutoring tools (KST — teach the student's gap, not ToC order):
+//   run_diagnostic_tutoring_step(...)        PREFERRED: drives the whole loop
+//   choose_next_diagnostic_question(resp)    pick the next question (asked inline)
+//   grade_diagnostic_answer(item,answer)     grading context (assistant judges)
+//   diagnose_student_gap_from_answers(resp)  locate the gap -> lesson to teach
 // Show tools (in-chat widgets):
 //   show_prerequisite_video(lesson) lesson's foundation/teaser video (kind:foundation)
 //   show_concept_video(concept)   concept intuition video player
@@ -89,6 +91,43 @@ for (const ch of LIB.chapters) {
     lessonById.set(ls.id, { ...ls, chapter_id: ch.id, chapter_title_ar: ch.title_ar });
   }
 }
+
+// slug -> Arabic concept name (for student-facing diagnosis messages).
+const conceptArBySlug = new Map();
+for (const ch of LIB.chapters)
+  for (const ls of ch.lessons)
+    for (const c of ls.concepts || [])
+      if (c.slug && (c.ar || c.concept_ar)) conceptArBySlug.set(c.slug, c.ar || c.concept_ar);
+
+// item_id -> the full question (so diagnostic tools can return the prompt inline,
+// no follow-up find_question needed) + lesson misconceptions for grading feedback.
+const questionById = new Map();
+const misconceptionsByLesson = new Map();
+function collectQuestions(node, out) {
+  if (Array.isArray(node)) { for (const x of node) collectQuestions(x, out); return; }
+  if (node && typeof node === "object") {
+    if (node.type === "question" || node.qkind) out.push(node);
+    for (const v of Object.values(node)) collectQuestions(v, out);
+  }
+}
+for (const [lid, lp] of Object.entries(lessonPages)) {
+  if (Array.isArray(lp.common_misconceptions_ar)) misconceptionsByLesson.set(lid, lp.common_misconceptions_ar);
+  const acc = [];
+  collectQuestions(lp.pages, acc);
+  for (const q of acc) if (q.id) questionById.set(q.id, { ...q, lesson: lid });
+}
+
+// Build the inline question payload the model asks the student verbatim.
+function questionPayload(itemId) {
+  const q = questionById.get(itemId);
+  if (!q) return { item_id: itemId };
+  return {
+    item_id: itemId, lesson: q.lesson, page: q.page, printed_number: q.printed_number,
+    qkind: q.qkind, prompt_ar: q.prompt_ar,
+    options_ar: q.options_ar || null, given_ar: q.given_ar || null,
+  };
+}
+const conceptName = (slug, en) => conceptArBySlug.get(slug) || en || slug;
 
 const lc = (s) => (s || "").toString().toLowerCase();
 
@@ -564,108 +603,252 @@ function createPhysicsServer() {
     }
   );
 
-  // ---- diagnose (KST gap location) ----
+  // === KST diagnostic tutoring tools ===
+  // The deployed extraction has NO answer key, so correctness is the assistant's
+  // judgment; these tools own question SELECTION, STATE, and gap DIAGNOSIS, and
+  // each output names the next teacher action so the model is never lost.
+  const RESPONSE = z.object({ item_id: z.string(), correct: z.boolean() });
+  const MIN_DIAGNOSTIC_QS = 4;
+
+  // ---- run_diagnostic_tutoring_step (orchestrator — preferred) ----
   registerAppTool(
     server,
-    "diagnose",
+    "run_diagnostic_tutoring_step",
     {
-      title: "Diagnose the student's knowledge gap (KST)",
+      title: "Run one step of diagnostic tutoring (preferred)",
       description:
-        "Locate WHERE the student's knowledge stops, using Knowledge Space Theory " +
-        "over the prerequisite graph — so you teach the student's actual gap " +
-        "instead of following table-of-contents order. Call this at session start " +
-        "or on a broad topic request ('I want to review momentum', 'where do I " +
-        "start?'). Give it the answers gathered so far as " +
-        "responses:[{item_id, correct}] (use suggest_next_question + find_question " +
-        "to gather a few first). It returns the gap: the concept to teach next " +
-        "with its slug, lesson, and book pages — then teach THAT lesson from the " +
-        "book via read_lesson_pages. If teach_kind is 'prerequisite', the gap is a " +
-        "foundational math idea with no lesson; start there, motivated by the " +
-        "concept it unlocks. Honor an explicit lesson request without diagnosing.",
+        "Use this to drive an interactive study session. It decides the next " +
+        "tutoring action from the diagnostic state so far: ask another diagnostic " +
+        "question, or diagnose the gap and teach. This is the PREFERRED tool for " +
+        "KST-based tutoring — prefer it over calling the individual tools.\n" +
+        "When: the student starts studying, says 'where do I start?', asks for " +
+        "general review, or seems unsure.\n" +
+        "How: first call with responses:[] (and the student's message). It returns " +
+        "next_action:'ask_question' with the full question — ask the student that " +
+        "question verbatim and wait. When they answer, YOU judge correct/incorrect " +
+        "(there is no answer key), then call this tool again passing the SAME " +
+        "responses you got back in internal_state PLUS last_question_item_id and " +
+        "was_correct. After enough questions it returns next_action:'teach_gap' " +
+        "with the lesson to teach.\n" +
+        "Do NOT use when the student explicitly asks for a specific lesson and " +
+        "doesn't want diagnosis — teach that lesson directly. Never expose tool " +
+        "names, item_ids, or KST internals to the student.",
       inputSchema: {
-        responses: z
-          .array(z.object({ item_id: z.string(), correct: z.boolean() }))
-          .describe("Answers gathered so far: item_id from the bank + whether correct"),
+        responses: z.array(RESPONSE).optional().describe("Running answers; pass back what you received in internal_state.responses"),
+        last_question_item_id: z.string().optional().describe("item_id of the question the student just answered"),
+        was_correct: z.boolean().optional().describe("Your judgment of that answer (true = correct or strong-partial)"),
+        student_message: z.string().optional().describe("The student's latest message, for tone only"),
       },
       outputSchema: {
-        status: z.string(),
-        gap_node: z.string().nullable().optional(),
-        gap_label: z.string().optional(),
-        slug: z.string().optional(),
-        lesson: z.string().optional(),
-        book_pages: z.string().optional(),
-        concept_en: z.string().optional(),
-        teach_kind: z.string().optional(),
-        teach: z.any().optional(),
-        confidence: z.number().optional(),
-        n_states: z.number().optional(),
-        responses_used: z.number().optional(),
-        responses_ignored: z.number().optional(),
-        structural_gap: z.any().optional(),
-        failed_nodes: z.array(z.any()).optional(),
-        fringe: z.array(z.any()).optional(),
-        note: z.string().optional(),
-        message: z.string().optional(),
+        next_action: z.string(),
+        message_to_student_ar: z.string(),
+        question: z.any().optional(),
+        after_answer_call: z.string().optional(),
+        gap: z.any().optional(),
+        prerequisite: z.any().optional(),
+        tool_to_call_next: z.any().optional(),
+        internal_state: z.any(),
+        diagnostic: z.any().optional(),
       },
       _meta: {},
     },
-    async ({ responses }) => {
-      if (!diagnostics)
-        return text("محرّك التشخيص غير متوفر حاليًا.", { status: "unavailable" });
-      const r = diagnostics.diagnose(responses || []);
-      let note;
-      if (r.status === "no_gap")
-        note = "لا توجد فجوة واضحة: المعرفة تغطّي ما جرى تقييمه. تابع بالدرس التالي.";
-      else if (r.teach_kind === "prerequisite")
-        note = `الفجوة في متطلّب أساسي (${r.gap_label}). ابدأ به لأنه أساس ${
-          r.teach?.motivates?.concept_en || "المفهوم المطلوب"
-        }.`;
-      else
-        note = `ابدأ من: ${r.concept_en} — الدرس ${r.lesson} (صفحات ${r.book_pages}). علّمه من الكتاب عبر read_lesson_pages.`;
-      return { content: [{ type: "text", text: note }], structuredContent: r };
+    async ({ responses, last_question_item_id, was_correct, student_message }) => {
+      if (!diagnostics) return text("محرّك التشخيص غير متوفر حاليًا.", { next_action: "unavailable", message_to_student_ar: "", internal_state: { responses: [] } });
+      const resp = [...(responses || [])];
+      if (last_question_item_id && typeof was_correct === "boolean" && !resp.some((r) => r.item_id === last_question_item_id))
+        resp.push({ item_id: last_question_item_id, correct: was_correct });
+
+      const nextId = resp.length < MIN_DIAGNOSTIC_QS ? diagnostics.suggestNext(resp).next_item?.item_id : null;
+      if (nextId) {
+        const first = resp.length === 0;
+        const out = {
+          next_action: "ask_question",
+          message_to_student_ar: first
+            ? "خلنا نبدأ بسؤال بسيط أعرف منه نقطة انطلاقك المناسبة:"
+            : "تمام، سؤال آخر يساعدني أحدّد من أين نبدأ:",
+          question: questionPayload(nextId),
+          after_answer_call: "run_diagnostic_tutoring_step",
+          internal_state: { responses: resp },
+        };
+        return { content: [{ type: "text", text: out.message_to_student_ar }], structuredContent: out };
+      }
+
+      // enough evidence -> diagnose and route to teaching
+      const d = diagnostics.diagnose(resp);
+      const base = { internal_state: { responses: resp }, diagnostic: { confidence: d.confidence, structural_gap: d.structural_gap } };
+      if (d.status === "no_gap") {
+        const msg = "ما ظهرت فجوة واضحة فيما قيّمناه — نقدر نكمل بالدرس التالي أو نتعمّق أكثر.";
+        return { content: [{ type: "text", text: msg }], structuredContent: { ...base, next_action: "advance_to_next_lesson", message_to_student_ar: msg } };
+      }
+      if (d.teach_kind === "prerequisite") {
+        const mot = d.teach?.motivates;
+        const msg = `قبل ${mot?.concept_en || "المفهوم المطلوب"}، يبدو أن الأساس الذي نقوّيه أولًا هو ${d.gap_label}.`;
+        const out = { ...base, next_action: "teach_prerequisite_first", message_to_student_ar: msg,
+          prerequisite: { node: d.gap_node, label: d.gap_label, motivates: mot },
+          tool_to_call_next: mot?.lesson ? { name: "read_lesson_pages", arguments: { lesson: mot.lesson } } : null };
+        return { content: [{ type: "text", text: msg }], structuredContent: out };
+      }
+      const cAr = conceptName(d.slug, d.concept_en);
+      const msg = `واضح أن أنسب نقطة نبدأ منها هي ${cAr} — الدرس ${d.lesson}.`;
+      const out = { ...base, next_action: "teach_gap", message_to_student_ar: msg,
+        gap: { slug: d.slug, lesson: d.lesson, book_pages: d.book_pages, concept_ar: cAr, concept_en: d.concept_en },
+        tool_to_call_next: { name: "read_lesson_pages", arguments: { lesson: d.lesson } } };
+      return { content: [{ type: "text", text: msg }], structuredContent: out };
     }
   );
 
-  // ---- suggest_next_question (KST half-split) ----
+  // ---- choose_next_diagnostic_question (KST half-split) ----
   registerAppTool(
     server,
-    "suggest_next_question",
+    "choose_next_diagnostic_question",
     {
-      title: "Pick the most informative next diagnostic question",
+      title: "Choose the next diagnostic question for the student",
       description:
-        "Adaptive questioning (KST half-split): given the answers so far, return " +
-        "the single most informative item to ask next, so you can narrow the gap " +
-        "one question at a time. Returns an item_id with its lesson and printed " +
-        "number — fetch the actual question with find_question(lesson, number), " +
-        "ask it, record the answer, then call diagnose. Pass responses:[] at the " +
-        "start of a session.",
+        "Use this when a student starts a study session, asks 'where should I " +
+        "start?', asks for general review, or seems unsure. It picks the ONE " +
+        "diagnostic question that best reveals the student's current knowledge gap " +
+        "(KST half-split) and returns the full question text. Ask the returned " +
+        "question to the student verbatim and wait for their answer — do not " +
+        "explain the lesson yet.\n" +
+        "Example: User: 'أريد مراجعة الزخم.' → call with responses:[] → ask the " +
+        "returned prompt_ar.\n" +
+        "Do NOT use after the student has answered enough questions and " +
+        "diagnose_student_gap_from_answers has returned a lesson (that would loop). " +
+        "Prefer run_diagnostic_tutoring_step, which manages this whole loop.",
       inputSchema: {
-        responses: z
-          .array(z.object({ item_id: z.string(), correct: z.boolean() }))
-          .describe("Answers gathered so far (empty array to start)"),
+        responses: z.array(RESPONSE).optional().describe("Answers gathered so far (omit or [] to start)"),
       },
       outputSchema: {
-        next_item: z
-          .object({
-            item_id: z.string(),
-            lesson: z.string().nullable().optional(),
-            node: z.string().nullable().optional(),
-            qkind: z.string().nullable().optional(),
-            printed_number: z.string().nullable().optional(),
-          })
-          .nullable(),
+        next_teacher_action: z.string(),
+        message_to_student_ar: z.string(),
+        question: z.any().nullable(),
+        after_answer_call: z.string().optional(),
+        responses_so_far: z.number(),
       },
       _meta: {},
     },
     async ({ responses }) => {
-      if (!diagnostics)
-        return text("محرّك التشخيص غير متوفر حاليًا.", { next_item: null });
-      const r = diagnostics.suggestNext(responses || []);
-      const ni = r.next_item;
-      const note = ni
-        ? `أنسب سؤال تالٍ: الدرس ${ni.lesson} رقم ${ni.printed_number}. أحضِره عبر find_question واطرحه.`
-        : "لا يوجد سؤال إضافي مفيد للتشخيص الآن.";
-      return { content: [{ type: "text", text: note }], structuredContent: r };
+      if (!diagnostics) return text("محرّك التشخيص غير متوفر حاليًا.", { next_teacher_action: "unavailable", message_to_student_ar: "", question: null, responses_so_far: 0 });
+      const resp = responses || [];
+      const id = diagnostics.suggestNext(resp).next_item?.item_id;
+      if (!id) {
+        const out = { next_teacher_action: "ready_to_diagnose", message_to_student_ar: "كفى أسئلة — لنحدّد نقطة البداية.",
+          question: null, after_answer_call: "diagnose_student_gap_from_answers", responses_so_far: resp.length };
+        return { content: [{ type: "text", text: out.message_to_student_ar }], structuredContent: out };
+      }
+      const out = { next_teacher_action: "ask_student_this_question",
+        message_to_student_ar: resp.length ? "سؤال آخر:" : "لنبدأ بسؤال تشخيصي بسيط:",
+        question: questionPayload(id), after_answer_call: "grade_diagnostic_answer", responses_so_far: resp.length };
+      return { content: [{ type: "text", text: `اطرح على الطالب: ${out.question.prompt_ar}` }], structuredContent: out };
+    }
+  );
+
+  // ---- grade_diagnostic_answer (grading-context helper; assistant judges) ----
+  registerAppTool(
+    server,
+    "grade_diagnostic_answer",
+    {
+      title: "Get grading context for a student's diagnostic answer",
+      description:
+        "Use this immediately after the student answers a diagnostic question, to " +
+        "grade it well and give good feedback. NOTE: the textbook extraction has " +
+        "no answer key, so this tool does not auto-grade — it returns the question, " +
+        "its options/given data, and the lesson's common misconceptions, and YOU " +
+        "decide correct / partial / incorrect from the student's reasoning and " +
+        "units. Treat a weak partial as incorrect for diagnosis. Then record the " +
+        "result as {item_id, correct} and continue via run_diagnostic_tutoring_step " +
+        "(or diagnose_student_gap_from_answers). Give the student gentle feedback " +
+        "using the misconceptions; never hand them the full solution outright.",
+      inputSchema: {
+        item_id: z.string().describe("The diagnostic question's item_id"),
+        student_answer: z.string().optional().describe("The student's answer (for your judgment)"),
+      },
+      outputSchema: {
+        requires_assistant_judgment: z.boolean(),
+        question: z.any(),
+        common_misconceptions_ar: z.array(z.string()),
+        how_to_grade_ar: z.string(),
+        after_grading: z.any(),
+        teacher_feedback_hint_ar: z.string(),
+      },
+      _meta: {},
+    },
+    async ({ item_id }) => {
+      const q = questionById.get(item_id);
+      const out = {
+        requires_assistant_judgment: true,
+        question: questionPayload(item_id),
+        common_misconceptions_ar: (q && misconceptionsByLesson.get(q.lesson)) || [],
+        how_to_grade_ar:
+          "لا يوجد مفتاح إجابة في الكتاب. احكم بنفسك: صحيح / جزئي / خطأ بناءً على منطق الطالب ووحداته؛ واعتبر الجزئي الضعيف خطأً لأغراض التشخيص.",
+        after_grading: {
+          record_answer_as: { item_id, correct: "true إن كانت صحيحة أو جزئية قوية، وإلا false" },
+          then_call: "run_diagnostic_tutoring_step (مرّر responses محدّثة مع last_question_item_id و was_correct)",
+        },
+        teacher_feedback_hint_ar:
+          "إن أخطأ الطالب صحّح بلطف مستعينًا بالمفاهيم الخاطئة الشائعة أعلاه، بسؤال أو تلميح، دون إعطاء الحل كاملًا.",
+      };
+      return { content: [{ type: "text", text: "قيّم إجابة الطالب بنفسك (لا يوجد مفتاح إجابة)، ثم سجّل النتيجة وتابع." }], structuredContent: out };
+    }
+  );
+
+  // ---- diagnose_student_gap_from_answers (KST gap location) ----
+  registerAppTool(
+    server,
+    "diagnose_student_gap_from_answers",
+    {
+      title: "Diagnose the student's gap from their diagnostic answers",
+      description:
+        "Use this after the student has answered diagnostic questions, to identify " +
+        "the best concept/lesson to teach next based on their correct/incorrect " +
+        "answers (Knowledge Space Theory over the prerequisite graph) — so you " +
+        "teach the student's actual gap, not table-of-contents order. Pass " +
+        "responses:[{item_id, correct}]. It returns the gap with its slug, lesson, " +
+        "and book pages; then teach that lesson via read_lesson_pages, telling the " +
+        "student e.g. 'نقطة انطلاقك المناسبة هي حفظ الزخم'. If teach_kind is " +
+        "'prerequisite', the gap is a foundational idea with no lesson — start " +
+        "there, motivated by the concept it unlocks.\n" +
+        "Do NOT use when the student explicitly asked for a specific lesson and " +
+        "doesn't want diagnosis — teach that lesson directly. Do not show KST " +
+        "internals or tool names to the student. Prefer run_diagnostic_tutoring_step.",
+      inputSchema: {
+        responses: z.array(RESPONSE).describe("Answers gathered: item_id + whether correct"),
+      },
+      outputSchema: {
+        next_teacher_action: z.string(),
+        student_facing_reason_ar: z.string(),
+        gap: z.any().nullable(),
+        prerequisite: z.any().optional(),
+        tool_to_call_next: z.any().nullable(),
+        status: z.string(),
+        teach_kind: z.string().optional(),
+        confidence: z.number().optional(),
+        structural_gap: z.any().optional(),
+      },
+      _meta: {},
+    },
+    async ({ responses }) => {
+      if (!diagnostics) return text("محرّك التشخيص غير متوفر حاليًا.", { next_teacher_action: "unavailable", student_facing_reason_ar: "", gap: null, tool_to_call_next: null, status: "unavailable" });
+      const d = diagnostics.diagnose(responses || []);
+      const common = { status: d.status, teach_kind: d.teach_kind, confidence: d.confidence, structural_gap: d.structural_gap };
+      if (d.status === "no_gap") {
+        const msg = "ما ظهرت فجوة واضحة فيما قيّمناه — نقدر نكمل بالدرس التالي.";
+        return { content: [{ type: "text", text: msg }], structuredContent: { ...common, next_teacher_action: "advance_to_next_lesson", student_facing_reason_ar: msg, gap: null, tool_to_call_next: null } };
+      }
+      if (d.teach_kind === "prerequisite") {
+        const mot = d.teach?.motivates;
+        const msg = `قبل ${mot?.concept_en || "المفهوم المطلوب"}، الأساس الذي نقوّيه أولًا هو ${d.gap_label}.`;
+        const out = { ...common, next_teacher_action: "teach_prerequisite_first", student_facing_reason_ar: msg,
+          gap: null, prerequisite: { node: d.gap_node, label: d.gap_label, motivates: mot },
+          tool_to_call_next: mot?.lesson ? { name: "read_lesson_pages", arguments: { lesson: mot.lesson } } : null };
+        return { content: [{ type: "text", text: msg }], structuredContent: out };
+      }
+      const cAr = conceptName(d.slug, d.concept_en);
+      const msg = `واضح أن أنسب نقطة نبدأ منها هي ${cAr}.`;
+      const out = { ...common, next_teacher_action: "teach_gap_lesson", student_facing_reason_ar: msg,
+        gap: { slug: d.slug, lesson: d.lesson, book_pages: d.book_pages, concept_ar: cAr, concept_en: d.concept_en },
+        tool_to_call_next: { name: "read_lesson_pages", arguments: { lesson: d.lesson } } };
+      return { content: [{ type: "text", text: `${msg} الدرس ${d.lesson} (صفحات ${d.book_pages}).` }], structuredContent: out };
     }
   );
 
