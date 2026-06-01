@@ -7,6 +7,7 @@
   "scripts": {
     "graphql": "node src/graphqlServer.mjs",
     "mcp": "node src/mcpServer.mjs",
+    "web": "node src/webServer.mjs",
     "build:junyi": "node graph/build_junyi_graph.mjs",
     "smoke": "node src/smoke.mjs"
   },

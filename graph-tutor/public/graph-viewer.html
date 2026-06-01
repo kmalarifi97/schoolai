@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>graph-tutor — prerequisite graph</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 14px/1.4 -apple-system, "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+         background:#0e1116; color:#e6edf3; }
+  #bar { display:flex; gap:14px; align-items:center; flex-wrap:wrap;
+         padding:10px 14px; background:#161b22; border-bottom:1px solid #30363d; }
+  #bar b { color:#fff; }
+  .stat { color:#9da7b3; }
+  .stat span { color:#fff; font-weight:600; }
+  button { background:#21262d; color:#e6edf3; border:1px solid #30363d; border-radius:6px;
+           padding:6px 10px; cursor:pointer; }
+  button:hover { background:#30363d; }
+  button.active { background:#1f6feb; border-color:#1f6feb; color:#fff; }
+  .legend { display:flex; gap:12px; align-items:center; margin-left:auto; }
+  .dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:5px; vertical-align:middle; }
+  label.slider { color:#9da7b3; display:flex; gap:6px; align-items:center; }
+  #net { width:100vw; height:calc(100vh - 52px); }
+  #err { padding:20px; color:#ff7b72; }
+</style>
+</head>
+<body>
+  <div id="bar">
+    <b>Prerequisite graph</b>
+    <span class="stat">nodes <span id="nN">–</span></span>
+    <span class="stat">edges <span id="nE">–</span></span>
+    <span class="stat">max depth <span id="nD">–</span> hops</span>
+    <button id="bForce" class="active">Force</button>
+    <button id="bTree">Hierarchical (L→R)</button>
+    <label class="slider">min support <input id="sup" type="range" min="0" max="500" value="0" step="10"><span id="supV">0</span></label>
+    <div class="legend">
+      <span><i class="dot" style="background:#3fb950"></i>root</span>
+      <span><i class="dot" style="background:#d29922"></i>intermediate</span>
+      <span><i class="dot" style="background:#8b949e"></i>leaf</span>
+    </div>
+  </div>
+  <div id="net"></div>
+  <div id="err"></div>
+
+<script>
+const COLORS = { root:"#3fb950", mid:"#d29922", leaf:"#8b949e" };
+let G, allEdges, network, nodesDS, edgesDS;
+
+function depthOf(nodes, edges) {
+  const succ = new Map(nodes.map(n => [n.id, []]));
+  edges.forEach(e => succ.get(e.source)?.push(e.target));
+  const memo = new Map();
+  const lp = u => { if (memo.has(u)) return memo.get(u); memo.set(u,0);
+    let d = 0; for (const v of succ.get(u)||[]) d = Math.max(d, 1 + lp(v)); memo.set(u,d); return d; };
+  return Math.max(0, ...nodes.map(n => lp(n.id)));
+}
+
+function build(minSupport) {
+  const edges = allEdges.filter(e => (e.support||0) >= minSupport);
+  const outd = {}, ind = {};
+  G.nodes.forEach(n => { outd[n.id]=0; ind[n.id]=0; });
+  edges.forEach(e => { outd[e.source]++; ind[e.target]++; });
+  const visNodes = G.nodes
+    .filter(n => outd[n.id] || ind[n.id])
+    .map(n => {
+      const role = ind[n.id]===0 ? "root" : outd[n.id]===0 ? "leaf" : "mid";
+      return { id:n.id, label:n.name, value:1+outd[n.id],
+        color:{ background:COLORS[role], border:"#0e1116" },
+        font:{ color:"#e6edf3", size:14, face:'"PingFang TC","Microsoft JhengHei",sans-serif' },
+        title:`${n.name}\nprerequisite of ${outd[n.id]} · depends on ${ind[n.id]}` };
+    });
+  const visEdges = edges.map(e => ({
+    from:e.source, to:e.target, value:e.support,
+    title:`P(src|tgt)=${e.p_source_given_target}  P(tgt|src)=${e.p_target_given_source}\nstudents: both=${e.support}, mastered-target=${e.mastered_target}`,
+    color:{ color:"#30516b", highlight:"#1f6feb", opacity:0.8 }, arrows:"to" }));
+  document.getElementById("nN").textContent = visNodes.length;
+  document.getElementById("nE").textContent = visEdges.length;
+  document.getElementById("nD").textContent = depthOf(visNodes, edges);
+  return { visNodes, visEdges };
+}
+
+function render(hierarchical) {
+  const minSupport = +document.getElementById("sup").value;
+  const { visNodes, visEdges } = build(minSupport);
+  nodesDS = new vis.DataSet(visNodes);
+  edgesDS = new vis.DataSet(visEdges);
+  const options = {
+    nodes:{ shape:"dot", scaling:{ min:8, max:40 }, borderWidth:2 },
+    edges:{ smooth:{ type:"cubicBezier" }, width:1, selectionWidth:3 },
+    interaction:{ hover:true, tooltipDelay:120, navigationButtons:true, keyboard:true },
+    physics: hierarchical ? false : { stabilization:{ iterations:200 },
+      barnesHut:{ gravitationalConstant:-9000, springLength:140, springConstant:0.04 } },
+    layout: hierarchical
+      ? { hierarchical:{ enabled:true, direction:"LR", sortMethod:"directed",
+          levelSeparation:240, nodeSpacing:24, treeSpacing:60 } }
+      : { improvedLayout:true },
+  };
+  network = new vis.Network(document.getElementById("net"), { nodes:nodesDS, edges:edgesDS }, options);
+}
+
+(async () => {
+  try {
+    G = await (await fetch("/graph.json")).json();
+    allEdges = G.edges;
+    render(false);
+  } catch (e) {
+    document.getElementById("err").textContent = "Failed to load /graph.json — is the web server running? " + e;
+  }
+})();
+
+const bForce = document.getElementById("bForce"), bTree = document.getElementById("bTree");
+bForce.onclick = () => { bForce.classList.add("active"); bTree.classList.remove("active"); render(false); };
+bTree.onclick  = () => { bTree.classList.add("active"); bForce.classList.remove("active"); render(true); };
+const sup = document.getElementById("sup");
+sup.oninput = () => { document.getElementById("supV").textContent = sup.value;
+  render(bTree.classList.contains("active")); };
+</script>
+</body>
+</html>

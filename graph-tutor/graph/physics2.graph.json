@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "source": "physics2-spine",
+    "note": "Named-concept prerequisite graph from chatgpt-app/data/spine. edge {source,target}: source is a prerequisite of target.",
+    "edge_semantics": "edge {source, target}: source is a PREREQUISITE of target."
+  },
+  "nodes": [
+    {
+      "id": "Q29175",
+      "name": "derivative",
+      "area": "math-foundation"
+    },
+    {
+      "id": "Q11465",
+      "name": "velocity",
+      "area": "math-foundation"
+    },
+    {
+      "id": "Q11402",
+      "name": "force",
+      "area": "physics"
+    },
+    {
+      "id": "Q42213",
+      "name": "work",
+      "area": "physics",
+      "lesson": "4-1",
+      "book_pages": "97-108"
+    },
+    {
+      "id": "Q11348",
+      "name": "function",
+      "area": "math-foundation"
+    },
+    {
+      "id": "Q246639",
+      "name": "limit",
+      "area": "math-foundation"
+    },
+    {
+      "id": "Q80091",
+      "name": "integral",
+      "area": "math-foundation"
+    },
+    {
+      "id": "Q44528",
+      "name": "vector",
+      "area": "math-foundation"
+    },
+    {
+      "id": "Q178192",
+      "name": "cross product",
+      "area": "math-foundation"
+    },
+    {
+      "id": "Q11471",
+      "name": "time",
+      "area": "math-foundation"
+    },
+    {
+      "id": "Q48103",
+      "name": "torque",
+      "area": "physics",
+      "lesson": "2-2",
+      "book_pages": "42-46"
+    },
+    {
+      "id": "Q46276",
+      "name": "kinetic energy",
+      "area": "physics",
+      "lesson": "4-1",
+      "book_pages": "97-108"
+    },
+    {
+      "id": "Q11382",
+      "name": "conservation of energy",
+      "area": "physics",
+      "lesson": "5-2",
+      "book_pages": "141-163"
+    },
+    {
+      "id": "Q155640",
+      "name": "potential energy",
+      "area": "physics",
+      "lesson": "5-1",
+      "book_pages": "131-140"
+    },
+    {
+      "id": "Q11423",
+      "name": "mass",
+      "area": "physics"
+    },
+    {
+      "id": "Q41273",
+      "name": "momentum",
+      "area": "physics"
+    },
+    {
+      "id": "Q2305665",
+      "name": "conservation of momentum",
+      "area": "physics",
+      "lesson": "3-2",
+      "book_pages": "74-95"
+    },
+    {
+      "id": "Q134465",
+      "name": "Newton's law of universal gravitation",
+      "area": "physics",
+      "lesson": "1-1",
+      "book_pages": "9-17"
+    },
+    {
+      "id": "Q161635",
+      "name": "angular velocity",
+      "area": "physics",
+      "lesson": "2-1",
+      "book_pages": "37-41"
+    }
+  ],
+  "edges": [
+    {
+      "source": "Q29175",
+      "target": "Q11465",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q11402",
+      "target": "Q42213",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q11348",
+      "target": "Q246639",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q246639",
+      "target": "Q29175",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q246639",
+      "target": "Q80091",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q44528",
+      "target": "Q178192",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q11471",
+      "target": "Q11465",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q44528",
+      "target": "Q11465",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q44528",
+      "target": "Q11402",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q80091",
+      "target": "Q42213",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q178192",
+      "target": "Q48103",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q42213",
+      "target": "Q46276",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q46276",
+      "target": "Q11382",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q155640",
+      "target": "Q11382",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q11423",
+      "target": "Q41273",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q11465",
+      "target": "Q41273",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q41273",
+      "target": "Q2305665",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q11402",
+      "target": "Q48103",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q11423",
+      "target": "Q134465",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q11402",
+      "target": "Q134465",
+      "confidence": 0.95
+    },
+    {
+      "source": "Q11471",
+      "target": "Q161635",
+      "confidence": 0.5
+    },
+    {
+      "source": "Q29175",
+      "target": "Q161635",
+      "confidence": 0.5
+    },
+    {
+      "source": "Q44528",
+      "target": "Q161635",
+      "confidence": 0.5
+    }
+  ]
+}
