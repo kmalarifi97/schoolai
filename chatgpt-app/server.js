@@ -38,6 +38,7 @@ import {
 } from "@modelcontextprotocol/ext-apps/server";
 
 import { createDiagnostics } from "./kst.js";
+import { createGapGraph } from "./gapgraph.js";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT ?? 8787);
@@ -80,6 +81,16 @@ try {
   console.log(`KST diagnostics ready: ${diagnostics._struct.states.length} knowledge states`);
 } catch (e) {
   console.error(`KST diagnostics disabled: ${e.message}`);
+}
+
+// Gap-closing graph layer (same spine, concept-name view). Powers the
+// gap-closing tool set alongside the KST tools. Disabled gracefully if absent.
+let gapgraph = null;
+try {
+  gapgraph = createGapGraph(join(HERE, "data", "spine"));
+  console.log(`Gap-closing graph ready: ${gapgraph.names().length} concepts`);
+} catch (e) {
+  console.error(`Gap-closing graph disabled: ${e.message}`);
 }
 const projects = LIB.projects;
 const projectBySlug = new Map(projects.map((p) => [p.slug, p]));
@@ -849,6 +860,214 @@ function createPhysicsServer() {
         gap: { slug: d.slug, lesson: d.lesson, book_pages: d.book_pages, concept_ar: cAr, concept_en: d.concept_en },
         tool_to_call_next: { name: "read_lesson_pages", arguments: { lesson: d.lesson } } };
       return { content: [{ type: "text", text: `${msg} الدرس ${d.lesson} (صفحات ${d.book_pages}).` }], structuredContent: out };
+    }
+  );
+
+  // === Gap-closing tools (concept-name view over the same prerequisite graph) ===
+  // GRAPH-backed: diagnose_blocking_prerequisites, choose_gap_finding_quiz.
+  // LLM-driven (no graph query, labeled): plan_gap_closing_lesson, check_gap_closure.
+  // Orchestrator: run_gap_closing_tutoring_step (only its diagnose branch hits the graph).
+  // These speak in concept names; internal IDs stay inside gapgraph.js.
+
+  // ---- diagnose_blocking_prerequisites (GRAPH) ----
+  registerAppTool(
+    server,
+    "diagnose_blocking_prerequisites",
+    {
+      title: "Diagnose the prerequisite blocking the student's failed concepts",
+      description:
+        "GRAPH-BACKED. Use this once the student has answered diagnostic questions and you know which " +
+        "concepts they PASSED and which they FAILED. It walks the prerequisite graph backward from each " +
+        "failed concept and returns the unmet prerequisite to teach first (root cause), preferring a " +
+        "prerequisite the student actually failed over one never tested, and surfaces a SHARED root cause " +
+        "when several failures collapse to one missing foundation. Then teach that concept (use get_concept / " +
+        "read_lesson_pages / show_concept_video). Do NOT call before you have pass/fail evidence. Never reveal " +
+        "IDs, graph edges, or probabilities; speak in concept names.",
+      inputSchema: {
+        passed: z.array(z.string()).optional().describe("Concept names the student got right"),
+        failed: z.array(z.string()).optional().describe("Concept names the student got wrong"),
+      },
+      outputSchema: {
+        next_teacher_action: z.string(), student_facing_summary: z.string(), diagnosis_summary: z.string(),
+        shared_root_cause: z.any().nullable(), failed_concepts: z.any(), unresolved_concepts: z.any(),
+        tool_to_call_next: z.any(),
+      },
+      _meta: {},
+    },
+    async ({ passed, failed }) => {
+      if (!gapgraph) return text("محرّك الفجوات غير متوفر حاليًا.", { next_teacher_action: "unavailable", student_facing_summary: "", diagnosis_summary: "", shared_root_cause: null, failed_concepts: [], unresolved_concepts: [], tool_to_call_next: null });
+      const r = gapgraph.diagnose(passed || [], failed || []);
+      const teachFirst = r.shared ? r.shared.concept_name : r.perFailed.find((f) => f.blocking_prerequisite)?.blocking_prerequisite;
+      const action = r.shared ? "teach_shared_root_cause" : teachFirst ? "teach_single_root_cause" : "ask_more_diagnostic_questions";
+      const sf = r.shared ? `أكثر من خطأ يرجع إلى أساس واحد: «${r.shared.concept_name}». نبدأ منه أولًا.`
+        : teachFirst ? `نقطة البداية المناسبة هي «${teachFirst}» قبل العودة لما أخطأت فيه.`
+        : "نحتاج أسئلة إضافية لنحدّد أين الفجوة بالضبط.";
+      const o = { next_teacher_action: action, student_facing_summary: sf, diagnosis_summary: r.summary,
+        shared_root_cause: r.shared, failed_concepts: r.perFailed, unresolved_concepts: r.unresolved,
+        tool_to_call_next: teachFirst ? { name: "plan_gap_closing_lesson", arguments: { root_cause_concept_name: teachFirst } }
+          : { name: "choose_gap_finding_quiz", reason: "not enough evidence yet" } };
+      return text(sf, o);
+    }
+  );
+
+  // ---- choose_gap_finding_quiz (GRAPH: which concepts to assess) ----
+  registerAppTool(
+    server,
+    "choose_gap_finding_quiz",
+    {
+      title: "Choose which concepts to quiz to find the blocking gap",
+      description:
+        "GRAPH-BACKED for concept SELECTION. Use this when a student asks for help with a topic, fails a " +
+        "problem, seems unsure, or asks 'where do I start?'. Given a target concept, it returns the target " +
+        "PLUS its prerequisites — the concepts to assess so you can locate the missing foundation. Write one " +
+        "short question per concept (or pull a real one with find_question for concepts that map to a lesson) " +
+        "and ask them naturally; the graph decides WHAT to test. Then judge pass/fail per concept and call " +
+        "diagnose_blocking_prerequisites. Do NOT use if the student wants a specific lesson with no diagnosis.",
+      inputSchema: {
+        target_skill_name: z.string().describe("The concept the student wants help with"),
+        max_questions: z.number().optional().describe("Cap on concepts to assess (default 5)"),
+      },
+      outputSchema: {
+        next_teacher_action: z.string(), student_facing_intro: z.string(), quiz_focus: z.any(),
+        skills_to_assess: z.any(), question_text_source: z.string(), after_student_answers: z.any(),
+      },
+      _meta: {},
+    },
+    async ({ target_skill_name, max_questions }) => {
+      if (!gapgraph) return text("محرّك الفجوات غير متوفر حاليًا.", { next_teacher_action: "unavailable", student_facing_intro: "", quiz_focus: null, skills_to_assess: [], question_text_source: "none", after_student_answers: null });
+      const target = gapgraph.resolve(target_skill_name);
+      if (!target) return text(`لم أجد المفهوم «${target_skill_name}» في الخريطة.`, { next_teacher_action: "ask_clarifying_question", student_facing_intro: "", quiz_focus: null, skills_to_assess: [], question_text_source: "none", after_student_answers: null });
+      const cap = max_questions || 5;
+      const pre = gapgraph.prerequisitesOf(target_skill_name, { recursive: true }).slice(0, Math.max(0, cap - 1));
+      const skills = [{ concept_name: gapgraph.nameOf(target), role: "target" }, ...pre.map((p) => ({ concept_name: p, role: "prerequisite" }))];
+      const o = { next_teacher_action: "ask_diagnostic_questions",
+        student_facing_intro: "خلنا نبدأ بأسئلة قصيرة أعرف منها وين بالضبط النقطة اللي نقوّيها.",
+        quiz_focus: { target_concept: gapgraph.nameOf(target), why_this_quiz: `"${gapgraph.nameOf(target)}" depends on ${pre.length} earlier concept(s); testing them locates the gap.` },
+        skills_to_assess: skills, question_text_source: "write_or_find_question",
+        after_student_answers: { tool_to_call_next: "diagnose_blocking_prerequisites", pass_fail_format: { passed: ["concept names"], failed: ["concept names"] } } };
+      return text(`Assess: ${skills.map((s) => s.concept_name).join(", ")}`, o);
+    }
+  );
+
+  // ---- plan_gap_closing_lesson (LLM-driven — NOT a graph query) ----
+  registerAppTool(
+    server,
+    "plan_gap_closing_lesson",
+    {
+      title: "Plan a short lesson that closes the root-cause gap",
+      description:
+        "LLM-DRIVEN (no graph query). Use this after diagnose_blocking_prerequisites names a root-cause " +
+        "prerequisite. It returns a self-guiding scaffold: teach the prerequisite first (short intuition + one " +
+        "check question), then bridge back to the originally failed concept. YOU write the explanation — pull " +
+        "real content with get_concept / read_lesson_pages / show_concept_video when the concept maps to a " +
+        "lesson. Do NOT dump a full chapter, and do NOT jump to the failed skill before teaching the prerequisite.",
+      inputSchema: {
+        root_cause_concept_name: z.string(), blocked_concept_name: z.string().optional(), student_goal: z.string().optional(),
+      },
+      outputSchema: { next_teacher_action: z.string(), implemented_by: z.string(), why_this_first: z.string(), micro_lesson: z.any(), bridge_back_to_failed_skill: z.any(), tool_to_call_next: z.any() },
+      _meta: {},
+    },
+    async ({ root_cause_concept_name, blocked_concept_name }) => text(`Teach "${root_cause_concept_name}" first, then bridge back.`, {
+      next_teacher_action: "teach_root_cause_first",
+      implemented_by: "assistant (LLM) — this tool does not query the graph; it scaffolds your teaching",
+      why_this_first: blocked_concept_name ? `"${blocked_concept_name}" depends on "${root_cause_concept_name}"; closing the prerequisite unblocks it.` : `Teach "${root_cause_concept_name}" first as the missing foundation.`,
+      micro_lesson: { concept_to_teach: root_cause_concept_name, teaching_goal: `Student can use "${root_cause_concept_name}" correctly in one simple case.`,
+        steps: [{ step_title: "Intuition first", teacher_explanation: "(you write: one concrete idea, no jargon — use get_concept/read_lesson_pages if it maps to a lesson)", check_question: "(you write: one short question that proves understanding)", expected_understanding: "(what a correct answer shows)" }] },
+      bridge_back_to_failed_skill: blocked_concept_name ? { blocked_concept: blocked_concept_name, bridge_explanation: `Once the check passes, connect "${root_cause_concept_name}" back to "${blocked_concept_name}".`, when_to_bridge: "after the student answers the check question correctly" } : null,
+      tool_to_call_next: { name: "check_gap_closure", when: "after teaching and asking the check question" },
+    })
+  );
+
+  // ---- check_gap_closure (LLM-driven — NOT a graph query) ----
+  registerAppTool(
+    server,
+    "check_gap_closure",
+    {
+      title: "Decide whether the prerequisite gap is now closed",
+      description:
+        "LLM-DRIVEN (no graph query). Use this after you taught the root-cause prerequisite and the student " +
+        "answered a check question. YOU judge the answer (there is no answer key); this tool structures the " +
+        "decision and names the next action: return to the originally failed concept if closed, reteach more " +
+        "simply if still open, or ask another check. Do NOT mark the gap closed just because you explained it.",
+      inputSchema: {
+        root_cause_concept_name: z.string(), blocked_concept_name: z.string().optional(),
+        student_answer: z.string().optional(), your_judgment: z.enum(["closed", "still_open", "uncertain"]).optional().describe("Your assessment; drives the next action"),
+      },
+      outputSchema: { next_teacher_action: z.string(), implemented_by: z.string(), gap_status: z.string(), if_closed: z.any(), if_still_open: z.any(), tool_to_call_next: z.any() },
+      _meta: {},
+    },
+    async ({ root_cause_concept_name, blocked_concept_name, your_judgment }) => {
+      const status = your_judgment || "uncertain";
+      const action = status === "closed" ? "return_to_blocked_skill" : status === "still_open" ? "reteach_root_cause" : "ask_another_check";
+      return text(`Gap status: ${status} -> ${action}`, {
+        next_teacher_action: action, implemented_by: "assistant (LLM) judges correctness — this tool does not grade", gap_status: status,
+        if_closed: status === "closed" && blocked_concept_name ? { bridge_to_blocked_skill: `Reconnect "${root_cause_concept_name}" to "${blocked_concept_name}" and resume it.` } : null,
+        if_still_open: status === "still_open" ? { reteach_focus: root_cause_concept_name, hint: "Use a simpler, more concrete example, then re-check." } : null,
+        tool_to_call_next: status === "closed" ? { name: "run_gap_closing_tutoring_step", when: "to resume the failed concept" } : { name: "plan_gap_closing_lesson", when: "to reteach the prerequisite" },
+      });
+    }
+  );
+
+  // ---- run_gap_closing_tutoring_step (orchestrator — preferred for gap-closing) ----
+  registerAppTool(
+    server,
+    "run_gap_closing_tutoring_step",
+    {
+      title: "Run one step of the gap-closing tutoring loop",
+      description:
+        "Preferred for a gap-closing session. Drives one step and tells you what to do next: pick which " +
+        "concepts to quiz, diagnose the blocking prerequisite (the only step that queries the graph), plan the " +
+        "root-cause lesson, check closure, or return to the failed concept. Pass the running session_state back " +
+        "each call; always follow next_teacher_action. Never expose IDs, graph internals, probabilities, or tool " +
+        "names — speak in concept names. (run_diagnostic_tutoring_step is the older KST loop; this one is the " +
+        "concept-level gap-closing loop.)",
+      inputSchema: {
+        student_message: z.string().optional(),
+        session_state: z.object({
+          student_goal: z.string().optional(), target_concept: z.string().optional(),
+          passed: z.array(z.string()).optional(), failed: z.array(z.string()).optional(),
+          current_root_cause: z.string().optional(), current_blocked_concept: z.string().optional(),
+          last_student_answer: z.string().optional(), gap_judgment: z.enum(["closed", "still_open", "uncertain"]).optional(),
+        }).optional(),
+      },
+      outputSchema: { next_teacher_action: z.string(), message_to_student: z.string(), why_this_action: z.string(), graph_backed_step: z.boolean(), skills_to_assess: z.any(), diagnosis: z.any(), updated_session_state: z.any(), tool_to_call_next: z.any() },
+      _meta: {},
+    },
+    async ({ session_state }) => {
+      if (!gapgraph) return text("محرّك الفجوات غير متوفر حاليًا.", { next_teacher_action: "unavailable", message_to_student: "", why_this_action: "", graph_backed_step: false, skills_to_assess: null, diagnosis: null, updated_session_state: session_state || {}, tool_to_call_next: null });
+      const s = session_state || {}; const passed = s.passed || [], failed = s.failed || [];
+      const base = { skills_to_assess: null, diagnosis: null, graph_backed_step: false, updated_session_state: { ...s, passed, failed } };
+      if (s.current_root_cause && s.gap_judgment === "closed")
+        return text("نرجع الآن للمهارة الأساسية.", { ...base, next_teacher_action: "return_to_blocked_skill",
+          message_to_student: s.current_blocked_concept ? `ممتاز، ثبّتنا الأساس. نرجع الآن إلى «${s.current_blocked_concept}».` : "ممتاز، نكمل.",
+          why_this_action: "Prerequisite gap closed; resume the failed concept.",
+          updated_session_state: { ...s, current_root_cause: undefined, current_blocked_concept: undefined }, tool_to_call_next: null });
+      if (s.current_root_cause && s.last_student_answer)
+        return text("نقيّم إجابة الطالب على الأساس.", { ...base, next_teacher_action: "check_gap_closure", message_to_student: "", why_this_action: "Student answered the check question; judge if the gap is closed.",
+          tool_to_call_next: { name: "check_gap_closure", arguments: { root_cause_concept_name: s.current_root_cause, blocked_concept_name: s.current_blocked_concept, student_answer: s.last_student_answer } } });
+      if (failed.length) {
+        const r = gapgraph.diagnose(passed, failed);
+        const teachFirst = r.shared ? r.shared.concept_name : r.perFailed.find((f) => f.blocking_prerequisite)?.blocking_prerequisite;
+        if (teachFirst) {
+          const blocked = r.shared ? r.shared.blocked_concepts[0] : r.perFailed.find((f) => f.blocking_prerequisite)?.failed_concept;
+          return text(`نبدأ من «${teachFirst}».`, { ...base, graph_backed_step: true, next_teacher_action: "teach_root_cause",
+            message_to_student: `نقطة البداية المناسبة هي «${teachFirst}» قبل العودة إلى «${blocked}».`, why_this_action: "Failure traces back to this prerequisite in the graph.",
+            diagnosis: { root_cause_concept: teachFirst, blocked_concepts: r.shared ? r.shared.blocked_concepts : [blocked], shared: !!r.shared },
+            updated_session_state: { ...s, passed, failed, current_root_cause: teachFirst, current_blocked_concept: blocked },
+            tool_to_call_next: { name: "plan_gap_closing_lesson", arguments: { root_cause_concept_name: teachFirst, blocked_concept_name: blocked } } });
+        }
+        return text("نحتاج أسئلة إضافية.", { ...base, graph_backed_step: true, next_teacher_action: "ask_more_diagnostic_questions",
+          message_to_student: "نحتاج سؤالًا أو سؤالين إضافيين لتحديد الأساس الناقص.", why_this_action: "Failed concept's prerequisites were not tested.",
+          tool_to_call_next: { name: "choose_gap_finding_quiz", arguments: { target_skill_name: failed[0] } } });
+      }
+      if (s.target_concept && gapgraph.resolve(s.target_concept)) {
+        const pre = gapgraph.prerequisitesOf(s.target_concept, { recursive: true }).slice(0, 4);
+        const skills = [{ concept_name: gapgraph.nameOf(gapgraph.resolve(s.target_concept)), role: "target" }, ...pre.map((p) => ({ concept_name: p, role: "prerequisite" }))];
+        return text("نبدأ بأسئلة تشخيصية قصيرة.", { ...base, graph_backed_step: true, next_teacher_action: "ask_diagnostic_question",
+          message_to_student: "خلنا نبدأ بأسئلة قصيرة أعرف منها نقطة انطلاقك.", why_this_action: "Locate the gap by testing the target and its prerequisites.",
+          skills_to_assess: skills, tool_to_call_next: { name: "diagnose_blocking_prerequisites", when: "after the student answers" } });
+      }
+      return text("أي موضوع تحب نركّز عليه؟", { ...base, next_teacher_action: "ask_clarifying_question", message_to_student: "أي موضوع أو مهارة تحب نبدأ فيها؟", why_this_action: "No target concept or evidence yet.", tool_to_call_next: null });
     }
   );
 
