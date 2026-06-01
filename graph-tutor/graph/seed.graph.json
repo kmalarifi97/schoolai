@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "source": "seed",
+    "note": "Small hand-built prerequisite DAG so the stack runs before the Junyi graph exists. Same shape the Junyi builder emits, so it drops in unchanged.",
+    "edge_semantics": "An edge {source, target} means: source is a PREREQUISITE of target (master source before target). Equivalent to 'target REQUIRES source'."
+  },
+  "nodes": [
+    { "id": "functions",     "name": "Functions" },
+    { "id": "limits",        "name": "Limits" },
+    { "id": "derivatives",   "name": "Derivatives" },
+    { "id": "integrals",     "name": "Integrals" },
+    { "id": "vectors",       "name": "Vectors" },
+    { "id": "kinematics",    "name": "Kinematics" },
+    { "id": "forces",        "name": "Forces & Newton's Laws" },
+    { "id": "work_energy",   "name": "Work & Energy" }
+  ],
+  "edges": [
+    { "source": "functions",   "target": "limits",      "p_source_given_target": 0.97, "p_target_given_source": 0.41, "support": 1840 },
+    { "source": "limits",      "target": "derivatives", "p_source_given_target": 0.95, "p_target_given_source": 0.38, "support": 1610 },
+    { "source": "derivatives", "target": "integrals",   "p_source_given_target": 0.93, "p_target_given_source": 0.44, "support": 1290 },
+    { "source": "derivatives", "target": "kinematics",  "p_source_given_target": 0.91, "p_target_given_source": 0.47, "support": 1105 },
+    { "source": "vectors",     "target": "kinematics",  "p_source_given_target": 0.94, "p_target_given_source": 0.40, "support": 1320 },
+    { "source": "kinematics",  "target": "forces",      "p_source_given_target": 0.96, "p_target_given_source": 0.43, "support": 980 },
+    { "source": "forces",      "target": "work_energy", "p_source_given_target": 0.92, "p_target_given_source": 0.49, "support": 870 }
+  ]
+}
