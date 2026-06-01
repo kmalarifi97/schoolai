@@ -1,0 +1,7 @@
+# What NOT to upload to Cloud Build. Critically excludes the 4.3GB raw dataset.
+.git
+node_modules
+graph/junyi_raw
+graph/junyi.graph.json
+graph/junyi.graph.vs_expert.json
+*.log
