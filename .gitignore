@@ -38,3 +38,6 @@ venv/
 
 # Reference book (not for distribution)
 why_dont_students_like_school.txt
+
+# Local Neo4j explorer (out of git; local visualization only)
+neo4j/
