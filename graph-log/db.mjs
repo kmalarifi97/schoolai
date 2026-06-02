@@ -9,7 +9,7 @@ import { mkdirSync } from "node:fs";
 import { dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const DEFAULT_DB = fileURLToPath(new URL("data/tutor.db", import.meta.url));
+const DEFAULT_DB = process.env.GRAPHLOG_DB || fileURLToPath(new URL("data/tutor.db", import.meta.url));
 
 export function openDb(path = DEFAULT_DB) {
   if (path !== ":memory:") mkdirSync(dirname(path), { recursive: true });

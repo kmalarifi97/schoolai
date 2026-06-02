@@ -5,6 +5,11 @@
   "type": "module",
   "description": "Empty experience-log graph + on-demand LLM topic decomposition. No pre-built map, no traversal engine — the LLM decomposes and personalizes; the DB only logs.",
   "scripts": {
-    "demo": "node demo.mjs"
+    "demo": "node demo.mjs",
+    "mcp": "node mcp.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "zod": "^3.23.0"
   }
 }
