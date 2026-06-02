@@ -1,0 +1,10 @@
+{
+  "name": "graph-log",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Empty experience-log graph + on-demand LLM topic decomposition. No pre-built map, no traversal engine — the LLM decomposes and personalizes; the DB only logs.",
+  "scripts": {
+    "demo": "node demo.mjs"
+  }
+}
