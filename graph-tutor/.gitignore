@@ -1,9 +1,0 @@
-node_modules/
-# deployment script kept separate from the repo (contains project/region config)
-deploy.local.sh
-# generated empirical graph (derived from non-commercial Junyi data)
-graph/junyi.graph.json
-graph/junyi.graph.vs_expert.json
-# raw dataset must not be committed (research-only license)
-graph/junyi_raw/
-*.log

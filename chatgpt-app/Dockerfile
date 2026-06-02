@@ -6,8 +6,6 @@ COPY package.json package-lock.json* ./
 RUN npm install --omit=dev
 
 COPY server.js ./
-COPY kst.js ./
-COPY gapgraph.js ./
 COPY instructions.md ./
 COPY public ./public
 COPY data ./data

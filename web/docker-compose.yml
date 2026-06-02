@@ -4,14 +4,9 @@ services:
     environment:
       LIB_ROOT: /srv/lib
       APP_SECRET: change-me-in-production-please
-      # Diagnostic response log (seed of real calibration data). The repo mount
-      # is read-only, so the log lives on the writable named volume below.
-      SPINE_RESPONSES: /srv/responses/responses.jsonl
     volumes:
-      # repo root -> /srv/lib (read-only): scripts/** + all mp4s + the
-      # diagnostic spine (spine/**) imported by gpt_api.py.
+      # repo root -> /srv/lib (read-only): scripts/** + all mp4s
       - ..:/srv/lib:ro
-      - spine_responses:/srv/responses
     ports:
       - "8090:8000"   # host debug port (auto-picked free)
 
@@ -26,6 +21,3 @@ services:
       - backend
     ports:
       - "3000:3000"
-
-volumes:
-  spine_responses:   # writable store for the diagnostic response log

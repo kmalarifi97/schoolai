@@ -1,11 +1,5 @@
 # Physics 2 — ChatGPT App (Apps SDK / MCP)
 
-> ⚠️ **INACTIVE / LEGACY (superseded).** This KST-based stack is preserved but no
-> longer the active tutor. The current approach is the explicit prerequisite-graph
-> tutor in [`../graph-tutor/`](../graph-tutor/) (graph → GraphQL → MCP, diagnosis by
-> direct graph traversal). Nothing here is deleted; this app remains runnable for
-> reference and can be reactivated, but new work happens in `graph-tutor/`.
-
 An MCP server that gives ChatGPT an **in-chat video-player widget** for the
 Physics 2 concept library. Two tools:
 

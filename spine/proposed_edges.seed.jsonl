@@ -1,9 +1,0 @@
-# LLM-PROPOSED prerequisite edges, LOW CONFIDENCE -- flagged for human review.
-# These are NOT pulled from the graph's arbitrated.jsonl; they are proposals to
-# ground matched nodes that arrive with no prerequisite edge. The deterministic
-# builder merges them into the candidate edge set, the graph's validator/dag.py
-# must still pass, and review may accept/reject each one before it enters the
-# graph proper. Format mirrors arbitrated.jsonl edges.
-{"from":"Q11471","to":"Q161635","type":"prerequisite","confidence":0.5,"provenance":["llm-proposed"],"flag":"review","rationale":"Angular velocity is a rate of change of angular position with respect to time; mirrors Time->Velocity. Angular velocity has NO prerequisite edge in the graph today (it floats)."}
-{"from":"Q29175","to":"Q161635","type":"prerequisite","confidence":0.5,"provenance":["llm-proposed"],"flag":"review","rationale":"Angular velocity is omega = d(theta)/dt, a derivative; mirrors Derivative->Velocity."}
-{"from":"Q44528","to":"Q161635","type":"prerequisite","confidence":0.5,"provenance":["llm-proposed"],"flag":"review","rationale":"Angular velocity is a (pseudo)vector quantity; mirrors Euclidean vector->Velocity. Lower confidence: pseudovector nuance."}
