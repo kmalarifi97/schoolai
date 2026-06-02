@@ -32,6 +32,9 @@ import {
   RESOURCE_MIME_TYPE,
 } from "@modelcontextprotocol/ext-apps/server";
 
+// New-model layer: empty experience-log graph + on-demand LLM decomposition.
+import { openDb, storeDecomposition, getTopic, logOutcome, topicStatusForStudent } from "./db.mjs";
+import { DECOMPOSITION_PROMPT, normalize } from "./decompose.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT ?? 8787);
@@ -143,6 +146,16 @@ const text = (t, structured) =>
   structured
     ? { content: [{ type: "text", text: t }], structuredContent: structured }
     : { content: [{ type: "text", text: t }] };
+
+// New-model store: empty experience log (Node built-in SQLite). Honors GRAPHLOG_DB
+// (Cloud Run sets it to /tmp). Disabled gracefully so content tools still work.
+let glog = null;
+try {
+  glog = openDb();
+  console.log("graph-log model ready (experience log open)");
+} catch (e) {
+  console.error(`graph-log model disabled: ${e.message}`);
+}
 
 function createPhysicsServer() {
   const server = new McpServer(
@@ -550,6 +563,106 @@ function createPhysicsServer() {
     }
   );
 
+  // === New-model tools: empty experience log + on-demand LLM decomposition ===
+  // The LLM decomposes a topic (guide below), stores it, logs the student's
+  // pass/struggle, and reads gaps. No traversal engine; the DB only logs.
+  const _NODE = z.object({ concept: z.string(), layer: z.number().optional(), is_floor: z.boolean().optional() });
+  const _EDGE = z.object({ concept: z.string(), requires: z.string(), why: z.string().optional() });
+  const _glogOff = () => text("سجل الخبرة غير متاح حاليًا.", { error: "graph-log unavailable" });
+
+  registerAppTool(
+    server,
+    "get_decomposition_guide",
+    {
+      title: "Get the topic-decomposition guide (with worked example)",
+      description:
+        "Returns the rules + Kepler worked example for decomposing a topic into its prerequisite graph " +
+        "(descend topic→math, stop at equation/variable literacy). Use it before save_topic_decomposition.",
+      inputSchema: {},
+      outputSchema: { guide: z.string() },
+      _meta: {},
+    },
+    async () => text("decomposition guide", { guide: DECOMPOSITION_PROMPT })
+  );
+
+  registerAppTool(
+    server,
+    "save_topic_decomposition",
+    {
+      title: "Save the topic's prerequisite graph you decomposed",
+      description:
+        "Store the decomposition YOU produced for a topic (same for every student). nodes:[{concept,layer," +
+        "is_floor}]; edges:[{concept,requires,why}] meaning concept REQUIRES requires. Stop at equation/" +
+        "variable literacy. Idempotent — re-saving replaces it.",
+      inputSchema: { topic: z.string(), nodes: z.array(_NODE), edges: z.array(_EDGE) },
+      outputSchema: { topic: z.string(), nodes: z.number(), edges: z.number(), next_teacher_action: z.string() },
+      _meta: {},
+    },
+    async ({ topic, nodes, edges }) => {
+      if (!glog) return _glogOff();
+      const r = storeDecomposition(glog, topic, normalize({ topic, nodes, edges }));
+      return text(`saved "${topic}": ${r.nodes} nodes, ${r.edges} edges`, { ...r, next_teacher_action: "teach_from_deepest_unmet_prerequisite" });
+    }
+  );
+
+  registerAppTool(
+    server,
+    "get_topic_decomposition",
+    {
+      title: "Read a stored topic decomposition",
+      description: "Read back the prerequisite graph stored for a topic (nodes by layer + edges). Null if not saved yet.",
+      inputSchema: { topic: z.string() },
+      outputSchema: { topic: z.any() },
+      _meta: {},
+    },
+    async ({ topic }) => {
+      if (!glog) return _glogOff();
+      const g = getTopic(glog, topic);
+      return text(g ? `topic "${topic}": ${g.nodes.length} nodes` : `"${topic}" not decomposed yet`, { topic: g });
+    }
+  );
+
+  registerAppTool(
+    server,
+    "log_outcome",
+    {
+      title: "Log a student's pass/struggle on one concept",
+      description:
+        "Record this student's experience on a concept of a topic. outcome is 'passed' or 'struggled'. This is " +
+        "the only thing that grows per student; call it as they answer.",
+      inputSchema: {
+        student_id: z.string(), topic: z.string(), concept: z.string(),
+        outcome: z.enum(["passed", "struggled"]),
+      },
+      outputSchema: { logged: z.boolean(), next_teacher_action: z.string() },
+      _meta: {},
+    },
+    async ({ student_id, topic, concept, outcome }) => {
+      if (!glog) return _glogOff();
+      logOutcome(glog, { student_id, topic, concept, outcome });
+      return text(`logged ${outcome} on "${concept}"`, { logged: true, next_teacher_action: outcome === "struggled" ? "teach_this_concept_now" : "advance" });
+    }
+  );
+
+  registerAppTool(
+    server,
+    "get_student_status",
+    {
+      title: "Get a student's pass/struggle status across a topic's nodes",
+      description:
+        "For a topic, return each node with this student's latest outcome (passed/struggled/untested) so you can " +
+        "start from their actual gap. Teach the deepest 'struggled' node first, then climb to the topic.",
+      inputSchema: { student_id: z.string(), topic: z.string() },
+      outputSchema: { status: z.any(), gaps: z.any(), next_teacher_action: z.string() },
+      _meta: {},
+    },
+    async ({ student_id, topic }) => {
+      if (!glog) return _glogOff();
+      const status = topicStatusForStudent(glog, student_id, topic);
+      const gaps = status.filter((s) => s.latest_outcome === "struggled").map((s) => s.concept);
+      return text(gaps.length ? `gaps: ${gaps.join(", ")}` : "no logged gaps yet", { status, gaps, next_teacher_action: gaps.length ? "teach_deepest_gap_first" : "begin_or_quiz" });
+    }
+  );
 
   return server;
 }
