@@ -1,0 +1,549 @@
+[
+  {
+    "content_node_id": 622,
+    "concept": "Closed system",
+    "nodes": [
+      {
+        "concept": "boundary definition (system vs surroundings)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الفرق بين النظام والمحيط في الفيزياء؟"
+      },
+      {
+        "concept": "mass transfer across a boundary",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "هل يمكن للمادة أن تعبر حدود النظام المغلق؟"
+      },
+      {
+        "concept": "conservation of mass",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا لم تدخل كتلة إلى نظام ولم تخرج منه، هل تبقى كتلته ثابتة؟"
+      },
+      {
+        "concept": "addition and subtraction of quantities",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كانت كتلة النظام 10 كغ ولم تدخل أي كتلة ولم تخرج، ما كتلته بعد فترة؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني علامة = في معادلة مثل m_قبل = m_بعد؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "ماذا يمثل الرمز m في معادلة فيزيائية؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Closed system",
+        "requires": "boundary definition (system vs surroundings)",
+        "why": "تعريف النظام المغلق يبدأ بتحديد حدود تفصله عن محيطه"
+      },
+      {
+        "concept": "Closed system",
+        "requires": "mass transfer across a boundary",
+        "why": "الخاصية المميزة للنظام المغلق هي عدم انتقال المادة عبر حدوده"
+      },
+      {
+        "concept": "mass transfer across a boundary",
+        "requires": "conservation of mass",
+        "why": "فهم أن الكتلة لا تُفقد ولا تُكتسب يستلزم مفهوم انحفاظ الكتلة"
+      },
+      {
+        "concept": "conservation of mass",
+        "requires": "addition and subtraction of quantities",
+        "why": "حساب إجمالي الكتلة داخل نظام يعتمد على جمع الكتل وطرحها"
+      },
+      {
+        "concept": "addition and subtraction of quantities",
+        "requires": "equals sign as balance",
+        "why": "معادلة الكتلة قبل وبعد تقوم على أن طرفي المعادلة متساويان"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "قراءة أي معادلة تستلزم فهم أن الرموز تمثل قيماً عددية"
+      }
+    ]
+  },
+  {
+    "content_node_id": 624,
+    "concept": "Isolated system",
+    "nodes": [
+      {
+        "concept": "boundary definition (system vs surroundings)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الذي يميز حدود النظام المعزول عن غيره؟"
+      },
+      {
+        "concept": "no mass or energy transfer",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "هل يتبادل النظام المعزول طاقة أو مادة مع محيطه؟"
+      },
+      {
+        "concept": "conservation of energy",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كانت طاقة النظام المعزول 50 جول، ما طاقته بعد لحظة؟"
+      },
+      {
+        "concept": "conservation of mass",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "لماذا لا تتغير كتلة النظام المعزول مع الزمن؟"
+      },
+      {
+        "concept": "addition and subtraction of quantities",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "كيف تحسب مجموع طاقتين داخل نظام معزول؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني E_داخل = ثابت في سياق النظام المعزول؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "ماذا يرمز الحرف E في معادلة الطاقة؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Isolated system",
+        "requires": "boundary definition (system vs surroundings)",
+        "why": "النظام المعزول نوع خاص من الأنظمة يُعرَّف أولاً بوجود حدود تفصله عن محيطه"
+      },
+      {
+        "concept": "Isolated system",
+        "requires": "no mass or energy transfer",
+        "why": "الخاصية الجوهرية للنظام المعزول هي عدم انتقال الكتلة أو الطاقة عبر حدوده"
+      },
+      {
+        "concept": "no mass or energy transfer",
+        "requires": "conservation of energy",
+        "why": "عدم تبادل الطاقة يعني انحفاظها داخل النظام"
+      },
+      {
+        "concept": "no mass or energy transfer",
+        "requires": "conservation of mass",
+        "why": "عدم انتقال المادة يعني انحفاظ الكتلة داخل النظام"
+      },
+      {
+        "concept": "conservation of energy",
+        "requires": "addition and subtraction of quantities",
+        "why": "حساب مجموع الطاقات الداخلية يعتمد على الجمع والطرح"
+      },
+      {
+        "concept": "conservation of mass",
+        "requires": "addition and subtraction of quantities",
+        "why": "حساب الكتلة الكلية للنظام يستلزم جمع كتل مكوناته"
+      },
+      {
+        "concept": "addition and subtraction of quantities",
+        "requires": "equals sign as balance",
+        "why": "التحقق من الانحفاظ يعتمد على مبدأ تساوي طرفي المعادلة"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "قراءة معادلات الانحفاظ تستلزم فهم أن الرموز تمثل قيماً قابلة للقياس"
+      }
+    ]
+  },
+  {
+    "content_node_id": 626,
+    "concept": "Law of conservation of momentum",
+    "nodes": [
+      {
+        "concept": "momentum (p = mv)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما زخم جسم كتلته 2 كغ يتحرك بسرعة 3 م/ث؟"
+      },
+      {
+        "concept": "total momentum of a system",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "كيف تحسب الزخم الكلي لجسمين يتحركان في نفس الاتجاه؟"
+      },
+      {
+        "concept": "impulse-momentum relationship (Δp = FΔt)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما الذي يسبب تغير زخم جسم ما؟"
+      },
+      {
+        "concept": "multiplication of two quantities",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "احسب حاصل ضرب 4 × 7"
+      },
+      {
+        "concept": "vector addition (same direction)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "جسمان لهما زخمان 5 ك.م/ث و 3 ك.م/ث في نفس الاتجاه، ما مجموعهما؟"
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت سرعة جسم وبقيت كتلته ثابتة، ماذا يحدث لزخمه؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني معادلة p_قبل = p_بعد في قانون حفظ الزخم؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "ماذا يمثل الرمز p في معادلات الزخم؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Law of conservation of momentum",
+        "requires": "momentum (p = mv)",
+        "why": "قانون الحفظ يتحدث عن الزخم، لذا يجب فهم تعريفه أولاً"
+      },
+      {
+        "concept": "Law of conservation of momentum",
+        "requires": "total momentum of a system",
+        "why": "القانون يقول إن الزخم الكلي للنظام المعزول يبقى ثابتاً"
+      },
+      {
+        "concept": "total momentum of a system",
+        "requires": "vector addition (same direction)",
+        "why": "الزخم الكلي يُحسب بجمع زخوم الأجسام المنفردة"
+      },
+      {
+        "concept": "momentum (p = mv)",
+        "requires": "multiplication of two quantities",
+        "why": "حساب الزخم يتطلب ضرب الكتلة في السرعة"
+      },
+      {
+        "concept": "momentum (p = mv)",
+        "requires": "proportionality (constant ratio)",
+        "why": "الزخم يتناسب طردياً مع كل من الكتلة والسرعة"
+      },
+      {
+        "concept": "impulse-momentum relationship (Δp = FΔt)",
+        "requires": "multiplication of two quantities",
+        "why": "حساب الدفع يتطلب ضرب القوة في الزمن"
+      },
+      {
+        "concept": "Law of conservation of momentum",
+        "requires": "impulse-momentum relationship (Δp = FΔt)",
+        "why": "في النظام المعزول لا توجد قوى خارجية فلا يتغير الزخم"
+      },
+      {
+        "concept": "vector addition (same direction)",
+        "requires": "equals sign as balance",
+        "why": "التحقق من حفظ الزخم يعتمد على تساوي الزخم الكلي قبل التصادم وبعده"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم معادلة الزخم يبدأ بإدراك أن كل رمز يمثل قيمة عددية"
+      }
+    ]
+  },
+  {
+    "content_node_id": 825,
+    "concept": "Work",
+    "nodes": [
+      {
+        "concept": "force and displacement",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الشرط الأساسي لأداء شغل على جسم ما؟"
+      },
+      {
+        "concept": "angle between force and displacement (cos θ)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا كانت القوة عمودية على الإزاحة، ما قيمة cos 90°؟"
+      },
+      {
+        "concept": "scalar product (dot product concept)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما الشغل المبذول بقوة 10 نيوتن على إزاحة 5 م عند زاوية 0°؟"
+      },
+      {
+        "concept": "multiplication of three quantities",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "احسب: 6 × 4 × 0.5"
+      },
+      {
+        "concept": "trigonometric ratio (cosine)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما قيمة cos 60°؟"
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت الإزاحة وبقيت القوة والزاوية ثابتتين، ماذا يحدث للشغل؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "في معادلة W = F·d·cos θ، ماذا تعني علامة = ؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "ماذا يرمز الحرف W في معادلة الشغل؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Work",
+        "requires": "force and displacement",
+        "why": "الشغل يُعرَّف بوصفه أثر القوة على إزاحة الجسم"
+      },
+      {
+        "concept": "Work",
+        "requires": "angle between force and displacement (cos θ)",
+        "why": "الشغل يعتمد على المركبة الموازية للقوة في اتجاه الإزاحة"
+      },
+      {
+        "concept": "angle between force and displacement (cos θ)",
+        "requires": "scalar product (dot product concept)",
+        "why": "حساب المركبة الفعالة للقوة يستلزم فهم الجداء الاتجاهي"
+      },
+      {
+        "concept": "scalar product (dot product concept)",
+        "requires": "trigonometric ratio (cosine)",
+        "why": "الجداء الاتجاهي يستخدم جيب التمام للزاوية بين الاتجاهين"
+      },
+      {
+        "concept": "scalar product (dot product concept)",
+        "requires": "multiplication of three quantities",
+        "why": "W = F × d × cos θ تعني ضرب ثلاث قيم معاً"
+      },
+      {
+        "concept": "force and displacement",
+        "requires": "proportionality (constant ratio)",
+        "why": "الشغل يتناسب طردياً مع كل من القوة والإزاحة"
+      },
+      {
+        "concept": "multiplication of three quantities",
+        "requires": "equals sign as balance",
+        "why": "نتيجة ضرب القوة والإزاحة وجيب التمام تساوي الشغل المبذول"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "استخدام معادلة الشغل يبدأ بفهم أن رموزها تمثل قيماً قابلة للحساب"
+      }
+    ]
+  },
+  {
+    "content_node_id": 831,
+    "concept": "Energy",
+    "nodes": [
+      {
+        "concept": "capacity to do work",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما العلاقة بين الطاقة والقدرة على بذل شغل؟"
+      },
+      {
+        "concept": "forms of energy (kinetic, potential, thermal…)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "اذكر شكلين مختلفين من أشكال الطاقة."
+      },
+      {
+        "concept": "energy transfer and transformation",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "عند تسقط كرة من ارتفاع، إلى ماذا تتحول طاقتها الوضعية؟"
+      },
+      {
+        "concept": "conservation of energy",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "هل تُفقد الطاقة عند انتقالها من شكل إلى آخر؟"
+      },
+      {
+        "concept": "addition and subtraction of quantities",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كانت طاقة حركية جسم 20 جول وطاقته الوضعية 30 جول، ما طاقته الكلية؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني معادلة E_قبل = E_بعد؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "ماذا يعني الرمز E في معادلات الطاقة؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Energy",
+        "requires": "capacity to do work",
+        "why": "الطاقة تُعرَّف بوصفها القدرة على بذل شغل"
+      },
+      {
+        "concept": "Energy",
+        "requires": "forms of energy (kinetic, potential, thermal…)",
+        "why": "فهم الطاقة يستلزم معرفة أشكالها المختلفة وكيفية التمييز بينها"
+      },
+      {
+        "concept": "forms of energy (kinetic, potential, thermal…)",
+        "requires": "energy transfer and transformation",
+        "why": "الأشكال المختلفة للطاقة مترابطة ويمكن أن تتحول من شكل إلى آخر"
+      },
+      {
+        "concept": "energy transfer and transformation",
+        "requires": "conservation of energy",
+        "why": "التحول بين أشكال الطاقة يخضع لمبدأ انحفاظ الطاقة الكلية"
+      },
+      {
+        "concept": "conservation of energy",
+        "requires": "addition and subtraction of quantities",
+        "why": "حساب الطاقة الكلية وتتبع انحفاظها يعتمد على جمع الطاقات وطرحها"
+      },
+      {
+        "concept": "addition and subtraction of quantities",
+        "requires": "equals sign as balance",
+        "why": "التحقق من انحفاظ الطاقة يعتمد على مبدأ تساوي طرفي المعادلة"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "كتابة معادلات الطاقة وقراءتها تستلزم فهم أن الرموز تمثل قيماً عددية"
+      }
+    ]
+  },
+  {
+    "content_node_id": 833,
+    "concept": "Kinetic Energy",
+    "nodes": [
+      {
+        "concept": "kinetic energy formula (KE = ½mv²)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما طاقة الحركة لجسم كتلته 2 كغ يتحرك بسرعة 4 م/ث؟"
+      },
+      {
+        "concept": "dependence on mass and speed",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت سرعة جسم، بكم تتغير طاقته الحركية؟"
+      },
+      {
+        "concept": "powers/exponents (squaring)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما قيمة 5²؟"
+      },
+      {
+        "concept": "multiplication of quantities (including fraction ½)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "احسب: ½ × 4 × 9"
+      },
+      {
+        "concept": "direct proportionality (KE ∝ m)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت كتلة جسم وبقيت سرعته ثابتة، ماذا يحدث لطاقته الحركية؟"
+      },
+      {
+        "concept": "square proportionality (KE ∝ v²)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت السرعة، هل تتضاعف طاقة الحركة أم تتضاعف أربع مرات؟ ولماذا؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "في معادلة KE = ½mv²، ماذا تعني علامة = ؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "ماذا يمثل الرمز v في معادلة طاقة الحركة؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Kinetic Energy",
+        "requires": "kinetic energy formula (KE = ½mv²)",
+        "why": "المعادلة هي التعبير الكمي الرئيسي عن طاقة الحركة"
+      },
+      {
+        "concept": "Kinetic Energy",
+        "requires": "dependence on mass and speed",
+        "why": "فهم طاقة الحركة يستلزم معرفة العوامل التي تؤثر فيها"
+      },
+      {
+        "concept": "kinetic energy formula (KE = ½mv²)",
+        "requires": "powers/exponents (squaring)",
+        "why": "المعادلة تتضمن v² لذا يجب فهم تربيع الأعداد"
+      },
+      {
+        "concept": "kinetic energy formula (KE = ½mv²)",
+        "requires": "multiplication of quantities (including fraction ½)",
+        "why": "حساب KE = ½mv² يتطلب ضرب ثلاثة عوامل بما فيها الكسر ½"
+      },
+      {
+        "concept": "dependence on mass and speed",
+        "requires": "direct proportionality (KE ∝ m)",
+        "why": "طاقة الحركة تتناسب طردياً مع الكتلة عند ثبات السرعة"
+      },
+      {
+        "concept": "dependence on mass and speed",
+        "requires": "square proportionality (KE ∝ v²)",
+        "why": "طاقة الحركة تتناسب مع مربع السرعة وليس مع السرعة مباشرة"
+      },
+      {
+        "concept": "square proportionality (KE ∝ v²)",
+        "requires": "powers/exponents (squaring)",
+        "why": "التناسب التربيعي يعتمد على فهم عملية التربيع"
+      },
+      {
+        "concept": "multiplication of quantities (including fraction ½)",
+        "requires": "equals sign as balance",
+        "why": "نتيجة الضرب تساوي قيمة طاقة الحركة وهذا جوهر معنى علامة ="
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "استخدام معادلة طاقة الحركة يبدأ بفهم أن رموزها تمثل قيماً قابلة للحساب"
+      }
+    ]
+  }
+]

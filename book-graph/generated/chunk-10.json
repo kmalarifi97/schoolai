@@ -1,0 +1,634 @@
+[
+  {
+    "content_node_id": 1538,
+    "concept": "Melting point",
+    "nodes": [
+      {
+        "concept": "phase transition (solid to liquid)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الذي يحدث للمادة عند انتقالها من الحالة الصلبة إلى السائلة؟"
+      },
+      {
+        "concept": "temperature as thermal energy measure",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ماذا تقيس درجة الحرارة في المادة؟"
+      },
+      {
+        "concept": "fixed characteristic temperature per substance",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "لماذا تختلف درجة انصهار الحديد عن درجة انصهار الجليد؟"
+      },
+      {
+        "concept": "equality of temperature at transition",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ماذا يحدث لدرجة الحرارة أثناء عملية الانصهار؟"
+      },
+      {
+        "concept": "reading and comparing values on a number line",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "أي من القيمتين 0 درجة مئوية و100 درجة مئوية أكبر؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ماذا يعني أن درجة الانصهار تساوي 0°م؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "ماذا يمثل الرمز T في معادلة فيزيائية؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Melting point",
+        "requires": "phase transition (solid to liquid)",
+        "why": "درجة الانصهار هي درجة الحرارة التي تبدأ عندها المادة في الانتقال من الصلب إلى السائل"
+      },
+      {
+        "concept": "Melting point",
+        "requires": "temperature as thermal energy measure",
+        "why": "درجة الانصهار قيمة حرارية لا يمكن فهمها دون معرفة ما تعنيه درجة الحرارة"
+      },
+      {
+        "concept": "phase transition (solid to liquid)",
+        "requires": "fixed characteristic temperature per substance",
+        "why": "كل مادة لها درجة انصهار ثابتة تميزها عن غيرها"
+      },
+      {
+        "concept": "phase transition (solid to liquid)",
+        "requires": "equality of temperature at transition",
+        "why": "يحدث الانصهار عند درجة حرارة ثابتة بالضبط ولا ترتفع خلال التحول"
+      },
+      {
+        "concept": "fixed characteristic temperature per substance",
+        "requires": "reading and comparing values on a number line",
+        "why": "مقارنة درجات انصهار المواد تتطلب قراءة القيم العددية ومقارنتها"
+      },
+      {
+        "concept": "equality of temperature at transition",
+        "requires": "equals sign as balance",
+        "why": "القول بأن درجة الانصهار تساوي قيمة بعينها يعتمد على مفهوم التساوي"
+      },
+      {
+        "concept": "reading and comparing values on a number line",
+        "requires": "equation/variable literacy",
+        "why": "قراءة القيم الرقمية ومقارنتها تستلزم فهم أن الرمز يمثل عدداً"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم علامة المساواة يبنى على أساس الإلمام بالمتغيرات والرموز"
+      }
+    ]
+  },
+  {
+    "content_node_id": 1540,
+    "concept": "Boiling point",
+    "nodes": [
+      {
+        "concept": "phase transition (liquid to gas)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الذي يحدث للمادة عند انتقالها من الحالة السائلة إلى الغازية؟"
+      },
+      {
+        "concept": "temperature as thermal energy measure",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ماذا تقيس درجة الحرارة في المادة؟"
+      },
+      {
+        "concept": "fixed characteristic temperature per substance",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "لماذا تغلي المياه عند 100°م وليس عند درجة أخرى؟"
+      },
+      {
+        "concept": "effect of pressure on boiling point",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف يؤثر ارتفاع الضغط على درجة غليان السائل؟"
+      },
+      {
+        "concept": "direct proportionality",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا زاد الضغط فكيف تتغير درجة الغليان؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ماذا يعني أن درجة الغليان للماء تساوي 100°م؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "ماذا يمثل الرمز P في معادلة تتعلق بضغط الغاز؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Boiling point",
+        "requires": "phase transition (liquid to gas)",
+        "why": "درجة الغليان هي درجة الحرارة التي ينتقل عندها السائل إلى غاز"
+      },
+      {
+        "concept": "Boiling point",
+        "requires": "temperature as thermal energy measure",
+        "why": "درجة الغليان قيمة حرارية ولا يمكن تحديدها دون فهم معنى درجة الحرارة"
+      },
+      {
+        "concept": "phase transition (liquid to gas)",
+        "requires": "fixed characteristic temperature per substance",
+        "why": "كل سائل يتحول إلى غاز عند درجة حرارة ثابتة مميزة له"
+      },
+      {
+        "concept": "phase transition (liquid to gas)",
+        "requires": "effect of pressure on boiling point",
+        "why": "درجة الغليان تتغير بتغير الضغط الخارجي فلا يمكن تجاهل هذه العلاقة"
+      },
+      {
+        "concept": "effect of pressure on boiling point",
+        "requires": "direct proportionality",
+        "why": "ارتفاع الضغط يرفع درجة الغليان وهذه علاقة طردية تحتاج فهم التناسب"
+      },
+      {
+        "concept": "fixed characteristic temperature per substance",
+        "requires": "equals sign as balance",
+        "why": "تحديد درجة غليان مادة يعني أنها تساوي قيمة عددية بعينها"
+      },
+      {
+        "concept": "direct proportionality",
+        "requires": "equation/variable literacy",
+        "why": "التناسب الطردي يعتمد على قراءة متغيرين ومعرفة أن زيادة أحدهما تزيد الآخر"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم المساواة يستلزم معرفة أن الرموز تمثل أعداداً"
+      }
+    ]
+  },
+  {
+    "content_node_id": 1543,
+    "concept": "Latent heat of fusion",
+    "nodes": [
+      {
+        "concept": "heat absorbed during melting at constant temperature",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "لماذا تمتص المادة حرارة خلال الانصهار دون أن ترتفع درجة حرارتها؟"
+      },
+      {
+        "concept": "proportionality of heat to mass (Q = mLf)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا ضاعفت كتلة الجليد المنصهر فكيف تتغير الحرارة اللازمة؟"
+      },
+      {
+        "concept": "multiplication (Q = m × Lf)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تحسب الحرارة الكامنة الكلية إذا عرفت الكتلة والحرارة النوعية الكامنة؟"
+      },
+      {
+        "concept": "direct proportionality",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما معنى أن كمية الحرارة تتناسب طردياً مع الكتلة؟"
+      },
+      {
+        "concept": "constant ratio (Lf = Q/m)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما الذي يمثله ثابت الحرارة الكامنة للانصهار Lf؟"
+      },
+      {
+        "concept": "division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "كيف تستخرج قيمة Lf إذا عرفت Q وm؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني معادلة Q = mLf بالنسبة للطرفين؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "ماذا يمثل الرمز Q في معادلة الحرارة الكامنة؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Latent heat of fusion",
+        "requires": "heat absorbed during melting at constant temperature",
+        "why": "الحرارة الكامنة للانصهار هي الطاقة الممتصة أثناء التحول دون تغير في درجة الحرارة"
+      },
+      {
+        "concept": "Latent heat of fusion",
+        "requires": "proportionality of heat to mass (Q = mLf)",
+        "why": "معادلة الحرارة الكامنة تربط Q بالكتلة m وثابت Lf في علاقة تناسب"
+      },
+      {
+        "concept": "proportionality of heat to mass (Q = mLf)",
+        "requires": "multiplication (Q = m × Lf)",
+        "why": "حساب Q يستوجب ضرب الكتلة في الحرارة الكامنة النوعية"
+      },
+      {
+        "concept": "proportionality of heat to mass (Q = mLf)",
+        "requires": "direct proportionality",
+        "why": "زيادة الكتلة تزيد Q بنفس النسبة وهذا جوهر التناسب الطردي"
+      },
+      {
+        "concept": "direct proportionality",
+        "requires": "constant ratio (Lf = Q/m)",
+        "why": "التناسب الطردي يعني أن النسبة Q/m ثابتة وهذا الثابت هو Lf"
+      },
+      {
+        "concept": "constant ratio (Lf = Q/m)",
+        "requires": "division",
+        "why": "حساب النسبة Q/m يتطلب إجراء عملية القسمة"
+      },
+      {
+        "concept": "multiplication (Q = m × Lf)",
+        "requires": "equals sign as balance",
+        "why": "كتابة Q = m × Lf تعتمد على أن الطرفين متساويان في القيمة"
+      },
+      {
+        "concept": "division",
+        "requires": "equals sign as balance",
+        "why": "استخراج Lf بقسمة Q على m يعتمد على مفهوم التساوي في المعادلة"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم المساواة يستلزم معرفة أن الرموز تمثل أعداداً يمكن المقارنة بينها"
+      }
+    ]
+  },
+  {
+    "content_node_id": 1545,
+    "concept": "Latent heat of vaporization",
+    "nodes": [
+      {
+        "concept": "heat absorbed during vaporization at constant temperature",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "لماذا يمتص السائل حرارة كبيرة عند تحوله إلى بخار دون أن ترتفع درجة حرارته؟"
+      },
+      {
+        "concept": "proportionality of heat to mass (Q = mLv)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت كتلة السائل المتبخر فكيف تتغير الحرارة اللازمة؟"
+      },
+      {
+        "concept": "comparison: Lv greater than Lf",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "أيهما أكبر: الحرارة الكامنة للتبخر أم للانصهار، ولماذا؟"
+      },
+      {
+        "concept": "multiplication (Q = m × Lv)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تحسب كمية الحرارة اللازمة لتبخير كتلة معينة من سائل؟"
+      },
+      {
+        "concept": "direct proportionality",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما معنى أن حرارة التبخر تتناسب طردياً مع كتلة السائل؟"
+      },
+      {
+        "concept": "division (Lv = Q/m)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "كيف تستخرج قيمة Lv إذا عرفت Q وm؟"
+      },
+      {
+        "concept": "subtraction for comparing values",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "كيف تحسب مقدار الفرق بين قيمتي Lv وLf لمادة ما؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني معادلة Q = mLv بالنسبة لطرفيها؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "ماذا يمثل الرمز Lv في معادلة الحرارة الكامنة للتبخر؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Latent heat of vaporization",
+        "requires": "heat absorbed during vaporization at constant temperature",
+        "why": "الحرارة الكامنة للتبخر هي الطاقة الممتصة أثناء تحول السائل إلى بخار دون تغير في درجة الحرارة"
+      },
+      {
+        "concept": "Latent heat of vaporization",
+        "requires": "proportionality of heat to mass (Q = mLv)",
+        "why": "معادلة الحرارة الكامنة للتبخر تربط Q بالكتلة m والثابت Lv"
+      },
+      {
+        "concept": "Latent heat of vaporization",
+        "requires": "comparison: Lv greater than Lf",
+        "why": "فهم أن Lv أكبر من Lf يوضح أن قطع روابط الغاز يحتاج طاقة أكبر من قطع روابط الصلب"
+      },
+      {
+        "concept": "proportionality of heat to mass (Q = mLv)",
+        "requires": "multiplication (Q = m × Lv)",
+        "why": "حساب Q يستوجب ضرب الكتلة في الحرارة الكامنة النوعية للتبخر"
+      },
+      {
+        "concept": "proportionality of heat to mass (Q = mLv)",
+        "requires": "direct proportionality",
+        "why": "كلما زادت الكتلة ازدادت Q بالنسبة ذاتها وهذا هو التناسب الطردي"
+      },
+      {
+        "concept": "comparison: Lv greater than Lf",
+        "requires": "subtraction for comparing values",
+        "why": "مقارنة قيمتين تحتاج طرح إحداهما من الأخرى لمعرفة الفرق"
+      },
+      {
+        "concept": "direct proportionality",
+        "requires": "division (Lv = Q/m)",
+        "why": "ثابت التناسب Lv يُستخرج بقسمة Q على m"
+      },
+      {
+        "concept": "multiplication (Q = m × Lv)",
+        "requires": "equals sign as balance",
+        "why": "كتابة Q = m × Lv تعتمد على أن الطرفين متساويان"
+      },
+      {
+        "concept": "division (Lv = Q/m)",
+        "requires": "equals sign as balance",
+        "why": "استخراج Lv بالقسمة يعتمد على مفهوم المساواة في المعادلة"
+      },
+      {
+        "concept": "subtraction for comparing values",
+        "requires": "equation/variable literacy",
+        "why": "طرح قيمتين يستلزم فهم أن الرموز تمثل أعداداً قابلة للعمليات"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم المساواة يستلزم معرفة أن الرموز تمثل أعداداً"
+      }
+    ]
+  },
+  {
+    "content_node_id": 1568,
+    "concept": "First Law of Thermodynamics",
+    "nodes": [
+      {
+        "concept": "internal energy change (ΔU)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الذي يمثله التغير في الطاقة الداخلية ΔU لجسم ما؟"
+      },
+      {
+        "concept": "heat added to a system (Q)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ماذا يحدث للطاقة الداخلية للغاز عندما يكتسب حرارة Q؟"
+      },
+      {
+        "concept": "work done by a system (W)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "متى يقوم الغاز بشغل على المحيط؟"
+      },
+      {
+        "concept": "conservation of energy",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ماذا يقول مبدأ حفظ الطاقة بشأن الطاقة الكلية لنظام معزول؟"
+      },
+      {
+        "concept": "subtraction (ΔU = Q − W)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تحسب ΔU إذا علمت أن النظام امتص حرارة Q وأدى شغلاً W؟"
+      },
+      {
+        "concept": "signed quantities (positive/negative heat and work)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما إشارة Q عندما يفقد النظام حرارة للبيئة المحيطة؟"
+      },
+      {
+        "concept": "addition of signed numbers",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما ناتج جمع (+50) و(−30)؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني معادلة ΔU = Q − W بالنسبة لطرفيها؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "ماذا يمثل الرمز ΔU في معادلة القانون الأول للديناميكا الحرارية؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "First Law of Thermodynamics",
+        "requires": "internal energy change (ΔU)",
+        "why": "القانون الأول يصف كيف يتغير ΔU نتيجة للحرارة والشغل"
+      },
+      {
+        "concept": "First Law of Thermodynamics",
+        "requires": "heat added to a system (Q)",
+        "why": "الحرارة المنقولة إلى النظام هي أحد مدخلات المعادلة الأساسية"
+      },
+      {
+        "concept": "First Law of Thermodynamics",
+        "requires": "work done by a system (W)",
+        "why": "الشغل الذي يؤديه النظام على المحيط هو المخرج الآخر في المعادلة"
+      },
+      {
+        "concept": "internal energy change (ΔU)",
+        "requires": "conservation of energy",
+        "why": "ΔU يعبر عن مبدأ حفظ الطاقة: ما يدخل النظام لا يضيع بل يتحول"
+      },
+      {
+        "concept": "internal energy change (ΔU)",
+        "requires": "subtraction (ΔU = Q − W)",
+        "why": "حساب ΔU يستلزم طرح الشغل المبذول من الحرارة المكتسبة"
+      },
+      {
+        "concept": "subtraction (ΔU = Q − W)",
+        "requires": "signed quantities (positive/negative heat and work)",
+        "why": "الطرح ذو معنى فيزيائي صحيح فقط عند فهم إشارة Q وW"
+      },
+      {
+        "concept": "signed quantities (positive/negative heat and work)",
+        "requires": "addition of signed numbers",
+        "why": "التعامل مع إشارات الكميات يتطلب إتقان جمع الأعداد الموجبة والسالبة"
+      },
+      {
+        "concept": "addition of signed numbers",
+        "requires": "equals sign as balance",
+        "why": "جمع الكميات للحصول على ΔU يعتمد على مفهوم المساواة بين الطرفين"
+      },
+      {
+        "concept": "conservation of energy",
+        "requires": "equals sign as balance",
+        "why": "مبدأ الحفظ يُصاغ كمعادلة تساوي تعتمد على كون الطرفين متكافئين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم علامة المساواة يُبنى على الإلمام بالمتغيرات والرموز الفيزيائية"
+      }
+    ]
+  },
+  {
+    "content_node_id": 1571,
+    "concept": "Heat engine",
+    "nodes": [
+      {
+        "concept": "conversion of heat to mechanical work",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الوظيفة الأساسية للمحرك الحراري؟"
+      },
+      {
+        "concept": "thermal efficiency (η = W/Qh)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما المقصود بكفاءة المحرك الحراري؟"
+      },
+      {
+        "concept": "energy balance (Qh = W + Qc)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تُوزَّع الحرارة المكتسبة من المصدر الساخن في المحرك الحراري؟"
+      },
+      {
+        "concept": "ratio and percentage",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تحول نسبة W/Qh إلى نسبة مئوية لتعبر عن الكفاءة؟"
+      },
+      {
+        "concept": "subtraction (W = Qh − Qc)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "كيف تحسب الشغل المنتج إذا عرفت حرارة المصدر الساخن والحوض البارد؟"
+      },
+      {
+        "concept": "division (η = W ÷ Qh)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "كيف تستخرج كفاءة المحرك رياضياً؟"
+      },
+      {
+        "concept": "multiplication (percentage form: η × 100)",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "إذا كانت كفاءة محرك 0.35 فكيف تعبر عنها كنسبة مئوية؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني معادلة Qh = W + Qc بالنسبة للطاقة في المحرك؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "ماذا يمثل الرمز Qh في معادلة المحرك الحراري؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Heat engine",
+        "requires": "conversion of heat to mechanical work",
+        "why": "المحرك الحراري يعمل أساساً على تحويل جزء من الحرارة إلى شغل ميكانيكي"
+      },
+      {
+        "concept": "Heat engine",
+        "requires": "thermal efficiency (η = W/Qh)",
+        "why": "كفاءة المحرك هي المقياس الكمي الرئيسي لأداء المحرك الحراري"
+      },
+      {
+        "concept": "conversion of heat to mechanical work",
+        "requires": "energy balance (Qh = W + Qc)",
+        "why": "الشغل المنتج هو الفرق بين الحرارة الداخلة والحرارة المنطلقة وفق مبدأ الحفظ"
+      },
+      {
+        "concept": "thermal efficiency (η = W/Qh)",
+        "requires": "ratio and percentage",
+        "why": "الكفاءة نسبة بين الشغل والحرارة الكلية ويُعبَّر عنها غالباً كنسبة مئوية"
+      },
+      {
+        "concept": "thermal efficiency (η = W/Qh)",
+        "requires": "division (η = W ÷ Qh)",
+        "why": "حساب الكفاءة يتطلب قسمة الشغل على الحرارة المكتسبة من المصدر"
+      },
+      {
+        "concept": "energy balance (Qh = W + Qc)",
+        "requires": "subtraction (W = Qh − Qc)",
+        "why": "إيجاد الشغل من معادلة الطاقة يستلزم طرح Qc من Qh"
+      },
+      {
+        "concept": "energy balance (Qh = W + Qc)",
+        "requires": "equals sign as balance",
+        "why": "معادلة الطاقة تعني أن الطاقة الداخلة تساوي الطاقة الخارجة بالضبط"
+      },
+      {
+        "concept": "ratio and percentage",
+        "requires": "multiplication (percentage form: η × 100)",
+        "why": "تحويل النسبة العشرية إلى نسبة مئوية يتم بضربها في 100"
+      },
+      {
+        "concept": "division (η = W ÷ Qh)",
+        "requires": "equals sign as balance",
+        "why": "كتابة η = W/Qh تعتمد على أن الطرفين متساويان"
+      },
+      {
+        "concept": "subtraction (W = Qh − Qc)",
+        "requires": "equals sign as balance",
+        "why": "معادلة W = Qh − Qc تعتمد على مفهوم المساواة بين طرفي المعادلة"
+      },
+      {
+        "concept": "multiplication (percentage form: η × 100)",
+        "requires": "equation/variable literacy",
+        "why": "ضرب النسبة في 100 يستلزم فهم أن η رمز يمثل قيمة عددية"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم علامة المساواة يستلزم الإلمام بأن الرموز تمثل أعداداً"
+      }
+    ]
+  }
+]

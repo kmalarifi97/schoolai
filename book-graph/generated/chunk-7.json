@@ -1,0 +1,623 @@
+[
+  {
+    "content_node_id": 1164,
+    "concept": "Gravitational Potential Energy",
+    "nodes": [
+      {
+        "concept": "work done against gravity",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "عندما ترفع جسمًا إلى أعلى، ضد أي قوة تبذل شغلًا؟"
+      },
+      {
+        "concept": "height above reference level",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما المقصود بارتفاع الجسم في معادلة طاقة الوضع الجاذبية؟"
+      },
+      {
+        "concept": "direct proportionality (PE ∝ mgh)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت كتلة الجسم مع ثبات الارتفاع، كيف تتغير طاقة وضعه الجاذبية؟"
+      },
+      {
+        "concept": "multiplication of three quantities",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب حاصل ضرب 2 × 10 × 5."
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كانت y تتناسب طرديًا مع x، ما العلاقة بين y/x وقيمة ثابتة؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني علامة المساواة في المعادلة PE = mgh؟"
+      },
+      {
+        "concept": "addition of quantities",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ما ناتج 3 + 7؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في المعادلة PE = mgh، ماذا يمثل الحرف m؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Gravitational Potential Energy",
+        "requires": "work done against gravity",
+        "why": "طاقة الوضع الجاذبية هي الشغل المخزّن الذي بُذل ضد الجاذبية لرفع الجسم."
+      },
+      {
+        "concept": "Gravitational Potential Energy",
+        "requires": "height above reference level",
+        "why": "طاقة الوضع تعتمد على ارتفاع الجسم h فوق مستوى إسناد محدد."
+      },
+      {
+        "concept": "work done against gravity",
+        "requires": "direct proportionality (PE ∝ mgh)",
+        "why": "الشغل المبذول يتناسب طرديًا مع الكتلة والارتفاع وتسارع الجاذبية."
+      },
+      {
+        "concept": "height above reference level",
+        "requires": "direct proportionality (PE ∝ mgh)",
+        "why": "لفهم أن زيادة h تزيد PE بنسبة مباشرة يلزم فهم التناسب الطردي."
+      },
+      {
+        "concept": "direct proportionality (PE ∝ mgh)",
+        "requires": "multiplication of three quantities",
+        "why": "حساب mgh يستلزم ضرب ثلاثة أعداد معًا."
+      },
+      {
+        "concept": "direct proportionality (PE ∝ mgh)",
+        "requires": "proportionality (constant ratio)",
+        "why": "التناسب الطردي يعني أن النسبة PE/(mgh) ثابتة وتساوي 1."
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "requires": "equals sign as balance",
+        "why": "فهم النسبة الثابتة يعتمد على مفهوم أن الطرفين متساويان."
+      },
+      {
+        "concept": "multiplication of three quantities",
+        "requires": "addition of quantities",
+        "why": "الضرب المتكرر يُبنى على فهم الجمع كأساس للعمليات الحسابية."
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "لفهم أن PE = mgh يمثل توازنًا، يجب أن يعرف الطالب أن الحروف تمثل أعدادًا."
+      },
+      {
+        "concept": "addition of quantities",
+        "requires": "equation/variable literacy",
+        "why": "جمع الكميات يستلزم فهم أن الرموز تمثل قيمًا عددية."
+      }
+    ]
+  },
+  {
+    "content_node_id": 1165,
+    "concept": "Reference Level",
+    "nodes": [
+      {
+        "concept": "arbitrary zero point for potential energy",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "هل يمكن اختيار مستوى الإسناد بحرية، أم أنه ثابت دائمًا؟"
+      },
+      {
+        "concept": "relative measurement (height is a difference)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا وضعت كتابًا على طاولة ارتفاعها 1 م فوق الأرض، ما ارتفاع الكتاب عن الأرض؟"
+      },
+      {
+        "concept": "signed quantities (positive and negative heights)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كان مستوى الإسناد هو سطح الطاولة وكان الجسم تحتها، هل تكون طاقة وضعه موجبة أم سالبة؟"
+      },
+      {
+        "concept": "subtraction as difference",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما الفرق بين ارتفاعَين: الأول 5 م والثاني 2 م؟"
+      },
+      {
+        "concept": "number line (negative numbers)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "أين يقع العدد −3 على خط الأعداد بالنسبة إلى الصفر؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني علامة المساواة في معادلة PE = mgh؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في معادلة h = h₂ − h₁، ماذا تمثل الحروف h₁ و h₂؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Reference Level",
+        "requires": "arbitrary zero point for potential energy",
+        "why": "مستوى الإسناد هو النقطة التي يُعتبر عندها h = 0، ويمكن اختيارها بحرية."
+      },
+      {
+        "concept": "arbitrary zero point for potential energy",
+        "requires": "relative measurement (height is a difference)",
+        "why": "الارتفاع دائمًا نسبي، أي فرق بين موضعين، لذا يحتاج الطالب لفهم القياس النسبي."
+      },
+      {
+        "concept": "arbitrary zero point for potential energy",
+        "requires": "signed quantities (positive and negative heights)",
+        "why": "اختيار مستوى الإسناد يجعل بعض الارتفاعات سالبة، فيجب فهم الكميات الموجبة والسالبة."
+      },
+      {
+        "concept": "relative measurement (height is a difference)",
+        "requires": "subtraction as difference",
+        "why": "قياس الارتفاع النسبي يتطلب طرح قيمتين للحصول على الفرق."
+      },
+      {
+        "concept": "signed quantities (positive and negative heights)",
+        "requires": "number line (negative numbers)",
+        "why": "فهم الارتفاعات السالبة يعتمد على معرفة الأعداد السالبة وموقعها على خط الأعداد."
+      },
+      {
+        "concept": "subtraction as difference",
+        "requires": "equals sign as balance",
+        "why": "فهم الطرح كعملية في معادلة يتطلب معرفة أن الطرفين متساويان."
+      },
+      {
+        "concept": "number line (negative numbers)",
+        "requires": "equation/variable literacy",
+        "why": "التعامل مع الأعداد السالبة في المعادلات يستلزم فهم أن الرموز تمثل قيمًا عددية."
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "مفهوم المساواة يتأسس على كون الرموز والحروف تمثل قيمًا محددة."
+      }
+    ]
+  },
+  {
+    "content_node_id": 1184,
+    "concept": "Elastic Potential Energy",
+    "nodes": [
+      {
+        "concept": "spring deformation (compression/extension)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الفرق بين ضغط النابض وتمديده؟"
+      },
+      {
+        "concept": "Hooke's law (F = kx)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "وفق قانون هوك، إذا تضاعف مقدار إزاحة النابض، ماذا يحدث للقوة المؤثرة فيه؟"
+      },
+      {
+        "concept": "quadratic relationship (PE ∝ x²)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت إزاحة النابض، بكم تتضاعف طاقة وضعه المرونية؟"
+      },
+      {
+        "concept": "powers/exponents (squaring)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما قيمة 3²؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما ناتج ½ × 4 × 9؟"
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كانت PE تتناسب مع x²، ما النسبة PE/x²؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني علامة المساواة في المعادلة PE = ½kx²؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في المعادلة PE = ½kx²، ماذا يمثل الحرف k وماذا يمثل x؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Elastic Potential Energy",
+        "requires": "spring deformation (compression/extension)",
+        "why": "طاقة الوضع المرونية تُخزَّن في النابض عند تشوّهه ضغطًا أو تمديدًا."
+      },
+      {
+        "concept": "Elastic Potential Energy",
+        "requires": "Hooke's law (F = kx)",
+        "why": "معادلة PE = ½kx² مشتقة من قانون هوك، لذا يجب فهمه أولًا."
+      },
+      {
+        "concept": "Hooke's law (F = kx)",
+        "requires": "quadratic relationship (PE ∝ x²)",
+        "why": "تكامل قوة هوك الخطية ينتج طاقة تتناسب مع مربع الإزاحة."
+      },
+      {
+        "concept": "quadratic relationship (PE ∝ x²)",
+        "requires": "powers/exponents (squaring)",
+        "why": "العلاقة التربيعية تتطلب فهم رفع الكمية للقوة الثانية."
+      },
+      {
+        "concept": "quadratic relationship (PE ∝ x²)",
+        "requires": "proportionality (constant ratio)",
+        "why": "التناسب مع x² يعني أن PE/x² نسبة ثابتة تساوي ½k."
+      },
+      {
+        "concept": "powers/exponents (squaring)",
+        "requires": "multiplication",
+        "why": "تربيع عدد هو ضربه في نفسه، لذا يتطلب فهم الضرب."
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "requires": "multiplication",
+        "why": "فهم أن PE = ½ × k × x² يستلزم ضرب ثلاثة عوامل معًا."
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "استخدام الضرب في معادلة يتطلب فهم أن كلا الطرفين متساويان."
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "مفهوم التوازن في المعادلة يتأسس على كون الرموز تمثل قيمًا عددية محددة."
+      }
+    ]
+  },
+  {
+    "content_node_id": 1204,
+    "concept": "Law of Conservation of Energy",
+    "nodes": [
+      {
+        "concept": "total mechanical energy (KE + PE = constant)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا كانت الطاقة الكلية لجسم محافظة ثابتة، وازدادت طاقة حركته، ماذا يحدث لطاقة وضعه؟"
+      },
+      {
+        "concept": "energy transformation between KE and PE",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "عندما يسقط جسم حر، أي نوع من الطاقة يتحول إلى أي نوع آخر؟"
+      },
+      {
+        "concept": "conservation law concept (quantity unchanged)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما معنى أن كمية فيزيائية محفوظة؟"
+      },
+      {
+        "concept": "addition of energy terms",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كانت طاقة حركة جسم 30 جول وطاقة وضعه 20 جول، ما طاقته الكلية؟"
+      },
+      {
+        "concept": "setting two expressions equal (before = after)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "في قانون حفظ الطاقة، ماذا يعني KE₁ + PE₁ = KE₂ + PE₂؟"
+      },
+      {
+        "concept": "subtraction to find change",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كانت الطاقة الكلية 50 جول وطاقة الحركة 35 جول، ما طاقة الوضع؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني علامة المساواة في E_قبل = E_بعد؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في المعادلة KE + PE = E، ماذا تمثل كل رمز؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Law of Conservation of Energy",
+        "requires": "total mechanical energy (KE + PE = constant)",
+        "why": "القانون يقول إن مجموع طاقتي الحركة والوضع يبقى ثابتًا في غياب القوى غير المحافظة."
+      },
+      {
+        "concept": "Law of Conservation of Energy",
+        "requires": "energy transformation between KE and PE",
+        "why": "فهم القانون يتطلب إدراك أن الطاقة تتحول بين أشكالها دون أن تُفقد."
+      },
+      {
+        "concept": "total mechanical energy (KE + PE = constant)",
+        "requires": "conservation law concept (quantity unchanged)",
+        "why": "القول إن الطاقة الكلية ثابتة هو تطبيق لمفهوم الحفظ العام."
+      },
+      {
+        "concept": "total mechanical energy (KE + PE = constant)",
+        "requires": "addition of energy terms",
+        "why": "حساب الطاقة الكلية يستلزم جمع طاقة الحركة وطاقة الوضع."
+      },
+      {
+        "concept": "energy transformation between KE and PE",
+        "requires": "setting two expressions equal (before = after)",
+        "why": "التحول بين نوعَي الطاقة يُعبَّر عنه بمعادلة تساوي الحالة الأولى والثانية."
+      },
+      {
+        "concept": "addition of energy terms",
+        "requires": "subtraction to find change",
+        "why": "إيجاد أحد مكونَي الطاقة يتطلب طرح المكوّن الآخر من الطاقة الكلية."
+      },
+      {
+        "concept": "setting two expressions equal (before = after)",
+        "requires": "equals sign as balance",
+        "why": "تساوي حالتين مختلفتين يعتمد على مفهوم علامة المساواة كتوازن."
+      },
+      {
+        "concept": "subtraction to find change",
+        "requires": "equals sign as balance",
+        "why": "إجراء عملية الطرح في سياق معادلة يستلزم فهم المساواة كتوازن."
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "مفهوم التوازن في المعادلة يتأسس على أن الحروف تمثل قيمًا عددية."
+      }
+    ]
+  },
+  {
+    "content_node_id": 1206,
+    "concept": "Mechanical energy",
+    "nodes": [
+      {
+        "concept": "kinetic energy (KE = ½mv²)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما صيغة طاقة الحركة وعلى ماذا تعتمد؟"
+      },
+      {
+        "concept": "potential energy (gravitational and elastic)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "اذكر نوعَين من طاقة الوضع الميكانيكية."
+      },
+      {
+        "concept": "addition of energy components",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كانت طاقة حركة جسم 40 جول وطاقة وضعه 60 جول، ما طاقته الميكانيكية الكلية؟"
+      },
+      {
+        "concept": "quadratic relationship (KE ∝ v²)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت سرعة جسم، بكم تتضاعف طاقة حركته؟"
+      },
+      {
+        "concept": "powers/exponents (squaring velocity)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما قيمة (4)²؟"
+      },
+      {
+        "concept": "multiplication (½ × m × v²)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب ½ × 2 × 16."
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني علامة المساواة في E_mech = KE + PE؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في المعادلة E = KE + PE، ماذا يمثل كل رمز؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Mechanical energy",
+        "requires": "kinetic energy (KE = ½mv²)",
+        "why": "الطاقة الميكانيكية تشمل طاقة الحركة كمكوّن رئيسي."
+      },
+      {
+        "concept": "Mechanical energy",
+        "requires": "potential energy (gravitational and elastic)",
+        "why": "الطاقة الميكانيكية تشمل طاقة الوضع بنوعَيها كمكوّن رئيسي آخر."
+      },
+      {
+        "concept": "kinetic energy (KE = ½mv²)",
+        "requires": "addition of energy components",
+        "why": "جمع طاقة الحركة وطاقة الوضع يعطي الطاقة الميكانيكية الكلية."
+      },
+      {
+        "concept": "kinetic energy (KE = ½mv²)",
+        "requires": "quadratic relationship (KE ∝ v²)",
+        "why": "طاقة الحركة تتناسب مع مربع السرعة، وهذا جوهر صيغتها."
+      },
+      {
+        "concept": "quadratic relationship (KE ∝ v²)",
+        "requires": "powers/exponents (squaring velocity)",
+        "why": "العلاقة التربيعية تتطلب فهم تربيع السرعة في الحساب."
+      },
+      {
+        "concept": "quadratic relationship (KE ∝ v²)",
+        "requires": "multiplication (½ × m × v²)",
+        "why": "حساب KE يستلزم ضرب ½ في الكتلة في مربع السرعة."
+      },
+      {
+        "concept": "powers/exponents (squaring velocity)",
+        "requires": "multiplication (½ × m × v²)",
+        "why": "تربيع السرعة هو ضربها في نفسها، وهو جزء من حساب الضرب الكلي."
+      },
+      {
+        "concept": "addition of energy components",
+        "requires": "equals sign as balance",
+        "why": "التعبير عن المجموع كطاقة كلية في معادلة يتطلب فهم علامة المساواة."
+      },
+      {
+        "concept": "multiplication (½ × m × v²)",
+        "requires": "equals sign as balance",
+        "why": "استخدام الضرب ضمن معادلة يستلزم فهم أن الطرفين متساويان."
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "مفهوم المساواة كتوازن يبنى على كون الرموز تمثل قيمًا عددية."
+      }
+    ]
+  },
+  {
+    "content_node_id": 1248,
+    "concept": "Superelastic (explosive) collision",
+    "nodes": [
+      {
+        "concept": "conservation of momentum (before = after)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "في تصادم انفجاري، هل يُحفظ زخم المنظومة الكلي؟"
+      },
+      {
+        "concept": "internal energy release (chemical/spring → KE)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "من أين تأتي الطاقة الحركية الإضافية في التصادم الانفجاري؟"
+      },
+      {
+        "concept": "kinetic energy increases (KE_after > KE_before)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تقارن طاقة الحركة الكلية بعد التصادم الانفجاري بما كانت عليه قبله؟"
+      },
+      {
+        "concept": "momentum as product (p = mv)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما زخم جسم كتلته 3 كغ يتحرك بسرعة 4 م/ث؟"
+      },
+      {
+        "concept": "addition and subtraction of momenta (vector sum)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا تحرك جسمان في اتجاهين متعاكسين بعد تصادم، كيف تجمع زخمَيهما؟"
+      },
+      {
+        "concept": "multiplication (mass × velocity)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب ناتج 5 × 3."
+      },
+      {
+        "concept": "comparison of two quantities (greater than / less than)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كانت طاقة الحركة قبل التصادم 10 جول وبعده 25 جول، أيهما أكبر؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني المعادلة p_قبل = p_بعد في حفظ الزخم؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في المعادلة p = mv، ماذا يمثل كل رمز؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Superelastic (explosive) collision",
+        "requires": "conservation of momentum (before = after)",
+        "why": "حتى في التصادم الانفجاري يُحفظ الزخم الكلي للمنظومة المعزولة."
+      },
+      {
+        "concept": "Superelastic (explosive) collision",
+        "requires": "internal energy release (chemical/spring → KE)",
+        "why": "الميزة المميزة للتصادم الانفجاري هي تحرر طاقة داخلية تزيد الطاقة الحركية الكلية."
+      },
+      {
+        "concept": "internal energy release (chemical/spring → KE)",
+        "requires": "kinetic energy increases (KE_after > KE_before)",
+        "why": "الطاقة المحررة تظهر كزيادة في الطاقة الحركية الكلية بعد الانفجار."
+      },
+      {
+        "concept": "conservation of momentum (before = after)",
+        "requires": "momentum as product (p = mv)",
+        "why": "حساب الزخم قبل وبعد التصادم يستلزم فهم p = mv."
+      },
+      {
+        "concept": "kinetic energy increases (KE_after > KE_before)",
+        "requires": "comparison of two quantities (greater than / less than)",
+        "why": "تحديد أن الطاقة الحركية ازدادت يتطلب مقارنة قيمتين عدديتين."
+      },
+      {
+        "concept": "momentum as product (p = mv)",
+        "requires": "addition and subtraction of momenta (vector sum)",
+        "why": "حفظ الزخم الكلي يستلزم جمع أو طرح زخوم الأجسام مع مراعاة الاتجاه."
+      },
+      {
+        "concept": "momentum as product (p = mv)",
+        "requires": "multiplication (mass × velocity)",
+        "why": "حساب زخم جسم واحد هو حاصل ضرب كتلته في سرعته."
+      },
+      {
+        "concept": "addition and subtraction of momenta (vector sum)",
+        "requires": "equals sign as balance",
+        "why": "التعبير عن حفظ الزخم كمعادلة يتطلب فهم علامة المساواة كتوازن."
+      },
+      {
+        "concept": "multiplication (mass × velocity)",
+        "requires": "equals sign as balance",
+        "why": "استخدام الضرب في معادلة الزخم يستلزم فهم أن الطرفين متساويان."
+      },
+      {
+        "concept": "comparison of two quantities (greater than / less than)",
+        "requires": "equation/variable literacy",
+        "why": "مقارنة الكميات الفيزيائية يتطلب فهم أن الرموز تمثل قيمًا عددية يمكن مقارنتها."
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "مفهوم المساواة كتوازن يبنى على أن الحروف والرموز تمثل أعدادًا."
+      }
+    ]
+  }
+]

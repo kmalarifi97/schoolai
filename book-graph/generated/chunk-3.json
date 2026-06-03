@@ -1,0 +1,627 @@
+[
+  {
+    "content_node_id": 320,
+    "concept": "Torque",
+    "nodes": [
+      {
+        "concept": "moment arm (perpendicular distance)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما المسافة التي تُستخدم في حساب العزم: المسافة الكاملة من المحور إلى نقطة تطبيق القوة، أم المسافة العمودية؟"
+      },
+      {
+        "concept": "direction of rotation (clockwise vs counterclockwise)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا دفعت باب من جهته اليمنى إلى الأمام، في أي اتجاه يدور: مع عقارب الساعة أم عكسها؟"
+      },
+      {
+        "concept": "multiplication (force × distance)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كانت القوة 10 نيوتن والمسافة العمودية 3 أمتار، فما محصّل ضربهما؟"
+      },
+      {
+        "concept": "perpendicularity / right angle",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما الزاوية التي يجب أن تكون بين القوة وذراع العزم لتحقيق أقصى تأثير للعزم؟"
+      },
+      {
+        "concept": "proportionality (τ ∝ F and τ ∝ d)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا ضاعفت المسافة من المحور مع بقاء القوة ثابتة، ماذا يحدث للعزم؟"
+      },
+      {
+        "concept": "division (isolating a variable)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كان العزم = 30 ن·م والقوة = 6 ن، كيف تجد ذراع العزم؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ماذا تعني علامة = في معادلة τ = F × d؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في معادلة τ = F × d، ماذا يمثّل كل رمز من هذه الرموز الثلاثة؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Torque",
+        "requires": "moment arm (perpendicular distance)",
+        "why": "العزم يُحسب بضرب القوة في ذراع العزم (المسافة العمودية)، فلا بد من معرفة هذه المسافة أولاً"
+      },
+      {
+        "concept": "Torque",
+        "requires": "direction of rotation (clockwise vs counterclockwise)",
+        "why": "العزم كمية متجهة تتطلب تحديد اتجاه الدوران لتمييز العزوم الموجبة من السالبة"
+      },
+      {
+        "concept": "Torque",
+        "requires": "multiplication (force × distance)",
+        "why": "صيغة العزم τ = F × d تعتمد أساساً على عملية الضرب"
+      },
+      {
+        "concept": "moment arm (perpendicular distance)",
+        "requires": "perpendicularity / right angle",
+        "why": "ذراع العزم هو بالتعريف الإسقاط العمودي، لذا يجب فهم مفهوم التعامد"
+      },
+      {
+        "concept": "Torque",
+        "requires": "proportionality (τ ∝ F and τ ∝ d)",
+        "why": "فهم أن العزم يتناسب طردياً مع القوة ومع المسافة يوضح لماذا يزداد الأثر عند زيادة أي منهما"
+      },
+      {
+        "concept": "proportionality (τ ∝ F and τ ∝ d)",
+        "requires": "multiplication (force × distance)",
+        "why": "التناسب الطردي يعني أن حاصل الضرب يبقى في نسبة ثابتة عند تغيير أحد العاملين"
+      },
+      {
+        "concept": "multiplication (force × distance)",
+        "requires": "division (isolating a variable)",
+        "why": "حل معادلة الضرب عن متغير مجهول يستلزم استخدام القسمة"
+      },
+      {
+        "concept": "division (isolating a variable)",
+        "requires": "equals sign as balance",
+        "why": "إجراء القسمة على طرفَي المعادلة يعتمد على مبدأ أن المعادلة توازن بين طرفين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم أن = تعني التساوي وليس مجرد إشارة حساب هو أساس قراءة أي معادلة"
+      }
+    ]
+  },
+  {
+    "content_node_id": 360,
+    "concept": "Center of Mass",
+    "nodes": [
+      {
+        "concept": "weighted average of positions",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "لماذا نضرب كتلة كل جسم في موضعه قبل الجمع عند إيجاد مركز الكتلة؟"
+      },
+      {
+        "concept": "summation (Σ) of terms",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كان لديك ثلاثة أجسام، كم مرة تجري عملية الجمع في بسط معادلة مركز الكتلة؟"
+      },
+      {
+        "concept": "multiplication (m × x for each mass)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "جسم كتلته 4 كغ عند الموضع x = 3 م، ما حاصل ضرب m × x له؟"
+      },
+      {
+        "concept": "division (total moment ÷ total mass)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كان مجموع حواصل الضرب (m×x) يساوي 60 كغ·م والكتلة الكلية 12 كغ، فما موضع مركز الكتلة؟"
+      },
+      {
+        "concept": "proportionality (heavier mass pulls CoM closer)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كانت كتلة جسم ما أكبر بكثير من بقية الأجسام، إلى أي جهة ينجذب مركز الكتلة؟"
+      },
+      {
+        "concept": "addition (combining products)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما خطوة الجمع في حساب مركز الكتلة لجسمين؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ماذا تعني علامة = في معادلة x_cm = Σ(m·x) / M؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في رمز x_cm، ماذا يعني الرمز الأساسي x والمؤشر السفلي cm؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Center of Mass",
+        "requires": "weighted average of positions",
+        "why": "مركز الكتلة هو المتوسط الموزون بالكتل لمواضع الأجسام"
+      },
+      {
+        "concept": "weighted average of positions",
+        "requires": "summation (Σ) of terms",
+        "why": "حساب المتوسط الموزون يستلزم جمع حواصل ضرب (كتلة × موضع) لكل الأجسام"
+      },
+      {
+        "concept": "weighted average of positions",
+        "requires": "multiplication (m × x for each mass)",
+        "why": "كل حد في بسط المعادلة هو حاصل ضرب كتلة في موضعها"
+      },
+      {
+        "concept": "weighted average of positions",
+        "requires": "division (total moment ÷ total mass)",
+        "why": "الخطوة الأخيرة في المتوسط الموزون هي قسمة المجموع على الكتلة الكلية"
+      },
+      {
+        "concept": "summation (Σ) of terms",
+        "requires": "addition (combining products)",
+        "why": "التجميع بالرمز Σ ليس إلا جمعاً متكرراً للحدود"
+      },
+      {
+        "concept": "division (total moment ÷ total mass)",
+        "requires": "proportionality (heavier mass pulls CoM closer)",
+        "why": "نتيجة القسمة تفسّر لماذا تُقرّب الكتلة الأكبر مركز الكتلة إليها"
+      },
+      {
+        "concept": "addition (combining products)",
+        "requires": "equals sign as balance",
+        "why": "جمع الطرفين ثم موازنتهما بالعلامة = أساس كتابة معادلة مركز الكتلة"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "قراءة المعادلة تتطلب أن يفهم الطالب أن الرموز تمثل أعداداً وأن = تعني التساوي"
+      }
+    ]
+  },
+  {
+    "content_node_id": 363,
+    "concept": "Center of mass of the human body",
+    "nodes": [
+      {
+        "concept": "center of mass shifts with posture",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "لماذا يتغير موضع مركز كتلة الإنسان عند رفع الذراعين للأعلى؟"
+      },
+      {
+        "concept": "weighted average of positions",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "كيف يؤثر توزيع الكتلة في أجزاء الجسم المختلفة على موضع مركز الكتلة الكلي؟"
+      },
+      {
+        "concept": "segment masses and their positions",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "لماذا نحتاج إلى معرفة كتلة كل جزء من أجزاء الجسم وموضعه لحساب مركز الكتلة؟"
+      },
+      {
+        "concept": "summation (Σ) of terms",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا قسّمنا الجسم إلى خمسة أجزاء، كم حداً نجمع في بسط معادلة مركز الكتلة؟"
+      },
+      {
+        "concept": "multiplication (segment mass × segment position)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "كتلة الذراع 4 كغ وموضع مركزها 0.3 م، ما حاصل ضربهما المستخدم في المعادلة؟"
+      },
+      {
+        "concept": "division (sum of moments ÷ total body mass)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما العملية الحسابية الأخيرة في إيجاد مركز كتلة جسم الإنسان من بيانات أجزائه؟"
+      },
+      {
+        "concept": "addition (combining segment contributions)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما الخطوة الحسابية التي تتبع ضرب كتلة كل جزء في موضعه؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني = في معادلة مركز كتلة أجزاء الجسم؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في معادلة x_cm، ماذا يرمز x وم وΣ؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Center of mass of the human body",
+        "requires": "center of mass shifts with posture",
+        "why": "تغير وضعية الجسم يعيد توزيع كتل الأجزاء فيؤثر على موضع مركز الكتلة الكلي"
+      },
+      {
+        "concept": "Center of mass of the human body",
+        "requires": "weighted average of positions",
+        "why": "مركز كتلة الجسم يُحسب بالمتوسط الموزون بكتل الأجزاء ومواضعها"
+      },
+      {
+        "concept": "center of mass shifts with posture",
+        "requires": "segment masses and their positions",
+        "why": "لفهم سبب الإزاحة لا بد من معرفة كيف تتغير مواضع الأجزاء الثقيلة مع الحركة"
+      },
+      {
+        "concept": "weighted average of positions",
+        "requires": "summation (Σ) of terms",
+        "why": "حساب المتوسط الموزون يبدأ بجمع حواصل ضرب كل جزء"
+      },
+      {
+        "concept": "weighted average of positions",
+        "requires": "multiplication (segment mass × segment position)",
+        "why": "كل حد في المجموع هو ناتج ضرب كتلة الجزء في موضعه"
+      },
+      {
+        "concept": "weighted average of positions",
+        "requires": "division (sum of moments ÷ total body mass)",
+        "why": "الحصول على المتوسط يتطلب قسمة مجموع العزوم على الكتلة الكلية"
+      },
+      {
+        "concept": "summation (Σ) of terms",
+        "requires": "addition (combining segment contributions)",
+        "why": "التجميع Σ هو جمع متكرر لجميع الحدود"
+      },
+      {
+        "concept": "addition (combining segment contributions)",
+        "requires": "equals sign as balance",
+        "why": "وضع المجموع في المعادلة يعتمد على فهم أن = توازن بين طرفين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "قراءة المعادلة بصحة تبدأ بمعرفة أن الرموز أعداد وأن = تعني التساوي"
+      }
+    ]
+  },
+  {
+    "content_node_id": 370,
+    "concept": "Stability",
+    "nodes": [
+      {
+        "concept": "base of support",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما المنطقة التي يجب أن يقع ضمنها مركز الكتلة لكي يبقى الجسم مستقراً؟"
+      },
+      {
+        "concept": "center of gravity position relative to base",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "لماذا يسقط الجسم عندما يخرج مركز ثقله عن قاعدة ارتكازه؟"
+      },
+      {
+        "concept": "height of center of gravity",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "أيهما أكثر استقراراً: جسم مركز ثقله منخفض أم مرتفع؟ ولماذا؟"
+      },
+      {
+        "concept": "comparison (lower vs higher CoG)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تقارن استقرار سيارتين إحداهما منخفضة والأخرى مرتفعة بالنظر إلى موضع مركز ثقلهما؟"
+      },
+      {
+        "concept": "torque due to gravity (restoring vs toppling)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "متى يولّد وزن الجسم عزماً يعيده إلى وضعه الأصلي ومتى يولّد عزماً يُسقطه؟"
+      },
+      {
+        "concept": "proportionality (wider base → more stable)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا وسّعت قاعدة ارتكاز الجسم، كيف يتغير استقراره؟"
+      },
+      {
+        "concept": "multiplication (force × distance for torque)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "كيف تحسب العزم الناتج عن وزن الجسم حول حافة قاعدة ارتكازه؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ما الذي يعنيه تساوي العزوم المعيدة والمقلبة عند حدّ الاستقرار؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في معادلة العزم τ = F × d، ماذا يرمز كل من τ و F و d؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Stability",
+        "requires": "base of support",
+        "why": "الاستقرار يتحدد بوقوع مركز الكتلة فوق قاعدة الارتكاز أو خارجها"
+      },
+      {
+        "concept": "Stability",
+        "requires": "center of gravity position relative to base",
+        "why": "موضع مركز الثقل بالنسبة للقاعدة يحدد ما إذا كان الجسم سيُعاد توازنه أو سيسقط"
+      },
+      {
+        "concept": "center of gravity position relative to base",
+        "requires": "height of center of gravity",
+        "why": "ارتفاع مركز الثقل يؤثر على مدى سهولة إخراجه عن القاعدة"
+      },
+      {
+        "concept": "center of gravity position relative to base",
+        "requires": "torque due to gravity (restoring vs toppling)",
+        "why": "عزم الوزن حول حافة القاعدة هو المحدد الفيزيائي لسقوط الجسم أو عودته"
+      },
+      {
+        "concept": "height of center of gravity",
+        "requires": "comparison (lower vs higher CoG)",
+        "why": "المقارنة بين حالات مختلفة توضح قاعدة: كلما انخفض مركز الثقل زاد الاستقرار"
+      },
+      {
+        "concept": "Stability",
+        "requires": "proportionality (wider base → more stable)",
+        "why": "توسيع القاعدة يصعّب خروج مركز الثقل عنها ويزيد الاستقرار تناسبياً"
+      },
+      {
+        "concept": "torque due to gravity (restoring vs toppling)",
+        "requires": "multiplication (force × distance for torque)",
+        "why": "حساب عزم الوزن يتطلب ضرب قوة الثقل في ذراعها العمودي من المحور"
+      },
+      {
+        "concept": "multiplication (force × distance for torque)",
+        "requires": "equals sign as balance",
+        "why": "مقارنة العزمين المعيد والمقلب تستخدم المعادلة وعلامة التساوي عند حد الاستقرار"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "قراءة معادلات العزم تبدأ بمعرفة أن الرموز أعداد وأن = توازن بين الطرفين"
+      }
+    ]
+  },
+  {
+    "content_node_id": 376,
+    "concept": "Mechanical Equilibrium",
+    "nodes": [
+      {
+        "concept": "net force equals zero (ΣF = 0)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الشرط الأول لتحقيق الاتزان الميكانيكي المتعلق بمحصّل القوى؟"
+      },
+      {
+        "concept": "net torque equals zero (Στ = 0)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الشرط الثاني للاتزان الميكانيكي المتعلق بمحصّل العزوم؟"
+      },
+      {
+        "concept": "vector addition of forces",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تجمع قوتين في اتجاهين متعاكسين لتتحقق من أن محصّلتهما صفر؟"
+      },
+      {
+        "concept": "cancellation (equal and opposite terms sum to zero)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كانت هناك قوة 10 ن لليمين وقوة 10 ن لليسار، ما محصّل القوى؟"
+      },
+      {
+        "concept": "clockwise and counterclockwise torques",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تميز بين العزم الموجب والسالب عند التحقق من شرط الاتزان الدوراني؟"
+      },
+      {
+        "concept": "subtraction (ΣF = F₁ − F₂ = 0)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "لماذا نطرح القوى في الاتجاهات المتعاكسة عند حساب محصّل القوى؟"
+      },
+      {
+        "concept": "multiplication (force × moment arm for each torque)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "كيف تحسب عزم قوة مقدارها 8 ن تعمل على ذراع طولها 2 م؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا يعني أن ΣF = 0 بالنسبة للتوازن بين طرفَي المعادلة؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في ΣF = 0، ماذا يرمز Σ وماذا يعني أن المحصّل يساوي صفراً؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Mechanical Equilibrium",
+        "requires": "net force equals zero (ΣF = 0)",
+        "why": "الشرط الأول للاتزان الميكانيكي هو أن محصّل القوى المؤثرة يساوي صفراً"
+      },
+      {
+        "concept": "Mechanical Equilibrium",
+        "requires": "net torque equals zero (Στ = 0)",
+        "why": "الشرط الثاني للاتزان هو أن محصّل العزوم حول أي محور يساوي صفراً"
+      },
+      {
+        "concept": "net force equals zero (ΣF = 0)",
+        "requires": "vector addition of forces",
+        "why": "إيجاد محصّل القوى يستلزم جمعها بالاتجاه لا بالمقدار فقط"
+      },
+      {
+        "concept": "net force equals zero (ΣF = 0)",
+        "requires": "cancellation (equal and opposite terms sum to zero)",
+        "why": "القوى المتعاكسة والمتساوية تتلغى لتعطي محصّلاً صفرياً"
+      },
+      {
+        "concept": "net torque equals zero (Στ = 0)",
+        "requires": "clockwise and counterclockwise torques",
+        "why": "العزوم الموجبة والسالبة يجب أن تتساوى حتى يتحقق الاتزان الدوراني"
+      },
+      {
+        "concept": "vector addition of forces",
+        "requires": "subtraction (ΣF = F₁ − F₂ = 0)",
+        "why": "جمع المتجهات في اتجاهات متعاكسة يكافئ عملية الطرح"
+      },
+      {
+        "concept": "clockwise and counterclockwise torques",
+        "requires": "multiplication (force × moment arm for each torque)",
+        "why": "حساب قيمة كل عزم يتطلب ضرب القوة في ذراعها"
+      },
+      {
+        "concept": "multiplication (force × moment arm for each torque)",
+        "requires": "equals sign as balance",
+        "why": "مساواة عزوم جهتَي الدوران تعتمد على علامة = لموازنة الطرفين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم معادلات الاتزان يبدأ بمعرفة أن الرموز أعداد وأن = توازن بين طرفين"
+      }
+    ]
+  },
+  {
+    "content_node_id": 395,
+    "concept": "Centrifugal Force",
+    "nodes": [
+      {
+        "concept": "non-inertial (rotating) reference frame",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "لماذا تشعر بأنك تُدفع للخارج عند الدوران، بينما المراقب الخارجي لا يرى هذه القوة؟"
+      },
+      {
+        "concept": "centripetal acceleration (directed inward)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما اتجاه التسارع المركزي في الحركة الدائرية المنتظمة؟"
+      },
+      {
+        "concept": "Newton's second law (F = ma)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تحسب القوة المطلوبة لإبقاء جسم في مسار دائري إذا عرفت كتلته وتسارعه المركزي؟"
+      },
+      {
+        "concept": "inverse proportionality (a_c = v²/r, force ∝ 1/r)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا ضاعفت نصف قطر المسار الدائري مع بقاء السرعة ثابتة، ماذا يحدث للقوة المطلوبة؟"
+      },
+      {
+        "concept": "powers / squaring (v²)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت سرعة الجسم في المسار الدائري، بكم يتغير تسارعه المركزي؟"
+      },
+      {
+        "concept": "division (a_c = v²/r)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "كيف تحسب التسارع المركزي إذا علمت السرعة ونصف القطر؟"
+      },
+      {
+        "concept": "multiplication (F = m × a_c)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "جسم كتلته 2 كغ يتحرك في مسار دائري بتسارع مركزي 5 م/ث²، ما القوة المركزية؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني = في معادلة F_c = mv²/r؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في معادلة F_c = mv²/r، ماذا يمثّل كل من F_c وm وv وr؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Centrifugal Force",
+        "requires": "non-inertial (rotating) reference frame",
+        "why": "القوة الطاردة المركزية ليست حقيقية بل هي قوة وهمية تظهر فقط في إطار المرجع الدوار"
+      },
+      {
+        "concept": "Centrifugal Force",
+        "requires": "centripetal acceleration (directed inward)",
+        "why": "القوة الطاردة تساوي في المقدار وتعاكس في الاتجاه التسارع المركزي الحقيقي"
+      },
+      {
+        "concept": "centripetal acceleration (directed inward)",
+        "requires": "Newton's second law (F = ma)",
+        "why": "القوة المركزية تُحسب من القانون الثاني لنيوتن F = ma_c"
+      },
+      {
+        "concept": "centripetal acceleration (directed inward)",
+        "requires": "inverse proportionality (a_c = v²/r, force ∝ 1/r)",
+        "why": "التسارع المركزي يتناسب عكسياً مع نصف القطر، مما يفسر تأثير تغيير المسار"
+      },
+      {
+        "concept": "Newton's second law (F = ma)",
+        "requires": "multiplication (F = m × a_c)",
+        "why": "تطبيق القانون الثاني يستلزم ضرب الكتلة في التسارع"
+      },
+      {
+        "concept": "inverse proportionality (a_c = v²/r, force ∝ 1/r)",
+        "requires": "powers / squaring (v²)",
+        "why": "صيغة التسارع المركزي تتضمن مربع السرعة لذا لا بد من فهم الأسس"
+      },
+      {
+        "concept": "inverse proportionality (a_c = v²/r, force ∝ 1/r)",
+        "requires": "division (a_c = v²/r)",
+        "why": "حساب التسارع المركزي يعتمد على قسمة مربع السرعة على نصف القطر"
+      },
+      {
+        "concept": "division (a_c = v²/r)",
+        "requires": "equals sign as balance",
+        "why": "قسمة طرفَي المعادلة تعتمد على مبدأ التوازن بين الطرفين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم أي معادلة فيزيائية يبدأ بمعرفة أن الرموز تمثل أعداداً وأن = تعني التساوي"
+      }
+    ]
+  }
+]

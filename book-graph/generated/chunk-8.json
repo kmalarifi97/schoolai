@@ -1,0 +1,611 @@
+[
+  {
+    "content_node_id": 1251,
+    "concept": "Elastic collision",
+    "nodes": [
+      {
+        "concept": "conservation of kinetic energy",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "في التصادم المرن، ماذا يحدث لمجموع الطاقة الحركية للمنظومة قبل التصادم وبعده؟"
+      },
+      {
+        "concept": "conservation of momentum",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الكمية التي تبقى ثابتة في أي تصادم معزول بصرف النظر عن نوعه؟"
+      },
+      {
+        "concept": "kinetic energy (½mv²)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما صيغة الطاقة الحركية لجسم كتلته m يتحرك بسرعة v؟"
+      },
+      {
+        "concept": "momentum (mv)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تحسب كمية التحرك لجسم كتلته 3 كغ يتحرك بسرعة 4 م/ث؟"
+      },
+      {
+        "concept": "powers/exponents",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما قيمة v² إذا كانت v = 5 م/ث؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب حاصل ضرب 4 × 7."
+      },
+      {
+        "concept": "addition/subtraction of quantities",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "إذا كانت طاقة الجسم الأول 10 جول والثاني 6 جول، فما مجموع طاقتيهما؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في المعادلة KE = ½mv²، ماذا تمثل الرموز m وv؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Elastic collision",
+        "requires": "conservation of kinetic energy",
+        "why": "التصادم المرن يُعرَّف بأن الطاقة الحركية الكلية تُحفَظ، فلا بد من فهم هذا الشرط."
+      },
+      {
+        "concept": "Elastic collision",
+        "requires": "conservation of momentum",
+        "why": "كمية التحرك الكلية محفوظة في أي تصادم معزول، بما فيه المرن."
+      },
+      {
+        "concept": "conservation of kinetic energy",
+        "requires": "kinetic energy (½mv²)",
+        "why": "لا يمكن المقارنة بين الطاقة الحركية قبل التصادم وبعده دون معرفة صيغتها."
+      },
+      {
+        "concept": "conservation of momentum",
+        "requires": "momentum (mv)",
+        "why": "حفظ كمية التحرك يستلزم حساب mv لكل جسم قبل التصادم وبعده."
+      },
+      {
+        "concept": "kinetic energy (½mv²)",
+        "requires": "powers/exponents",
+        "why": "الطاقة الحركية تحتوي على v² وهو مفهوم يتطلب فهم الأسس."
+      },
+      {
+        "concept": "kinetic energy (½mv²)",
+        "requires": "multiplication",
+        "why": "حساب ½mv² يتطلب ضرب الكتلة في مربع السرعة وفي ½."
+      },
+      {
+        "concept": "momentum (mv)",
+        "requires": "multiplication",
+        "why": "كمية التحرك هي حاصل ضرب الكتلة في السرعة."
+      },
+      {
+        "concept": "powers/exponents",
+        "requires": "multiplication",
+        "why": "الأس يعني ضرب العدد في نفسه عدداً من المرات."
+      },
+      {
+        "concept": "multiplication",
+        "requires": "addition/subtraction of quantities",
+        "why": "الضرب المتكرر يُبنى على جمع متكرر للكميات."
+      },
+      {
+        "concept": "addition/subtraction of quantities",
+        "requires": "equation/variable literacy",
+        "why": "جمع كميات فيزيائية وطرحها يفترض فهم أن كل رمز يمثل قيمة عددية."
+      }
+    ]
+  },
+  {
+    "content_node_id": 1254,
+    "concept": "Inelastic collision",
+    "nodes": [
+      {
+        "concept": "conservation of momentum",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "هل تُحفَظ كمية التحرك الكلية في التصادم العديم المرونة؟ علِّل."
+      },
+      {
+        "concept": "loss of kinetic energy",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إلى أي أشكال من الطاقة تتحول الطاقة الحركية المفقودة في التصادم غير المرن؟"
+      },
+      {
+        "concept": "momentum (mv)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "جسم كتلته 2 كغ يتحرك بسرعة 5 م/ث. ما كمية تحركه؟"
+      },
+      {
+        "concept": "kinetic energy (½mv²)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "احسب الطاقة الحركية لجسم كتلته 4 كغ بسرعة 3 م/ث."
+      },
+      {
+        "concept": "subtraction to find difference",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كانت الطاقة الحركية قبل التصادم 50 جول وبعده 30 جول، ما مقدار الطاقة المفقودة؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب 6 × 9."
+      },
+      {
+        "concept": "powers/exponents",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما قيمة 3²؟"
+      },
+      {
+        "concept": "addition of momenta",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "جسمان كمية تحرك الأول 12 كغ·م/ث والثاني 8 كغ·م/ث، ما مجموع كمية تحركهما؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في المعادلة p = mv، ماذا يعني الرمز p؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Inelastic collision",
+        "requires": "conservation of momentum",
+        "why": "حتى في التصادم غير المرن تبقى كمية التحرك الكلية محفوظة، وهذا أساس المعادلة."
+      },
+      {
+        "concept": "Inelastic collision",
+        "requires": "loss of kinetic energy",
+        "why": "الفارق الجوهري بين التصادم المرن وغير المرن هو ضياع جزء من الطاقة الحركية."
+      },
+      {
+        "concept": "conservation of momentum",
+        "requires": "momentum (mv)",
+        "why": "المقارنة بين كمية التحرك قبل التصادم وبعده تستلزم حساب mv لكل جسم."
+      },
+      {
+        "concept": "loss of kinetic energy",
+        "requires": "kinetic energy (½mv²)",
+        "why": "حساب الطاقة المفقودة يستلزم معرفة صيغة الطاقة الحركية."
+      },
+      {
+        "concept": "loss of kinetic energy",
+        "requires": "subtraction to find difference",
+        "why": "الطاقة المفقودة = الطاقة قبل − الطاقة بعد، وهذه عملية طرح."
+      },
+      {
+        "concept": "momentum (mv)",
+        "requires": "multiplication",
+        "why": "حساب كمية التحرك يتطلب ضرب الكتلة في السرعة."
+      },
+      {
+        "concept": "kinetic energy (½mv²)",
+        "requires": "multiplication",
+        "why": "حساب ½mv² يتطلب ضرب الكتلة في مربع السرعة."
+      },
+      {
+        "concept": "kinetic energy (½mv²)",
+        "requires": "powers/exponents",
+        "why": "الطاقة الحركية تتضمن v² وهو أس يتطلب فهم القوى."
+      },
+      {
+        "concept": "conservation of momentum",
+        "requires": "addition of momenta",
+        "why": "كمية التحرك الكلية للمنظومة هي مجموع كميات تحرك الأجسام المكوِّنة لها."
+      },
+      {
+        "concept": "addition of momenta",
+        "requires": "equation/variable literacy",
+        "why": "جمع كميات فيزيائية يفترض أن الرموز تمثل قيماً عددية يمكن جمعها."
+      },
+      {
+        "concept": "subtraction to find difference",
+        "requires": "equation/variable literacy",
+        "why": "عملية الطرح لحساب الفرق تستلزم فهم أن الرموز تعبِّر عن أعداد قابلة للمقارنة."
+      }
+    ]
+  },
+  {
+    "content_node_id": 1437,
+    "concept": "Thermal Energy",
+    "nodes": [
+      {
+        "concept": "kinetic energy of particles",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما علاقة حركة جزيئات المادة بالطاقة الحرارية المخزَّنة فيها؟"
+      },
+      {
+        "concept": "internal energy as sum",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "من أي نوعين من الطاقة تتكون الطاقة الداخلية للمادة؟"
+      },
+      {
+        "concept": "kinetic energy (½mv²)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما الصيغة الرياضية للطاقة الحركية لجسيم كتلته m بسرعة v؟"
+      },
+      {
+        "concept": "summation of microscopic energies",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كان لديك مليار جزيء لكل منها طاقة حركية صغيرة، كيف تحسب الطاقة الحركية الكلية؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب 8 × 5."
+      },
+      {
+        "concept": "addition of many terms",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما معنى مجموع طاقات الجزيئات إذا كان عددها كبيراً جداً؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في معادلة فيزيائية مثل E = ½mv²، ماذا يعني أن نُعطي قيمة عددية للرمز m؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Thermal Energy",
+        "requires": "kinetic energy of particles",
+        "why": "الطاقة الحرارية هي مجموع الطاقة الحركية العشوائية لجزيئات المادة."
+      },
+      {
+        "concept": "Thermal Energy",
+        "requires": "internal energy as sum",
+        "why": "الطاقة الحرارية جزء من الطاقة الداخلية التي تشمل الطاقة الحركية والطاقة الكامنة للجزيئات."
+      },
+      {
+        "concept": "kinetic energy of particles",
+        "requires": "kinetic energy (½mv²)",
+        "why": "طاقة كل جسيم متحرك تُحسب بالصيغة ½mv²."
+      },
+      {
+        "concept": "internal energy as sum",
+        "requires": "summation of microscopic energies",
+        "why": "الطاقة الداخلية هي مجموع طاقات الجزيئات المكروسكوبية جميعها."
+      },
+      {
+        "concept": "kinetic energy (½mv²)",
+        "requires": "multiplication",
+        "why": "حساب ½mv² يتطلب ضرب الكتلة في مربع السرعة."
+      },
+      {
+        "concept": "summation of microscopic energies",
+        "requires": "addition of many terms",
+        "why": "الجمع الكلي لطاقات الجزيئات يقوم على مبدأ جمع حدود متعددة."
+      },
+      {
+        "concept": "addition of many terms",
+        "requires": "equation/variable literacy",
+        "why": "جمع كميات فيزيائية يفترض فهم أن كل رمز يمثل قيمة عددية محددة."
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equation/variable literacy",
+        "why": "الضرب كعملية رياضية يستلزم فهم أن الرموز تمثل أعداداً يمكن التعامل معها."
+      }
+    ]
+  },
+  {
+    "content_node_id": 1445,
+    "concept": "Temperature",
+    "nodes": [
+      {
+        "concept": "average kinetic energy of particles",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الكمية الفيزيائية التي تقيسها درجة الحرارة على المستوى الجزيئي؟"
+      },
+      {
+        "concept": "temperature scales (Celsius, Kelvin)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "كيف تحوِّل درجة حرارة من المئوية إلى كلفن؟"
+      },
+      {
+        "concept": "arithmetic mean (average)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما متوسط الأعداد 4 و6 و8؟"
+      },
+      {
+        "concept": "linear conversion between scales",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كانت درجة الحرارة 27 مئوية، ما قيمتها بالكلفن؟"
+      },
+      {
+        "concept": "addition/subtraction of quantities",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب 273 + 27."
+      },
+      {
+        "concept": "division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب 30 ÷ 3."
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في معادلة T = t + 273، ماذا تمثل الحروف T وt؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Temperature",
+        "requires": "average kinetic energy of particles",
+        "why": "درجة الحرارة هي مقياس متوسط الطاقة الحركية العشوائية لجزيئات المادة."
+      },
+      {
+        "concept": "Temperature",
+        "requires": "temperature scales (Celsius, Kelvin)",
+        "why": "التعامل مع درجة الحرارة يستلزم معرفة مقاييس القياس المختلفة والتحويل بينها."
+      },
+      {
+        "concept": "average kinetic energy of particles",
+        "requires": "arithmetic mean (average)",
+        "why": "متوسط الطاقة الحركية يُحسب بقسمة مجموع الطاقات على عدد الجسيمات."
+      },
+      {
+        "concept": "temperature scales (Celsius, Kelvin)",
+        "requires": "linear conversion between scales",
+        "why": "التحويل بين مقياسَي المئوية والكلفن يعتمد على معادلة خطية T = t + 273."
+      },
+      {
+        "concept": "arithmetic mean (average)",
+        "requires": "division",
+        "why": "المتوسط الحسابي يُحسب بقسمة المجموع على عدد الحدود."
+      },
+      {
+        "concept": "arithmetic mean (average)",
+        "requires": "addition/subtraction of quantities",
+        "why": "حساب المتوسط يبدأ بجمع القيم."
+      },
+      {
+        "concept": "linear conversion between scales",
+        "requires": "addition/subtraction of quantities",
+        "why": "التحويل بين المئوية والكلفن يتضمن جمعاً أو طرحاً ثابتاً."
+      },
+      {
+        "concept": "division",
+        "requires": "equation/variable literacy",
+        "why": "القسمة كعملية رياضية تستلزم فهم أن الرموز تعبِّر عن قيم عددية."
+      },
+      {
+        "concept": "addition/subtraction of quantities",
+        "requires": "equation/variable literacy",
+        "why": "جمع الكميات وطرحها يفترض فهم أن كل رمز يمثل عدداً محدداً."
+      }
+    ]
+  },
+  {
+    "content_node_id": 1450,
+    "concept": "Thermal Equilibrium",
+    "nodes": [
+      {
+        "concept": "heat transfer direction",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "في أي اتجاه ينتقل الحرارة بين جسمين بدرجتَي حرارة مختلفتين؟"
+      },
+      {
+        "concept": "equal temperatures condition",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "متى يتوقف انتقال الحرارة بين جسمين موضوعَين في تماس حراري؟"
+      },
+      {
+        "concept": "temperature difference (ΔT)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كانت درجة حرارة الجسم الأول 80°م والثاني 50°م، ما فرق درجة الحرارة بينهما؟"
+      },
+      {
+        "concept": "equality as balance",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ماذا تعني العبارة T₁ = T₂ في سياق الاتزان الحراري؟"
+      },
+      {
+        "concept": "subtraction to find difference",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب 95 − 60."
+      },
+      {
+        "concept": "zero as a meaningful value",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ماذا يعني أن فرق درجة الحرارة بين جسمين يساوي صفراً؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في العلاقة ΔT = T₁ − T₂، ماذا تعني الرموز T₁ وT₂؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Thermal Equilibrium",
+        "requires": "heat transfer direction",
+        "why": "الاتزان الحراري يصف الحالة التي يتوقف فيها انتقال الحرارة، وهذا يستلزم فهم اتجاه الانتقال."
+      },
+      {
+        "concept": "Thermal Equilibrium",
+        "requires": "equal temperatures condition",
+        "why": "يُعرَّف الاتزان الحراري بأن درجتَي حرارة الجسمين تتساويان ويتوقف التبادل الحراري."
+      },
+      {
+        "concept": "heat transfer direction",
+        "requires": "temperature difference (ΔT)",
+        "why": "اتجاه انتقال الحرارة يحدده فرق درجتَي الحرارة بين الجسمين."
+      },
+      {
+        "concept": "equal temperatures condition",
+        "requires": "equality as balance",
+        "why": "تساوي درجتَي الحرارة يعني أن المعادلة T₁ = T₂ تصبح صحيحة، وهذا مفهوم التوازن."
+      },
+      {
+        "concept": "temperature difference (ΔT)",
+        "requires": "subtraction to find difference",
+        "why": "فرق درجتَي الحرارة يُحسب بطرح إحداهما من الأخرى: ΔT = T₁ − T₂."
+      },
+      {
+        "concept": "equal temperatures condition",
+        "requires": "zero as a meaningful value",
+        "why": "الاتزان الحراري يعني أن ΔT = 0، وهذا يستلزم فهم الصفر كقيمة ذات معنى فيزيائي."
+      },
+      {
+        "concept": "subtraction to find difference",
+        "requires": "equation/variable literacy",
+        "why": "حساب الفرق بالطرح يفترض أن الرموز تمثل قيماً عددية يمكن طرحها."
+      },
+      {
+        "concept": "zero as a meaningful value",
+        "requires": "equation/variable literacy",
+        "why": "فهم أن الصفر قيمة عددية ذات معنى يستلزم فهم أن الرموز تمثل أعداداً حقيقية."
+      },
+      {
+        "concept": "equality as balance",
+        "requires": "equation/variable literacy",
+        "why": "مفهوم التساوي كتوازن بين طرفَي المعادلة هو أساس قراءة الرموز الجبرية."
+      }
+    ]
+  },
+  {
+    "content_node_id": 1459,
+    "concept": "Absolute Zero",
+    "nodes": [
+      {
+        "concept": "zero kinetic energy of particles",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ماذا يحدث لحركة الجزيئات عند الصفر المطلق نظرياً؟"
+      },
+      {
+        "concept": "Kelvin temperature scale",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما قيمة الصفر المطلق بالدرجة المئوية وبالكلفن؟"
+      },
+      {
+        "concept": "average kinetic energy proportional to T",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت درجة الحرارة المطلقة لغاز، ماذا يحدث لمتوسط طاقته الحركية؟"
+      },
+      {
+        "concept": "linear conversion (Celsius to Kelvin)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "حوِّل −273°م إلى كلفن."
+      },
+      {
+        "concept": "direct proportionality",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كان KE ∝ T، وتضاعفت T، ماذا يحدث لـ KE؟"
+      },
+      {
+        "concept": "addition/subtraction with constants",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب −273 + 273."
+      },
+      {
+        "concept": "zero as lower bound",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "لماذا لا يمكن أن تكون درجة الحرارة المطلقة أقل من صفر كلفن؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في العلاقة T(K) = T(°C) + 273، ما الذي يمثله كلٌّ من الرمزين؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Absolute Zero",
+        "requires": "zero kinetic energy of particles",
+        "why": "الصفر المطلق هو درجة الحرارة التي تنعدم عندها الطاقة الحركية للجزيئات نظرياً."
+      },
+      {
+        "concept": "Absolute Zero",
+        "requires": "Kelvin temperature scale",
+        "why": "الصفر المطلق هو نقطة بداية مقياس كلفن (0 K)، ولا يمكن فهمه دون هذا المقياس."
+      },
+      {
+        "concept": "zero kinetic energy of particles",
+        "requires": "average kinetic energy proportional to T",
+        "why": "إذا كانت الطاقة الحركية تتناسب طردياً مع T، فعند T = 0 تنعدم الطاقة الحركية."
+      },
+      {
+        "concept": "Kelvin temperature scale",
+        "requires": "linear conversion (Celsius to Kelvin)",
+        "why": "مقياس كلفن يرتبط بالمئوية بإضافة 273، وهذا تحويل خطي أساسي."
+      },
+      {
+        "concept": "average kinetic energy proportional to T",
+        "requires": "direct proportionality",
+        "why": "العلاقة بين الطاقة الحركية ودرجة الحرارة المطلقة هي تناسب طردي مباشر."
+      },
+      {
+        "concept": "linear conversion (Celsius to Kelvin)",
+        "requires": "addition/subtraction with constants",
+        "why": "التحويل T(K) = T(°C) + 273 يتضمن جمع ثابت للقيمة المئوية."
+      },
+      {
+        "concept": "Kelvin temperature scale",
+        "requires": "zero as lower bound",
+        "why": "ما يميز مقياس كلفن هو أن له حداً أدنى حقيقياً هو الصفر المطلق ولا قيم سالبة."
+      },
+      {
+        "concept": "direct proportionality",
+        "requires": "equation/variable literacy",
+        "why": "فهم التناسب الطردي يستلزم تفسير رموز المعادلة كقيم عددية متغيرة."
+      },
+      {
+        "concept": "addition/subtraction with constants",
+        "requires": "equation/variable literacy",
+        "why": "إجراء عمليات الجمع والطرح على رموز المعادلة يفترض فهم أن الرمز يمثل عدداً."
+      },
+      {
+        "concept": "zero as lower bound",
+        "requires": "equation/variable literacy",
+        "why": "مفهوم الصفر كحد أدنى لمتغير فيزيائي يستلزم فهم أن الرمز يمثل قيمة يمكن مقارنتها بالصفر."
+      }
+    ]
+  }
+]

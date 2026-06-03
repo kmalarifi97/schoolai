@@ -1,0 +1,689 @@
+[
+  {
+    "content_node_id": 116,
+    "concept": "Inertial mass",
+    "nodes": [
+      {
+        "concept": "Newton's second law (F=ma)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا طُبِّقت قوةٌ ثابتة على جسمين مختلفَي الكتلة، أيُّهما يكتسب تسارعاً أكبر؟"
+      },
+      {
+        "concept": "resistance to acceleration",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الذي يُقاوم تغيُّر حالة حركة الجسم عند تطبيق قوة عليه؟"
+      },
+      {
+        "concept": "ratio of force to acceleration",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تحسب كتلة جسم إذا عرفتَ القوة المؤثرة فيه وتسارعه الناتج؟"
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت القوة وتضاعف التسارع بالقدر ذاته، ماذا يعني ذلك للنسبة بينهما؟"
+      },
+      {
+        "concept": "division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب ناتج قسمة 30 على 6."
+      },
+      {
+        "concept": "multiplication",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "إذا كانت الكتلة 4 كغ والتسارع 5 م/ث²، فما القوة اللازمة؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا يعني أن طرفَي المعادلة متساويان؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في المعادلة F = ma، ماذا يمثّل الرمز m؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Inertial mass",
+        "requires": "Newton's second law (F=ma)",
+        "why": "الكتلة القصورية تُعرَّف بوصفها النسبة F/a في قانون نيوتن الثاني"
+      },
+      {
+        "concept": "Inertial mass",
+        "requires": "resistance to acceleration",
+        "why": "الكتلة القصورية هي مقياس مقاومة الجسم للتسارع عند تأثير قوة"
+      },
+      {
+        "concept": "Newton's second law (F=ma)",
+        "requires": "ratio of force to acceleration",
+        "why": "الكتلة في F=ma تُستخرج بحساب نسبة القوة إلى التسارع"
+      },
+      {
+        "concept": "resistance to acceleration",
+        "requires": "ratio of force to acceleration",
+        "why": "قياس المقاومة يستلزم حساب نسبة القوة المطبَّقة إلى التسارع الناتج"
+      },
+      {
+        "concept": "ratio of force to acceleration",
+        "requires": "division",
+        "why": "حساب النسبة F/a عملية قسمة"
+      },
+      {
+        "concept": "ratio of force to acceleration",
+        "requires": "proportionality (constant ratio)",
+        "why": "ثبات نسبة F/a هو ما يُعرِّف الكتلة القصورية بوصفها خاصية ثابتة"
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "requires": "division",
+        "why": "التحقق من ثبات النسبة يتطلب إجراء قسمة متكررة"
+      },
+      {
+        "concept": "division",
+        "requires": "multiplication",
+        "why": "القسمة هي العملية العكسية للضرب وتُبنى على مفهومه"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "كتابة F = m × a تستلزم فهم أن الطرفين متساويان"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم التساوي يفترض معرفة أن الرموز تمثّل أعداداً يمكن مقارنتها"
+      }
+    ]
+  },
+  {
+    "content_node_id": 123,
+    "concept": "Gravitational mass",
+    "nodes": [
+      {
+        "concept": "Newton's law of universal gravitation",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "بمَ تتناسب قوة الجاذبية بين جسمين طبقاً لقانون نيوتن للجاذبية الكونية؟"
+      },
+      {
+        "concept": "weight as gravitational force (W=mg)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما العلاقة بين وزن الجسم وكتلته الجاذبية وتسارع الجاذبية الأرضية؟"
+      },
+      {
+        "concept": "ratio of weight to gravitational field",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تستخدم ميزاناً لقياس الكتلة الجاذبية لجسم ما؟"
+      },
+      {
+        "concept": "direct proportionality (W∝m)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت كتلة الجسم الجاذبية، بمقدار كم يتضاعف وزنه؟"
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما الثابت الذي يربط وزن الجسم بكتلته الجاذبية على سطح الأرض؟"
+      },
+      {
+        "concept": "division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب الكتلة الجاذبية لجسم وزنه 49 نيوتن وg = 9.8 م/ث²."
+      },
+      {
+        "concept": "multiplication",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ما وزن جسم كتلته الجاذبية 5 كغ على سطح الأرض؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "في المعادلة W = mg، ماذا يعني علامة المساواة؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في المعادلة W = mg، ماذا يرمز الحرف g؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Gravitational mass",
+        "requires": "Newton's law of universal gravitation",
+        "why": "الكتلة الجاذبية هي المقدار الذي يحدد شدة تفاعل الجسم مع الحقل الجاذب في قانون نيوتن"
+      },
+      {
+        "concept": "Gravitational mass",
+        "requires": "weight as gravitational force (W=mg)",
+        "why": "الوزن هو المظهر العملي للكتلة الجاذبية في حقل جاذبية معروف"
+      },
+      {
+        "concept": "weight as gravitational force (W=mg)",
+        "requires": "ratio of weight to gravitational field",
+        "why": "قياس الكتلة الجاذبية يتم بقسمة الوزن على شدة الحقل الجاذبي"
+      },
+      {
+        "concept": "weight as gravitational force (W=mg)",
+        "requires": "direct proportionality (W∝m)",
+        "why": "العلاقة W = mg تعني أن الوزن يتناسب تناسباً طردياً مع الكتلة الجاذبية"
+      },
+      {
+        "concept": "direct proportionality (W∝m)",
+        "requires": "proportionality (constant ratio)",
+        "why": "التناسب الطردي يعني ثبات النسبة W/m = g"
+      },
+      {
+        "concept": "ratio of weight to gravitational field",
+        "requires": "division",
+        "why": "إيجاد الكتلة الجاذبية من W/g عملية قسمة"
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "requires": "division",
+        "why": "التحقق من ثبات النسبة يستلزم عملية قسمة"
+      },
+      {
+        "concept": "division",
+        "requires": "multiplication",
+        "why": "القسمة هي عكس الضرب وتستند إليه مفهومياً"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "كتابة W = m × g تستلزم فهم التساوي بين الطرفين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم علامة التساوي يفترض أن الرموز تمثّل قيماً عددية قابلة للمقارنة"
+      }
+    ]
+  },
+  {
+    "content_node_id": 130,
+    "concept": "Equivalence principle",
+    "nodes": [
+      {
+        "concept": "equality of inertial and gravitational mass",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الفرق التجريبي المقيس بين الكتلة القصورية والكتلة الجاذبية لجسم ما؟"
+      },
+      {
+        "concept": "free-fall acceleration independence from mass",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "هل يسقط جسمان مختلفا الكتلة بالتسارع ذاته في الفراغ؟ لماذا؟"
+      },
+      {
+        "concept": "ratio cancellation (m_i / m_g = 1)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "عندما تتساوى الكتلة القصورية والكتلة الجاذبية، ما قيمة نسبتهما؟"
+      },
+      {
+        "concept": "Newton's second law (F=ma)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "اكتب معادلة تسارع جسم كتلته القصورية m_i تحت تأثير قوة الجاذبية."
+      },
+      {
+        "concept": "division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما ناتج قسمة عدد على نفسه؟"
+      },
+      {
+        "concept": "subtraction (measuring difference)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا قِست كتلة قصورية = 2.000 كغ وكتلة جاذبية = 2.000 كغ، فما الفرق بينهما؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "احسب قوة الجاذبية على جسم كتلته 3 كغ وg = 10 م/ث²."
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا يعني القول إن m_i = m_g لجسم ما؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في المعادلة a = g، ما الذي يمثّله الرمز g؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Equivalence principle",
+        "requires": "equality of inertial and gravitational mass",
+        "why": "مبدأ التكافؤ يقوم على التساوي التجريبي بين الكتلة القصورية والكتلة الجاذبية"
+      },
+      {
+        "concept": "Equivalence principle",
+        "requires": "free-fall acceleration independence from mass",
+        "why": "التساقط الحر بتسارع مستقل عن الكتلة هو النتيجة المباشرة لتكافؤ الكتلتين"
+      },
+      {
+        "concept": "equality of inertial and gravitational mass",
+        "requires": "ratio cancellation (m_i / m_g = 1)",
+        "why": "إثبات التساوي يعني أن نسبة الكتلتين تساوي 1 بدقة"
+      },
+      {
+        "concept": "free-fall acceleration independence from mass",
+        "requires": "Newton's second law (F=ma)",
+        "why": "اشتقاق a = g من قانون نيوتن الثاني يُظهر اختفاء الكتلة من المعادلة"
+      },
+      {
+        "concept": "ratio cancellation (m_i / m_g = 1)",
+        "requires": "division",
+        "why": "حساب النسبة بين الكتلتين عملية قسمة"
+      },
+      {
+        "concept": "equality of inertial and gravitational mass",
+        "requires": "subtraction (measuring difference)",
+        "why": "قياس التساوي التجريبي يتم بحساب الفرق والتحقق من أنه صفر"
+      },
+      {
+        "concept": "Newton's second law (F=ma)",
+        "requires": "multiplication",
+        "why": "حساب القوة F = ma يستلزم ضرب الكتلة في التسارع"
+      },
+      {
+        "concept": "subtraction (measuring difference)",
+        "requires": "equals sign as balance",
+        "why": "مقارنة قيمتين والحكم بتساويهما تستلزم فهم معنى علامة المساواة"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "كتابة F = m × a تستلزم فهم أن الطرفين متساويان"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم علامة التساوي يفترض معرفة أن الرموز تمثّل قيماً عددية"
+      }
+    ]
+  },
+  {
+    "content_node_id": 161,
+    "concept": "Kepler's second law approximate equal-area relation",
+    "nodes": [
+      {
+        "concept": "swept area by radius vector",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما المساحة التي يجتاحها الخط الواصل بين الكوكب والشمس خلال فترة زمنية معينة؟"
+      },
+      {
+        "concept": "equal areas in equal times",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "متى يتحرك الكوكب بسرعة أكبر: عندما يكون قريباً من الشمس أم بعيداً عنها؟"
+      },
+      {
+        "concept": "area of triangle approximation",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما معادلة مساحة المثلث إذا عُرِفت قاعدته وارتفاعه؟"
+      },
+      {
+        "concept": "conservation of angular momentum (qualitative)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "لماذا يزيد معدل الاجتياح حين يقترب الكوكب من الشمس؟"
+      },
+      {
+        "concept": "multiplication (base × height)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب مساحة مثلث قاعدته 6 وحدات وارتفاعه 4 وحدات."
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ماذا يعني أن معدل اجتياح المساحة ثابت؟"
+      },
+      {
+        "concept": "division (halving for triangle area)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "لماذا تقسم حاصل ضرب القاعدة في الارتفاع على 2 لإيجاد مساحة المثلث؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني كتابة A₁ = A₂ في قانون كيبلر الثاني؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في معادلة مساحة المثلث A = ½ b h، ماذا يمثّل الرمز h؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Kepler's second law approximate equal-area relation",
+        "requires": "swept area by radius vector",
+        "why": "القانون يصف المساحة التي يجتاحها متجه الموضع بين الكوكب والشمس"
+      },
+      {
+        "concept": "Kepler's second law approximate equal-area relation",
+        "requires": "equal areas in equal times",
+        "why": "جوهر القانون الثاني هو أن المساحات المجتاحة في فترات زمنية متساوية تكون متساوية"
+      },
+      {
+        "concept": "swept area by radius vector",
+        "requires": "area of triangle approximation",
+        "why": "المساحة المجتاحة في زمن قصير تُقرَّب بمساحة مثلث يحده متجه الموضع"
+      },
+      {
+        "concept": "equal areas in equal times",
+        "requires": "conservation of angular momentum (qualitative)",
+        "why": "ثبات المساحة في الزمن ناتج مباشر عن حفظ الزخم الزاوي"
+      },
+      {
+        "concept": "area of triangle approximation",
+        "requires": "multiplication (base × height)",
+        "why": "حساب مساحة المثلث يستلزم ضرب القاعدة في الارتفاع"
+      },
+      {
+        "concept": "area of triangle approximation",
+        "requires": "division (halving for triangle area)",
+        "why": "مساحة المثلث = ½ × القاعدة × الارتفاع، أي قسمة الناتج على 2"
+      },
+      {
+        "concept": "equal areas in equal times",
+        "requires": "proportionality (constant ratio)",
+        "why": "ثبات معدل اجتياح المساحة يعني أن النسبة المساحة/الزمن ثابتة"
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "requires": "division (halving for triangle area)",
+        "why": "حساب النسبة بين المساحة والزمن يتضمن عملية قسمة"
+      },
+      {
+        "concept": "multiplication (base × height)",
+        "requires": "equals sign as balance",
+        "why": "كتابة A = ½bh تستلزم فهم معنى علامة المساواة"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم علامة التساوي يفترض معرفة أن الرموز تمثّل قيماً عددية يمكن مقارنتها"
+      }
+    ]
+  },
+  {
+    "content_node_id": 188,
+    "concept": "Kepler's Third Law",
+    "nodes": [
+      {
+        "concept": "orbital period (T)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما المقصود بالدورة الكاملة لكوكب حول الشمس؟"
+      },
+      {
+        "concept": "semi-major axis (a) of ellipse",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما شبه المحور الأكبر للمدار الإهليلجي وكيف يرتبط بمتوسط البعد عن الشمس؟"
+      },
+      {
+        "concept": "T² ∝ a³ (ratio form)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا تضاعف شبه المحور الأكبر لمدار كوكب، بكم يتغير مربع زمن دورته؟"
+      },
+      {
+        "concept": "powers/exponents (squaring and cubing)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما الفرق بين T² وT³؟ احسب كلاً منهما إذا كان T = 3."
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما الثابت الذي تعطيه نسبة T²/a³ لجميع كواكب المجموعة الشمسية؟"
+      },
+      {
+        "concept": "division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب T²/a³ إذا كان T² = 1 سنة² وa³ = 1 وح فلكية³."
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب 2³ خطوة بخطوة باستخدام الضرب."
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "في معادلة كيبلر الثالث T²/a³ = k، ماذا يعني الطرفان المتساويان؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في قانون كيبلر الثالث T² = k a³، ماذا يرمز T وماذا يرمز a؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Kepler's Third Law",
+        "requires": "orbital period (T)",
+        "why": "القانون يربط الزمن الذي يستغرقه الكوكب لإتمام دورة كاملة بأبعاد مداره"
+      },
+      {
+        "concept": "Kepler's Third Law",
+        "requires": "semi-major axis (a) of ellipse",
+        "why": "شبه المحور الأكبر هو المقدار الهندسي الذي يمثّل حجم المدار في قانون كيبلر الثالث"
+      },
+      {
+        "concept": "Kepler's Third Law",
+        "requires": "T² ∝ a³ (ratio form)",
+        "why": "جوهر القانون هو العلاقة التناسبية بين مربع الدورة ومكعب شبه المحور الأكبر"
+      },
+      {
+        "concept": "T² ∝ a³ (ratio form)",
+        "requires": "powers/exponents (squaring and cubing)",
+        "why": "التعامل مع T² وa³ يستلزم فهم القوى والأسس"
+      },
+      {
+        "concept": "T² ∝ a³ (ratio form)",
+        "requires": "proportionality (constant ratio)",
+        "why": "العلاقة T²/a³ = k تعني أن هذه النسبة ثابتة لجميع الكواكب"
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "requires": "division",
+        "why": "التحقق من ثبات النسبة T²/a³ يتطلب عملية قسمة"
+      },
+      {
+        "concept": "powers/exponents (squaring and cubing)",
+        "requires": "multiplication",
+        "why": "الرفع للقوة يُحسب عبر الضرب المتكرر"
+      },
+      {
+        "concept": "division",
+        "requires": "multiplication",
+        "why": "القسمة هي العملية العكسية للضرب وتستند إليه مفهومياً"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "كتابة T² = k a³ تستلزم فهم أن الطرفين متساويان"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم علامة التساوي يفترض معرفة أن الرموز تمثّل قيماً عددية قابلة للمقارنة"
+      }
+    ]
+  },
+  {
+    "content_node_id": 189,
+    "concept": "Newton's law of universal gravitation",
+    "nodes": [
+      {
+        "concept": "direct proportionality (F∝m₁m₂)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت كتلة أحد الجسمين، بمقدار كم تتغير قوة الجاذبية بينهما؟"
+      },
+      {
+        "concept": "inverse-square law (F∝1/r²)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت المسافة بين جسمين، بمقدار كم تتناقص قوة الجاذبية؟"
+      },
+      {
+        "concept": "product of masses",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما حاصل ضرب كتلتين m₁ = 3 كغ وm₂ = 4 كغ؟"
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما الذي يجعل G ثابتاً في قانون الجاذبية الكونية؟"
+      },
+      {
+        "concept": "division",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "احسب قيمة 1/r² عندما تكون r = 2 متر."
+      },
+      {
+        "concept": "powers/exponents",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما معنى r² في قانون الجاذبية؟ احسبه إذا كان r = 5 م."
+      },
+      {
+        "concept": "multiplication",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "احسب حاصل ضرب 6.67 × 10⁻¹¹ × 5 × 10²⁴."
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "في معادلة F = Gm₁m₂/r²، ماذا يعني أن الطرفين متساويان؟"
+      },
+      {
+        "concept": "addition",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما مجموع 3.5 × 10⁸ و2.1 × 10⁸؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في معادلة F = Gm₁m₂/r²، ماذا يمثّل الرمز G وماذا يمثّل r؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Newton's law of universal gravitation",
+        "requires": "direct proportionality (F∝m₁m₂)",
+        "why": "قوة الجاذبية تتناسب طردياً مع حاصل ضرب كتلتي الجسمين"
+      },
+      {
+        "concept": "Newton's law of universal gravitation",
+        "requires": "inverse-square law (F∝1/r²)",
+        "why": "قوة الجاذبية تتناسب عكسياً مع مربع المسافة بين الجسمين"
+      },
+      {
+        "concept": "Newton's law of universal gravitation",
+        "requires": "product of masses",
+        "why": "البسط في قانون الجاذبية هو حاصل ضرب الكتلتين m₁ × m₂"
+      },
+      {
+        "concept": "inverse-square law (F∝1/r²)",
+        "requires": "division",
+        "why": "التناسب العكسي مع r² يعني قسمة الكميات الأخرى على r²"
+      },
+      {
+        "concept": "inverse-square law (F∝1/r²)",
+        "requires": "powers/exponents",
+        "why": "المقام r² يستلزم فهم تربيع المتغير"
+      },
+      {
+        "concept": "product of masses",
+        "requires": "multiplication",
+        "why": "حاصل ضرب m₁ × m₂ عملية ضرب مباشرة"
+      },
+      {
+        "concept": "direct proportionality (F∝m₁m₂)",
+        "requires": "proportionality (constant ratio)",
+        "why": "التناسب الطردي يعني ثبات نسبة F إلى m₁m₂، وهذا الثابت هو G"
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "requires": "division",
+        "why": "التحقق من ثبات النسبة يتطلب إجراء قسمة"
+      },
+      {
+        "concept": "powers/exponents",
+        "requires": "multiplication",
+        "why": "الرفع للقوة يُحسب عبر الضرب المتكرر"
+      },
+      {
+        "concept": "division",
+        "requires": "equals sign as balance",
+        "why": "عملية القسمة في المعادلة تستلزم فهم أن الطرفين متساويان"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "addition",
+        "why": "الضرب يُبنى على مفهوم الجمع المتكرر"
+      },
+      {
+        "concept": "addition",
+        "requires": "equation/variable literacy",
+        "why": "الجمع يفترض أن الرموز تمثّل أعداداً يمكن التعامل معها"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم علامة التساوي يفترض معرفة أن الرموز تمثّل قيماً عددية يمكن مقارنتها"
+      }
+    ]
+  }
+]

@@ -1,0 +1,579 @@
+[
+  {
+    "content_node_id": 1468,
+    "concept": "Heat",
+    "nodes": [
+      {
+        "concept": "energy transfer between objects",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "متى تنتقل الحرارة من جسم إلى آخر؟"
+      },
+      {
+        "concept": "temperature difference (ΔT)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا كانت درجة حرارة جسم أعلى من جسم آخر، في أي اتجاه تنتقل الحرارة بينهما؟"
+      },
+      {
+        "concept": "thermal equilibrium",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ماذا يحدث لتدفق الحرارة بين جسمين حين يصلان إلى درجة حرارة متساوية؟"
+      },
+      {
+        "concept": "subtraction (difference of two values)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كانت درجة حرارة الجسم الأول 80°C والثاني 30°C، ما فرق درجة الحرارة؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ماذا يعني أن Q₁ = Q₂ في معادلة التوازن الحراري؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في معادلة Q = mcΔT، ماذا يمثل كل رمز؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Heat",
+        "requires": "energy transfer between objects",
+        "why": "الحرارة هي مقدار الطاقة المنتقلة بين الأجسام بسبب اختلاف درجات حرارتها"
+      },
+      {
+        "concept": "Heat",
+        "requires": "temperature difference (ΔT)",
+        "why": "الحرارة تنتقل فقط حين يوجد فرق في درجة الحرارة بين الجسمين"
+      },
+      {
+        "concept": "energy transfer between objects",
+        "requires": "thermal equilibrium",
+        "why": "فهم انتقال الطاقة يتطلب معرفة حالة التوازن الحراري التي يتوقف عندها الانتقال"
+      },
+      {
+        "concept": "temperature difference (ΔT)",
+        "requires": "subtraction (difference of two values)",
+        "why": "حساب ΔT يعتمد على طرح درجة الحرارة الابتدائية من النهائية"
+      },
+      {
+        "concept": "thermal equilibrium",
+        "requires": "equals sign as balance",
+        "why": "التوازن الحراري يُعبَّر عنه بمعادلة تساوٍ تعني أن الطاقة المكتسبة تساوي الطاقة المفقودة"
+      },
+      {
+        "concept": "subtraction (difference of two values)",
+        "requires": "equals sign as balance",
+        "why": "عملية الطرح تُكتب في معادلة يكون فيها الفرق مساوياً لناتج محدد"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "لفهم أن علامة المساواة تعني التوازن يجب أن يدرك الطالب أن الرموز تمثل قيماً عددية"
+      }
+    ]
+  },
+  {
+    "content_node_id": 1470,
+    "concept": "Conduction",
+    "nodes": [
+      {
+        "concept": "heat flow through direct contact",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "كيف تنتقل الحرارة عبر التوصيل؟ هل يلزم تلامس مباشر بين الجسمين؟"
+      },
+      {
+        "concept": "thermal conductivity (k)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "لماذا تنقل المعادن الحرارة أسرع من البلاستيك؟"
+      },
+      {
+        "concept": "rate of heat transfer (Q/t)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تحسب معدل انتقال الحرارة خلال جسم ما؟"
+      },
+      {
+        "concept": "direct proportionality",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا زاد فرق درجة الحرارة عبر جسم، كيف يتغير معدل انتقال الحرارة؟"
+      },
+      {
+        "concept": "division (ratio of quantities)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا انتقلت 500 جول خلال 10 ثوانٍ، ما معدل انتقال الحرارة؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "في معادلة Q/t = kA(ΔT/d)، كيف تحسب حاصل ضرب عدة كميات معاً؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا يعني أن معدل انتقال الحرارة يساوي حاصل ضرب المعاملات في المعادلة؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في معادلة Q/t = kA(ΔT/d)، ماذا يمثل كل رمز من رموز المعادلة؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Conduction",
+        "requires": "heat flow through direct contact",
+        "why": "التوصيل الحراري هو آلية انتقال الحرارة بالتماس المباشر بين جزيئات المادة"
+      },
+      {
+        "concept": "Conduction",
+        "requires": "thermal conductivity (k)",
+        "why": "معامل التوصيل الحراري يحدد كفاءة المادة في توصيل الحرارة ويُستخدم مباشرة في المعادلة"
+      },
+      {
+        "concept": "heat flow through direct contact",
+        "requires": "rate of heat transfer (Q/t)",
+        "why": "وصف انتقال الحرارة بالتوصيل يتطلب فهم معدل هذا الانتقال عبر الزمن"
+      },
+      {
+        "concept": "thermal conductivity (k)",
+        "requires": "direct proportionality",
+        "why": "معدل التوصيل يتناسب طردياً مع k وΔT ومساحة المقطع، لذا يلزم فهم التناسب الطردي"
+      },
+      {
+        "concept": "rate of heat transfer (Q/t)",
+        "requires": "division (ratio of quantities)",
+        "why": "حساب المعدل Q/t يعتمد على قسمة الحرارة المنتقلة على الزمن"
+      },
+      {
+        "concept": "direct proportionality",
+        "requires": "multiplication",
+        "why": "التناسب الطردي بين كميات متعددة يُعبَّر عنه بضربها معاً في المعادلة"
+      },
+      {
+        "concept": "division (ratio of quantities)",
+        "requires": "equals sign as balance",
+        "why": "كتابة النسبة في معادلة يستلزم فهم علامة المساواة كتوازن بين طرفي المعادلة"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "ناتج الضرب يُعادَل بالكمية المطلوبة، مما يتطلب فهم المساواة كتوازن"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم التوازن في المعادلة يفترض أن يعرف الطالب أن كل رمز يمثل قيمة عددية محددة"
+      }
+    ]
+  },
+  {
+    "content_node_id": 1472,
+    "concept": "Convection",
+    "nodes": [
+      {
+        "concept": "heat transfer by fluid motion",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "كيف تنتقل الحرارة في الحمل الحراري؟ ما دور حركة السائل أو الغاز؟"
+      },
+      {
+        "concept": "density difference driving buoyancy",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "لماذا يرتفع السائل الدافئ إلى أعلى ويهبط البارد إلى أسفل؟"
+      },
+      {
+        "concept": "temperature-density relationship",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف يتغير حجم السائل وكثافته عند تسخينه؟"
+      },
+      {
+        "concept": "subtraction (difference of two values)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كانت كثافة السائل الدافئ 0.9 g/cm³ والبارد 1.0 g/cm³، ما فرق الكثافة؟"
+      },
+      {
+        "concept": "division (ratio of mass to volume)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "كيف تحسب كثافة جسم إذا عرفتَ كتلته وحجمه؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني علامة المساواة في معادلة الكثافة ρ = m/V؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في معادلة ρ = m/V، ماذا يمثل كل رمز من الرموز الثلاثة؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Convection",
+        "requires": "heat transfer by fluid motion",
+        "why": "الحمل الحراري هو انتقال الحرارة عن طريق حركة جزيئات السائل أو الغاز نفسها"
+      },
+      {
+        "concept": "Convection",
+        "requires": "density difference driving buoyancy",
+        "why": "الدافع الرئيس لتيارات الحمل هو فرق الكثافة الناتج عن اختلاف درجات الحرارة"
+      },
+      {
+        "concept": "heat transfer by fluid motion",
+        "requires": "temperature-density relationship",
+        "why": "فهم حركة السائل الحاملة للحرارة يتطلب معرفة كيف تؤثر الحرارة على الكثافة"
+      },
+      {
+        "concept": "density difference driving buoyancy",
+        "requires": "subtraction (difference of two values)",
+        "why": "حساب فرق الكثافة بين طبقتين يعتمد على عملية الطرح"
+      },
+      {
+        "concept": "temperature-density relationship",
+        "requires": "division (ratio of mass to volume)",
+        "why": "الكثافة تُحسب بقسمة الكتلة على الحجم، لذا يلزم فهم القسمة كنسبة"
+      },
+      {
+        "concept": "subtraction (difference of two values)",
+        "requires": "equals sign as balance",
+        "why": "تعبير فرق الكثافة في معادلة يستلزم فهم علامة المساواة كتوازن"
+      },
+      {
+        "concept": "division (ratio of mass to volume)",
+        "requires": "equals sign as balance",
+        "why": "معادلة الكثافة ρ = m/V تستخدم علامة المساواة التي تعني التوازن بين الطرفين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم المساواة كتوازن يبنى على إدراك أن الرموز تمثل قيماً عددية"
+      }
+    ]
+  },
+  {
+    "content_node_id": 1479,
+    "concept": "Radiation",
+    "nodes": [
+      {
+        "concept": "heat transfer by electromagnetic waves",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "كيف تنتقل الحرارة بالإشعاع؟ هل تحتاج إلى وسط مادي؟"
+      },
+      {
+        "concept": "Stefan-Boltzmann law (P ∝ T⁴)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "كيف يتغير معدل الإشعاع الحراري إذا تضاعفت درجة الحرارة المطلقة؟"
+      },
+      {
+        "concept": "powers/exponents (T⁴)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما قيمة 3⁴؟ وضّح كيف تحسب القوة الرابعة لعدد ما."
+      },
+      {
+        "concept": "direct proportionality",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كانت P ∝ T⁴، ماذا يحدث لـ P عند مضاعفة T؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "في معادلة P = σεAT⁴، كيف تحسب ناتج ضرب أربع كميات معاً؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا يعني أن P = σεAT⁴؟ ما الذي يتساوى مع ماذا؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في معادلة P = σεAT⁴، ماذا يمثل كل رمز من رموزها؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Radiation",
+        "requires": "heat transfer by electromagnetic waves",
+        "why": "الإشعاع الحراري هو انتقال الطاقة عبر موجات كهرومغناطيسية دون الحاجة لوسط مادي"
+      },
+      {
+        "concept": "Radiation",
+        "requires": "Stefan-Boltzmann law (P ∝ T⁴)",
+        "why": "قانون ستيفان-بولتزمان يصف كمياً معدل الإشعاع الحراري وعلاقته بدرجة الحرارة"
+      },
+      {
+        "concept": "Stefan-Boltzmann law (P ∝ T⁴)",
+        "requires": "powers/exponents (T⁴)",
+        "why": "المعادلة تحتوي على T⁴ لذا يجب فهم الأسس والقوى لحساب قيمة T مرفوعة للقوة الرابعة"
+      },
+      {
+        "concept": "Stefan-Boltzmann law (P ∝ T⁴)",
+        "requires": "direct proportionality",
+        "why": "P يتناسب طردياً مع T⁴، وهذا التناسب هو جوهر فهم القانون"
+      },
+      {
+        "concept": "powers/exponents (T⁴)",
+        "requires": "multiplication",
+        "why": "رفع عدد إلى قوة يعني ضربه في نفسه عدة مرات"
+      },
+      {
+        "concept": "direct proportionality",
+        "requires": "multiplication",
+        "why": "التناسب الطردي يُعبَّر عنه بضرب الكميات بثابت تناسب"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "ناتج ضرب المعاملات يُعادَل بالقدرة المشعّة في المعادلة"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "إدراك علامة المساواة كتوازن يستند إلى فهم أن كل رمز يمثل قيمة عددية"
+      }
+    ]
+  },
+  {
+    "content_node_id": 1484,
+    "concept": "Specific Heat",
+    "nodes": [
+      {
+        "concept": "heat needed to raise temperature (Q = mcΔT)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الكمية المطلوبة لحساب الحرارة اللازمة لرفع درجة حرارة جسم معين؟"
+      },
+      {
+        "concept": "specific heat capacity (c) as material property",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "لماذا يحتاج الماء حرارةً أكثر من الحديد لرفع درجة حرارته بالمقدار نفسه؟"
+      },
+      {
+        "concept": "direct proportionality (Q ∝ m and Q ∝ ΔT)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا ضاعفتَ كتلة الجسم مع بقاء كل شيء آخر ثابتاً، كيف تتغير الحرارة اللازمة؟"
+      },
+      {
+        "concept": "division (isolating c = Q/mΔT)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تحسب الحرارة النوعية لمادة ما إذا عرفتَ Q و m و ΔT؟"
+      },
+      {
+        "concept": "multiplication (product of three quantities)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "في معادلة Q = mcΔT، كيف تحسب ناتج ضرب ثلاث كميات معاً؟"
+      },
+      {
+        "concept": "subtraction (ΔT = T_f − T_i)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا ارتفعت درجة حرارة جسم من 25°C إلى 75°C، ما قيمة ΔT؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا يعني أن Q = mcΔT؟ صِف التوازن بين الطرفين."
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في معادلة Q = mcΔT، ماذا يمثل كل رمز من الرموز الأربعة؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Specific Heat",
+        "requires": "heat needed to raise temperature (Q = mcΔT)",
+        "why": "الحرارة النوعية تُعرَّف من خلال معادلة Q = mcΔT التي تربط الحرارة بالكتلة وتغير درجة الحرارة"
+      },
+      {
+        "concept": "Specific Heat",
+        "requires": "specific heat capacity (c) as material property",
+        "why": "الحرارة النوعية هي خاصية مادية تميز كل مادة في قدرتها على امتصاص الحرارة"
+      },
+      {
+        "concept": "heat needed to raise temperature (Q = mcΔT)",
+        "requires": "direct proportionality (Q ∝ m and Q ∝ ΔT)",
+        "why": "المعادلة تعكس أن Q يتناسب طردياً مع كل من الكتلة وفرق درجة الحرارة"
+      },
+      {
+        "concept": "specific heat capacity (c) as material property",
+        "requires": "division (isolating c = Q/mΔT)",
+        "why": "لإيجاد c تجريبياً تُقسَم الحرارة المقاسة على حاصل ضرب الكتلة وفرق درجة الحرارة"
+      },
+      {
+        "concept": "direct proportionality (Q ∝ m and Q ∝ ΔT)",
+        "requires": "multiplication (product of three quantities)",
+        "why": "التناسب الطردي مع عدة متغيرات يُعبَّر عنه بضربها معاً في المعادلة"
+      },
+      {
+        "concept": "division (isolating c = Q/mΔT)",
+        "requires": "multiplication (product of three quantities)",
+        "why": "عزل c يتطلب قسمة Q على حاصل ضرب m وΔT، فالقسمة والضرب متلازمان هنا"
+      },
+      {
+        "concept": "heat needed to raise temperature (Q = mcΔT)",
+        "requires": "subtraction (ΔT = T_f − T_i)",
+        "why": "حساب فرق درجة الحرارة ΔT يعتمد على طرح درجة الحرارة الابتدائية من النهائية"
+      },
+      {
+        "concept": "multiplication (product of three quantities)",
+        "requires": "equals sign as balance",
+        "why": "ناتج الضرب يتساوى مع Q في المعادلة مما يتطلب فهم علامة المساواة كتوازن"
+      },
+      {
+        "concept": "subtraction (ΔT = T_f − T_i)",
+        "requires": "equals sign as balance",
+        "why": "كتابة ΔT = T_f − T_i في صورة معادلة يستلزم فهم المساواة بين الطرفين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم التوازن في المعادلة يبنى على إدراك أن كل رمز يمثل قيمة عددية"
+      }
+    ]
+  },
+  {
+    "content_node_id": 1497,
+    "concept": "Calorimeter",
+    "nodes": [
+      {
+        "concept": "heat exchange between hot and cold objects",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "عند خلط جسمين أحدهما ساخن والآخر بارد داخل المسعر، ما الذي يحدث للحرارة؟"
+      },
+      {
+        "concept": "conservation of energy in calorimetry (Q_lost = Q_gained)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما مبدأ الحفاظ على الطاقة الذي يُطبَّق في المسعر؟"
+      },
+      {
+        "concept": "applying Q = mcΔT to each substance",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تكتب معادلة الحرارة المكتسبة لجسم كتلته m وحرارته النوعية c ارتفعت درجة حرارته بمقدار ΔT؟"
+      },
+      {
+        "concept": "direct proportionality (Q ∝ m and Q ∝ ΔT)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كانت الكتلة أكبر مع بقاء c وΔT ثابتَين، كيف تتغير الحرارة المنتقلة؟"
+      },
+      {
+        "concept": "multiplication (product of three quantities)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب Q إذا كانت m = 0.2 kg وc = 4200 J/(kg·°C) وΔT = 10°C."
+      },
+      {
+        "concept": "subtraction (ΔT = T_f − T_i)",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "جسم كانت درجة حرارته 90°C فأصبحت 40°C داخل المسعر، ما ΔT له؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "في معادلة m₁c₁ΔT₁ = m₂c₂ΔT₂، ما الذي يتوازن مع ماذا؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في معادلة m₁c₁ΔT₁ = m₂c₂ΔT₂، ماذا يمثل كل رمز؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Calorimeter",
+        "requires": "heat exchange between hot and cold objects",
+        "why": "المسعر أداة لقياس الحرارة المنتقلة بين أجسام مختلفة درجات حرارتها"
+      },
+      {
+        "concept": "Calorimeter",
+        "requires": "conservation of energy in calorimetry (Q_lost = Q_gained)",
+        "why": "مبدأ عمل المسعر يقوم على أن الحرارة المفقودة من الجسم الساخن تساوي المكتسبة للبارد"
+      },
+      {
+        "concept": "conservation of energy in calorimetry (Q_lost = Q_gained)",
+        "requires": "applying Q = mcΔT to each substance",
+        "why": "تطبيق قانون الحفاظ يتطلب حساب Q لكل مادة على حدة باستخدام معادلة Q = mcΔT"
+      },
+      {
+        "concept": "heat exchange between hot and cold objects",
+        "requires": "applying Q = mcΔT to each substance",
+        "why": "قياس الحرارة المتبادلة يستلزم تطبيق معادلة Q = mcΔT على كل جسم في المنظومة"
+      },
+      {
+        "concept": "applying Q = mcΔT to each substance",
+        "requires": "direct proportionality (Q ∝ m and Q ∝ ΔT)",
+        "why": "تطبيق المعادلة يفترض فهم التناسب الطردي بين Q والكتلة وفرق درجة الحرارة"
+      },
+      {
+        "concept": "applying Q = mcΔT to each substance",
+        "requires": "multiplication (product of three quantities)",
+        "why": "حساب Q يعتمد على ضرب m في c في ΔT معاً"
+      },
+      {
+        "concept": "applying Q = mcΔT to each substance",
+        "requires": "subtraction (ΔT = T_f − T_i)",
+        "why": "حساب ΔT لكل مادة يتطلب طرح درجة حرارتها الابتدائية من النهائية"
+      },
+      {
+        "concept": "direct proportionality (Q ∝ m and Q ∝ ΔT)",
+        "requires": "multiplication (product of three quantities)",
+        "why": "التناسب الطردي مع متغيرات متعددة يُعبَّر عنه بضربها معاً"
+      },
+      {
+        "concept": "multiplication (product of three quantities)",
+        "requires": "equals sign as balance",
+        "why": "ناتج الضرب يُعادَل بالحرارة في المعادلة مما يتطلب فهم المساواة كتوازن"
+      },
+      {
+        "concept": "subtraction (ΔT = T_f − T_i)",
+        "requires": "equals sign as balance",
+        "why": "كتابة فرق درجات الحرارة في معادلة تستلزم فهم علامة المساواة"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم المساواة كتوازن يستند إلى إدراك أن كل رمز يمثل قيمة عددية محددة"
+      }
+    ]
+  }
+]

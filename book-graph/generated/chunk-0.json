@@ -1,0 +1,659 @@
+[
+  {
+    "content_node_id": 14,
+    "concept": "Kepler's First Law",
+    "nodes": [
+      {
+        "concept": "ellipse as a closed curve",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الشكل الهندسي الذي يصف مدار الكوكب حول الشمس وفق القانون الأول لكبلر؟"
+      },
+      {
+        "concept": "focus points of an ellipse",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "أين تقع الشمس بالنسبة لمدار الكوكب الإهليلجي؟"
+      },
+      {
+        "concept": "semi-major and semi-minor axes",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما الفرق بين المحور شبه الرئيسي والمحور شبه الصغير في القطع الناقص؟"
+      },
+      {
+        "concept": "distance between two points",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تحسب المسافة بين نقطتين في المستوى؟"
+      },
+      {
+        "concept": "ratio and proportion",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كان طول المحور الرئيسي ضعف المحور الصغير، فما نسبة أحدهما إلى الآخر؟"
+      },
+      {
+        "concept": "subtraction",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كانت المسافة القصوى للكوكب عن الشمس 152 مليون كم والدنيا 147 مليون كم، فما الفرق بينهما؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في العلاقة r = a، ماذا تمثل كل من r وa؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Kepler's First Law",
+        "requires": "ellipse as a closed curve",
+        "why": "يصف القانون مدار الكوكب بأنه قطع ناقص، فلا بد من معرفة شكل القطع الناقص"
+      },
+      {
+        "concept": "Kepler's First Law",
+        "requires": "focus points of an ellipse",
+        "why": "تقع الشمس في إحدى بؤرتَي القطع الناقص، فيجب فهم ما هي البؤرة"
+      },
+      {
+        "concept": "ellipse as a closed curve",
+        "requires": "semi-major and semi-minor axes",
+        "why": "يُعرَّف شكل القطع الناقص بمحوريه، فلا بد من معرفة المحورين"
+      },
+      {
+        "concept": "focus points of an ellipse",
+        "requires": "distance between two points",
+        "why": "تُحدَّد بؤرتا القطع الناقص بمسافتهما عن المركز، ويلزم حساب المسافات"
+      },
+      {
+        "concept": "semi-major and semi-minor axes",
+        "requires": "ratio and proportion",
+        "why": "توصف العلاقة بين المحورين بنسبة عددية"
+      },
+      {
+        "concept": "distance between two points",
+        "requires": "subtraction",
+        "why": "حساب المسافة بين نقطتين يستلزم طرح إحداثياتهما"
+      },
+      {
+        "concept": "ratio and proportion",
+        "requires": "equation/variable literacy",
+        "why": "التعبير عن النسبة يستلزم فهم أن الرمز يمثل عدداً وأن المعادلة توازن طرفين"
+      },
+      {
+        "concept": "subtraction",
+        "requires": "equation/variable literacy",
+        "why": "عملية الطرح تستخدم رموزاً في معادلة توازن الطرفين"
+      }
+    ]
+  },
+  {
+    "content_node_id": 18,
+    "concept": "Kepler's Second Law",
+    "nodes": [
+      {
+        "concept": "equal areas in equal times",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ماذا يعني أن الخط الواصل بين الكوكب والشمس يجتاح مساحات متساوية في أزمنة متساوية؟"
+      },
+      {
+        "concept": "area of a triangle",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما صيغة حساب مساحة المثلث إذا عُرفت القاعدة والارتفاع؟"
+      },
+      {
+        "concept": "variable orbital speed",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "لماذا يتغير سرعة الكوكب في مداره حسب القانون الثاني لكبلر؟"
+      },
+      {
+        "concept": "direct proportionality",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت المسافة بين الكوكب والشمس، كيف تتغير السرعة المدارية للحفاظ على تساوي المساحات؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "احسب مساحة مثلث قاعدته 4 وحدات وارتفاعه 3 وحدات."
+      },
+      {
+        "concept": "division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كانت المساحة ثابتة والزمن تضاعف، فما الذي يحدث للسرعة؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "في المعادلة A₁ = A₂، ماذا يعني رمز المساواة؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في العلاقة dA/dt = ثابت، ماذا تمثل dA و dt؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Kepler's Second Law",
+        "requires": "equal areas in equal times",
+        "why": "هذا القانون هو نص مبدأ تساوي المساحات في أزمنة متساوية"
+      },
+      {
+        "concept": "Kepler's Second Law",
+        "requires": "area of a triangle",
+        "why": "تُحسب المساحة التي يجتاحها الخط الرابط تقريبياً بمساحة مثلثات صغيرة"
+      },
+      {
+        "concept": "Kepler's Second Law",
+        "requires": "variable orbital speed",
+        "why": "يستلزم القانون فهم أن السرعة تتغير بحسب الموقع على المدار"
+      },
+      {
+        "concept": "equal areas in equal times",
+        "requires": "direct proportionality",
+        "why": "ثبات المساحة مع الزمن يعني تناسباً طردياً بين المساحة والزمن"
+      },
+      {
+        "concept": "area of a triangle",
+        "requires": "multiplication",
+        "why": "حساب مساحة المثلث (½×قاعدة×ارتفاع) يستلزم الضرب"
+      },
+      {
+        "concept": "variable orbital speed",
+        "requires": "division",
+        "why": "السرعة = المسافة ÷ الزمن، فلا بد من فهم القسمة"
+      },
+      {
+        "concept": "direct proportionality",
+        "requires": "equals sign as balance",
+        "why": "التعبير عن التناسب الطردي يستخدم معادلة يتوازن فيها الطرفان"
+      },
+      {
+        "concept": "division",
+        "requires": "equals sign as balance",
+        "why": "صيغة القسمة معادلة توازن بين الطرفين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم المساواة كتوازن يستلزم إدراك أن الرموز تمثل أعداداً"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equation/variable literacy",
+        "why": "عملية الضرب تُكتب بصيغة رمزية يجب قراءتها كأعداد"
+      }
+    ]
+  },
+  {
+    "content_node_id": 22,
+    "concept": "Kepler's Third Law",
+    "nodes": [
+      {
+        "concept": "T² ∝ r³ proportionality",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ماذا تعني العلاقة T² ∝ r³ بين زمن الدورة والبُعد عن الشمس؟"
+      },
+      {
+        "concept": "powers/exponents",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما قيمة 3² ؟ وما قيمة 2³؟"
+      },
+      {
+        "concept": "ratio and proportion (constant k = T²/r³)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كان T²/r³ ثابتاً لكوكبين، كيف تستخدم ذلك لحساب زمن دورة كوكب إذا عرفت بُعده؟"
+      },
+      {
+        "concept": "division",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "احسب قيمة T²/r³ إذا كان T = 1 سنة و r = 1 وحدة فلكية."
+      },
+      {
+        "concept": "multiplication",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كان r³ = 8 وk = 1، فما قيمة T²؟"
+      },
+      {
+        "concept": "square roots and cube roots",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما الجذر التربيعي لـ 25؟ وما الجذر التكعيبي لـ 27؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "في المعادلة T²/r³ = k، ماذا يعني رمز المساواة؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في العلاقة T² = k·r³، ماذا يمثل كل رمز من T وr وk؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Kepler's Third Law",
+        "requires": "T² ∝ r³ proportionality",
+        "why": "جوهر القانون هو التناسب بين مربع الزمن ومكعب البُعد"
+      },
+      {
+        "concept": "Kepler's Third Law",
+        "requires": "powers/exponents",
+        "why": "العلاقة تتضمن التربيع (T²) والتكعيب (r³) ولا يمكن فهمها دون معرفة الأسس"
+      },
+      {
+        "concept": "T² ∝ r³ proportionality",
+        "requires": "ratio and proportion (constant k = T²/r³)",
+        "why": "التناسب يعني أن النسبة T²/r³ ثابتة لجميع الكواكب"
+      },
+      {
+        "concept": "T² ∝ r³ proportionality",
+        "requires": "division",
+        "why": "حساب النسبة T²/r³ يستلزم القسمة"
+      },
+      {
+        "concept": "powers/exponents",
+        "requires": "multiplication",
+        "why": "الأس يعني الضرب المتكرر للعدد في نفسه"
+      },
+      {
+        "concept": "ratio and proportion (constant k = T²/r³)",
+        "requires": "equals sign as balance",
+        "why": "التعبير عن ثبات النسبة يستخدم معادلة توازن بين الطرفين"
+      },
+      {
+        "concept": "square roots and cube roots",
+        "requires": "powers/exponents",
+        "why": "الجذر التربيعي والتكعيبي هما العملية العكسية للأسس"
+      },
+      {
+        "concept": "division",
+        "requires": "equals sign as balance",
+        "why": "معادلة القسمة تقوم على مفهوم التوازن بين الطرفين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم علامة المساواة كتوازن يبدأ من قراءة الرموز كأعداد"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equation/variable literacy",
+        "why": "الضرب يُكتب رمزياً ويلزم فهم أن الرمز يمثل عدداً"
+      }
+    ]
+  },
+  {
+    "content_node_id": 34,
+    "concept": "Gravitational force",
+    "nodes": [
+      {
+        "concept": "direct proportionality to product of masses",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت كتلة أحد الجسمين، كيف تتغير قوة الجاذبية بينهما؟"
+      },
+      {
+        "concept": "inverse-square law",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت المسافة بين جسمين، بكم تقل قوة الجاذبية بينهما؟"
+      },
+      {
+        "concept": "product of masses (m₁ × m₂)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "احسب حاصل ضرب كتلتين إذا كانت الأولى 6×10²⁴ كغ والثانية 7×10²² كغ."
+      },
+      {
+        "concept": "proportionality constant G",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما دور الثابت G في معادلة قانون الجاذبية الكونية؟"
+      },
+      {
+        "concept": "powers/exponents",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما قيمة (2r)²؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "احسب 6.67×10⁻¹¹ × 5."
+      },
+      {
+        "concept": "division",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "احسب 100 ÷ 4."
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "في المعادلة F = G·m₁m₂/r²، ماذا يعني رمز المساواة؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في المعادلة F = G·m₁m₂/r²، ما الذي يمثله كل رمز من F وG وm وr؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Gravitational force",
+        "requires": "direct proportionality to product of masses",
+        "why": "تتناسب قوة الجاذبية طردياً مع حاصل ضرب الكتلتين"
+      },
+      {
+        "concept": "Gravitational force",
+        "requires": "inverse-square law",
+        "why": "تتناسب قوة الجاذبية عكسياً مع مربع المسافة بين الجسمين"
+      },
+      {
+        "concept": "Gravitational force",
+        "requires": "product of masses (m₁ × m₂)",
+        "why": "تحتاج المعادلة إلى حساب حاصل ضرب الكتلتين"
+      },
+      {
+        "concept": "direct proportionality to product of masses",
+        "requires": "proportionality constant G",
+        "why": "تحويل التناسب إلى معادلة يستلزم إدخال الثابت G"
+      },
+      {
+        "concept": "inverse-square law",
+        "requires": "powers/exponents",
+        "why": "القانون العكسي التربيعي يتضمن رفع المسافة إلى الأس 2"
+      },
+      {
+        "concept": "inverse-square law",
+        "requires": "division",
+        "why": "العلاقة العكسية تعني قسمة البسط على مربع المسافة"
+      },
+      {
+        "concept": "product of masses (m₁ × m₂)",
+        "requires": "multiplication",
+        "why": "حاصل ضرب الكتلتين يستلزم عملية الضرب"
+      },
+      {
+        "concept": "powers/exponents",
+        "requires": "multiplication",
+        "why": "الأس يعني الضرب المتكرر"
+      },
+      {
+        "concept": "proportionality constant G",
+        "requires": "equals sign as balance",
+        "why": "الثابت يُدرج في معادلة توازن بين القوة وباقي المتغيرات"
+      },
+      {
+        "concept": "division",
+        "requires": "equals sign as balance",
+        "why": "صيغة القسمة في المعادلة تقوم على توازن الطرفين"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equation/variable literacy",
+        "why": "الضرب الرمزي يستلزم فهم أن الرمز يمثل عدداً"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "مفهوم التوازن في المعادلة يبنى على قراءة الرموز كأعداد"
+      }
+    ]
+  },
+  {
+    "content_node_id": 99,
+    "concept": "acceleration due to gravity decreases with altitude",
+    "nodes": [
+      {
+        "concept": "g = GM/r² formula",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "اكتب المعادلة التي تربط تسارع الجاذبية بكتلة الأرض والبُعد عن مركزها."
+      },
+      {
+        "concept": "inverse-square dependence on r",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا تضاعف البُعد عن مركز الأرض، بكم يتغير تسارع الجاذبية؟"
+      },
+      {
+        "concept": "radius increases with altitude",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا كان نصف قطر الأرض 6400 كم وارتفاع الجسم 400 كم، فما البُعد الكلي عن المركز؟"
+      },
+      {
+        "concept": "powers/exponents",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما قيمة (6400 + 400)² ؟"
+      },
+      {
+        "concept": "division",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كان GM = 4×10¹⁴ و r² = 4×10¹³، فما قيمة g؟"
+      },
+      {
+        "concept": "addition",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "احسب مجموع نصف قطر الأرض (R) والارتفاع (h) إذا كان R = 6400 كم وh = 200 كم."
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "في المعادلة g = GM/r²، ماذا يعني رمز المساواة؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في المعادلة g = GM/r²، ما الذي يمثله كل رمز من g وG وM وr؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "acceleration due to gravity decreases with altitude",
+        "requires": "g = GM/r² formula",
+        "why": "المعادلة هي الأساس الرياضي لفهم كيف يتغير g مع البُعد"
+      },
+      {
+        "concept": "acceleration due to gravity decreases with altitude",
+        "requires": "inverse-square dependence on r",
+        "why": "تناقص g مع الارتفاع مباشرة ناتج عن العلاقة العكسية التربيعية مع r"
+      },
+      {
+        "concept": "acceleration due to gravity decreases with altitude",
+        "requires": "radius increases with altitude",
+        "why": "الارتفاع يزيد المسافة r = R + h عن مركز الأرض"
+      },
+      {
+        "concept": "g = GM/r² formula",
+        "requires": "division",
+        "why": "المعادلة تتضمن قسمة حاصل GM على r²"
+      },
+      {
+        "concept": "inverse-square dependence on r",
+        "requires": "powers/exponents",
+        "why": "العلاقة العكسية التربيعية تعتمد على رفع r إلى الأس 2"
+      },
+      {
+        "concept": "radius increases with altitude",
+        "requires": "addition",
+        "why": "البُعد الكلي r = R + h يستلزم جمع نصف القطر والارتفاع"
+      },
+      {
+        "concept": "powers/exponents",
+        "requires": "multiplication",
+        "why": "الأس يعني الضرب المتكرر للعدد في نفسه"
+      },
+      {
+        "concept": "division",
+        "requires": "equals sign as balance",
+        "why": "صيغة القسمة في المعادلة تستلزم فهم توازن الطرفين"
+      },
+      {
+        "concept": "addition",
+        "requires": "equation/variable literacy",
+        "why": "الجمع بالرموز يستلزم فهم أن كل رمز يمثل عدداً"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "مفهوم التوازن في المعادلة يبنى على قراءة الرموز كأعداد"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equation/variable literacy",
+        "why": "الضرب الرمزي يستلزم فهم أن الرمز يمثل عدداً"
+      }
+    ]
+  },
+  {
+    "content_node_id": 108,
+    "concept": "Gravitational field",
+    "nodes": [
+      {
+        "concept": "field as force per unit mass (g = F/m)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما تعريف شدة المجال الجاذبي؟ وما وحدته؟"
+      },
+      {
+        "concept": "gravitational field strength g = GM/r²",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "اكتب معادلة شدة المجال الجاذبي عند بُعد r من جسم كتلته M."
+      },
+      {
+        "concept": "force and mass relationship (F = mg)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كانت شدة المجال الجاذبي 9.8 نيوتن/كغ وكتلة الجسم 5 كغ، فما القوة الجاذبية عليه؟"
+      },
+      {
+        "concept": "division",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "احسب شدة المجال إذا كانت القوة 49 نيوتن والكتلة 5 كغ."
+      },
+      {
+        "concept": "inverse-square law",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تتغير شدة المجال الجاذبي إذا تضاعف البُعد عن المصدر؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب الوزن إذا كانت الكتلة 70 كغ وشدة المجال 1.6 نيوتن/كغ."
+      },
+      {
+        "concept": "powers/exponents",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما قيمة r² إذا كان r = 3×10⁶ متر؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "في المعادلة g = F/m، ماذا يعني رمز المساواة؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في المعادلة g = GM/r²، ما الذي يمثله كل رمز من g وG وM وr؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Gravitational field",
+        "requires": "field as force per unit mass (g = F/m)",
+        "why": "تعريف المجال الجاذبي هو القوة المؤثرة على وحدة الكتلة"
+      },
+      {
+        "concept": "Gravitational field",
+        "requires": "gravitational field strength g = GM/r²",
+        "why": "معادلة شدة المجال هي التعبير الكمي لمفهوم المجال الجاذبي"
+      },
+      {
+        "concept": "field as force per unit mass (g = F/m)",
+        "requires": "division",
+        "why": "القسمة على الكتلة (F ÷ m) هي أساس تعريف شدة المجال"
+      },
+      {
+        "concept": "field as force per unit mass (g = F/m)",
+        "requires": "force and mass relationship (F = mg)",
+        "why": "العلاقة F = mg هي إعادة ترتيب تعريف المجال وتُستخدم لحساب القوة"
+      },
+      {
+        "concept": "gravitational field strength g = GM/r²",
+        "requires": "inverse-square law",
+        "why": "شدة المجال تتناقص مع مربع المسافة وفق القانون العكسي التربيعي"
+      },
+      {
+        "concept": "force and mass relationship (F = mg)",
+        "requires": "multiplication",
+        "why": "حساب القوة F = mg يستلزم ضرب الكتلة في شدة المجال"
+      },
+      {
+        "concept": "inverse-square law",
+        "requires": "powers/exponents",
+        "why": "القانون العكسي التربيعي يتضمن رفع المسافة إلى الأس 2"
+      },
+      {
+        "concept": "division",
+        "requires": "equals sign as balance",
+        "why": "معادلة القسمة تقوم على مفهوم توازن الطرفين"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "صيغة الضرب في المعادلة تستلزم فهم توازن الطرفين"
+      },
+      {
+        "concept": "powers/exponents",
+        "requires": "multiplication",
+        "why": "الأس هو الضرب المتكرر للعدد في نفسه"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم علامة المساواة كتوازن يبدأ من إدراك أن الرمز يمثل عدداً"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equation/variable literacy",
+        "why": "الضرب الرمزي يستلزم فهم أن كل رمز يمثل عدداً"
+      }
+    ]
+  }
+]

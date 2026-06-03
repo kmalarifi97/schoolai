@@ -1,0 +1,579 @@
+[
+  {
+    "content_node_id": 400,
+    "concept": "Coriolis Force",
+    "nodes": [
+      {
+        "concept": "rotating reference frame",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الفرق بين إطار مرجعي ثابت وإطار مرجعي دوّار؟"
+      },
+      {
+        "concept": "fictitious (pseudo) force",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "لماذا تُسمى قوة كوريوليس قوةً وهميةً؟"
+      },
+      {
+        "concept": "direct proportionality to mass and speed",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت سرعة الجسم في الإطار الدوّار، فكيف تتغير قوة كوريوليس؟"
+      },
+      {
+        "concept": "angular velocity (Ω)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ماذا يقيس مقدار Ω لجسم يدور حول محور؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب: ٢ × ٣ × ٥"
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كانت y تتناسب طرديًا مع x، وكان y = 6 عندما x = 2، فما قيمة y عندما x = 5؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني علامة (=) في المعادلة F = 2mΩv؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في العبارة F = 2mΩv، ماذا يمثل الرمز m؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Coriolis Force",
+        "requires": "rotating reference frame",
+        "why": "قوة كوريوليس لا تظهر إلا عند وصف الحركة داخل إطار مرجعي دوّار"
+      },
+      {
+        "concept": "Coriolis Force",
+        "requires": "fictitious (pseudo) force",
+        "why": "قوة كوريوليس قوة وهمية تنشأ من دوران الإطار لا من تفاعل حقيقي"
+      },
+      {
+        "concept": "Coriolis Force",
+        "requires": "direct proportionality to mass and speed",
+        "why": "صيغة F = 2mΩv تُظهر أن القوة تتناسب طرديًا مع كتلة الجسم وسرعته"
+      },
+      {
+        "concept": "rotating reference frame",
+        "requires": "angular velocity (Ω)",
+        "why": "وصف دوران الإطار المرجعي يستلزم معرفة السرعة الزاوية Ω"
+      },
+      {
+        "concept": "direct proportionality to mass and speed",
+        "requires": "multiplication",
+        "why": "حساب حاصل ضرب m × Ω × v يتطلب إتقان عملية الضرب"
+      },
+      {
+        "concept": "direct proportionality to mass and speed",
+        "requires": "proportionality (constant ratio)",
+        "why": "فهم أن تضاعف السرعة يُضاعف القوة يستلزم مفهوم التناسب الطردي"
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "requires": "multiplication",
+        "why": "التناسب الطردي يعني أن النسبة y/x ثابتة، وحساب هذه النسبة يعتمد على الضرب"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "استخدام نتيجة الضرب في معادلة يستلزم فهم أن طرفَي المعادلة متكافئان"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "إدراك أن = تعني التكافؤ يبدأ بفهم أن الرموز تمثل أعدادًا"
+      }
+    ]
+  },
+  {
+    "content_node_id": 549,
+    "concept": "Newton's second law in terms of momentum change",
+    "nodes": [
+      {
+        "concept": "rate of change",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما معنى معدل تغيُّر كمية ما بالنسبة للزمن؟"
+      },
+      {
+        "concept": "momentum (p = mv)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما كمية تحرك جسم كتلته 3 كيلوغرام يتحرك بسرعة 4 م/ث؟"
+      },
+      {
+        "concept": "change (delta, Δ)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا تغيرت سرعة جسم من 2 م/ث إلى 7 م/ث، فما Δv؟"
+      },
+      {
+        "concept": "division",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما ناتج 24 ÷ 6؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب: 5 × 8"
+      },
+      {
+        "concept": "subtraction",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب: 15 - 9"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا تعني علامة (=) في معادلة F = Δp/Δt؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في العبارة p = mv، ماذا يمثل الرمز p؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Newton's second law in terms of momentum change",
+        "requires": "rate of change",
+        "why": "الصيغة F = Δp/Δt تعبّر عن القوة باعتبارها معدل تغيُّر كمية التحرك"
+      },
+      {
+        "concept": "Newton's second law in terms of momentum change",
+        "requires": "momentum (p = mv)",
+        "why": "لا يمكن حساب Δp دون معرفة كمية التحرك p = mv"
+      },
+      {
+        "concept": "rate of change",
+        "requires": "division",
+        "why": "معدل التغير يُحسب بقسمة مقدار التغير على الزمن المستغرق"
+      },
+      {
+        "concept": "rate of change",
+        "requires": "change (delta, Δ)",
+        "why": "فهم معدل التغيُّر يستلزم أولًا فهم مفهوم الفرق (Δ)"
+      },
+      {
+        "concept": "momentum (p = mv)",
+        "requires": "multiplication",
+        "why": "حساب كمية التحرك p = mv يتطلب ضرب الكتلة في السرعة"
+      },
+      {
+        "concept": "change (delta, Δ)",
+        "requires": "subtraction",
+        "why": "التغيُّر Δp = p₂ - p₁ يُحسب بطرح القيمة الابتدائية من النهائية"
+      },
+      {
+        "concept": "division",
+        "requires": "equals sign as balance",
+        "why": "كتابة نتيجة القسمة في معادلة القوة تستلزم فهم التكافؤ بين الطرفين"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "ربط نتيجة الضرب بمتغير في معادلة يعتمد على مفهوم التوازن في المعادلة"
+      },
+      {
+        "concept": "subtraction",
+        "requires": "equation/variable literacy",
+        "why": "إجراء عملية الطرح على متغيرات رمزية يستلزم فهم أن الرموز تمثل أعدادًا"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "إدراك معنى = يبدأ بفهم أن كل رمز في المعادلة يقف مقام عدد"
+      }
+    ]
+  },
+  {
+    "content_node_id": 553,
+    "concept": "Impulse",
+    "nodes": [
+      {
+        "concept": "force applied over time",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "كيف تختلف القوة المطبقة للحظة واحدة عن القوة المطبقة لفترة أطول في تأثيرها على الجسم؟"
+      },
+      {
+        "concept": "time interval (Δt)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا بدأ تطبيق قوة عند t = 2 ث وانتهى عند t = 5 ث، فما الفترة الزمنية Δt؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "احسب: 7 × 4"
+      },
+      {
+        "concept": "subtraction",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "احسب: 10 - 3"
+      },
+      {
+        "concept": "direct proportionality",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كان الدفع يتناسب طرديًا مع الزمن، فماذا يحدث للدفع إذا تضاعف الزمن؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ماذا تعني علامة (=) في معادلة J = F·Δt؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في الرمز J = F·Δt، ماذا يمثل الحرف F؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Impulse",
+        "requires": "force applied over time",
+        "why": "الدفع J = F·Δt يُعرَّف أساسًا بوصفه تأثير القوة خلال فترة زمنية محددة"
+      },
+      {
+        "concept": "Impulse",
+        "requires": "time interval (Δt)",
+        "why": "حساب الدفع يستلزم تحديد المدة الزمنية Δt التي تُطبَّق خلالها القوة"
+      },
+      {
+        "concept": "Impulse",
+        "requires": "direct proportionality",
+        "why": "الدفع يتناسب طرديًا مع القوة ومع الفترة الزمنية وفق J = F·Δt"
+      },
+      {
+        "concept": "time interval (Δt)",
+        "requires": "subtraction",
+        "why": "الفترة الزمنية Δt = t₂ - t₁ تُحسب بطرح الزمن الابتدائي من النهائي"
+      },
+      {
+        "concept": "force applied over time",
+        "requires": "multiplication",
+        "why": "حساب J = F × Δt يتطلب ضرب مقدار القوة في الفترة الزمنية"
+      },
+      {
+        "concept": "direct proportionality",
+        "requires": "multiplication",
+        "why": "التناسب الطردي يُعبَّر عنه رياضيًا بالضرب في ثابت"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "وضع ناتج الضرب في طرف معادلة يعتمد على فهم التكافؤ بين الطرفين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم أن = توازن بين طرفين يستلزم أن تعرف أن الرموز تقف مقام أعداد"
+      }
+    ]
+  },
+  {
+    "content_node_id": 556,
+    "concept": "Momentum",
+    "nodes": [
+      {
+        "concept": "product of mass and velocity",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما كمية تحرك جسم كتلته 5 كيلوغرام يتحرك بسرعة 3 م/ث؟"
+      },
+      {
+        "concept": "direct proportionality to mass",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت كتلة الجسم مع ثبات سرعته، فكيف تتغير كمية تحركه؟"
+      },
+      {
+        "concept": "direct proportionality to velocity",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا تضاعفت سرعة الجسم مع ثبات كتلته، فكيف تتغير كمية تحركه؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "احسب: 6 × 9"
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كانت y/x = 4 دائمًا، فما قيمة y عندما x = 7؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "في معادلة p = mv، ماذا يعني أن الطرف الأيسر يساوي الأيمن؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في الرمز p = mv، ماذا يمثل الحرف v؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Momentum",
+        "requires": "product of mass and velocity",
+        "why": "تعريف الزخم p = mv هو حاصل ضرب الكتلة في السرعة مباشرةً"
+      },
+      {
+        "concept": "Momentum",
+        "requires": "direct proportionality to mass",
+        "why": "p = mv يُظهر أن الزخم يتناسب طرديًا مع الكتلة عند ثبات السرعة"
+      },
+      {
+        "concept": "Momentum",
+        "requires": "direct proportionality to velocity",
+        "why": "p = mv يُظهر أن الزخم يتناسب طرديًا مع السرعة عند ثبات الكتلة"
+      },
+      {
+        "concept": "product of mass and velocity",
+        "requires": "multiplication",
+        "why": "حساب m × v يتطلب إتقان عملية الضرب"
+      },
+      {
+        "concept": "direct proportionality to mass",
+        "requires": "proportionality (constant ratio)",
+        "why": "فهم التناسب الطردي يستلزم إدراك أن النسبة p/m = v تبقى ثابتة"
+      },
+      {
+        "concept": "direct proportionality to velocity",
+        "requires": "proportionality (constant ratio)",
+        "why": "فهم التناسب الطردي يستلزم إدراك أن النسبة p/v = m تبقى ثابتة"
+      },
+      {
+        "concept": "proportionality (constant ratio)",
+        "requires": "multiplication",
+        "why": "التحقق من ثبات النسبة يعتمد على عمليات الضرب والقسمة"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "ربط ناتج الضرب بالرمز p في المعادلة يستلزم فهم معنى علامة ="
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "إدراك التوازن في المعادلة يبدأ بفهم أن كل رمز يقف مقام عدد"
+      }
+    ]
+  },
+  {
+    "content_node_id": 563,
+    "concept": "Impulse-Momentum Theorem",
+    "nodes": [
+      {
+        "concept": "impulse equals momentum change",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ماذا يعني أن الدفع المؤثر على جسم يساوي تغيُّر زخمه؟"
+      },
+      {
+        "concept": "impulse (J = FΔt)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "احسب الدفع الناتج عن قوة مقدارها 10 نيوتن تؤثر لمدة 3 ثوانٍ"
+      },
+      {
+        "concept": "momentum change (Δp)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "جسم كتلته 2 كغ تغيّرت سرعته من 3 م/ث إلى 8 م/ث، احسب Δp"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب: 4 × 6"
+      },
+      {
+        "concept": "subtraction",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب: 16 - 6"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "في معادلة J = Δp، ماذا يعني أن الطرفين متساويان؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في الرمز Δp، ماذا يمثل الرمز Δ وماذا يمثل p؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Impulse-Momentum Theorem",
+        "requires": "impulse equals momentum change",
+        "why": "النظرية تنص أساسًا على أن J = Δp، أي أن الدفع يعادل تغيُّر الزخم تمامًا"
+      },
+      {
+        "concept": "Impulse-Momentum Theorem",
+        "requires": "impulse (J = FΔt)",
+        "why": "طرف المعادلة الأيسر J = FΔt يستلزم معرفة مفهوم الدفع وكيفية حسابه"
+      },
+      {
+        "concept": "impulse equals momentum change",
+        "requires": "momentum change (Δp)",
+        "why": "لإثبات أن J = Δp لا بد من حساب Δp = m·Δv بصورة مستقلة"
+      },
+      {
+        "concept": "impulse (J = FΔt)",
+        "requires": "multiplication",
+        "why": "حساب J = F × Δt يتطلب ضرب القوة في الفترة الزمنية"
+      },
+      {
+        "concept": "momentum change (Δp)",
+        "requires": "subtraction",
+        "why": "Δp = p₂ - p₁ يُحسب بطرح الزخم الابتدائي من الزخم النهائي"
+      },
+      {
+        "concept": "momentum change (Δp)",
+        "requires": "multiplication",
+        "why": "حساب كل من p₁ = mv₁ و p₂ = mv₂ يستلزم ضرب الكتلة في السرعة"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "وضع ناتج الضرب في طرف معادلة يعتمد على فهم التكافؤ بين الطرفين"
+      },
+      {
+        "concept": "subtraction",
+        "requires": "equals sign as balance",
+        "why": "استخدام نتيجة الطرح في معادلة يستلزم فهم أن = توازن بين طرفين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "إدراك معنى التوازن في المعادلة يبدأ بفهم أن الرموز تمثل أعدادًا"
+      }
+    ]
+  },
+  {
+    "content_node_id": 612,
+    "concept": "Newton's third law for colliding balls",
+    "nodes": [
+      {
+        "concept": "action-reaction force pairs",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "عند تصادم كرتين، كيف تؤثر كل منهما على الأخرى من حيث الشدة والاتجاه؟"
+      },
+      {
+        "concept": "equal magnitude, opposite direction",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا أثرت كرة A على كرة B بقوة 20 نيوتن، فما مقدار القوة التي تؤثر بها B على A؟"
+      },
+      {
+        "concept": "contact force during collision",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "في أيّ لحظة تُطبَّق قوة التصادم بين كرتين؟"
+      },
+      {
+        "concept": "negation / sign reversal",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كانت قوة A على B تساوي +30 نيوتن، فما قوة B على A بالإشارة؟"
+      },
+      {
+        "concept": "multiplication by −1",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب: (−1) × 15"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ماذا يعني أن F₁₂ = −F₂₁ في قانون نيوتن الثالث؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في الرمز F₁₂، ماذا يعني الترقيم ١٢ في أسفل الرمز F؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Newton's third law for colliding balls",
+        "requires": "action-reaction force pairs",
+        "why": "قانون نيوتن الثالث يُقرِّر أن لكل قوة فعل قوة رد فعل مساوية ومضادة"
+      },
+      {
+        "concept": "Newton's third law for colliding balls",
+        "requires": "equal magnitude, opposite direction",
+        "why": "الصيغة F₁₂ = −F₂₁ تشترط تساوي المقدارين واختلاف الاتجاهين في آنٍ واحد"
+      },
+      {
+        "concept": "Newton's third law for colliding balls",
+        "requires": "contact force during collision",
+        "why": "تطبيق القانون على الكرات يستلزم فهم أن القوة تنشأ لحظة التلامس فقط"
+      },
+      {
+        "concept": "equal magnitude, opposite direction",
+        "requires": "negation / sign reversal",
+        "why": "التعبير عن الاتجاه المعاكس يُمثَّل رياضيًا بإشارة سالبة أمام المتجه"
+      },
+      {
+        "concept": "negation / sign reversal",
+        "requires": "multiplication by −1",
+        "why": "قلب إشارة قوة ما يعني ضربها في (−1) رياضيًا"
+      },
+      {
+        "concept": "action-reaction force pairs",
+        "requires": "equals sign as balance",
+        "why": "التعبير عن تساوي قوتي الفعل ورد الفعل في معادلة يعتمد على فهم معنى ="
+      },
+      {
+        "concept": "multiplication by −1",
+        "requires": "equals sign as balance",
+        "why": "وضع ناتج الضرب في طرف معادلة يستلزم فهم التكافؤ بين الطرفين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم أن = توازن بين طرفين يبدأ بإدراك أن الرموز تمثل قيمًا عددية"
+      }
+    ]
+  }
+]

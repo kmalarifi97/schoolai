@@ -37,7 +37,9 @@ node demo.mjs       # structure + 2 full prereq graphs + a session logging a str
 ```
 
 Build summary: **6 chapters · 13 lessons · 187 pages · 1,748 content nodes**;
-3 content nodes carry full prerequisite graphs.
+**74 content nodes carry full prerequisite graphs** (597 prereq nodes, 712 edges).
+3 are hand-authored references in `prereqs.mjs`; the other 71 were authored by a
+fan-out of agents and live in `generated/*.json` (loaded by `build.mjs`).
 
 ## Storage
 Node built-in `node:sqlite` (same family as graph-log), file at `data/book.db`

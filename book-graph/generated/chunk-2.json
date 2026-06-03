@@ -1,0 +1,574 @@
+[
+  {
+    "content_node_id": 190,
+    "concept": "Kepler's Third Law (Newton)",
+    "nodes": [
+      {
+        "concept": "ratio of cube to square (T²∝r³)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا تضاعف نصف المسار، بأي معامل يتغير مربع الدورة؟"
+      },
+      {
+        "concept": "gravitational constant G",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ماذا تمثل G في قانون نيوتن للجاذبية، وما وحدتها؟"
+      },
+      {
+        "concept": "direct proportionality",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كانت Y تتناسب طردياً مع X، ماذا يحدث لـ Y عند مضاعفة X؟"
+      },
+      {
+        "concept": "powers/exponents",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما قيمة r³ إذا كان r = 2؟"
+      },
+      {
+        "concept": "division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما ناتج 4π²r³ ÷ GM إذا كانت جميع القيم معلومة؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب حاصل ضرب 4 × π² × 8."
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "إذا كان T² = 4π²r³/GM، هل يمكنك إيجاد T إذا عُرفت r و G و M؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في المعادلة T² = k، ماذا يمثل الرمز T وماذا يعني علامة الساواة؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Kepler's Third Law (Newton)",
+        "requires": "ratio of cube to square (T²∝r³)",
+        "why": "القانون يقول T² = 4π²r³/GM، أي أن مربع الدورة يتناسب مع مكعب نصف المسار"
+      },
+      {
+        "concept": "Kepler's Third Law (Newton)",
+        "requires": "gravitational constant G",
+        "why": "الثابت G يربط المد والجاذبية ليجعل النسبة كمية"
+      },
+      {
+        "concept": "ratio of cube to square (T²∝r³)",
+        "requires": "direct proportionality",
+        "why": "فهم أن T² ∝ r³ يعتمد على معنى التناسب الطردي بين كميتين"
+      },
+      {
+        "concept": "ratio of cube to square (T²∝r³)",
+        "requires": "powers/exponents",
+        "why": "حساب r³ و T² يستلزم معرفة القوى والأسس"
+      },
+      {
+        "concept": "gravitational constant G",
+        "requires": "division",
+        "why": "إيجاد G من المعادلة يتطلب قسمة طرفي المعادلة"
+      },
+      {
+        "concept": "direct proportionality",
+        "requires": "division",
+        "why": "التناسب الطردي يعني أن النسبة T²/r³ ثابتة، وهذا يستلزم القسمة"
+      },
+      {
+        "concept": "powers/exponents",
+        "requires": "multiplication",
+        "why": "الأس هو ضرب متكرر، لذا فهم القوى يبنى على الضرب"
+      },
+      {
+        "concept": "division",
+        "requires": "equals sign as balance",
+        "why": "إعادة ترتيب المعادلة بالقسمة يتطلب فهم أن الطرفين يبقيان متساويين"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "ضرب طرفي معادلة يستلزم فهم أن العلاقة تتحقق على كلا الجانبين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم الساواة كميزان يفترض أن يعرف الطالب أن الرموز تمثل أعداداً"
+      }
+    ]
+  },
+  {
+    "content_node_id": 269,
+    "concept": "Radian",
+    "nodes": [
+      {
+        "concept": "arc length to radius ratio (θ = s/r)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الزاوية بالراديان إذا كان طول القوس يساوي نصف قطر الدائرة؟"
+      },
+      {
+        "concept": "arc length as curved distance",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "هل طول القوس يساوي الوتر؟ وضح الفرق."
+      },
+      {
+        "concept": "circumference formula (C = 2πr)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما محيط دائرة نصف قطرها 5 م؟"
+      },
+      {
+        "concept": "ratio / division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما ناتج 12 ÷ 4؟ وماذا تعني النسبة 3/4؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب 2 × π × 3."
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "في معادلة θ = s/r، ماذا يعني أن الطرفين متساويان؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في θ = s/r، ماذا يمثل كل رمز، وماذا تعني علامة الساواة؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Radian",
+        "requires": "arc length to radius ratio (θ = s/r)",
+        "why": "الراديان يُعرَّف بأنه نسبة طول القوس إلى نصف القطر"
+      },
+      {
+        "concept": "Radian",
+        "requires": "circumference formula (C = 2πr)",
+        "why": "استنتاج أن الدائرة الكاملة = 2π راديان يستلزم معرفة صيغة المحيط"
+      },
+      {
+        "concept": "arc length to radius ratio (θ = s/r)",
+        "requires": "arc length as curved distance",
+        "why": "لحساب النسبة يجب أولاً فهم أن s هو مسافة منحنية على المحيط"
+      },
+      {
+        "concept": "arc length to radius ratio (θ = s/r)",
+        "requires": "ratio / division",
+        "why": "إيجاد θ يعني قسمة s على r، أي حساب نسبة"
+      },
+      {
+        "concept": "circumference formula (C = 2πr)",
+        "requires": "multiplication",
+        "why": "حساب 2πr يستلزم ضرب ثلاثة أعداد معاً"
+      },
+      {
+        "concept": "ratio / division",
+        "requires": "equals sign as balance",
+        "why": "إعادة ترتيب s = θr من θ = s/r يتطلب فهم الساواة كميزان"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "ضرب طرفي المعادلة يستلزم أن يبقى الطرفان متساويين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم الساواة يفترض أن يعرف الطالب أن الرموز تمثل قيماً عددية"
+      }
+    ]
+  },
+  {
+    "content_node_id": 288,
+    "concept": "Angular Velocity",
+    "nodes": [
+      {
+        "concept": "rate of change of angle (ω = Δθ/Δt)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا دار جسم بزاوية 6 راديان في 3 ثوانٍ، ما سرعته الزاوية؟"
+      },
+      {
+        "concept": "radian measure",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "حوّل 180° إلى راديان."
+      },
+      {
+        "concept": "delta notation (Δ = change)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كان θ₁ = 2 راديان و θ₂ = 5 راديان، ما قيمة Δθ؟"
+      },
+      {
+        "concept": "division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما ناتج Δθ ÷ Δt إذا كان Δθ = 10 راديان و Δt = 2 ثانية؟"
+      },
+      {
+        "concept": "subtraction",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب 5 − 2."
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "في معادلة ω = Δθ/Δt، كيف تعيد ترتيبها لإيجاد Δθ؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في ω = Δθ/Δt، ماذا يمثل كل رمز؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Angular Velocity",
+        "requires": "rate of change of angle (ω = Δθ/Δt)",
+        "why": "السرعة الزاوية تُعرَّف بأنها التغير في الزاوية مقسوماً على الزمن"
+      },
+      {
+        "concept": "rate of change of angle (ω = Δθ/Δt)",
+        "requires": "radian measure",
+        "why": "Δθ تُقاس بالراديان، لذا يجب فهم وحدة الراديان أولاً"
+      },
+      {
+        "concept": "rate of change of angle (ω = Δθ/Δt)",
+        "requires": "delta notation (Δ = change)",
+        "why": "رمز Δ يعني الفرق بين قيمتين، وهو أساس حساب معدل التغير"
+      },
+      {
+        "concept": "rate of change of angle (ω = Δθ/Δt)",
+        "requires": "division",
+        "why": "حساب ω يعني قسمة Δθ على Δt"
+      },
+      {
+        "concept": "delta notation (Δ = change)",
+        "requires": "subtraction",
+        "why": "Δθ = θ₂ − θ₁، أي أن مفهوم التغير يعتمد على الطرح"
+      },
+      {
+        "concept": "division",
+        "requires": "equals sign as balance",
+        "why": "قسمة طرفي المعادلة تستلزم فهم الساواة كميزان"
+      },
+      {
+        "concept": "subtraction",
+        "requires": "equals sign as balance",
+        "why": "طرح كمية من طرفي المعادلة يبقيها متوازنة"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم الساواة يفترض أن يعرف الطالب أن الرموز تمثل أعداداً"
+      }
+    ]
+  },
+  {
+    "content_node_id": 293,
+    "concept": "Angular Acceleration",
+    "nodes": [
+      {
+        "concept": "rate of change of angular velocity (α = Δω/Δt)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا تغيرت السرعة الزاوية من 2 إلى 8 راد/ث خلال 3 ثوانٍ، ما التسارع الزاوي؟"
+      },
+      {
+        "concept": "angular velocity (ω)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما السرعة الزاوية لجسم يدور بزاوية 4π راديان في ثانيتين؟"
+      },
+      {
+        "concept": "delta notation (Δ = change)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما قيمة Δω إذا كانت ω₁ = 3 راد/ث و ω₂ = 9 راد/ث؟"
+      },
+      {
+        "concept": "division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما ناتج 6 ÷ 3؟"
+      },
+      {
+        "concept": "subtraction",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب 9 − 3."
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "في α = Δω/Δt، كيف تعيد ترتيبها لإيجاد Δω؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في α = Δω/Δt، ماذا يمثل كل رمز وماذا تعني علامة الساواة؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Angular Acceleration",
+        "requires": "rate of change of angular velocity (α = Δω/Δt)",
+        "why": "التسارع الزاوي يُعرَّف بأنه معدل تغير السرعة الزاوية بالنسبة للزمن"
+      },
+      {
+        "concept": "rate of change of angular velocity (α = Δω/Δt)",
+        "requires": "angular velocity (ω)",
+        "why": "Δω هو فرق بين قيمتين للسرعة الزاوية، فيجب فهم ω أولاً"
+      },
+      {
+        "concept": "rate of change of angular velocity (α = Δω/Δt)",
+        "requires": "delta notation (Δ = change)",
+        "why": "رمز Δ يعني الفرق، وهو أساس حساب التغير في ω"
+      },
+      {
+        "concept": "rate of change of angular velocity (α = Δω/Δt)",
+        "requires": "division",
+        "why": "حساب α يعني قسمة Δω على Δt"
+      },
+      {
+        "concept": "delta notation (Δ = change)",
+        "requires": "subtraction",
+        "why": "Δω = ω₂ − ω₁، أي أن التغير يعتمد على الطرح"
+      },
+      {
+        "concept": "division",
+        "requires": "equals sign as balance",
+        "why": "قسمة طرفي المعادلة تستلزم فهم الساواة كميزان"
+      },
+      {
+        "concept": "subtraction",
+        "requires": "equals sign as balance",
+        "why": "طرح كمية من طرفي المعادلة يبقيها متوازنة"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم الساواة يفترض أن يعرف الطالب أن الرموز تمثل أعداداً"
+      }
+    ]
+  },
+  {
+    "content_node_id": 303,
+    "concept": "Angular Frequency",
+    "nodes": [
+      {
+        "concept": "ω = 2π/T = 2πf",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما التردد الزاوي لجسم دورته 0.5 ثانية؟"
+      },
+      {
+        "concept": "period and frequency (f = 1/T)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كان التردد 4 هرتز، ما الدورة الزمنية؟"
+      },
+      {
+        "concept": "full circle = 2π radians",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كم راديان في دورة كاملة؟"
+      },
+      {
+        "concept": "reciprocal relationship",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما مقلوب العدد 5؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب 2 × π × 4."
+      },
+      {
+        "concept": "division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما ناتج 2π ÷ 0.5؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "في ω = 2π/T، كيف تعيد ترتيبها لإيجاد T؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في ω = 2πf، ماذا يمثل كل رمز وماذا تعني علامة الساواة؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Angular Frequency",
+        "requires": "ω = 2π/T = 2πf",
+        "why": "التردد الزاوي يُعرَّف بمضاعفة 2π على تردد الدوران أو قسمتها على الدورة"
+      },
+      {
+        "concept": "ω = 2π/T = 2πf",
+        "requires": "period and frequency (f = 1/T)",
+        "why": "ω = 2πf تستلزم معرفة علاقة التردد بالدورة الزمنية"
+      },
+      {
+        "concept": "ω = 2π/T = 2πf",
+        "requires": "full circle = 2π radians",
+        "why": "معامل 2π في الصيغة مصدره أن الدورة الكاملة تساوي 2π راديان"
+      },
+      {
+        "concept": "period and frequency (f = 1/T)",
+        "requires": "reciprocal relationship",
+        "why": "f = 1/T تعني أن التردد هو مقلوب الدورة الزمنية"
+      },
+      {
+        "concept": "ω = 2π/T = 2πf",
+        "requires": "multiplication",
+        "why": "حساب 2πf يستلزم ضرب 2π في قيمة التردد"
+      },
+      {
+        "concept": "ω = 2π/T = 2πf",
+        "requires": "division",
+        "why": "حساب 2π/T يستلزم قسمة 2π على الدورة الزمنية"
+      },
+      {
+        "concept": "reciprocal relationship",
+        "requires": "division",
+        "why": "المقلوب هو 1 مقسوماً على العدد، فيعتمد على القسمة"
+      },
+      {
+        "concept": "division",
+        "requires": "equals sign as balance",
+        "why": "قسمة طرفي المعادلة تستلزم فهم الساواة كميزان"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "ضرب طرفي المعادلة يستلزم أن يبقى الطرفان متساويين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم الساواة يفترض أن يعرف الطالب أن الرموز تمثل أعداداً"
+      }
+    ]
+  },
+  {
+    "content_node_id": 316,
+    "concept": "Lever arm",
+    "nodes": [
+      {
+        "concept": "perpendicular distance from pivot to line of force",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "لماذا تكون ذراع القوة أصغر عندما لا تكون القوة عمودية على الذراع؟"
+      },
+      {
+        "concept": "sine function (sinθ)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما قيمة sin 90°؟ وما قيمة sin 30°؟"
+      },
+      {
+        "concept": "right-triangle geometry",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "في مثلث قائم، ما الضلع المقابل للزاوية θ إذا كان الوتر r؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب r × sin θ إذا كان r = 5 م و sin θ = 0.6."
+      },
+      {
+        "concept": "angle between vectors",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما الزاوية بين قوة أفقية وذراع رأسي؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "في d = r sinθ، كيف تعيد ترتيبها لإيجاد r؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في d = r sinθ، ماذا يمثل كل رمز وماذا تعني علامة الساواة؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Lever arm",
+        "requires": "perpendicular distance from pivot to line of force",
+        "why": "ذراع القوة هو المسافة العمودية من محور الدوران إلى خط تأثير القوة"
+      },
+      {
+        "concept": "Lever arm",
+        "requires": "sine function (sinθ)",
+        "why": "الصيغة d = r sinθ تستخدم الجيب لاستخراج المركبة العمودية للمسافة"
+      },
+      {
+        "concept": "perpendicular distance from pivot to line of force",
+        "requires": "right-triangle geometry",
+        "why": "المسافة العمودية تُستخرج من مثلث قائم يضم ذراع القوة وزاوية الميل"
+      },
+      {
+        "concept": "sine function (sinθ)",
+        "requires": "right-triangle geometry",
+        "why": "جيب الزاوية يُعرَّف عبر نسبة الضلع المقابل إلى الوتر في المثلث القائم"
+      },
+      {
+        "concept": "sine function (sinθ)",
+        "requires": "angle between vectors",
+        "why": "θ في d = r sinθ هي الزاوية بين متجه الذراع ومتجه القوة"
+      },
+      {
+        "concept": "Lever arm",
+        "requires": "multiplication",
+        "why": "حساب d = r sinθ يستلزم ضرب r في قيمة الجيب"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "ضرب طرفي المعادلة يستلزم أن يبقى الطرفان متساويين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم الساواة يفترض أن يعرف الطالب أن الرموز تمثل أعداداً"
+      }
+    ]
+  }
+]

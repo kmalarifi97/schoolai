@@ -1,0 +1,708 @@
+[
+  {
+    "content_node_id": 836,
+    "concept": "Work-Energy Theorem",
+    "nodes": [
+      {
+        "concept": "net work done on an object",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الشغل الكلي المبذول على جسم تؤثر فيه قوتان متعاكستان مقدارهما 10 نيوتن و4 نيوتن خلال إزاحة 2 متر؟"
+      },
+      {
+        "concept": "kinetic energy (½mv²)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الطاقة الحركية لجسم كتلته 2 كغ يتحرك بسرعة 3 م/ث؟"
+      },
+      {
+        "concept": "change in kinetic energy (ΔKE)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا ازدادت سرعة جسم من 2 م/ث إلى 5 م/ث، هل الطاقة الحركية ازدادت أم نقصت؟"
+      },
+      {
+        "concept": "work as force times displacement (W = F·d)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تحسب الشغل الذي تبذله قوة مقدارها 5 نيوتن على إزاحة 3 أمتار؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما حاصل ضرب 6 × 7؟"
+      },
+      {
+        "concept": "subtraction (difference of quantities)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كانت الطاقة الابتدائية 12 جول والنهائية 20 جول، ما مقدار التغيّر؟"
+      },
+      {
+        "concept": "powers/exponents (v²)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما قيمة 4²؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "إذا كان الشغل = ΔKE، ماذا يعني ذلك بالنسبة لطرفي المعادلة؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في معادلة W = F·d، ماذا يمثل كل رمز؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Work-Energy Theorem",
+        "requires": "net work done on an object",
+        "why": "النظرية تربط الشغل الكلي بالتغير في الطاقة الحركية، فيجب فهم الشغل الكلي أولاً"
+      },
+      {
+        "concept": "Work-Energy Theorem",
+        "requires": "kinetic energy (½mv²)",
+        "why": "النظرية تنص على أن الشغل يساوي التغير في الطاقة الحركية، فيجب معرفة معنى الطاقة الحركية"
+      },
+      {
+        "concept": "Work-Energy Theorem",
+        "requires": "change in kinetic energy (ΔKE)",
+        "why": "طرف المعادلة اليميني هو ΔKE، فيجب فهم مفهوم التغيّر في الطاقة الحركية"
+      },
+      {
+        "concept": "net work done on an object",
+        "requires": "work as force times displacement (W = F·d)",
+        "why": "الشغل الكلي هو مجموع أشغال القوى الفردية، وكل شغل فردي يُحسب بـ F·d"
+      },
+      {
+        "concept": "kinetic energy (½mv²)",
+        "requires": "multiplication",
+        "why": "حساب ½mv² يتطلب ضرب الكتلة في مربع السرعة"
+      },
+      {
+        "concept": "kinetic energy (½mv²)",
+        "requires": "powers/exponents (v²)",
+        "why": "السرعة في صيغة الطاقة الحركية مرفوعة للقوة 2، فيجب فهم الأسس"
+      },
+      {
+        "concept": "change in kinetic energy (ΔKE)",
+        "requires": "subtraction (difference of quantities)",
+        "why": "التغيّر في الطاقة الحركية يُحسب بطرح القيمة الابتدائية من النهائية"
+      },
+      {
+        "concept": "work as force times displacement (W = F·d)",
+        "requires": "multiplication",
+        "why": "الشغل يُحسب بضرب القوة في الإزاحة"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "لاستخدام نتائج الضرب في المعادلات يجب فهم أن الطرفين متكافئان"
+      },
+      {
+        "concept": "subtraction (difference of quantities)",
+        "requires": "equals sign as balance",
+        "why": "التعبير عن الفرق في معادلة يستلزم فهم علامة المساواة كتوازن"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم التوازن في المعادلة يفترض أن الطالب يدرك أن الرموز تمثل أعداداً"
+      }
+    ]
+  },
+  {
+    "content_node_id": 838,
+    "concept": "Joule",
+    "nodes": [
+      {
+        "concept": "unit of work and energy",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما وحدة قياس الشغل في النظام الدولي؟"
+      },
+      {
+        "concept": "work as force times displacement (W = F·d)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الصيغة الرياضية للشغل؟"
+      },
+      {
+        "concept": "newton (unit of force)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما وحدة قياس القوة في النظام الدولي؟"
+      },
+      {
+        "concept": "metre (unit of displacement)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما وحدة قياس الإزاحة في النظام الدولي؟"
+      },
+      {
+        "concept": "multiplication of units (N·m)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما الوحدة الناتجة عن ضرب نيوتن في متر؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ما حاصل ضرب 5 × 3؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "إذا كانت W = F·d وكانت F = 1 نيوتن و d = 1 متر، ما قيمة W؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في معادلة W = F·d، ماذا يمثل الرمز d؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Joule",
+        "requires": "unit of work and energy",
+        "why": "الجول هو وحدة الشغل والطاقة، فلا بد من فهم ما تعنيه وحدة القياس لهاتين الكميتين"
+      },
+      {
+        "concept": "Joule",
+        "requires": "work as force times displacement (W = F·d)",
+        "why": "الجول يُشتق من تعريف الشغل = قوة × إزاحة، فيجب فهم هذا التعريف أولاً"
+      },
+      {
+        "concept": "unit of work and energy",
+        "requires": "multiplication of units (N·m)",
+        "why": "وحدة الشغل هي جداء وحدتي القوة والإزاحة، أي N·m = J"
+      },
+      {
+        "concept": "work as force times displacement (W = F·d)",
+        "requires": "newton (unit of force)",
+        "why": "حساب الشغل يشمل القوة المقاسة بالنيوتن"
+      },
+      {
+        "concept": "work as force times displacement (W = F·d)",
+        "requires": "metre (unit of displacement)",
+        "why": "حساب الشغل يشمل الإزاحة المقاسة بالمتر"
+      },
+      {
+        "concept": "multiplication of units (N·m)",
+        "requires": "newton (unit of force)",
+        "why": "ضرب الوحدات يتطلب معرفة وحدة القوة وهي النيوتن"
+      },
+      {
+        "concept": "multiplication of units (N·m)",
+        "requires": "metre (unit of displacement)",
+        "why": "ضرب الوحدات يتطلب معرفة وحدة الإزاحة وهي المتر"
+      },
+      {
+        "concept": "multiplication of units (N·m)",
+        "requires": "multiplication",
+        "why": "ضرب الوحدات عملية ضرب رياضية بين كميتين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "multiplication",
+        "why": "لاستخدام معادلة الشغل يجب أن يفهم الطالب أن الطرف الأيسر يساوي الأيمن بعد الضرب"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم التوازن في المعادلة يبدأ من إدراك أن الرموز تمثل أعداداً يمكن حسابها"
+      }
+    ]
+  },
+  {
+    "content_node_id": 878,
+    "concept": "Power",
+    "nodes": [
+      {
+        "concept": "rate of doing work (P = W/t)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "كيف تعرّف القدرة رياضياً بدلالة الشغل والزمن؟"
+      },
+      {
+        "concept": "work as force times displacement (W = F·d)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما صيغة الشغل؟"
+      },
+      {
+        "concept": "ratio (one quantity per unit of another)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما معنى قول 'سرعة 60 كم في الساعة'؟ ما الكمية التي تُقسم على الأخرى؟"
+      },
+      {
+        "concept": "division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما ناتج 120 ÷ 4؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما حاصل ضرب 8 × 5؟"
+      },
+      {
+        "concept": "direct proportionality (P ∝ W for fixed t)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا ضاعف عامل الشغل الذي يبذله في نفس الوقت، كيف تتغير قدرته؟"
+      },
+      {
+        "concept": "inverse proportionality (P ∝ 1/t for fixed W)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا أنجز عاملان نفس الشغل لكن الثاني أخذ نصف الوقت، من منهما أعلى قدرة؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "في P = W/t، إذا كان W = 100 جول و t = 5 ثوانٍ، ما قيمة P؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في معادلة P = W/t، ما الذي يمثله كل رمز من الرموز الثلاثة؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Power",
+        "requires": "rate of doing work (P = W/t)",
+        "why": "القدرة تُعرَّف على أنها معدل الشغل المبذول بالنسبة للزمن"
+      },
+      {
+        "concept": "Power",
+        "requires": "work as force times displacement (W = F·d)",
+        "why": "لحساب القدرة لا بد من معرفة الشغل الذي يُحسب بضرب القوة في الإزاحة"
+      },
+      {
+        "concept": "Power",
+        "requires": "direct proportionality (P ∝ W for fixed t)",
+        "why": "القدرة تتناسب طردياً مع الشغل إذا ثبت الزمن، فيجب إدراك هذه العلاقة"
+      },
+      {
+        "concept": "Power",
+        "requires": "inverse proportionality (P ∝ 1/t for fixed W)",
+        "why": "القدرة تتناسب عكسياً مع الزمن إذا ثبت الشغل، وهذا جوهر تعريفها"
+      },
+      {
+        "concept": "rate of doing work (P = W/t)",
+        "requires": "ratio (one quantity per unit of another)",
+        "why": "المعدل هو نسبة كمية إلى كمية أخرى، فيجب فهم مفهوم النسبة"
+      },
+      {
+        "concept": "rate of doing work (P = W/t)",
+        "requires": "division",
+        "why": "حساب معدل الشغل يتطلب قسمة الشغل على الزمن"
+      },
+      {
+        "concept": "work as force times displacement (W = F·d)",
+        "requires": "multiplication",
+        "why": "الشغل يُحسب بضرب القوة في الإزاحة"
+      },
+      {
+        "concept": "ratio (one quantity per unit of another)",
+        "requires": "division",
+        "why": "النسبة تعبير رياضي يعتمد على القسمة"
+      },
+      {
+        "concept": "direct proportionality (P ∝ W for fixed t)",
+        "requires": "ratio (one quantity per unit of another)",
+        "why": "التناسب الطردي يعني ثبات النسبة بين الكميتين"
+      },
+      {
+        "concept": "inverse proportionality (P ∝ 1/t for fixed W)",
+        "requires": "division",
+        "why": "التناسب العكسي يعني أن إحدى الكميتين تُقسم على الأخرى"
+      },
+      {
+        "concept": "division",
+        "requires": "equals sign as balance",
+        "why": "لاستخدام القسمة في معادلة يجب فهم أن الطرفين متكافئان"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم التوازن في المعادلة يستلزم إدراك أن الرموز تمثل قيماً عددية"
+      }
+    ]
+  },
+  {
+    "content_node_id": 881,
+    "concept": "Watt",
+    "nodes": [
+      {
+        "concept": "unit of power",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما وحدة قياس القدرة في النظام الدولي؟"
+      },
+      {
+        "concept": "rate of doing work (P = W/t)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الصيغة الرياضية للقدرة؟"
+      },
+      {
+        "concept": "joule per second (J/s)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما الوحدة الناتجة عن قسمة الجول على الثانية؟"
+      },
+      {
+        "concept": "unit of work and energy (joule)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما وحدة الشغل والطاقة في النظام الدولي؟"
+      },
+      {
+        "concept": "division of units",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "كيف تُعبّر عن وحدة السرعة بوصفها نسبة وحدتين؟"
+      },
+      {
+        "concept": "division",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "ما ناتج 50 ÷ 10؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "إذا كانت P = W/t وكانت W = 1 جول و t = 1 ثانية، ما قيمة P بالواط؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في P = W/t، ما الذي يرمز إليه P؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Watt",
+        "requires": "unit of power",
+        "why": "الواط هو وحدة قياس القدرة، فيجب أن يفهم الطالب ما تعنيه وحدة القدرة"
+      },
+      {
+        "concept": "Watt",
+        "requires": "rate of doing work (P = W/t)",
+        "why": "الواط يُشتق من تعريف القدرة كمعدل للشغل، فيجب فهم هذا التعريف"
+      },
+      {
+        "concept": "unit of power",
+        "requires": "joule per second (J/s)",
+        "why": "الواط يساوي جول في الثانية، وهذا هو تعريفه الاشتقاقي"
+      },
+      {
+        "concept": "joule per second (J/s)",
+        "requires": "unit of work and energy (joule)",
+        "why": "للتعبير عن J/s لا بد من معرفة أن J هي وحدة الشغل"
+      },
+      {
+        "concept": "joule per second (J/s)",
+        "requires": "division of units",
+        "why": "J/s هي قسمة وحدة على وحدة، وهي مهارة تحليل الوحدات الاشتقاقية"
+      },
+      {
+        "concept": "rate of doing work (P = W/t)",
+        "requires": "division",
+        "why": "حساب معدل الشغل يتطلب قسمة الشغل على الزمن"
+      },
+      {
+        "concept": "division of units",
+        "requires": "division",
+        "why": "قسمة الوحدات تعتمد على نفس قواعد القسمة الرياضية"
+      },
+      {
+        "concept": "division",
+        "requires": "equals sign as balance",
+        "why": "لاستخدام القسمة في معادلة يجب فهم التكافؤ بين الطرفين"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم علامة المساواة كتوازن يبدأ من إدراك أن الرموز تمثل أعداداً"
+      }
+    ]
+  },
+  {
+    "content_node_id": 942,
+    "concept": "Compound machine",
+    "nodes": [
+      {
+        "concept": "simple machine (lever, pulley, inclined plane)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "اذكر ثلاثة أمثلة على آلات بسيطة."
+      },
+      {
+        "concept": "mechanical advantage (MA = output force / input force)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الميزة الميكانيكية لآلة تحوّل قوة مدخلة 20 نيوتن إلى قوة مخرجة 100 نيوتن؟"
+      },
+      {
+        "concept": "overall MA of compound machine (MA_total = MA₁ × MA₂ × …)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا كانت الآلة المركبة مكونة من آلتين ميزتهما الميكانيكية 3 و4، ما مجمل الميزة الميكانيكية؟"
+      },
+      {
+        "concept": "efficiency (useful output / total input)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما كفاءة آلة تأخذ 200 جول وتنتج 150 جول من الطاقة المفيدة؟"
+      },
+      {
+        "concept": "ratio (one quantity per unit of another)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما معنى نسبة 3:1 في سياق الميزة الميكانيكية؟"
+      },
+      {
+        "concept": "multiplication (chaining MA values)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما حاصل ضرب 2 × 3 × 4؟"
+      },
+      {
+        "concept": "division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما ناتج 80 ÷ 20؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "في MA = F_out / F_in، إذا كانت F_out = 60 نيوتن و F_in = 10 نيوتن، ما قيمة MA؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في معادلة MA = F_out / F_in، ما الذي يمثله الرمز F_in؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Compound machine",
+        "requires": "simple machine (lever, pulley, inclined plane)",
+        "why": "الآلة المركبة هي تجميع لآلتين بسيطتين أو أكثر، فيجب فهم مكوناتها الأساسية"
+      },
+      {
+        "concept": "Compound machine",
+        "requires": "mechanical advantage (MA = output force / input force)",
+        "why": "الهدف من الآلة المركبة هو تعظيم الميزة الميكانيكية، فيجب فهم هذا المفهوم أولاً"
+      },
+      {
+        "concept": "Compound machine",
+        "requires": "overall MA of compound machine (MA_total = MA₁ × MA₂ × …)",
+        "why": "الميزة الميكانيكية الكلية للآلة المركبة هي حاصل ضرب ميز آلاتها البسيطة"
+      },
+      {
+        "concept": "mechanical advantage (MA = output force / input force)",
+        "requires": "ratio (one quantity per unit of another)",
+        "why": "الميزة الميكانيكية هي نسبة قوة إلى قوة، فيجب فهم مفهوم النسبة"
+      },
+      {
+        "concept": "mechanical advantage (MA = output force / input force)",
+        "requires": "division",
+        "why": "حساب الميزة الميكانيكية يتطلب قسمة القوة المخرجة على المدخلة"
+      },
+      {
+        "concept": "overall MA of compound machine (MA_total = MA₁ × MA₂ × …)",
+        "requires": "multiplication (chaining MA values)",
+        "why": "الميزة الميكانيكية الكلية تُحسب بضرب ميز الآلات البسيطة المتسلسلة"
+      },
+      {
+        "concept": "efficiency (useful output / total input)",
+        "requires": "ratio (one quantity per unit of another)",
+        "why": "الكفاءة هي نسبة بين الطاقة المفيدة والطاقة المدخلة"
+      },
+      {
+        "concept": "efficiency (useful output / total input)",
+        "requires": "division",
+        "why": "حساب الكفاءة يستلزم قسمة الطاقة المفيدة على الكلية"
+      },
+      {
+        "concept": "ratio (one quantity per unit of another)",
+        "requires": "division",
+        "why": "النسبة تعتمد رياضياً على عملية القسمة"
+      },
+      {
+        "concept": "division",
+        "requires": "equals sign as balance",
+        "why": "لاستخدام القسمة في معادلة يجب فهم التكافؤ بين طرفيها"
+      },
+      {
+        "concept": "multiplication (chaining MA values)",
+        "requires": "equals sign as balance",
+        "why": "لاستخدام نتيجة الضرب في معادلة يجب فهم علامة المساواة"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم التوازن في المعادلة يستلزم إدراك أن الرموز تمثل قيماً عددية"
+      }
+    ]
+  },
+  {
+    "content_node_id": 1147,
+    "concept": "Rotational Kinetic Energy",
+    "nodes": [
+      {
+        "concept": "moment of inertia (I = Σmr²)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما عزم القصور الذاتي لجسيم كتلته 2 كغ يبعد 3 أمتار عن محور الدوران؟"
+      },
+      {
+        "concept": "angular velocity (ω)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما السرعة الزاوية لجسم يكمل دورة كاملة في ثانيتين؟"
+      },
+      {
+        "concept": "rotational KE formula (KE_rot = ½Iω²)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما صيغة الطاقة الحركية الدورانية؟"
+      },
+      {
+        "concept": "analogy with translational KE (½mv²)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف يشبه عزم القصور الذاتي الكتلة في صيغة الطاقة الحركية الانتقالية؟"
+      },
+      {
+        "concept": "powers/exponents (ω²)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما قيمة 6²؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما حاصل ضرب ½ × 4 × 9؟"
+      },
+      {
+        "concept": "summation (Σ) over mass elements",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كان جسم مؤلفاً من ثلاث كتل، كيف تجد عزم قصوره الذاتي الكلي؟"
+      },
+      {
+        "concept": "addition of terms",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ما ناتج 5 + 12 + 7؟"
+      },
+      {
+        "concept": "equals sign as balance",
+        "layer": 4,
+        "is_floor": false,
+        "check_question": "في KE_rot = ½Iω²، إذا كان I = 2 كغ·م² و ω = 3 راد/ث، ما قيمة KE_rot؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 5,
+        "is_floor": true,
+        "check_question": "في معادلة KE_rot = ½Iω²، ما الذي يمثله الرمز I والرمز ω؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Rotational Kinetic Energy",
+        "requires": "moment of inertia (I = Σmr²)",
+        "why": "الطاقة الحركية الدورانية تعتمد على عزم القصور الذاتي بوصفه مقياس مقاومة التغيير في الدوران"
+      },
+      {
+        "concept": "Rotational Kinetic Energy",
+        "requires": "angular velocity (ω)",
+        "why": "السرعة الزاوية هي المكافئ الدوراني للسرعة الخطية وتدخل في صيغة الطاقة"
+      },
+      {
+        "concept": "Rotational Kinetic Energy",
+        "requires": "rotational KE formula (KE_rot = ½Iω²)",
+        "why": "الصيغة الرياضية هي أداة الحساب المباشرة للطاقة الحركية الدورانية"
+      },
+      {
+        "concept": "rotational KE formula (KE_rot = ½Iω²)",
+        "requires": "analogy with translational KE (½mv²)",
+        "why": "فهم الصيغة يتيسّر بمقارنتها بالطاقة الحركية الانتقالية حيث I ↔ m و ω ↔ v"
+      },
+      {
+        "concept": "rotational KE formula (KE_rot = ½Iω²)",
+        "requires": "powers/exponents (ω²)",
+        "why": "السرعة الزاوية في الصيغة مرفوعة للقوة 2، فيجب فهم مفهوم الأسس"
+      },
+      {
+        "concept": "rotational KE formula (KE_rot = ½Iω²)",
+        "requires": "multiplication",
+        "why": "حساب ½Iω² يتطلب ضرب قيمتين وتصغيرها بمعامل ½"
+      },
+      {
+        "concept": "moment of inertia (I = Σmr²)",
+        "requires": "summation (Σ) over mass elements",
+        "why": "عزم القصور الذاتي هو مجموع حدود mr² لكل جزء من أجزاء الجسم"
+      },
+      {
+        "concept": "moment of inertia (I = Σmr²)",
+        "requires": "powers/exponents (ω²)",
+        "why": "في صيغة Σmr² يظهر r مرفوعاً للقوة 2، فيجب فهم الأسس"
+      },
+      {
+        "concept": "moment of inertia (I = Σmr²)",
+        "requires": "multiplication",
+        "why": "كل حد في المجموع يُحسب بضرب الكتلة في مربع نصف القطر"
+      },
+      {
+        "concept": "summation (Σ) over mass elements",
+        "requires": "addition of terms",
+        "why": "المجموع الرياضي هو جمع حدود متعددة"
+      },
+      {
+        "concept": "powers/exponents (ω²)",
+        "requires": "multiplication",
+        "why": "الأس يعني ضرب العدد في نفسه عدداً من المرات"
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equals sign as balance",
+        "why": "لاستخدام الضرب في معادلة يجب فهم أن الطرفين متكافئان"
+      },
+      {
+        "concept": "addition of terms",
+        "requires": "equals sign as balance",
+        "why": "لاستخدام الجمع في معادلة يجب فهم علامة المساواة كتوازن"
+      },
+      {
+        "concept": "equals sign as balance",
+        "requires": "equation/variable literacy",
+        "why": "فهم التوازن في المعادلة يستلزم إدراك أن الرموز تمثل قيماً عددية قابلة للحساب"
+      }
+    ]
+  }
+]

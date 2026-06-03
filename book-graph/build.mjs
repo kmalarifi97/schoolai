@@ -5,11 +5,12 @@
 // Source of truth: ../chatgpt-app/data/library.json (chapters→lessons index) +
 // ../chatgpt-app/data/lesson_pages/<code>.json (pages→typed blocks).
 
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync, existsSync, rmSync } from "node:fs";
 import { fileURLToPath } from "node:url";
+import { join } from "node:path";
 import {
   openDb, reset, setBook, addChapter, addLesson, addPage, addContentNode,
-  findContentNode, attachPrereqGraph, structureSummary,
+  findContentNode, getContentNode, attachPrereqGraph, structureSummary,
 } from "./db.mjs";
 import { PREREQ_GRAPHS } from "./prereqs.mjs";
 
@@ -32,8 +33,11 @@ const textOf = (b) => {
   }
 };
 
+// Fresh DB each build so content-node ids are deterministic (1…N) and stable —
+// the generated prereq graphs reference content nodes by id.
+const DBP = process.env.BOOKGRAPH_DB || fileURLToPath(new URL("data/book.db", import.meta.url));
+rmSync(DBP, { force: true });
 const db = openDb();
-reset(db);
 setBook(db, 1, lib.book?.title_ar || lib.book?.title || "الفيزياء 2");
 
 let ord = 0;
@@ -75,7 +79,27 @@ for (const pg of PREREQ_GRAPHS) {
   console.log(`  ✓ "${pg.name}" → content_node #${cn.id} [${cn.type}, lesson ${pg.anchor.lessonCode}]  (${pg.nodes.length} prereq nodes, ${pg.edges.length} edges)`);
 }
 
+// load fan-out-authored prereq graphs (generated/*.json), attached by content_node_id
+const GEN = fileURLToPath(new URL("generated", import.meta.url));
+let gG = 0, gN = 0, gFail = 0;
+if (existsSync(GEN)) {
+  for (const f of readdirSync(GEN).filter((x) => x.endsWith(".json")).sort()) {
+    let arr;
+    try { arr = JSON.parse(readFileSync(join(GEN, f), "utf8")); } catch { console.warn(`  ✗ ${f}: invalid JSON`); gFail++; continue; }
+    if (!Array.isArray(arr)) continue;
+    for (const g of arr) {
+      if (!g.content_node_id || !Array.isArray(g.nodes) || !Array.isArray(g.edges) || !getContentNode(db, g.content_node_id)) { gFail++; continue; }
+      attachPrereqGraph(db, g.content_node_id, { nodes: g.nodes, edges: g.edges });
+      gG++; gN += g.nodes.length;
+    }
+  }
+  console.log(`\n=== attached ${gG} fan-out-authored prereq graphs (${gN} prereq nodes)${gFail ? `, ${gFail} skipped` : ""} ===`);
+}
+
 console.log("\n=== book graph summary ===");
 console.log(structureSummary(db));
+const pn = db.prepare(`SELECT COUNT(*) c FROM prereq_nodes`).get().c;
+const pe = db.prepare(`SELECT COUNT(*) c FROM prereq_edges`).get().c;
+console.log(`prereq graphs: ${structureSummary(db).with_prereqs} · prereq nodes: ${pn} · prereq edges: ${pe}`);
 db.close();
 console.log("\nbuild OK");

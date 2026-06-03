@@ -1,0 +1,565 @@
+[
+  {
+    "content_node_id": 1578,
+    "concept": "Efficiency",
+    "nodes": [
+      {
+        "concept": "useful output energy / work",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الطاقة المفيدة التي يُنتجها محرك حراري يُحوِّل جزءاً من الحرارة إلى شغل؟"
+      },
+      {
+        "concept": "total input energy",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما الطاقة الكلية المُضافة إلى آلة حرارية من المصدر الساخن؟"
+      },
+      {
+        "concept": "ratio as fraction (output/input)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا أنتجت آلة 300 جول من أصل 500 جول مُدخَلة، ما نسبة الإنتاج إلى الإدخال؟"
+      },
+      {
+        "concept": "percentage conversion (×100)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تحوِّل الكسر 0.6 إلى نسبة مئوية؟"
+      },
+      {
+        "concept": "energy conservation (input = useful + wasted)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كانت الطاقة المُدخَلة 500 جول والطاقة المهدورة 200 جول، فما الطاقة المفيدة؟"
+      },
+      {
+        "concept": "division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب 300 ÷ 500."
+      },
+      {
+        "concept": "subtraction",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كان المجموع 500 وأحد الجزأين 200، فما الجزء الآخر؟"
+      },
+      {
+        "concept": "multiplication",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب 0.6 × 100."
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في المعادلة e = W/Q، ماذا يمثل كل رمز؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Efficiency",
+        "requires": "useful output energy / work",
+        "why": "الكفاءة هي نسبة الشغل المفيد الناتج، لذا يجب فهم ما يُعدّ طاقةً مفيدة."
+      },
+      {
+        "concept": "Efficiency",
+        "requires": "total input energy",
+        "why": "الكفاءة تُقاس بالنسبة إلى إجمالي الطاقة المُدخَلة للآلة."
+      },
+      {
+        "concept": "Efficiency",
+        "requires": "ratio as fraction (output/input)",
+        "why": "صيغة الكفاءة هي حاصل قسمة الخرج على الدخل، أي نسبة."
+      },
+      {
+        "concept": "Efficiency",
+        "requires": "percentage conversion (×100)",
+        "why": "تُعبَّر الكفاءة غالباً بنسبة مئوية فتُضرب النسبة في 100."
+      },
+      {
+        "concept": "total input energy",
+        "requires": "energy conservation (input = useful + wasted)",
+        "why": "فهم أن الدخل يُوزَّع بين الطاقة المفيدة والمهدورة يُوضح معنى الطاقة الكلية."
+      },
+      {
+        "concept": "ratio as fraction (output/input)",
+        "requires": "division",
+        "why": "حساب النسبة يتطلب قسمة الخرج على الدخل."
+      },
+      {
+        "concept": "energy conservation (input = useful + wasted)",
+        "requires": "subtraction",
+        "why": "إيجاد الطاقة المهدورة أو المفيدة من الكلية يعتمد على الطرح."
+      },
+      {
+        "concept": "percentage conversion (×100)",
+        "requires": "multiplication",
+        "why": "تحويل الكسر إلى نسبة مئوية يتطلب الضرب في 100."
+      },
+      {
+        "concept": "division",
+        "requires": "equation/variable literacy",
+        "why": "القسمة عملية رياضية أساسية تستلزم قراءة الرموز والمتغيرات في المعادلة."
+      },
+      {
+        "concept": "subtraction",
+        "requires": "equation/variable literacy",
+        "why": "الطرح يستلزم التعرف على الرموز الممثِّلة للكميات في المعادلة."
+      },
+      {
+        "concept": "multiplication",
+        "requires": "equation/variable literacy",
+        "why": "الضرب يتطلب فهم ما تمثله المتغيرات في المعادلة."
+      }
+    ]
+  },
+  {
+    "content_node_id": 1582,
+    "concept": "Refrigerators",
+    "nodes": [
+      {
+        "concept": "heat flow direction (cold to hot requires work)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "لماذا يحتاج المبرد إلى شغل خارجي لنقل الحرارة من داخله البارد إلى المحيط الدافئ؟"
+      },
+      {
+        "concept": "coefficient of performance COP (Q_cold / W)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما معامل الأداء للمبرد إذا امتص 400 جول من الطرف البارد بشغل 100 جول؟"
+      },
+      {
+        "concept": "energy balance (Q_hot = Q_cold + W)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كانت الحرارة الممتصة من الطرف البارد 300 جول والشغل المُبذَل 100 جول، فكم تكون الحرارة المُطلَقة في الطرف الساخن؟"
+      },
+      {
+        "concept": "ratio as fraction",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تعبّر عن كمية مقسومة على كمية أخرى في صورة كسر؟"
+      },
+      {
+        "concept": "addition",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كانت قيمتان 300 و100، فما مجموعهما؟"
+      },
+      {
+        "concept": "division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب 400 ÷ 100."
+      },
+      {
+        "concept": "subtraction",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كان المجموع 400 وأحد الجزأين 300، فما الجزء الآخر؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في المعادلة COP = Q_c / W، ماذا يمثل كل رمز؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Refrigerators",
+        "requires": "heat flow direction (cold to hot requires work)",
+        "why": "المبرد يعمل عكس الاتجاه الطبيعي للحرارة، لذا يجب فهم سبب الحاجة إلى شغل خارجي."
+      },
+      {
+        "concept": "Refrigerators",
+        "requires": "coefficient of performance COP (Q_cold / W)",
+        "why": "معامل الأداء هو المقياس الأساسي لكفاءة المبرد."
+      },
+      {
+        "concept": "coefficient of performance COP (Q_cold / W)",
+        "requires": "ratio as fraction",
+        "why": "COP هو نسبة الحرارة الممتصة إلى الشغل المبذول."
+      },
+      {
+        "concept": "coefficient of performance COP (Q_cold / W)",
+        "requires": "energy balance (Q_hot = Q_cold + W)",
+        "why": "فهم توازن الطاقة يُوضح كيف يرتبط الشغل بالحرارتين الممتصة والمُطلَقة."
+      },
+      {
+        "concept": "energy balance (Q_hot = Q_cold + W)",
+        "requires": "addition",
+        "why": "معادلة التوازن تستلزم جمع الحرارة الممتصة والشغل للحصول على الحرارة المُطلَقة."
+      },
+      {
+        "concept": "energy balance (Q_hot = Q_cold + W)",
+        "requires": "subtraction",
+        "why": "إيجاد أحد مكونات معادلة التوازن يتطلب الطرح."
+      },
+      {
+        "concept": "ratio as fraction",
+        "requires": "division",
+        "why": "حساب النسبة يعتمد على القسمة."
+      },
+      {
+        "concept": "addition",
+        "requires": "equation/variable literacy",
+        "why": "الجمع يستلزم التعرف على الرموز الممثِّلة للكميات الفيزيائية."
+      },
+      {
+        "concept": "division",
+        "requires": "equation/variable literacy",
+        "why": "القسمة تتطلب فهم معنى الرموز في المعادلة."
+      },
+      {
+        "concept": "subtraction",
+        "requires": "equation/variable literacy",
+        "why": "الطرح يستلزم قراءة المتغيرات وفهم ما تمثله."
+      }
+    ]
+  },
+  {
+    "content_node_id": 1585,
+    "concept": "Heat pump",
+    "nodes": [
+      {
+        "concept": "purpose: transferring heat to a hot reservoir using work",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "كيف تنقل المضخة الحرارية الحرارة إلى مكان أدفأ من المصدر؟"
+      },
+      {
+        "concept": "COP for heating (Q_hot / W)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ما معامل أداء المضخة الحرارية إذا أطلقت 500 جول في الطرف الساخن بشغل 200 جول؟"
+      },
+      {
+        "concept": "energy balance (Q_hot = Q_cold + W)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كانت الحرارة الممتصة من الخارج 300 جول والشغل 100 جول، فكم حرارة تُطلَق في الداخل؟"
+      },
+      {
+        "concept": "comparison with refrigerator COP",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "لماذا يكون معامل أداء المضخة الحرارية دائماً أكبر من 1؟"
+      },
+      {
+        "concept": "ratio as fraction",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "كيف تحسب نسبة كميتين إحداهما على الأخرى؟"
+      },
+      {
+        "concept": "addition",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب 300 + 100."
+      },
+      {
+        "concept": "division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب 500 ÷ 200."
+      },
+      {
+        "concept": "inequality / greater than",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كان أ = 5 وب = 3، فهل أ > ب؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في المعادلة COP_hp = Q_h / W، ماذا يمثل كل رمز؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Heat pump",
+        "requires": "purpose: transferring heat to a hot reservoir using work",
+        "why": "وظيفة المضخة الحرارية هي نقل الحرارة إلى المستودع الساخن بمساعدة شغل خارجي."
+      },
+      {
+        "concept": "Heat pump",
+        "requires": "COP for heating (Q_hot / W)",
+        "why": "معامل الأداء الحراري هو المقياس الأساسي لكفاءة المضخة الحرارية."
+      },
+      {
+        "concept": "COP for heating (Q_hot / W)",
+        "requires": "ratio as fraction",
+        "why": "COP هو نسبة الحرارة المُطلَقة إلى الشغل المبذول."
+      },
+      {
+        "concept": "COP for heating (Q_hot / W)",
+        "requires": "energy balance (Q_hot = Q_cold + W)",
+        "why": "يرتبط COP بتوازن الطاقة الذي يصل بين الحرارتين والشغل."
+      },
+      {
+        "concept": "COP for heating (Q_hot / W)",
+        "requires": "comparison with refrigerator COP",
+        "why": "فهم الفرق بين COP المضخة والمبرد يُعمِّق استيعاب الصيغة."
+      },
+      {
+        "concept": "energy balance (Q_hot = Q_cold + W)",
+        "requires": "addition",
+        "why": "معادلة التوازن تعتمد على جمع الحرارة الممتصة والشغل."
+      },
+      {
+        "concept": "ratio as fraction",
+        "requires": "division",
+        "why": "حساب النسبة يعتمد على القسمة."
+      },
+      {
+        "concept": "comparison with refrigerator COP",
+        "requires": "inequality / greater than",
+        "why": "المقارنة بين معاملي الأداء تتطلب فهم علاقة أكبر من / أصغر من."
+      },
+      {
+        "concept": "addition",
+        "requires": "equation/variable literacy",
+        "why": "الجمع يستلزم التعرف على الرموز الممثِّلة للكميات."
+      },
+      {
+        "concept": "division",
+        "requires": "equation/variable literacy",
+        "why": "القسمة تتطلب فهم الرموز والمتغيرات في المعادلة."
+      },
+      {
+        "concept": "inequality / greater than",
+        "requires": "equation/variable literacy",
+        "why": "مقارنة القيم تستلزم فهم ما تمثله الرموز."
+      }
+    ]
+  },
+  {
+    "content_node_id": 1597,
+    "concept": "Entropy",
+    "nodes": [
+      {
+        "concept": "disorder / number of microstates",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "كيف يرتبط عدد الترتيبات الممكنة لجزيئات نظام ما بدرجة فوضاه؟"
+      },
+      {
+        "concept": "entropy change ΔS = Q/T",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "إذا امتص نظام 600 جول عند درجة حرارة 300 كلفن، فما تغير الإنتروبي؟"
+      },
+      {
+        "concept": "absolute temperature (Kelvin scale)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما درجة حرارة 27°م بالكلفن؟"
+      },
+      {
+        "concept": "ratio as fraction (Q/T)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "كيف تحسب نسبة الحرارة إلى درجة الحرارة المطلقة؟"
+      },
+      {
+        "concept": "sign of ΔS (positive = more disorder)",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "إذا كان تغير الإنتروبي موجباً، ماذا يعني ذلك بالنسبة لفوضى النظام؟"
+      },
+      {
+        "concept": "division",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "احسب 600 ÷ 300."
+      },
+      {
+        "concept": "addition and subtraction of quantities",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كانت درجة حرارة جسم 27°م، فكم تساوي بعد إضافة 273؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في المعادلة ΔS = Q/T، ماذا يمثل كل رمز؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Entropy",
+        "requires": "disorder / number of microstates",
+        "why": "الإنتروبي مقياس للفوضى وعدد الحالات الدقيقة الممكنة في النظام."
+      },
+      {
+        "concept": "Entropy",
+        "requires": "entropy change ΔS = Q/T",
+        "why": "الصيغة الرياضية لتغير الإنتروبي هي الأداة الكمية لحساب التغير في الفوضى."
+      },
+      {
+        "concept": "entropy change ΔS = Q/T",
+        "requires": "absolute temperature (Kelvin scale)",
+        "why": "المعادلة تستخدم درجة الحرارة المطلقة بالكلفن وليس المئوية أو الفهرنهايت."
+      },
+      {
+        "concept": "entropy change ΔS = Q/T",
+        "requires": "ratio as fraction (Q/T)",
+        "why": "تغير الإنتروبي هو نسبة الحرارة إلى درجة الحرارة المطلقة."
+      },
+      {
+        "concept": "entropy change ΔS = Q/T",
+        "requires": "sign of ΔS (positive = more disorder)",
+        "why": "تفسير إشارة ΔS ضروري لربط النتيجة العددية بمعناها الفيزيائي."
+      },
+      {
+        "concept": "absolute temperature (Kelvin scale)",
+        "requires": "addition and subtraction of quantities",
+        "why": "التحويل من مئوي إلى كلفن يعتمد على جمع 273 أو طرح 273."
+      },
+      {
+        "concept": "ratio as fraction (Q/T)",
+        "requires": "division",
+        "why": "حساب Q/T يعتمد أساساً على القسمة."
+      },
+      {
+        "concept": "division",
+        "requires": "equation/variable literacy",
+        "why": "القسمة تتطلب فهم ما تمثله الرموز في المعادلة."
+      },
+      {
+        "concept": "addition and subtraction of quantities",
+        "requires": "equation/variable literacy",
+        "why": "الجمع والطرح يستلزمان قراءة الأرقام والمتغيرات المعطاة."
+      },
+      {
+        "concept": "sign of ΔS (positive = more disorder)",
+        "requires": "equation/variable literacy",
+        "why": "تفسير الإشارة يستلزم فهم أن Δ ترمز إلى التغير وأن القيمة قد تكون موجبة أو سالبة."
+      }
+    ]
+  },
+  {
+    "content_node_id": 1607,
+    "concept": "Second Law of Thermodynamics",
+    "nodes": [
+      {
+        "concept": "natural direction of heat flow (hot to cold)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "في أي اتجاه تنتقل الحرارة تلقائياً بين جسمين بدرجتي حرارة مختلفتين؟"
+      },
+      {
+        "concept": "entropy of an isolated system always increases",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "ماذا يحدث لإنتروبي نظام معزول مع مرور الوقت وفق القانون الثاني؟"
+      },
+      {
+        "concept": "no heat engine is 100% efficient (Kelvin–Planck statement)",
+        "layer": 1,
+        "is_floor": false,
+        "check_question": "لماذا لا يمكن لأي محرك حراري أن يُحوِّل كل الحرارة الممتصة إلى شغل مفيد؟"
+      },
+      {
+        "concept": "irreversibility of natural processes",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "هل تعود الغازات المنتشرة في غرفة تلقائياً إلى حيزها الأصلي؟ لماذا؟"
+      },
+      {
+        "concept": "entropy change ΔS ≥ 0 for isolated systems",
+        "layer": 2,
+        "is_floor": false,
+        "check_question": "ما الشرط الرياضي الذي يفرضه القانون الثاني على تغير إنتروبي نظام معزول؟"
+      },
+      {
+        "concept": "inequality (greater than or equal)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "ماذا تعني الإشارة ≥ في معادلة رياضية؟"
+      },
+      {
+        "concept": "proportionality and limits (efficiency < 1)",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كانت الكفاءة دائماً أقل من 1، فماذا يعني ذلك بالنسبة للطاقة المهدورة؟"
+      },
+      {
+        "concept": "subtraction",
+        "layer": 3,
+        "is_floor": false,
+        "check_question": "إذا كانت الطاقة الكلية 500 جول والشغل المنتج 300 جول، فكم الطاقة المهدورة؟"
+      },
+      {
+        "concept": "equation/variable literacy",
+        "layer": 4,
+        "is_floor": true,
+        "check_question": "في المعادلة ΔS ≥ 0، ماذا يمثل الرمز ΔS؟"
+      }
+    ],
+    "edges": [
+      {
+        "concept": "Second Law of Thermodynamics",
+        "requires": "natural direction of heat flow (hot to cold)",
+        "why": "القانون الثاني يصف الاتجاه التلقائي لانتقال الحرارة من الساخن إلى البارد."
+      },
+      {
+        "concept": "Second Law of Thermodynamics",
+        "requires": "entropy of an isolated system always increases",
+        "why": "الصياغة الإنتروبية للقانون الثاني تنص على أن الإنتروبي لا يتناقص في النظام المعزول."
+      },
+      {
+        "concept": "Second Law of Thermodynamics",
+        "requires": "no heat engine is 100% efficient (Kelvin–Planck statement)",
+        "why": "صياغة كلفن-بلانك توضح أن القانون الثاني يمنع الكفاءة الكاملة لأي محرك."
+      },
+      {
+        "concept": "entropy of an isolated system always increases",
+        "requires": "irreversibility of natural processes",
+        "why": "ارتفاع الإنتروبي مرتبط بعدم انعكاسية العمليات الطبيعية."
+      },
+      {
+        "concept": "entropy of an isolated system always increases",
+        "requires": "entropy change ΔS ≥ 0 for isolated systems",
+        "why": "الصياغة الرياضية للقانون تستلزم فهم شرط عدم السالبية لتغير الإنتروبي."
+      },
+      {
+        "concept": "no heat engine is 100% efficient (Kelvin–Planck statement)",
+        "requires": "proportionality and limits (efficiency < 1)",
+        "why": "الكفاءة القصوى أقل من 1 دائماً، وهو ما يعنيه قيد كلفن-بلانك رياضياً."
+      },
+      {
+        "concept": "no heat engine is 100% efficient (Kelvin–Planck statement)",
+        "requires": "subtraction",
+        "why": "حساب الطاقة المهدورة (Q_h - W) يعتمد على الطرح."
+      },
+      {
+        "concept": "entropy change ΔS ≥ 0 for isolated systems",
+        "requires": "inequality (greater than or equal)",
+        "why": "الشرط الرياضي ΔS ≥ 0 يعتمد على فهم رمز الأكبر من أو يساوي."
+      },
+      {
+        "concept": "inequality (greater than or equal)",
+        "requires": "equation/variable literacy",
+        "why": "قراءة وتفسير رموز المتراجحات تستلزم الألفة بالرموز والمتغيرات."
+      },
+      {
+        "concept": "subtraction",
+        "requires": "equation/variable literacy",
+        "why": "الطرح يستلزم التعرف على الكميات الممثَّلة بالرموز في المعادلة."
+      },
+      {
+        "concept": "proportionality and limits (efficiency < 1)",
+        "requires": "equation/variable literacy",
+        "why": "فهم حد الكفاءة يتطلب ربط رموز المعادلة بقيمها الفيزيائية."
+      }
+    ]
+  }
+]
