@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Shared book graph (book->chapters->pages->content nodes, with attached prerequisite graphs + check questions) + per-student session overlay.",
-  "scripts": { "build": "node build.mjs", "demo": "node demo.mjs" }
+  "description": "Pre-built book graph + attached prerequisite graphs & check questions + per-student session overlay, exposed over MCP with on-demand decomposition fallback.",
+  "scripts": { "build": "node build.mjs", "demo": "node demo.mjs", "mcp": "node mcp.mjs" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "zod": "^3.23.0"
+  }
 }

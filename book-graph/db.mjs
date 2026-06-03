@@ -64,13 +64,23 @@ export const addContentNode = (db, { lesson_id, page_id, type, ordinal, block_id
   Number(db.prepare(`INSERT INTO content_nodes(lesson_id,page_id,type,ordinal,block_id,text) VALUES(?,?,?,?,?,?)`).run(lesson_id, page_id, type, ordinal, block_id || null, text || null).lastInsertRowid);
 
 // Attach a prerequisite graph (with check questions) to a content node.
+// Idempotent: re-attaching replaces (so the on-demand fallback can save/overwrite).
 export function attachPrereqGraph(db, content_node_id, { nodes, edges }) {
+  db.prepare(`DELETE FROM prereq_nodes WHERE content_node_id=?`).run(content_node_id);
+  db.prepare(`DELETE FROM prereq_edges WHERE content_node_id=?`).run(content_node_id);
   db.prepare(`UPDATE content_nodes SET has_prereqs=1 WHERE id=?`).run(content_node_id);
   const insN = db.prepare(`INSERT INTO prereq_nodes(content_node_id,concept,layer,is_floor,check_question) VALUES(?,?,?,?,?)`);
   for (const n of nodes) insN.run(content_node_id, n.concept, n.layer ?? 0, n.is_floor ? 1 : 0, n.check_question || null);
   const insE = db.prepare(`INSERT INTO prereq_edges(content_node_id,concept,requires,why) VALUES(?,?,?,?)`);
   for (const e of edges) insE.run(content_node_id, e.concept, e.requires, e.why || null);
 }
+
+// Search concept/law content nodes by name (for the LLM to locate a topic).
+export const searchConcepts = (db, query, limit = 8) =>
+  db.prepare(`SELECT cn.id AS content_node_id, cn.type, cn.text, cn.has_prereqs, l.code AS lesson
+    FROM content_nodes cn JOIN lessons l ON l.id=cn.lesson_id
+    WHERE cn.type IN ('key_term','equation','worked_example') AND cn.text LIKE ?
+    ORDER BY cn.has_prereqs DESC, (cn.type='key_term') DESC, cn.id LIMIT ?`).all(`%${query}%`, limit);
 
 // Find a content node by a text/type/lesson hint (used to anchor a prereq graph).
 export const findContentNode = (db, { lessonCode, type, like }) =>
@@ -95,7 +105,7 @@ export const chaptersTree = (db) => db.prepare(`
   FROM chapters c JOIN lessons l ON l.chapter_id=c.id ORDER BY c.number, l.code`).all();
 export const getContentNode = (db, id) => db.prepare(`SELECT * FROM content_nodes WHERE id=?`).get(id);
 export const getPrereqGraph = (db, content_node_id) => ({
-  nodes: db.prepare(`SELECT concept, layer, is_floor, check_question FROM prereq_nodes WHERE content_node_id=? ORDER BY layer, id`).all(content_node_id),
+  nodes: db.prepare(`SELECT id AS prereq_node_id, concept, layer, is_floor, check_question FROM prereq_nodes WHERE content_node_id=? ORDER BY layer, id`).all(content_node_id),
   edges: db.prepare(`SELECT concept, requires, why FROM prereq_edges WHERE content_node_id=?`).all(content_node_id),
 });
 export const contentNodesWithPrereqs = (db) => db.prepare(`
