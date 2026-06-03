@@ -32,9 +32,14 @@ import {
   RESOURCE_MIME_TYPE,
 } from "@modelcontextprotocol/ext-apps/server";
 
-// New-model layer: empty experience-log graph + on-demand LLM decomposition.
-import { openDb, storeDecomposition, getTopic, logOutcome, topicStatusForStudent } from "./db.mjs";
-import { DECOMPOSITION_PROMPT, normalize } from "./decompose.mjs";
+// Pre-built book-graph model + per-student session overlay (shipped seed/book.db,
+// copied to a writable path at startup). Replaces the old on-demand log model.
+import { copyFileSync, existsSync } from "node:fs";
+import {
+  openDb as openBookGraph, chaptersTree, structureSummary, searchConcepts,
+  getContentNode, getPrereqGraph, attachPrereqGraph, startSession, logOnNode,
+  studentStruggles,
+} from "./bookgraph.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT ?? 8787);
@@ -147,14 +152,23 @@ const text = (t, structured) =>
     ? { content: [{ type: "text", text: t }], structuredContent: structured }
     : { content: [{ type: "text", text: t }] };
 
-// New-model store: empty experience log (Node built-in SQLite). Honors GRAPHLOG_DB
-// (Cloud Run sets it to /tmp). Disabled gracefully so content tools still work.
-let glog = null;
+// Pre-built book graph (shipped read-only as seed/book.db) → writable copy so
+// per-student session logs can be written (Cloud Run fs is ephemeral). Honors
+// BOOKGRAPH_DB (defaults to /tmp/book.db). Disabled gracefully so the video/
+// content tools still work if it fails.
+const BOOKGRAPH_GUIDE = `Decompose the concept into its prerequisite graph for an 18-year-old: layer by layer,
+descend from the physics concept into the underlying math, justify why each node needs the one
+beneath it, and STOP at the floor "equation/variable literacy" (a symbol stands for a number, =
+means both sides are equal). ~6-10 nodes, one Arabic check question per node, one floor node.`;
+let bookgraph = null;
 try {
-  glog = openDb();
-  console.log("graph-log model ready (experience log open)");
+  const SEED = join(HERE, "seed", "book.db");
+  const DBPATH = process.env.BOOKGRAPH_DB || "/tmp/book.db";
+  if (!existsSync(DBPATH) && existsSync(SEED)) copyFileSync(SEED, DBPATH);
+  bookgraph = openBookGraph(DBPATH);
+  console.log(`book-graph model ready (db: ${DBPATH})`);
 } catch (e) {
-  console.error(`graph-log model disabled: ${e.message}`);
+  console.error(`book-graph model disabled: ${e.message}`);
 }
 
 function createPhysicsServer() {
@@ -563,84 +577,101 @@ function createPhysicsServer() {
     }
   );
 
-  // === New-model tools: empty experience log + on-demand LLM decomposition ===
-  // The LLM decomposes a topic (guide below), stores it, logs the student's
-  // pass/struggle, and reads gaps. No traversal engine; the DB only logs.
-  const _NODE = z.object({ concept: z.string(), layer: z.number().optional(), is_floor: z.boolean().optional() });
+  // === Book-graph model: pre-built prerequisite graph + per-student overlay ===
+  // find_book_concept → get_prereq_graph (pre-built; or decompose on demand +
+  // save_prereq_graph) → log_struggle per node → get_student_status for gaps.
+  const _bgOff = () => text("سجل الخبرة غير متاح حاليًا.", { error: "book-graph unavailable" });
+  const _NODE = z.object({ concept: z.string(), layer: z.number().optional(), is_floor: z.boolean().optional(), check_question: z.string().optional() });
   const _EDGE = z.object({ concept: z.string(), requires: z.string(), why: z.string().optional() });
-  const _glogOff = () => text("سجل الخبرة غير متاح حاليًا.", { error: "graph-log unavailable" });
 
   registerAppTool(
     server,
-    "get_decomposition_guide",
+    "find_book_concept",
     {
-      title: "Get the topic-decomposition guide (with worked example)",
+      title: "Find a law/concept node in the book",
       description:
-        "Returns the rules + Kepler worked example for decomposing a topic into its prerequisite graph " +
-        "(descend topic→math, stop at equation/variable literacy). Use it before save_topic_decomposition.",
-      inputSchema: {},
-      outputSchema: { guide: z.string() },
+        "Search the book's laws/key-concepts by Arabic or English keyword. Returns matches with their " +
+        "content_node_id, lesson, type, and whether a pre-built prerequisite graph exists. Call get_prereq_graph next.",
+      inputSchema: { query: z.string() },
+      outputSchema: { matches: z.any() },
       _meta: {},
     },
-    async () => text("decomposition guide", { guide: DECOMPOSITION_PROMPT })
-  );
-
-  registerAppTool(
-    server,
-    "save_topic_decomposition",
-    {
-      title: "Save the topic's prerequisite graph you decomposed",
-      description:
-        "Store the decomposition YOU produced for a topic (same for every student). nodes:[{concept,layer," +
-        "is_floor}]; edges:[{concept,requires,why}] meaning concept REQUIRES requires. Stop at equation/" +
-        "variable literacy. Idempotent — re-saving replaces it.",
-      inputSchema: { topic: z.string(), nodes: z.array(_NODE), edges: z.array(_EDGE) },
-      outputSchema: { topic: z.string(), nodes: z.number(), edges: z.number(), next_teacher_action: z.string() },
-      _meta: {},
-    },
-    async ({ topic, nodes, edges }) => {
-      if (!glog) return _glogOff();
-      const r = storeDecomposition(glog, topic, normalize({ topic, nodes, edges }));
-      return text(`saved "${topic}": ${r.nodes} nodes, ${r.edges} edges`, { ...r, next_teacher_action: "teach_from_deepest_unmet_prerequisite" });
+    async ({ query }) => {
+      if (!bookgraph) return _bgOff();
+      const rows = searchConcepts(bookgraph, query).map((r) => ({
+        content_node_id: r.content_node_id, lesson: r.lesson, type: r.type,
+        name: (r.text || "").slice(0, 80), has_prereq_graph: !!r.has_prereqs,
+      }));
+      return text(`${rows.length} matches for "${query}"`, { matches: rows });
     }
   );
 
   registerAppTool(
     server,
-    "get_topic_decomposition",
+    "get_prereq_graph",
     {
-      title: "Read a stored topic decomposition",
-      description: "Read back the prerequisite graph stored for a topic (nodes by layer + edges). Null if not saved yet.",
-      inputSchema: { topic: z.string() },
-      outputSchema: { topic: z.any() },
+      title: "Get a concept's prerequisite graph (pre-built, or decompose on demand)",
+      description:
+        "For a content_node_id, return its prerequisite graph: nodes (each with a prereq_node_id, layer, " +
+        "is_floor, check_question) + edges. Teach from the floor up; after each check question call log_struggle with " +
+        "that node's prereq_node_id. If no pre-built graph exists, returns has_prereqs:false + a decomposition guide — " +
+        "decompose it yourself and call save_prereq_graph.",
+      inputSchema: { content_node_id: z.number() },
+      outputSchema: { has_prereqs: z.boolean(), concept: z.any(), nodes: z.any(), edges: z.any(), decomposition_guide: z.any(), next_teacher_action: z.string() },
       _meta: {},
     },
-    async ({ topic }) => {
-      if (!glog) return _glogOff();
-      const g = getTopic(glog, topic);
-      return text(g ? `topic "${topic}": ${g.nodes.length} nodes` : `"${topic}" not decomposed yet`, { topic: g });
+    async ({ content_node_id }) => {
+      if (!bookgraph) return _bgOff();
+      const cn = getContentNode(bookgraph, content_node_id);
+      if (!cn) return text("no such content node", { has_prereqs: false, concept: null, nodes: [], edges: [], decomposition_guide: null, next_teacher_action: "find_concept_again" });
+      if (cn.has_prereqs) {
+        const g = getPrereqGraph(bookgraph, content_node_id);
+        return text(`prereq graph: ${g.nodes.length} nodes`, { has_prereqs: true, concept: cn.text?.slice(0, 80), nodes: g.nodes, edges: g.edges, decomposition_guide: null, next_teacher_action: "teach_from_floor_up_then_log_each_check" });
+      }
+      return text("no pre-built graph — decompose on demand", { has_prereqs: false, concept: cn.text?.slice(0, 80), nodes: [], edges: [], decomposition_guide: BOOKGRAPH_GUIDE, next_teacher_action: "decompose_then_call_save_prereq_graph" });
     }
   );
 
   registerAppTool(
     server,
-    "log_outcome",
+    "save_prereq_graph",
     {
-      title: "Log a student's pass/struggle on one concept",
+      title: "Save an on-demand prerequisite graph (fallback)",
       description:
-        "Record this student's experience on a concept of a topic. outcome is 'passed' or 'struggled'. This is " +
-        "the only thing that grows per student; call it as they answer.",
+        "Persist a prerequisite graph YOU decomposed for a content node that had none, so it joins the " +
+        "shared graph (grows it). Idempotent.",
+      inputSchema: { content_node_id: z.number(), nodes: z.array(_NODE), edges: z.array(_EDGE) },
+      outputSchema: { saved: z.boolean(), nodes: z.number() },
+      _meta: {},
+    },
+    async ({ content_node_id, nodes, edges }) => {
+      if (!bookgraph) return _bgOff();
+      attachPrereqGraph(bookgraph, content_node_id, { nodes, edges });
+      return text(`saved ${nodes.length} prereq nodes`, { saved: true, nodes: nodes.length });
+    }
+  );
+
+  registerAppTool(
+    server,
+    "log_struggle",
+    {
+      title: "Log a student's pass/struggle on a graph node (the session overlay)",
+      description:
+        "Record this student's outcome on a book-graph node, ON THE LINK between their session and that " +
+        "node. ref_kind 'prereq' (a prereq_node_id from get_prereq_graph) or 'content' (a content_node_id). One " +
+        "session_id per chat. outcome 'passed' or 'struggled'.",
       inputSchema: {
-        student_id: z.string(), topic: z.string(), concept: z.string(),
-        outcome: z.enum(["passed", "struggled"]),
+        student_id: z.string(), session_id: z.string(), ref_kind: z.enum(["prereq", "content"]),
+        ref_id: z.number(), outcome: z.enum(["passed", "struggled"]),
       },
       outputSchema: { logged: z.boolean(), next_teacher_action: z.string() },
       _meta: {},
     },
-    async ({ student_id, topic, concept, outcome }) => {
-      if (!glog) return _glogOff();
-      logOutcome(glog, { student_id, topic, concept, outcome });
-      return text(`logged ${outcome} on "${concept}"`, { logged: true, next_teacher_action: outcome === "struggled" ? "teach_this_concept_now" : "advance" });
+    async ({ student_id, session_id, ref_kind, ref_id, outcome }) => {
+      if (!bookgraph) return _bgOff();
+      startSession(bookgraph, session_id, student_id);
+      logOnNode(bookgraph, { session_id, ref_kind, ref_id, outcome });
+      return text(`logged ${outcome}`, { logged: true, next_teacher_action: outcome === "struggled" ? "teach_this_node_now" : "advance" });
     }
   );
 
@@ -648,19 +679,18 @@ function createPhysicsServer() {
     server,
     "get_student_status",
     {
-      title: "Get a student's pass/struggle status across a topic's nodes",
+      title: "Get everything a student has struggled on (across sessions)",
       description:
-        "For a topic, return each node with this student's latest outcome (passed/struggled/untested) so you can " +
-        "start from their actual gap. Teach the deepest 'struggled' node first, then climb to the topic.",
-      inputSchema: { student_id: z.string(), topic: z.string() },
-      outputSchema: { status: z.any(), gaps: z.any(), next_teacher_action: z.string() },
+        "Read back this student's logged struggles against book-graph nodes, so you start from their actual " +
+        "gaps. Speak in concept names; never show ids.",
+      inputSchema: { student_id: z.string() },
+      outputSchema: { struggles: z.any() },
       _meta: {},
     },
-    async ({ student_id, topic }) => {
-      if (!glog) return _glogOff();
-      const status = topicStatusForStudent(glog, student_id, topic);
-      const gaps = status.filter((s) => s.latest_outcome === "struggled").map((s) => s.concept);
-      return text(gaps.length ? `gaps: ${gaps.join(", ")}` : "no logged gaps yet", { status, gaps, next_teacher_action: gaps.length ? "teach_deepest_gap_first" : "begin_or_quiz" });
+    async ({ student_id }) => {
+      if (!bookgraph) return _bgOff();
+      const s = studentStruggles(bookgraph, student_id);
+      return text(`${s.length} logged struggle(s)`, { struggles: s });
     }
   );
 

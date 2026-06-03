@@ -1,0 +1,4 @@
+node_modules/
+# ignore runtime DBs (root .gitignore has *.db) but keep the shipped seed graph
+*.db
+!seed/book.db
