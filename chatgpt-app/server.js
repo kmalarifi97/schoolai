@@ -37,7 +37,7 @@ import {
 import { copyFileSync, existsSync } from "node:fs";
 import {
   openDb as openBookGraph, chaptersTree, structureSummary, searchConcepts,
-  getContentNode, getPrereqGraph, attachPrereqGraph, startSession, logOnNode,
+  getContentNode, getPrereqGraph, startSession, logOnNode,
   studentStruggles,
 } from "./bookgraph.mjs";
 
@@ -156,10 +156,6 @@ const text = (t, structured) =>
 // per-student session logs can be written (Cloud Run fs is ephemeral). Honors
 // BOOKGRAPH_DB (defaults to /tmp/book.db). Disabled gracefully so the video/
 // content tools still work if it fails.
-const BOOKGRAPH_GUIDE = `Decompose the concept into its prerequisite graph for an 18-year-old: layer by layer,
-descend from the physics concept into the underlying math, justify why each node needs the one
-beneath it, and STOP at the floor "equation/variable literacy" (a symbol stands for a number, =
-means both sides are equal). ~6-10 nodes, one Arabic check question per node, one floor node.`;
 let bookgraph = null;
 try {
   const SEED = join(HERE, "seed", "book.db");
@@ -581,8 +577,6 @@ function createPhysicsServer() {
   // find_book_concept → get_prereq_graph (pre-built; or decompose on demand +
   // save_prereq_graph) → log_struggle per node → get_student_status for gaps.
   const _bgOff = () => text("سجل الخبرة غير متاح حاليًا.", { error: "book-graph unavailable" });
-  const _NODE = z.object({ concept: z.string(), layer: z.number().optional(), is_floor: z.boolean().optional(), check_question: z.string().optional() });
-  const _EDGE = z.object({ concept: z.string(), requires: z.string(), why: z.string().optional() });
 
   registerAppTool(
     server,
@@ -610,44 +604,25 @@ function createPhysicsServer() {
     server,
     "get_prereq_graph",
     {
-      title: "Get a concept's prerequisite graph (pre-built, or decompose on demand)",
+      title: "Get a concept's pre-built prerequisite graph",
       description:
-        "For a content_node_id, return its prerequisite graph: nodes (each with a prereq_node_id, layer, " +
-        "is_floor, check_question) + edges. Teach from the floor up; after each check question call log_struggle with " +
-        "that node's prereq_node_id. If no pre-built graph exists, returns has_prereqs:false + a decomposition guide — " +
-        "decompose it yourself and call save_prereq_graph.",
+        "For a content_node_id, return its PRE-BUILT prerequisite graph: nodes (each with a prereq_node_id, " +
+        "layer, is_floor, check_question) + edges. Teach from the floor up; after each check question call " +
+        "log_struggle with that node's prereq_node_id. Every named concept in the book has a graph; if a node " +
+        "has none (e.g. a raw intermediate equation), has_prereqs is false — just teach it directly.",
       inputSchema: { content_node_id: z.number() },
-      outputSchema: { has_prereqs: z.boolean(), concept: z.any(), nodes: z.any(), edges: z.any(), decomposition_guide: z.any(), next_teacher_action: z.string() },
+      outputSchema: { has_prereqs: z.boolean(), concept: z.any(), nodes: z.any(), edges: z.any(), next_teacher_action: z.string() },
       _meta: {},
     },
     async ({ content_node_id }) => {
       if (!bookgraph) return _bgOff();
       const cn = getContentNode(bookgraph, content_node_id);
-      if (!cn) return text("no such content node", { has_prereqs: false, concept: null, nodes: [], edges: [], decomposition_guide: null, next_teacher_action: "find_concept_again" });
+      if (!cn) return text("no such content node", { has_prereqs: false, concept: null, nodes: [], edges: [], next_teacher_action: "find_concept_again" });
       if (cn.has_prereqs) {
         const g = getPrereqGraph(bookgraph, content_node_id);
-        return text(`prereq graph: ${g.nodes.length} nodes`, { has_prereqs: true, concept: cn.text?.slice(0, 80), nodes: g.nodes, edges: g.edges, decomposition_guide: null, next_teacher_action: "teach_from_floor_up_then_log_each_check" });
+        return text(`prereq graph: ${g.nodes.length} nodes`, { has_prereqs: true, concept: cn.text?.slice(0, 80), nodes: g.nodes, edges: g.edges, next_teacher_action: "teach_from_floor_up_then_log_each_check" });
       }
-      return text("no pre-built graph — decompose on demand", { has_prereqs: false, concept: cn.text?.slice(0, 80), nodes: [], edges: [], decomposition_guide: BOOKGRAPH_GUIDE, next_teacher_action: "decompose_then_call_save_prereq_graph" });
-    }
-  );
-
-  registerAppTool(
-    server,
-    "save_prereq_graph",
-    {
-      title: "Save an on-demand prerequisite graph (fallback)",
-      description:
-        "Persist a prerequisite graph YOU decomposed for a content node that had none, so it joins the " +
-        "shared graph (grows it). Idempotent.",
-      inputSchema: { content_node_id: z.number(), nodes: z.array(_NODE), edges: z.array(_EDGE) },
-      outputSchema: { saved: z.boolean(), nodes: z.number() },
-      _meta: {},
-    },
-    async ({ content_node_id, nodes, edges }) => {
-      if (!bookgraph) return _bgOff();
-      attachPrereqGraph(bookgraph, content_node_id, { nodes, edges });
-      return text(`saved ${nodes.length} prereq nodes`, { saved: true, nodes: nodes.length });
+      return text("no pre-built prereq graph for this node", { has_prereqs: false, concept: cn.text?.slice(0, 80), nodes: [], edges: [], next_teacher_action: "teach_directly" });
     }
   );
 
